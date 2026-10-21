@@ -1,0 +1,85 @@
+{
+  "testedAt": "2026-10-21T17:21:28.768Z",
+  "version": "0.9.1",
+  "source": "working candidate; tie to manifest before release",
+  "environment": "Local production bundle; account/provider/Blog API fixtures; real browser ZIP generation and download",
+  "records": [
+    {
+      "name": "Immediate reload retains last edit and position",
+      "result": "PASS",
+      "elapsedToReloadMs": 156,
+      "browser": "155.0.4283.62"
+    },
+    {
+      "name": "Review shows full idea/constraints and browser Back/Forward retains position",
+      "result": "PASS"
+    },
+    {
+      "name": "Advanced options and position survive reload with a single H1",
+      "result": "PASS"
+    },
+    {
+      "name": "Check consumes no allowance; real ZIP, shared starting instruction and byte-identical retry",
+      "result": "PASS",
+      "entries": 19,
+      "bytes": 18477,
+      "sha256": "d66d6f29698971f56a4bd00a480244769903b89fef9ce40f6b93859cd013e112",
+      "newAuthorizations": 1
+    },
+    {
+      "name": "Second tab cannot silently overwrite first tab draft",
+      "result": "PASS"
+    },
+    {
+      "name": "Attachment count survives reload without names/bytes and omission requires explicit action",
+      "result": "PASS"
+    },
+    {
+      "name": "OAuth-style return without lang restores saved Spanish, position and content",
+      "result": "PASS",
+      "realProvider": false
+    },
+    {
+      "name": "Article/list canonical and title reset on navigation and browser Back",
+      "result": "PASS"
+    },
+    {
+      "name": "Field boundary contrast, focus, reduced motion and narrow reflow",
+      "result": "PASS",
+      "contrast": {
+        "border": "rgb(116, 125, 156)",
+        "background": "rgb(13, 16, 25)",
+        "ratio": 4.66503320900427
+      },
+      "focus": {
+        "outline": "solid",
+        "width": "3px"
+      },
+      "viewports": [
+        320,
+        390,
+        720
+      ],
+      "pageErrors": []
+    },
+    {
+      "name": "Unavailable IndexedDB and exhausted storage do not freeze fields or claim saved",
+      "result": "PASS"
+    },
+    {
+      "name": "Future draft schema is preserved without freezing the form",
+      "result": "PASS"
+    },
+    {
+      "name": "firefox ES mobile viewport main journey",
+      "result": "PASS",
+      "browser": "153.0",
+      "physicalMobile": false
+    },
+    {
+      "name": "webkit desktop engine",
+      "result": "FAIL",
+      "reason": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /Estoy empezando con una idea/ })\u001b[22m\n"
+    }
+  ]
+}

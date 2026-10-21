@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-21T17:09:11.335Z",
+  "status": "PASS",
+  "scope": "Integrated browser, loopback synthetic account API and actual local production bundle; no production identity consent or real account mutations",
+  "checks": [
+    "A edited a named project with SQL and script examples as literal text",
+    "A signed out using the visible account menu",
+    "B signed in through the local synthetic fixture and started at name with empty fields and no previous project",
+    "Verified B session reload retained only B navigation and no technical resumption banner",
+    "Visible idea/restrictions counters 20000 and 10000",
+    "Review rendered script and SQL examples as text without navigation or script dialog",
+    "Advanced options visibly purple and aligned"
+  ],
+  "screenshots": [
+    "iab-account-b-empty.png",
+    "iab-final-review-purple.png"
+  ]
+}

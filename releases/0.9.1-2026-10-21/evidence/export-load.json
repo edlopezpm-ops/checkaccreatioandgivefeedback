@@ -1,0 +1,323 @@
+{
+  "startedAt": "2026-10-21T17:20:43.058Z",
+  "status": "PASS",
+  "candidate": {
+    "appVersion": "0.9.1",
+    "asset": "index-C4UbuF46.js",
+    "assetSha256": "ce408466d6cc4f41a39f0ba09b3022a63f1be3267f9a09d81098554c63392ea1"
+  },
+  "environment": {
+    "browserChannel": "msedge",
+    "headless": true,
+    "serviceWorkers": "block",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "reducedMotion": "reduce",
+    "platform": "win32",
+    "release": "10.0.26300",
+    "architecture": "x64",
+    "cpu": "AMD Ryzen 9 8945HX with Radeon Graphics        ",
+    "logicalCpus": 32,
+    "systemMemoryBytes": 16425455616,
+    "browserVersion": "155.0.4283.62"
+  },
+  "backend": "SYNTHETIC account/methods/authorization API fixture; no real account, identity provider, quota ledger or production request.",
+  "methodology": "Select deterministic fictitious local files through the real browser file chooser. Use the built UI and production generator, request a real download, extract the actual ZIP and compare every attachment byte and SHA-256. A transparent observer around native Response.blob records only application/zip archive start/end; 10ms timer and requestAnimationFrame samples record scheduling during the unmodified archive operation. A trusted Playwright Tab key is sent when ZIP generation starts; its arrival/focus transition is observed. Idle measurements use this same candidate only, not an earlier code baseline. No performance regression comparison is claimed.",
+  "cases": [
+    {
+      "id": "20-files-100-mib",
+      "status": "PASS",
+      "attachmentCount": 20,
+      "attachmentBytesEach": 5242880,
+      "attachmentBytesTotal": 104857600,
+      "attachments": [
+        {
+          "name": "fictitious-load-01.txt",
+          "expectedBytes": 5242880,
+          "expectedSha256": "cb57a4b88b212623489101444a229aaa5bcfadb5e1da06a8047f20d5ac7aba97",
+          "actualSha256": "cb57a4b88b212623489101444a229aaa5bcfadb5e1da06a8047f20d5ac7aba97",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-02.txt",
+          "expectedBytes": 5242880,
+          "expectedSha256": "a50c830cc6c69dab25f1ee3f5d936ca34a391b940bb35ffe8e2eaf97e706154a",
+          "actualSha256": "a50c830cc6c69dab25f1ee3f5d936ca34a391b940bb35ffe8e2eaf97e706154a",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-03.txt",
+          "expectedBytes": 5242880,
+          "expectedSha256": "63bc88046bc6fd43dc72d1fb692d4afca3d8aaf9ec582351e995bc8f02abf66c",
+          "actualSha256": "63bc88046bc6fd43dc72d1fb692d4afca3d8aaf9ec582351e995bc8f02abf66c",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-04.txt",
+          "expectedBytes": 5242880,
+          "expectedSha256": "1f1998cc8d6b9078a9703f52032cec951465eac168f00edef9e6aa6a30c2f6f0",
+          "actualSha256": "1f1998cc8d6b9078a9703f52032cec951465eac168f00edef9e6aa6a30c2f6f0",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-05.txt",
+          "expectedBytes": 5242880,
+          "expectedSha256": "d8a338688e9ed3ac65e47c3bc1a34325d15743263301cb20614b3fc74c81e6cd",
+          "actualSha256": "d8a338688e9ed3ac65e47c3bc1a34325d15743263301cb20614b3fc74c81e6cd",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-06.txt",
+          "expectedBytes": 5242880,
+          "expectedSha256": "0a7911f3ed0d0507b8d5b01aae70b4d1b5883d19e80bb7b61f5e4fd304f9d6f6",
+          "actualSha256": "0a7911f3ed0d0507b8d5b01aae70b4d1b5883d19e80bb7b61f5e4fd304f9d6f6",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-07.txt",
+          "expectedBytes": 5242880,
+          "expectedSha256": "aaf7a7d23fc87c2d42dec6dcb995891b51bf58882f055eb3130a7e5e73931eb8",
+          "actualSha256": "aaf7a7d23fc87c2d42dec6dcb995891b51bf58882f055eb3130a7e5e73931eb8",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-08.txt",
+          "expectedBytes": 5242880,
+          "expectedSha256": "4de4ba09bd55bc497ce19f80cf26039081b9dd7b35c9851393c3d798edb0fa54",
+          "actualSha256": "4de4ba09bd55bc497ce19f80cf26039081b9dd7b35c9851393c3d798edb0fa54",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-09.txt",
+          "expectedBytes": 5242880,
+          "expectedSha256": "bd3ca36232b0430cbd62b1ff9a379951cc8656152262b520aeae1667fe0429bb",
+          "actualSha256": "bd3ca36232b0430cbd62b1ff9a379951cc8656152262b520aeae1667fe0429bb",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-10.txt",
+          "expectedBytes": 5242880,
+          "expectedSha256": "0e2a59700cc54984bd8a4a8017c364014c2451eee30b8db5ee8a6ab616d03181",
+          "actualSha256": "0e2a59700cc54984bd8a4a8017c364014c2451eee30b8db5ee8a6ab616d03181",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-11.txt",
+          "expectedBytes": 5242880,
+          "expectedSha256": "a13685fcc779c804ac9185ff76ddb4e0baf5bace142ff730e59a98d38c7be4b7",
+          "actualSha256": "a13685fcc779c804ac9185ff76ddb4e0baf5bace142ff730e59a98d38c7be4b7",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-12.txt",
+          "expectedBytes": 5242880,
+          "expectedSha256": "a40940d2a1c4a2182ae6c4975c64eca0a663cee5c8a57acac50f1a71f77f91a4",
+          "actualSha256": "a40940d2a1c4a2182ae6c4975c64eca0a663cee5c8a57acac50f1a71f77f91a4",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-13.txt",
+          "expectedBytes": 5242880,
+          "expectedSha256": "bb7f16f5b5e9691eadd7394fd83fb5830b4e84ac5bea3335b3416d3ecf2cfee3",
+          "actualSha256": "bb7f16f5b5e9691eadd7394fd83fb5830b4e84ac5bea3335b3416d3ecf2cfee3",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-14.txt",
+          "expectedBytes": 5242880,
+          "expectedSha256": "e3bfd74ff4f6f92cf403553ee8ac8780bdadc0d14621a4210d1f7bb650c8ce08",
+          "actualSha256": "e3bfd74ff4f6f92cf403553ee8ac8780bdadc0d14621a4210d1f7bb650c8ce08",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-15.txt",
+          "expectedBytes": 5242880,
+          "expectedSha256": "9a40c2ae6eeeec0bff6833cab2a7ff6e0dce3d42db72e7567134dc8c04466351",
+          "actualSha256": "9a40c2ae6eeeec0bff6833cab2a7ff6e0dce3d42db72e7567134dc8c04466351",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-16.txt",
+          "expectedBytes": 5242880,
+          "expectedSha256": "8ae173b4d1433e20faa925e24b95f6c71cff22293408bf031105ac81c8bbfacf",
+          "actualSha256": "8ae173b4d1433e20faa925e24b95f6c71cff22293408bf031105ac81c8bbfacf",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-17.txt",
+          "expectedBytes": 5242880,
+          "expectedSha256": "2f0b2ecee52886870b3570e75a1ab21a03d93809d7bffab58386326492b9a8c8",
+          "actualSha256": "2f0b2ecee52886870b3570e75a1ab21a03d93809d7bffab58386326492b9a8c8",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-18.txt",
+          "expectedBytes": 5242880,
+          "expectedSha256": "2fe1cecbcc85f0a9741ab36939bc49336ee20664fa7c02754cf72801f2207a33",
+          "actualSha256": "2fe1cecbcc85f0a9741ab36939bc49336ee20664fa7c02754cf72801f2207a33",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-19.txt",
+          "expectedBytes": 5242880,
+          "expectedSha256": "e67f68abcdcf971652b5303d36adc5b67aa774f039b53a636b2f6abf27020b28",
+          "actualSha256": "e67f68abcdcf971652b5303d36adc5b67aa774f039b53a636b2f6abf27020b28",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-20.txt",
+          "expectedBytes": 5242880,
+          "expectedSha256": "c1073e0b1b35c954a5098b167130262c0cefe38977b6716a53ceffc3a6966d14",
+          "actualSha256": "c1073e0b1b35c954a5098b167130262c0cefe38977b6716a53ceffc3a6966d14",
+          "byteComparison": "PASS"
+        }
+      ],
+      "attachmentSelectionMs": 49,
+      "attachmentSummary": "20 / 20 · 100.0 / 100 MiB · 20-file limit reached",
+      "limits": {
+        "maxCount": 20,
+        "maxFileBytes": 20971520,
+        "maxTotalBytes": 104857600,
+        "exactCountBoundaryAccepted": true,
+        "exactFileBoundaryAccepted": false,
+        "exactTotalBoundaryAccepted": true
+      },
+      "confirmationToDownloadedAndSuccessMs": 1092,
+      "idle": {
+        "durationMs": 304.90000000596046,
+        "timerTicks": 31,
+        "timerPeriodMs": 10,
+        "maxTimerGapMs": 11,
+        "p95TimerGapMs": 10.900000005960464,
+        "animationFrames": 18,
+        "maxFrameGapMs": 33.40000000000009,
+        "longTasks": []
+      },
+      "archiveGeneration": {
+        "durationMs": 478.5,
+        "timerTicks": 47,
+        "timerPeriodMs": 10,
+        "maxTimerGapMs": 27.599999994039536,
+        "p95TimerGapMs": 12.799999982118607,
+        "animationFrames": 28,
+        "maxFrameGapMs": 16.800000000000182,
+        "longTasks": []
+      },
+      "confirmationThroughArchive": {
+        "durationMs": 526.7999999821186,
+        "timerTicks": 51,
+        "timerPeriodMs": 10,
+        "maxTimerGapMs": 27.599999994039536,
+        "p95TimerGapMs": 13.099999994039536,
+        "animationFrames": 31,
+        "maxFrameGapMs": 16.800000000000182,
+        "longTasks": []
+      },
+      "trustedKeysDuringArchive": [
+        {
+          "key": "Tab",
+          "time": 1610.300000011921,
+          "wallTime": 1792603245998,
+          "target": "BODY"
+        }
+      ],
+      "trustedKeyRequestToArrivalMs": 3,
+      "lastFocus": {
+        "time": 1610.5999999940395,
+        "tag": "BUTTON",
+        "label": "FAQ"
+      },
+      "zip": {
+        "cachePath": ".local\\cache\\readiness-2026-10-21\\export-load\\20-files-100-mib.zip",
+        "bytes": 104882708,
+        "sha256": "68565e715fd259c825001ffd9b84f3759a813647d046a9f7f712ec03892edfa3",
+        "entries": 39
+      },
+      "authorization": "One synthetic fixture authorization; no real quota claim.",
+      "completedAt": "2026-10-21T17:20:47.374Z"
+    },
+    {
+      "id": "1-file-20-mib",
+      "status": "PASS",
+      "attachmentCount": 1,
+      "attachmentBytesEach": 20971520,
+      "attachmentBytesTotal": 20971520,
+      "attachments": [
+        {
+          "name": "fictitious-load-01.txt",
+          "expectedBytes": 20971520,
+          "expectedSha256": "efd1663ca422d3e7694ac8c26cb8b5110facb3044da8a99d512905b693aaab04",
+          "actualSha256": "efd1663ca422d3e7694ac8c26cb8b5110facb3044da8a99d512905b693aaab04",
+          "byteComparison": "PASS"
+        }
+      ],
+      "attachmentSelectionMs": 32,
+      "attachmentSummary": "1 / 20 · 20.0 / 100 MiB",
+      "limits": {
+        "maxCount": 20,
+        "maxFileBytes": 20971520,
+        "maxTotalBytes": 104857600,
+        "exactCountBoundaryAccepted": false,
+        "exactFileBoundaryAccepted": true,
+        "exactTotalBoundaryAccepted": false
+      },
+      "confirmationToDownloadedAndSuccessMs": 395,
+      "idle": {
+        "durationMs": 312.19999998807907,
+        "timerTicks": 32,
+        "timerPeriodMs": 10,
+        "maxTimerGapMs": 11.800000011920929,
+        "p95TimerGapMs": 11.700000017881393,
+        "animationFrames": 19,
+        "maxFrameGapMs": 16.800000000000068,
+        "longTasks": []
+      },
+      "archiveGeneration": {
+        "durationMs": 95.09999999403954,
+        "timerTicks": 9,
+        "timerPeriodMs": 10,
+        "maxTimerGapMs": 26.900000005960464,
+        "p95TimerGapMs": 26.900000005960464,
+        "animationFrames": 6,
+        "maxFrameGapMs": 16.799999999999955,
+        "longTasks": []
+      },
+      "confirmationThroughArchive": {
+        "durationMs": 166,
+        "timerTicks": 13,
+        "timerPeriodMs": 10,
+        "maxTimerGapMs": 37.400000005960464,
+        "p95TimerGapMs": 37.400000005960464,
+        "animationFrames": 10,
+        "maxFrameGapMs": 16.799999999999955,
+        "longTasks": []
+      },
+      "trustedKeysDuringArchive": [
+        {
+          "key": "Tab",
+          "time": 1088.2000000178814,
+          "wallTime": 1792603248733,
+          "target": "BODY"
+        }
+      ],
+      "trustedKeyRequestToArrivalMs": 2,
+      "lastFocus": {
+        "time": 1088.5999999940395,
+        "tag": "BUTTON",
+        "label": "FAQ"
+      },
+      "zip": {
+        "cachePath": ".local\\cache\\readiness-2026-10-21\\export-load\\1-file-20-mib.zip",
+        "bytes": 20989774,
+        "sha256": "776dc8ee78f55edfe635b82928db3a019c78a2c664d054c32e79e51adbf57e19",
+        "entries": 20
+      },
+      "authorization": "One synthetic fixture authorization; no real quota claim.",
+      "completedAt": "2026-10-21T17:20:49.148Z"
+    }
+  ],
+  "completedAt": "2026-10-21T17:20:49.182Z",
+  "interpretation": "Both requested boundary exports completed and retained every attachment byte. Timers, frames and a trusted key progressed during actual archive generation. Measurements describe this machine, built candidate and fixture run only. No earlier-code baseline, universal performance guarantee, real-backend/production load, physical-device result or paid service was used."
+}

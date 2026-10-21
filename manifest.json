@@ -1,10 +1,14 @@
 {
-  "schema": 2,
-  "generatedAtUtc": "2026-10-21T16:14:57.074217+00:00",
-  "scope": "Mixed dated documentary collection, excludes this root manifest. Historical snapshot and later self-report remain distinct.",
+  "schema": 3,
+  "generatedAtUtc": "2026-10-21T17:33:20.719Z",
+  "scope": "Dated documentary collection; every file except .git and this manifest. Final AI delivery, previous 0.9.0 implementation update and historical snapshots remain separate.",
   "historicalDossierCommit": "f53a75faaa42429ff1ef70fa6c4b5cd225bd1633",
   "historicalManifest": "history/manifest-2026-10-20.json",
   "implementationUpdate": "updates/2026-10-21/update-provenance.json",
+  "finalProductRelease": "releases/0.9.1-2026-10-21/release-summary.json",
+  "historicalReviewFilesByteIdentical": 24,
+  "priorImmutableFilesByteIdentical": 116,
+  "localLinksChecked": 137,
   "files": [
     {
       "file": ".gitattributes",
@@ -20,31 +24,6 @@
       "file": "AI_ANALYSIS_PROMPT.md",
       "bytes": 16328,
       "sha256": "9aad82a01108109c9ca2a8460ca7d09e02ee09eceafb4cc00ea5bf444d158776"
-    },
-    {
-      "file": "DOSSIER.md",
-      "bytes": 234176,
-      "sha256": "6ffa7e137d80f65c1c0416be5880b99c83e85751a6dfb40e00840f97d71ba60e"
-    },
-    {
-      "file": "IMPLEMENTATION_UPDATE_2026-10-21.md",
-      "bytes": 25954,
-      "sha256": "d9b7653e29217608fc7df32bf81236355258af3ecd16c44809066bb02b984258"
-    },
-    {
-      "file": "INDEPENDENT_REVIEW_MASTER_2026-10-20.md",
-      "bytes": 23000,
-      "sha256": "0e169f5e531c35a9572ba38c25aa1d22cc8abb9939adea52aa07144b839a5df8"
-    },
-    {
-      "file": "NOTICE.md",
-      "bytes": 375,
-      "sha256": "c056b29afd6a47d6687c636dc32abcc334282ae8a85389171933e50fb9b30e2e"
-    },
-    {
-      "file": "README.md",
-      "bytes": 2002,
-      "sha256": "1d3984b02caf235eb81e42733fabd476c5e8331cb1ba6d5b3c78f1ecf6a4aab0"
     },
     {
       "file": "assets/screenshots/copy/local-fixture-confirm-es.png",
@@ -212,9 +191,9 @@
       "sha256": "4d3e89d9cf725b64dbd6e6fda7212c7458746ee3d72a2f3bb9ea42ecabed0225"
     },
     {
-      "file": "evidence-extended/flow/START.md.txt",
-      "bytes": 834,
-      "sha256": "b2af222ca017c74a601a8f446986fd9c720d5da16a04182f85762cf273eec4d4"
+      "file": "DOSSIER.md",
+      "bytes": 234176,
+      "sha256": "6ffa7e137d80f65c1c0416be5880b99c83e85751a6dfb40e00840f97d71ba60e"
     },
     {
       "file": "evidence-extended/flow/local-expanded-plan.json",
@@ -287,6 +266,11 @@
       "sha256": "e15ea65f65d7b59f36ba1406ec46d474a88cc81a66be21a4700bccd9e6181dad"
     },
     {
+      "file": "evidence-extended/flow/START.md.txt",
+      "bytes": 834,
+      "sha256": "b2af222ca017c74a601a8f446986fd9c720d5da16a04182f85762cf273eec4d4"
+    },
+    {
       "file": "evidence-extended/flow/zip-inventory.json",
       "bytes": 1506,
       "sha256": "1f6acb6f6aafd0bcca8c49fdabca805ad65126e6d09881f8cb210265d27d57ba"
@@ -297,6 +281,16 @@
       "sha256": "4086ede3e4071d54c40c26d6ec962652cc4849385e5b1abdfef12797eb0f3363"
     },
     {
+      "file": "FINAL_PRODUCT_RELEASE_2026-10-21.md",
+      "bytes": 20055,
+      "sha256": "35196b9f607bec9dbb1faba60f363a3ea88c8326c0b4741fb02ead6418bd327d"
+    },
+    {
+      "file": "final-release-2026-10-21.html",
+      "bytes": 51542,
+      "sha256": "17a61c176696aab17ddbb9505271e74b98edbf24152612618057cc016fedadcf"
+    },
+    {
       "file": "gallery.json",
       "bytes": 20357,
       "sha256": "fd688001aa141ef13bf1929b0d582a4d0e1b10b9ff665540b5d31e8e1fe0f355"
@@ -305,6 +299,16 @@
       "file": "history/manifest-2026-10-20.json",
       "bytes": 17072,
       "sha256": "f8ae53a803c65c717e53fb4d0af1d83fd7dcb8542779bcb9ff6e81fb0ea4d7b9"
+    },
+    {
+      "file": "IMPLEMENTATION_UPDATE_2026-10-21.md",
+      "bytes": 25954,
+      "sha256": "d9b7653e29217608fc7df32bf81236355258af3ecd16c44809066bb02b984258"
+    },
+    {
+      "file": "INDEPENDENT_REVIEW_MASTER_2026-10-20.md",
+      "bytes": 23000,
+      "sha256": "0e169f5e531c35a9572ba38c25aa1d22cc8abb9939adea52aa07144b839a5df8"
     },
     {
       "file": "independent-review-2026-10-20/01-producto.md",
@@ -423,13 +427,18 @@
     },
     {
       "file": "index.html",
-      "bytes": 144215,
-      "sha256": "553a0900dcb32f2553137f8cd4b8d578294482909e265664faf8aa3e3adcf571"
+      "bytes": 144885,
+      "sha256": "04a5ae060d248399265f56465282f9ace104e393a8cce9233e2831fd62831390"
     },
     {
       "file": "llms.txt",
-      "bytes": 2000,
-      "sha256": "99a3a0c5783bdddcd4881b4caec74a63e9c1e632274c233ccb9be2b0f1dea9c9"
+      "bytes": 2800,
+      "sha256": "1346e16d025f2cb6e46ac8d2fe08a80e06741267f9d1af06ca99f8160cdf5829"
+    },
+    {
+      "file": "NOTICE.md",
+      "bytes": 375,
+      "sha256": "c056b29afd6a47d6687c636dc32abcc334282ae8a85389171933e50fb9b30e2e"
     },
     {
       "file": "provenance.json",
@@ -437,9 +446,89 @@
       "sha256": "eb2b4c7a0974705b631c57bc45b2ca74a66f1fe5f4d97abd370ba26300d866e2"
     },
     {
+      "file": "README.md",
+      "bytes": 2802,
+      "sha256": "78a9d07c19a62f1e4bc7e4feed4e4b8712f069d5d6ff96883f6c7aad34b0e24f"
+    },
+    {
+      "file": "releases/0.9.1-2026-10-21/evidence/account-isolation-receipt.json",
+      "bytes": 427,
+      "sha256": "be414f9c4d25582d4ae8b7efdb6af6b4f3d46fba6284b8d76315cb7c43a818d4"
+    },
+    {
+      "file": "releases/0.9.1-2026-10-21/evidence/dependency-inventory.json",
+      "bytes": 267,
+      "sha256": "2a0620ac9b8ca0a0fb322cbe8c19b938ebae9cfcf15f80c7eaa71b01a51070f1"
+    },
+    {
+      "file": "releases/0.9.1-2026-10-21/evidence/export-load.json",
+      "bytes": 13384,
+      "sha256": "e44ca5cff91862879df60a75e5265848e5bea2edf052691eb83ccb63f75cedc0"
+    },
+    {
+      "file": "releases/0.9.1-2026-10-21/evidence/iab-account-b-empty.png",
+      "bytes": 41884,
+      "sha256": "0120656f9132e39abab27933384221da39785e45dad2d865d21d756f044832e2"
+    },
+    {
+      "file": "releases/0.9.1-2026-10-21/evidence/iab-final-review-purple.png",
+      "bytes": 56330,
+      "sha256": "2a78de0ed8ac1ca2edd9f73feed501e47b07607551de16354e2a2c28c7bc5eb2"
+    },
+    {
+      "file": "releases/0.9.1-2026-10-21/evidence/iab-production-0.9.1.png",
+      "bytes": 41399,
+      "sha256": "789b50bd118df2ba7788434e2c8f2e679da2539ced2d97edf40d02f649854091"
+    },
+    {
+      "file": "releases/0.9.1-2026-10-21/evidence/iab-synthetic-receipt.json",
+      "bytes": 864,
+      "sha256": "cad57a26198d47e1973bc50506fb311b5b2aba178d634a041b1de64ad0908b92"
+    },
+    {
+      "file": "releases/0.9.1-2026-10-21/evidence/identity-continuity-receipt.json",
+      "bytes": 725,
+      "sha256": "d0b25c8244696cfabbaa5f0681328286c5c47276387a2eb51dfd71d6376858f3"
+    },
+    {
+      "file": "releases/0.9.1-2026-10-21/evidence/integrated-functional-combined.json",
+      "bytes": 2605,
+      "sha256": "00ccdd9326951b4ce61ed4d99e77f08776fa960cc46d3983a10e90aa5fbbf65c"
+    },
+    {
+      "file": "releases/0.9.1-2026-10-21/evidence/integrated-functional-webkit-directed.json",
+      "bytes": 475,
+      "sha256": "00192f5f546e01d72facf9492d2e4df1612758232be29ee632cbcf4b0c573b81"
+    },
+    {
+      "file": "releases/0.9.1-2026-10-21/release-summary.json",
+      "bytes": 13850,
+      "sha256": "048005775ad049b7ad6df669987ae394db2e9211693f4f43978423b9c56bd41c"
+    },
+    {
+      "file": "releases/0.9.1-2026-10-21/SECURITY_INPUT_ABUSE_DESIGN_2026-10-21.md",
+      "bytes": 31949,
+      "sha256": "204f64f9b308aa1868a5aa7676e223f3dbc7e33e18aee442da6b93d4b11ff33d"
+    },
+    {
+      "file": "releases/0.9.1-2026-10-21/SECURITY_INPUT_IMPLEMENTATION_2026-10-21.md",
+      "bytes": 11059,
+      "sha256": "625e4358ff61e56001616b4c7f608b6a23078943346cec0ef618d67cfe5f1f4b"
+    },
+    {
+      "file": "releases/0.9.1-2026-10-21/stack.json",
+      "bytes": 1223,
+      "sha256": "7bf08179c7863a84986763ab9cb9714a98cd8382566adccb6b6745d2eb4e7cad"
+    },
+    {
       "file": "sample-output.md",
       "bytes": 3697,
       "sha256": "f79f61da774ba1d6a52d773eab1fd5ecb69cccda7da2ed2f7a086a3fd6b0aa00"
+    },
+    {
+      "file": "samples/docs--product--discovery.md.txt",
+      "bytes": 333,
+      "sha256": "35454502db50ebc1b5a35ea4da33eec99b16b1201f712f755a23c2acc3e1ad62"
     },
     {
       "file": "samples/PROJECT_PROMPT.md.txt",
@@ -455,11 +544,6 @@
       "file": "samples/START.md.txt",
       "bytes": 836,
       "sha256": "4ec790b8794aac924cd30525b2328a3c5ff64f94a2c86e7d59d571cb4ebb6003"
-    },
-    {
-      "file": "samples/docs--product--discovery.md.txt",
-      "bytes": 333,
-      "sha256": "35454502db50ebc1b5a35ea4da33eec99b16b1201f712f755a23c2acc3e1ad62"
     },
     {
       "file": "samples/zip-inventory.json",
@@ -552,6 +636,21 @@
       "sha256": "71e16fd5155054b4ae054774dc580beed116b52a7aed72e8064b0b6e925c81b0"
     },
     {
+      "file": "updates/2026-10-21/samples/accreatio-basic-sample.zip",
+      "bytes": 19635,
+      "sha256": "bbf72008cecfdf648718ba85c86f1e234e14877f2c5c2d33b56f21b2d9225b57"
+    },
+    {
+      "file": "updates/2026-10-21/samples/accreatio-orchestration-sample.zip",
+      "bytes": 28607,
+      "sha256": "594dcf2fad4f3878e9aaf0bcaabf8af0002503984e919103146878d0ee4c7003"
+    },
+    {
+      "file": "updates/2026-10-21/samples/manifest.json",
+      "bytes": 13298,
+      "sha256": "0f14ae8cfec708dbdaa559372f90003dbac8156f487c66c85a47a9a944f7967e"
+    },
+    {
       "file": "updates/2026-10-21/samples/PROJECT_PROMPT.en.md",
       "bytes": 1047,
       "sha256": "305fe58dbda1f140cecb3048a6f0d53023e05c904125f4cb9bfb1bc5707a3159"
@@ -570,21 +669,6 @@
       "file": "updates/2026-10-21/samples/START.es.md",
       "bytes": 650,
       "sha256": "985b026ba00534eefab2e88b6f6b5c1ba0089c97d87a09be1835777f3a85e003"
-    },
-    {
-      "file": "updates/2026-10-21/samples/accreatio-basic-sample.zip",
-      "bytes": 19635,
-      "sha256": "bbf72008cecfdf648718ba85c86f1e234e14877f2c5c2d33b56f21b2d9225b57"
-    },
-    {
-      "file": "updates/2026-10-21/samples/accreatio-orchestration-sample.zip",
-      "bytes": 28607,
-      "sha256": "594dcf2fad4f3878e9aaf0bcaabf8af0002503984e919103146878d0ee4c7003"
-    },
-    {
-      "file": "updates/2026-10-21/samples/manifest.json",
-      "bytes": 13298,
-      "sha256": "0f14ae8cfec708dbdaa559372f90003dbac8156f487c66c85a47a9a944f7967e"
     },
     {
       "file": "updates/2026-10-21/stack.json",

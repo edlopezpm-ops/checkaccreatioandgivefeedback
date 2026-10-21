@@ -1,0 +1,17 @@
+{
+  "result": "PASS",
+  "environment": "local Chromium/Edge, real backend/SQLite, synthetic Google and GitHub HTTPS",
+  "checks": [
+    "Google/GitHub equal sign-in hierarchy ES/EN",
+    "320/390/1280 layout",
+    "GitHub new sign-in and Google explicit connection",
+    "same internal account, policy and shared quota",
+    "same-account proof and linking preserve local draft while session markers rotate",
+    "both identities in own export",
+    "logout and Google stable identity sign-in",
+    "explicit logout clears local draft before the same account returns through another provider",
+    "both authorization management links",
+    "deletion removes linked identities, sessions and receipt"
+  ],
+  "pageErrors": []
+}

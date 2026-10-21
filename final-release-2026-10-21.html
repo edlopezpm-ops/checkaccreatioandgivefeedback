@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Entrega final por IA de accreatio 0.9.1: aislamiento de borradores, validación contextual y pruebas con procedencia exacta."><title>accreatio 0.9.1 · Entrega final por IA · 21 octubre 2026</title><link rel="canonical" href="https://edlopezpm-ops.github.io/checkaccreatioandgivefeedback/final-release-2026-10-21.html"><link rel="icon" href="data:,"><style>:root{color-scheme:light;--ink:#182030;--paper:#f5f4f1;--accent:#6244bf}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 system-ui,-apple-system,Segoe UI,sans-serif}header,main,footer{max-width:1120px;margin:auto;padding:28px clamp(18px,5vw,56px)}header{background:#191529;color:#f3edff}header a{color:#e0d2ff}h1{font-size:clamp(28px,4vw,44px);line-height:1.15}h2{font-size:25px;line-height:1.3;border-top:1px solid #d9d4e2;padding-top:24px;margin-top:38px}h3{font-size:20px}a{color:#5336a8;text-underline-offset:3px}a:focus-visible{outline:3px solid #6244bf;outline-offset:4px}header a:focus-visible{outline-color:#e0d2ff}p,li{overflow-wrap:anywhere}li{margin:8px 0}ul{padding-left:24px}.badge{display:inline-block;border:1px solid #bfa9ed;border-radius:5px;padding:5px 10px}.skip{position:absolute;top:-100px;left:16px;background:white;color:#30205d;padding:8px}.skip:focus{top:8px}details{border:1px solid #d9d4e2;background:white;padding:15px}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px}footer{font-size:13px;border-top:1px solid #d9d4e2}@media(max-width:420px){body{font-size:15px}h2{font-size:22px}}@media print{header{background:white;color:black}header a{color:black}.skip{display:none}}</style></head><body><a class="skip" href="#content">Ir al contenido</a><header><p class="badge">Producto final entregado por IA · 0.9.1 · Publicado</p><p><a href="FINAL_PRODUCT_RELEASE_2026-10-21.md">Markdown para otras IA</a> · <a href="releases/0.9.1-2026-10-21/release-summary.json">Resultados JSON</a> · <a href="index.html">Índice e historia</a> · <a href="https://accreatio.com/">Abrir producto</a></p></header><main id="content"><h1>accreatio 0.9.1 — entrega final del producto por IA</h1>
+<p>21 de octubre de 2026. Entrega final realizada por el equipo de IA conforme a la instrucción actual del propietario. Producto publicado en https://accreatio.com/. La aplicación conserva la etiqueta de beta gratuita; esta entrega no añade una condición de UAT, aprobación o gate humano. El dossier anterior y la actualización 0.9.0 se conservan como evidencia histórica fechada.</p>
+<h2>Identidad exacta y resultado</h2>
+<ul><li>Versión: 0.9.1. Fuente de aplicación: a16c53dba5c29c5da15ff31e9f41d5a7610ad7d1.</li><li>Producción: despliegue 238ee6ee-e44b-4386-bb0a-290a807a8588, SUCCESS 2026-10-21T17:24:26.854513Z.</li><li>Verificación integral: PASS, exit 0; 387 pruebas de unidad aprobadas y 0 fallidas.</li><li>Readback público: PASS 2026-10-21T17:28:28.396Z; assets/index-C4UbuF46.js, 506718 bytes, SHA-256 ce408466d6cc4f41a39f0ba09b3022a63f1be3267f9a09d81098554c63392ea1, idéntico al build local.</li><li>Observación IAB pública: PASS 2026-10-21T17:30:25.764Z. Observación del navegador integrado en accreatio.com: Acerca de muestra 0.9.1, Nuevo proyecto muestra acceso Google/GitHub alineado y ningún aviso de borrador anterior. La pestaña instalada mostró inicialmente 0.9.0 y pasó a 0.9.1 tras una recarga normal adicional de la actualización PWA. Sin aceptar términos ni iniciar sesión con una identidad personal.</li></ul>
+<h2>Qué entrega el producto</h2>
+<p>accreatio convierte una definición estructurada en un prompt explícito, documentos iniciales, un plan determinista y un ZIP inspeccionable. La preparación básica no llama a un proveedor de IA ni ejecuta agentes; las instrucciones opcionales permiten continuar después con herramientas elegidas por el usuario. Extrae el paquete, abre la carpeta y sigue START.md; inspecciona las instrucciones antes de ejecutarlas. La entrega final de accreatio por IA no significa que el producto construya automáticamente las aplicaciones descritas por sus usuarios.</p>
+<p>El proyecto y los adjuntos se procesan en el dispositivo. No hay sincronización de proyectos al servidor, nuevo tracking, telemetría de contenido ni servicio pagado añadido. Cuentas, autorización de cuota y Blog usan servicios separados. Google y GitHub están habilitados; el acceso por código de correo está deshabilitado. La cuenta no es almacenamiento cloud del proyecto.</p>
+<h2>Aislamiento de borradores y sesión</h2>
+<ul><li>El borrador persistido pertenece a etiquetas opacas de cuenta y sesión verificadas y a una generación local. Esas etiquetas no son credenciales. El journal es accreatio:account-draft:v1; IndexedDB usa accreatio-drafts/drafts/account-current:v1; el contexto es accreatio:draft-context:v1.</li><li>La restauración requiere cuenta/sesión coincidentes verificadas, o un handoff OAuth válido y de un solo uso del mismo propietario verificado. Un nuevo propietario no hereda el borrador anterior. Los borradores heredados sin dueño se descartan.</li><li>Cerrar sesión, eliminar correctamente la cuenta o cambiar de cuenta limpia el borrador actual del sitio, referencias a archivos y ZIP preparado; el siguiente acceso comienza vacío. Los archivos ya descargados, la introducción, las preferencias de cookies y la cuota de cuenta son independientes.</li><li>La suspensión temporal, falta de conexión/verificación y reautenticación ocultan el editor y limpian ZIP/reintento en memoria; sólo el mismo propietario verificado puede retomar el borrador conservado.</li><li>Epoch/generación invalida escrituras o resultados tardíos. La invalidación entre pestañas y las comprobaciones durables impiden que un autosave o ZIP tardío reinstale trabajo de otro contexto. La cancelación del cliente no revierte una autorización de cuota ya aceptada en el servidor.</li><li>La limpieza deja un marcador sólo de generación hasta la siguiente vinculación o limpieza del sitio. Los fallos de almacenamiento se muestran y no autorizan restaurar trabajo de otra cuenta. El borrador sigue siendo una comodidad local, no un backup.</li></ul>
+<h2>Interfaz y límites explícitos</h2>
+<p>Opciones avanzadas / Advanced options usa contraste morado de la paleta existente, con estados hover, foco, deshabilitado y composición móvil. Los botones Google/GitHub conservan alineación, espacio y tamaños consistentes. El recorrido público y el ejemplo pueden inspeccionarse antes de iniciar sesión.</p>
+<p>Nombre web: hasta 50 caracteres. Idea/contexto: 20.000 unidades UTF-16; restricciones: 10.000; tarea de cada participante: 5.000. Es el conteo del textarea de JavaScript y algunos emoji cuentan doble. Se mantienen de uno a cuatro roles únicos y hasta 20 adjuntos, 20 MiB cada uno y 100 MiB en total. Memoria, selector y descargas dependen del navegador/dispositivo.</p>
+<h2>Validación de entradas y destinos</h2>
+<p>La corrección valida el esquema completo y los tipos/enums/números finitos antes de generar o ejecutar. YAML serializa valores validados; Markdown representa datos libres de forma literal y escapa elementos inline. Los nombres y rutas de ZIP y filesystem tienen controles de contención y portabilidad; Electron vuelve a validar payload, emisor IPC y archivos seleccionados en su frontera privilegiada. Las pruebas sintéticas reproducen los casos corregidos sin ejecutar el contenido de ejemplo.</p>
+<p>La validación es contextual: no elimina palabras SQL/JavaScript, marcas o prosa legítima por keywords. Los adjuntos se incluyen como bytes; no se interpretan con IA ni se ejecutan. Límites, esquema y extensión no constituyen antivirus ni certificación de inocuidad. El informe Astra ultra documenta el diseño, las correcciones, sus límites y fuentes primarias de OWASP, Electron, Cloudflare y autoridades de propiedad intelectual.</p>
+<p>El informe de diseño conserva los hallazgos y propuestas anteriores al cambio. El recibo de implementación separado identifica qué se corrigió, cómo se probó y qué propuestas no se adoptaron: no se añadió un límite global de 256 KiB, tokens opacos para la selección desktop ni un sandbox transaccional de filesystem. La validación de identidad/descriptor y los chequeos de contención reducen riesgos sin prometer resistencia absoluta a procesos locales hostiles ni a herramientas externas.</p>
+<h2>Uso, propiedad intelectual y privacidad</h2>
+<p>Los Términos ya prohíben malware, acceso no autorizado, violaciones de privacidad/propiedad intelectual, evasión y disrupción deliberada. Esta entrega no añade sanciones automáticas, bans por palabras, detección de copyright por IA ni recopilación nueva. Usa material que tengas derecho a procesar; inspecciona los avisos y obligaciones antes de compartir resultados. No se promete originalidad, exclusividad, validez jurídica, seguridad absoluta ni detección de malware o infracciones.</p>
+<p>Las versiones de aviso y recibo permanecen 2026-10-21-privacy / 2026-10-21-beta, finalidad account-core-v1; no hay aceptación histórica inventada. Autorización de cuenta, Términos y preferencias opcionales son decisiones separadas. Los datos de proyectos no entran en el ledger de cuenta o cuota. La licencia privada de la aplicación y las marcas se conservan; las plantillas reutilizables mantienen su aviso MIT específico.</p>
+<h2>Verificación por ámbito</h2>
+<ul><li>Pruebas de unidad: PASS. 387/387 aprobadas, sin fallos ni omisiones; dominio, snapshots, rutas, exportación, aislamiento y continuidad OAuth.</li><li>Tipos, formato y builds: PASS. TypeScript App/Electron/Functions, formato, build web y desktop; mailer tests/types/dry-run y Functions compiladas.</li><li>Smoke funcional de producto: PASS. Superficies web, ejecución Electron real con fixtures, 12 recorridos del mapa en 4 viewports, UI ES/EN a 320/390/760/1280.</li><li>Cuentas y sesión con backend real local: PASS. SQLite y handlers reales con identidades sintéticas: cuota/idempotencia, A→logout→B, A→logout→A, cookie reemplazada, pestaña secundaria, resultados tardíos y preferencias independientes.</li><li>Proveedores y continuidad: PASS. Navegador local con handlers reales y proveedores Google/GitHub sintéticos HTTPS; reautenticación/linking del mismo propietario conserva trabajo, logout y nuevo ingreso comienzan vacíos.</li><li>Activos y límites: PASS. Branding fijado, Blog seed, ejemplos, mapa y paquete ZIP; auditoría de rendimiento/accesibilidad y excepción SEO noindex declarada.</li></ul>
+<p>Lighthouse: rendimiento 97, accesibilidad 100, buenas prácticas 100, SEO 69. Son mediciones del escenario registrado; no certifican accesibilidad completa, seguridad ni posicionamiento. La política noindex de la beta explica la limitación SEO cuando así figura en el recibo.</p>
+<h3>Aislamiento entre cuentas y pestañas</h3>
+<p>PASS · synthetic. Ámbito: Backend real local SQLite, navegador Chromium y cuentas de prueba.. Siete comprobaciones del recibo de aislamiento aprobadas: logout A→B y A→A vacíos; contexto, opciones, navegación, adjuntos y recuperación borrados; cambio de cookie bloquea el editor; logout de pestaña secundaria invalida trabajo pendiente; cookie preferences y cuota previa conservadas.</p>
+<h3>Google/GitHub y reautenticación</h3>
+<p>PASS · synthetic. Ámbito: Handlers reales y SQLite local con Google/GitHub sintéticos HTTPS; ningún grant personal de producción.. Linking y prueba del mismo propietario conservan borrador con rotación de sesión, exportación de identidades y eliminación verificados. Handoff de redirección es de un solo uso, diez minutos, sólo etiquetas opacas; marcador antiguo retirado antes de iniciar cualquier nuevo acceso.</p>
+<h3>Recorrido visual en navegador integrado</h3>
+<p>PASS · synthetic. Ámbito: Fixture de cuentas A/B local; capturas previas al último ajuste no visual de handoff.. Logout de A y acceso de B dejan nombre vacío. SQL y scripts educativos se muestran como texto; no se ejecutó código. Contadores 20000/10000 visibles; Opciones avanzadas morado y alineado. Esta evidencia visual no se presenta como login de producción ni como equivalencia byte a byte del último build.</p>
+<h3>ZIP real en límites de adjuntos</h3>
+<p>PASS · synthetic. Ámbito: Build final index-C4UbuF46.js; selector y descarga reales, API de autorización sintética.. 20 archivos/100 MiB y un archivo/20 MiB descargados, extraídos y comparados byte a byte y SHA-256. ZIP de 104882708 y 20989774 bytes. Generación 478.5 ms y 95.1 ms; tecla Tab procesada en 3 ms y 2 ms. Sólo mediciones de esta máquina, sin comparación con otro build.</p>
+<h3>Actualización PWA y borradores</h3>
+<p>PASS · synthetic. Ámbito: Upgrade local desde activos legacy, navegador y sesión sintética.. Regresión de prompts repetidos recuperada, borrador legacy sin dueño descartado, borrador de sesión verificada retenido, sin recargas automáticas de actualización y OTP inline conserva trabajo. Proceso final exit 0.</p>
+<h3>Reproducción dirigida WebKit</h3>
+<p>PASS · synthetic. Ámbito: WebKit 26.5 contra el mismo build final; un solo recorrido dirigido sin relajar assertions.. Nombre→fase→contexto→recarga→revisión→dry-run→ZIP PASS, sin pageErrors. La corrida combinada previa conserva 12 PASS y un timeout WebKit no reproducido; la causa sigue sin determinar y ambos recibos se publican.</p>
+<h3>Fronteras de seguridad corregidas</h3>
+<p>PASS · synthetic. Ámbito: Suite de regresión contextual, Electron y tipos antes de la verificación integral final.. 121/121 pruebas de seguridad aprobadas; snapshots inválidos, Markdown/YAML, rutas ZIP/filesystem, emisor IPC y selección de adjuntos. Se preserva el diseño inicial independiente de Astra ultra y el recibo de cambios separado.</p>
+<h3>Inventario de dependencias</h3>
+<p>PASS · source-review. Ámbito: 709 componentes instalados de desarrollo/build; dependencias sin cambios en esta entrega.. Inventario completado: 0 vulnerabilidades altas/críticas, 8 moderadas en la cadena Electron/build. PASS significa inventario ejecutado y límites publicados, no ausencia de toda vulnerabilidad.</p>
+<h3>Artefacto público y controles HTTP</h3>
+<p>PASS · public-readback. Ámbito: Readback anónimo de accreatio.com y despliegue exacto de Cloudflare.. Bundle de 506718 bytes idéntico al build probado; rutas públicas y legales 200, ejemplos idénticos, cuenta anónima 401/no-store, métodos Google/GitHub activos y OTP propio deshabilitado. CSP script-src self, object-src none, nosniff y frame DENY presentes. ACCOUNT_DB conservada sin migración ni nuevos secretos.</p>
+<h2>Límites de evidencia</h2>
+<p>Las fixtures de cuenta, ledger y navegador demuestran los contratos en escenarios controlados; el readback público y la observación IAB describen el servicio real observado. No se presentan como pruebas de OAuth personal, de controles autenticados con consentimiento personal ni de Safari en un iPhone físico. Son límites de lo ejecutado y no nuevas condiciones humanas para esta entrega final.</p>
+<ul><li>No existe garantía de seguridad absoluta. La validación contextual no es antivirus ni analiza semánticamente binarios, PDF u Office; tampoco garantiza inmunidad a prompt injection en herramientas externas.</li><li>No se determina automáticamente si una idea viola copyright ni se bloquean cuentas por palabras. Los ToS fijan obligaciones, la creación sigue local y no se añadió vigilancia del contenido ni un servicio de moderación pagado.</li><li>La corrida adicional combinada del build final terminó con 12 PASS y un timeout WebKit esperando la selección de fase. Una única reproducción dirigida sobre el mismo asset aprobó todo el recorrido. No se demostró la causa del fallo intermitente; ambos recibos quedan conservados sin sustituir el resultado fallido por una afirmación de todas las corridas verdes.</li><li>No se realizó OAuth con consentimiento personal de producción ni exportación autenticada de una cuenta real en esta entrega; sí handlers/backend reales locales con proveedores sintéticos y readback público real. WebKit local no equivale a Safari en un iPhone físico.</li><li>La comprobación del repositorio hermano upstream de AEKR se omitió por depender de otro checkout; sí aprobaron el branding fijado, la verificación offline y las copias ZIP vendorizadas. No se presentan como una auditoría nueva del repositorio upstream.</li><li>Se detectan 8 vulnerabilidades moderadas de la cadena Electron/build y 0 altas/críticas según el inventario fechado. Lighthouse SEO69 conserva la política noindex de beta; los demás puntajes tampoco certifican accesibilidad universal.</li><li>Electron permanece congelado: se comprobaron localmente sus correcciones de frontera sin distribuir un nuevo instalador. No hay sandbox atómico contra un proceso local hostil que modifique directorios simultáneamente.</li><li>Los chequeos visuales y las fixtures automatizadas no predicen todos los usos humanos o dispositivos. La entrega final está completada por IA y estos límites no introducen gates humanos.</li></ul>
+<h2>Stack y arquitectura de esta versión</h2>
+<ul><li>react: 19.2.8 (package-lock.json del commit de aplicación).</li><li>react-dom: 19.2.8 (package-lock.json del commit de aplicación).</li><li>typescript: 7.0.2 (package-lock.json del commit de aplicación).</li><li>vite: 8.3.4 (package-lock.json del commit de aplicación).</li><li>client-zip: 2.5.0 (package-lock.json del commit de aplicación).</li><li>idb: 8.0.3 (package-lock.json del commit de aplicación).</li><li>openid-client: 6.8.8 (package-lock.json del commit de aplicación).</li><li>vite-plugin-pwa: 1.3.0 (package-lock.json del commit de aplicación).</li><li>wrangler: 4.151.3 (package-lock.json del commit de aplicación).</li><li>playwright: 1.62.1 (package-lock.json del commit de aplicación).</li><li>tsx: 4.23.1 (package-lock.json del commit de aplicación).</li><li>prettier: 3.9.6 (package-lock.json del commit de aplicación).</li><li>lighthouse: 13.4.1 (package-lock.json del commit de aplicación).</li><li>electron: 43.8.1 (package-lock.json del commit de aplicación).</li><li>electron-builder: 26.15.3 (package-lock.json del commit de aplicación).</li></ul>
+<p>Web: React/TypeScript/Vite, generación local de ZIP con client-zip e IndexedDB mediante idb, PWA/service worker para activos públicos. Cloudflare Pages/Functions sirve la aplicación y las APIs; D1 separa cuentas/cuota del Blog. Google OIDC y GitHub OAuth prueban identidad; la aplicación usa sesiones propias revocables y no retiene tokens de terceros como credenciales. Autenticación y API de cuenta usan la red y quedan fuera de la caché pública.</p>
+<p>Electron se conserva con desarrollo congelado. La validación local de sus fronteras no declara una nueva distribución instalada o una prueba de todos los sistemas operativos. Los números de dependencia provienen del lockfile del SHA indicado; no se inventa una versión de runtime remoto.</p>
+<h2>Documentos y evidencia descargable</h2>
+<ul><li><a href="releases/0.9.1-2026-10-21/release-summary.json">Resultado y procedencia saneados (JSON)</a></li><li><a href="releases/0.9.1-2026-10-21/stack.json">Stack exacto (JSON)</a></li><li><a href="releases/0.9.1-2026-10-21/SECURITY_INPUT_ABUSE_DESIGN_2026-10-21.md">Diseño y hallazgos previos conservados (Astra ultra)</a></li><li><a href="releases/0.9.1-2026-10-21/SECURITY_INPUT_IMPLEMENTATION_2026-10-21.md">Recibo final de implementación de seguridad</a></li><li><a href="manifest.json">Manifiesto de integridad de todo el dossier</a></li><li><a href="update-2026-10-21.html">Actualización 0.9.0 conservada</a></li><li><a href="index.html">Snapshot factual histórico</a></li><li><a href="INDEPENDENT_REVIEW_MASTER_2026-10-20.md">Master independiente original</a></li></ul>
+<ul><li><a href="releases/0.9.1-2026-10-21/evidence/iab-production-0.9.1.png">iab-production-0.9.1.png · public-anonymous</a></li><li><a href="releases/0.9.1-2026-10-21/evidence/iab-account-b-empty.png">iab-account-b-empty.png · synthetic</a></li><li><a href="releases/0.9.1-2026-10-21/evidence/iab-final-review-purple.png">iab-final-review-purple.png · synthetic</a></li><li><a href="releases/0.9.1-2026-10-21/evidence/iab-synthetic-receipt.json">iab-synthetic-receipt.json · synthetic</a></li><li><a href="releases/0.9.1-2026-10-21/evidence/account-isolation-receipt.json">account-isolation-receipt.json · synthetic</a></li><li><a href="releases/0.9.1-2026-10-21/evidence/identity-continuity-receipt.json">identity-continuity-receipt.json · synthetic</a></li><li><a href="releases/0.9.1-2026-10-21/evidence/integrated-functional-combined.json">integrated-functional-combined.json · synthetic</a></li><li><a href="releases/0.9.1-2026-10-21/evidence/integrated-functional-webkit-directed.json">integrated-functional-webkit-directed.json · synthetic</a></li><li><a href="releases/0.9.1-2026-10-21/evidence/export-load.json">export-load.json · synthetic</a></li><li><a href="releases/0.9.1-2026-10-21/evidence/dependency-inventory.json">dependency-inventory.json · synthetic</a></li></ul>
+<h2>Procedencia e integridad</h2>
+<p>Documento generado desde recibos ejecutados y resultados identificados por ámbito, incluido el fallo intermitente de la corrida adicional WebKit. Se conservan los 24 archivos de revisión histórica y el master independiente original con sus hashes, más 116 archivos previos inmutables, incluida la actualización 0.9.0. El manifiesto recalculado cubre todos los archivos del dossier salvo .git y el propio manifest.json. No se publica el código privado completo, credenciales, datos de cuentas reales ni el log crudo de verificación: sólo su hash y resultados agregados seleccionados.</p><details><summary>Recibo estructurado para otras IA</summary><pre>{
+  &quot;schema&quot;: 1,
+  &quot;product&quot;: &quot;accreatio&quot;,
+  &quot;version&quot;: &quot;0.9.1&quot;,
+  &quot;delivery&quot;: &quot;FINAL_PRODUCT_DELIVERED_BY_AI&quot;,
+  &quot;completedAtUtc&quot;: &quot;2026-10-21T17:30:25.764Z&quot;,
+  &quot;sourceRevision&quot;: &quot;a16c53dba5c29c5da15ff31e9f41d5a7610ad7d1&quot;,
+  &quot;scope&quot;: &quot;Final product delivery under the owner's current instruction. Evidence limitations are disclosed, not additional human release/UAT conditions.&quot;,
+  &quot;verification&quot;: {
+    &quot;status&quot;: &quot;PASS&quot;,
+    &quot;exitCode&quot;: 0,
+    &quot;testsPassed&quot;: 387,
+    &quot;testsFailed&quot;: 0,
+    &quot;receiptSha256&quot;: &quot;130a6ef89e1c27eca721e02090c8361a240b9fe8d3a2dacfbeef9ee60d3fb404&quot;,
+    &quot;checks&quot;: [
+      {
+        &quot;name&quot;: &quot;Pruebas de unidad&quot;,
+        &quot;scope&quot;: &quot;387/387 aprobadas, sin fallos ni omisiones; dominio, snapshots, rutas, exportación, aislamiento y continuidad OAuth.&quot;,
+        &quot;status&quot;: &quot;PASS&quot;
+      },
+      {
+        &quot;name&quot;: &quot;Tipos, formato y builds&quot;,
+        &quot;scope&quot;: &quot;TypeScript App/Electron/Functions, formato, build web y desktop; mailer tests/types/dry-run y Functions compiladas.&quot;,
+        &quot;status&quot;: &quot;PASS&quot;
+      },
+      {
+        &quot;name&quot;: &quot;Smoke funcional de producto&quot;,
+        &quot;scope&quot;: &quot;Superficies web, ejecución Electron real con fixtures, 12 recorridos del mapa en 4 viewports, UI ES/EN a 320/390/760/1280.&quot;,
+        &quot;status&quot;: &quot;PASS&quot;
+      },
+      {
+        &quot;name&quot;: &quot;Cuentas y sesión con backend real local&quot;,
+        &quot;scope&quot;: &quot;SQLite y handlers reales con identidades sintéticas: cuota/idempotencia, A→logout→B, A→logout→A, cookie reemplazada, pestaña secundaria, resultados tardíos y preferencias independientes.&quot;,
+        &quot;status&quot;: &quot;PASS&quot;
+      },
+      {
+        &quot;name&quot;: &quot;Proveedores y continuidad&quot;,
+        &quot;scope&quot;: &quot;Navegador local con handlers reales y proveedores Google/GitHub sintéticos HTTPS; reautenticación/linking del mismo propietario conserva trabajo, logout y nuevo ingreso comienzan vacíos.&quot;,
+        &quot;status&quot;: &quot;PASS&quot;
+      },
+      {
+        &quot;name&quot;: &quot;Activos y límites&quot;,
+        &quot;scope&quot;: &quot;Branding fijado, Blog seed, ejemplos, mapa y paquete ZIP; auditoría de rendimiento/accesibilidad y excepción SEO noindex declarada.&quot;,
+        &quot;status&quot;: &quot;PASS&quot;
+      }
+    ],
+    &quot;lighthouse&quot;: {
+      &quot;performance&quot;: 97,
+      &quot;accessibility&quot;: 100,
+      &quot;bestPractices&quot;: 100,
+      &quot;seo&quot;: 69
+    }
+  },
+  &quot;deployment&quot;: {
+    &quot;status&quot;: &quot;SUCCESS&quot;,
+    &quot;id&quot;: &quot;238ee6ee-e44b-4386-bb0a-290a807a8588&quot;,
+    &quot;url&quot;: &quot;https://accreatio.com/&quot;,
+    &quot;createdAtUtc&quot;: &quot;2026-10-21T17:24:24.423449Z&quot;,
+    &quot;succeededAtUtc&quot;: &quot;2026-10-21T17:24:26.854513Z&quot;
+  },
+  &quot;readback&quot;: {
+    &quot;status&quot;: &quot;PASS&quot;,
+    &quot;checkedAtUtc&quot;: &quot;2026-10-21T17:28:28.396Z&quot;,
+    &quot;sourceRevision&quot;: &quot;a16c53dba5c29c5da15ff31e9f41d5a7610ad7d1&quot;,
+    &quot;bundle&quot;: {
+      &quot;file&quot;: &quot;assets/index-C4UbuF46.js&quot;,
+      &quot;bytes&quot;: 506718,
+      &quot;sha256&quot;: &quot;ce408466d6cc4f41a39f0ba09b3022a63f1be3267f9a09d81098554c63392ea1&quot;,
+      &quot;identicalToLocalBuild&quot;: true
+    },
+    &quot;routes&quot;: [
+      {
+        &quot;path&quot;: &quot;/?view=about&amp;lang=es&quot;,
+        &quot;status&quot;: 200
+      },
+      {
+        &quot;path&quot;: &quot;/?view=blog&amp;lang=en&quot;,
+        &quot;status&quot;: 200
+      },
+      {
+        &quot;path&quot;: &quot;/legal/privacy.html&quot;,
+        &quot;status&quot;: 200
+      },
+      {
+        &quot;path&quot;: &quot;/legal/terms.html&quot;,
+        &quot;status&quot;: 200
+      },
+      {
+        &quot;path&quot;: &quot;/legal/cookies.html&quot;,
+        &quot;status&quot;: 200
+      },
+      {
+        &quot;path&quot;: &quot;/examples/manifest.json&quot;,
+        &quot;status&quot;: 200
+      }
+    ],
+    &quot;methods&quot;: {
+      &quot;google&quot;: true,
+      &quot;github&quot;: true,
+      &quot;emailOtp&quot;: false,
+      &quot;cacheControl&quot;: &quot;no-store&quot;
+    }
+  },
+  &quot;browser&quot;: {
+    &quot;status&quot;: &quot;PASS&quot;,
+    &quot;kind&quot;: &quot;IAB_PUBLIC_ANONYMOUS&quot;,
+    &quot;checkedAtUtc&quot;: &quot;2026-10-21T17:30:25.764Z&quot;,
+    &quot;summary&quot;: &quot;Observación del navegador integrado en accreatio.com: Acerca de muestra 0.9.1, Nuevo proyecto muestra acceso Google/GitHub alineado y ningún aviso de borrador anterior. La pestaña instalada mostró inicialmente 0.9.0 y pasó a 0.9.1 tras una recarga normal adicional de la actualización PWA. Sin aceptar términos ni iniciar sesión con una identidad personal.&quot;
+  },
+  &quot;security&quot;: {
+    &quot;status&quot;: &quot;PASS&quot;,
+    &quot;design&quot;: {
+      &quot;file&quot;: &quot;SECURITY_INPUT_ABUSE_DESIGN_2026-10-21.md&quot;,
+      &quot;scope&quot;: &quot;Preserved before-state design and findings; current correction status is in the implementation receipt.&quot;,
+      &quot;sha256&quot;: &quot;204f64f9b308aa1868a5aa7676e223f3dbc7e33e18aee442da6b93d4b11ff33d&quot;
+    },
+    &quot;receipt&quot;: {
+      &quot;file&quot;: &quot;SECURITY_INPUT_IMPLEMENTATION_2026-10-21.md&quot;,
+      &quot;sha256&quot;: &quot;625e4358ff61e56001616b4c7f608b6a23078943346cec0ef618d67cfe5f1f4b&quot;
+    },
+    &quot;attribution&quot;: &quot;Astra ultra security design and implementation receipt; scope and primary sources remain in the linked report.&quot;
+  },
+  &quot;evidence&quot;: [
+    {
+      &quot;id&quot;: &quot;account-isolation&quot;,
+      &quot;label&quot;: &quot;Aislamiento entre cuentas y pestañas&quot;,
+      &quot;kind&quot;: &quot;synthetic&quot;,
+      &quot;scope&quot;: &quot;Backend real local SQLite, navegador Chromium y cuentas de prueba.&quot;,
+      &quot;status&quot;: &quot;PASS&quot;,
+      &quot;summary&quot;: &quot;Siete comprobaciones del recibo de aislamiento aprobadas: logout A→B y A→A vacíos; contexto, opciones, navegación, adjuntos y recuperación borrados; cambio de cookie bloquea el editor; logout de pestaña secundaria invalida trabajo pendiente; cookie preferences y cuota previa conservadas.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;identity-continuity&quot;,
+      &quot;label&quot;: &quot;Google/GitHub y reautenticación&quot;,
+      &quot;kind&quot;: &quot;synthetic&quot;,
+      &quot;scope&quot;: &quot;Handlers reales y SQLite local con Google/GitHub sintéticos HTTPS; ningún grant personal de producción.&quot;,
+      &quot;status&quot;: &quot;PASS&quot;,
+      &quot;summary&quot;: &quot;Linking y prueba del mismo propietario conservan borrador con rotación de sesión, exportación de identidades y eliminación verificados. Handoff de redirección es de un solo uso, diez minutos, sólo etiquetas opacas; marcador antiguo retirado antes de iniciar cualquier nuevo acceso.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;iab-synthetic&quot;,
+      &quot;label&quot;: &quot;Recorrido visual en navegador integrado&quot;,
+      &quot;kind&quot;: &quot;synthetic&quot;,
+      &quot;scope&quot;: &quot;Fixture de cuentas A/B local; capturas previas al último ajuste no visual de handoff.&quot;,
+      &quot;status&quot;: &quot;PASS&quot;,
+      &quot;summary&quot;: &quot;Logout de A y acceso de B dejan nombre vacío. SQL y scripts educativos se muestran como texto; no se ejecutó código. Contadores 20000/10000 visibles; Opciones avanzadas morado y alineado. Esta evidencia visual no se presenta como login de producción ni como equivalencia byte a byte del último build.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;zip-boundaries&quot;,
+      &quot;label&quot;: &quot;ZIP real en límites de adjuntos&quot;,
+      &quot;kind&quot;: &quot;synthetic&quot;,
+      &quot;scope&quot;: &quot;Build final index-C4UbuF46.js; selector y descarga reales, API de autorización sintética.&quot;,
+      &quot;status&quot;: &quot;PASS&quot;,
+      &quot;summary&quot;: &quot;20 archivos/100 MiB y un archivo/20 MiB descargados, extraídos y comparados byte a byte y SHA-256. ZIP de 104882708 y 20989774 bytes. Generación 478.5 ms y 95.1 ms; tecla Tab procesada en 3 ms y 2 ms. Sólo mediciones de esta máquina, sin comparación con otro build.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;pwa-upgrade&quot;,
+      &quot;label&quot;: &quot;Actualización PWA y borradores&quot;,
+      &quot;kind&quot;: &quot;synthetic&quot;,
+      &quot;scope&quot;: &quot;Upgrade local desde activos legacy, navegador y sesión sintética.&quot;,
+      &quot;status&quot;: &quot;PASS&quot;,
+      &quot;summary&quot;: &quot;Regresión de prompts repetidos recuperada, borrador legacy sin dueño descartado, borrador de sesión verificada retenido, sin recargas automáticas de actualización y OTP inline conserva trabajo. Proceso final exit 0.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;webkit-directed&quot;,
+      &quot;label&quot;: &quot;Reproducción dirigida WebKit&quot;,
+      &quot;kind&quot;: &quot;synthetic&quot;,
+      &quot;scope&quot;: &quot;WebKit 26.5 contra el mismo build final; un solo recorrido dirigido sin relajar assertions.&quot;,
+      &quot;status&quot;: &quot;PASS&quot;,
+      &quot;summary&quot;: &quot;Nombre→fase→contexto→recarga→revisión→dry-run→ZIP PASS, sin pageErrors. La corrida combinada previa conserva 12 PASS y un timeout WebKit no reproducido; la causa sigue sin determinar y ambos recibos se publican.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;security-targeted&quot;,
+      &quot;label&quot;: &quot;Fronteras de seguridad corregidas&quot;,
+      &quot;kind&quot;: &quot;synthetic&quot;,
+      &quot;scope&quot;: &quot;Suite de regresión contextual, Electron y tipos antes de la verificación integral final.&quot;,
+      &quot;status&quot;: &quot;PASS&quot;,
+      &quot;summary&quot;: &quot;121/121 pruebas de seguridad aprobadas; snapshots inválidos, Markdown/YAML, rutas ZIP/filesystem, emisor IPC y selección de adjuntos. Se preserva el diseño inicial independiente de Astra ultra y el recibo de cambios separado.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;dependency-inventory&quot;,
+      &quot;label&quot;: &quot;Inventario de dependencias&quot;,
+      &quot;kind&quot;: &quot;source-review&quot;,
+      &quot;scope&quot;: &quot;709 componentes instalados de desarrollo/build; dependencias sin cambios en esta entrega.&quot;,
+      &quot;status&quot;: &quot;PASS&quot;,
+      &quot;summary&quot;: &quot;Inventario completado: 0 vulnerabilidades altas/críticas, 8 moderadas en la cadena Electron/build. PASS significa inventario ejecutado y límites publicados, no ausencia de toda vulnerabilidad.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;production-readback&quot;,
+      &quot;label&quot;: &quot;Artefacto público y controles HTTP&quot;,
+      &quot;kind&quot;: &quot;public-readback&quot;,
+      &quot;scope&quot;: &quot;Readback anónimo de accreatio.com y despliegue exacto de Cloudflare.&quot;,
+      &quot;status&quot;: &quot;PASS&quot;,
+      &quot;summary&quot;: &quot;Bundle de 506718 bytes idéntico al build probado; rutas públicas y legales 200, ejemplos idénticos, cuenta anónima 401/no-store, métodos Google/GitHub activos y OTP propio deshabilitado. CSP script-src self, object-src none, nosniff y frame DENY presentes. ACCOUNT_DB conservada sin migración ni nuevos secretos.&quot;
+    }
+  ],
+  &quot;evidenceLimits&quot;: [
+    &quot;No existe garantía de seguridad absoluta. La validación contextual no es antivirus ni analiza semánticamente binarios, PDF u Office; tampoco garantiza inmunidad a prompt injection en herramientas externas.&quot;,
+    &quot;No se determina automáticamente si una idea viola copyright ni se bloquean cuentas por palabras. Los ToS fijan obligaciones, la creación sigue local y no se añadió vigilancia del contenido ni un servicio de moderación pagado.&quot;,
+    &quot;La corrida adicional combinada del build final terminó con 12 PASS y un timeout WebKit esperando la selección de fase. Una única reproducción dirigida sobre el mismo asset aprobó todo el recorrido. No se demostró la causa del fallo intermitente; ambos recibos quedan conservados sin sustituir el resultado fallido por una afirmación de todas las corridas verdes.&quot;,
+    &quot;No se realizó OAuth con consentimiento personal de producción ni exportación autenticada de una cuenta real en esta entrega; sí handlers/backend reales locales con proveedores sintéticos y readback público real. WebKit local no equivale a Safari en un iPhone físico.&quot;,
+    &quot;La comprobación del repositorio hermano upstream de AEKR se omitió por depender de otro checkout; sí aprobaron el branding fijado, la verificación offline y las copias ZIP vendorizadas. No se presentan como una auditoría nueva del repositorio upstream.&quot;,
+    &quot;Se detectan 8 vulnerabilidades moderadas de la cadena Electron/build y 0 altas/críticas según el inventario fechado. Lighthouse SEO69 conserva la política noindex de beta; los demás puntajes tampoco certifican accesibilidad universal.&quot;,
+    &quot;Electron permanece congelado: se comprobaron localmente sus correcciones de frontera sin distribuir un nuevo instalador. No hay sandbox atómico contra un proceso local hostil que modifique directorios simultáneamente.&quot;,
+    &quot;Los chequeos visuales y las fixtures automatizadas no predicen todos los usos humanos o dispositivos. La entrega final está completada por IA y estos límites no introducen gates humanos.&quot;
+  ],
+  &quot;attachments&quot;: [
+    {
+      &quot;file&quot;: &quot;iab-production-0.9.1.png&quot;,
+      &quot;classification&quot;: &quot;public-anonymous&quot;,
+      &quot;bytes&quot;: 41399,
+      &quot;sha256&quot;: &quot;789b50bd118df2ba7788434e2c8f2e679da2539ced2d97edf40d02f649854091&quot;
+    },
+    {
+      &quot;file&quot;: &quot;iab-account-b-empty.png&quot;,
+      &quot;classification&quot;: &quot;synthetic&quot;,
+      &quot;bytes&quot;: 41884,
+      &quot;sha256&quot;: &quot;0120656f9132e39abab27933384221da39785e45dad2d865d21d756f044832e2&quot;
+    },
+    {
+      &quot;file&quot;: &quot;iab-final-review-purple.png&quot;,
+      &quot;classification&quot;: &quot;synthetic&quot;,
+      &quot;bytes&quot;: 56330,
+      &quot;sha256&quot;: &quot;2a78de0ed8ac1ca2edd9f73feed501e47b07607551de16354e2a2c28c7bc5eb2&quot;
+    },
+    {
+      &quot;file&quot;: &quot;iab-synthetic-receipt.json&quot;,
+      &quot;classification&quot;: &quot;synthetic&quot;,
+      &quot;bytes&quot;: 864,
+      &quot;sha256&quot;: &quot;cad57a26198d47e1973bc50506fb311b5b2aba178d634a041b1de64ad0908b92&quot;
+    },
+    {
+      &quot;file&quot;: &quot;account-isolation-receipt.json&quot;,
+      &quot;classification&quot;: &quot;synthetic&quot;,
+      &quot;bytes&quot;: 427,
+      &quot;sha256&quot;: &quot;be414f9c4d25582d4ae8b7efdb6af6b4f3d46fba6284b8d76315cb7c43a818d4&quot;
+    },
+    {
+      &quot;file&quot;: &quot;identity-continuity-receipt.json&quot;,
+      &quot;classification&quot;: &quot;synthetic&quot;,
+      &quot;bytes&quot;: 725,
+      &quot;sha256&quot;: &quot;d0b25c8244696cfabbaa5f0681328286c5c47276387a2eb51dfd71d6376858f3&quot;
+    },
+    {
+      &quot;file&quot;: &quot;integrated-functional-combined.json&quot;,
+      &quot;classification&quot;: &quot;synthetic&quot;,
+      &quot;bytes&quot;: 2605,
+      &quot;sha256&quot;: &quot;00ccdd9326951b4ce61ed4d99e77f08776fa960cc46d3983a10e90aa5fbbf65c&quot;
+    },
+    {
+      &quot;file&quot;: &quot;integrated-functional-webkit-directed.json&quot;,
+      &quot;classification&quot;: &quot;synthetic&quot;,
+      &quot;bytes&quot;: 475,
+      &quot;sha256&quot;: &quot;00192f5f546e01d72facf9492d2e4df1612758232be29ee632cbcf4b0c573b81&quot;
+    },
+    {
+      &quot;file&quot;: &quot;export-load.json&quot;,
+      &quot;classification&quot;: &quot;synthetic&quot;,
+      &quot;bytes&quot;: 13384,
+      &quot;sha256&quot;: &quot;e44ca5cff91862879df60a75e5265848e5bea2edf052691eb83ccb63f75cedc0&quot;
+    },
+    {
+      &quot;file&quot;: &quot;dependency-inventory.json&quot;,
+      &quot;classification&quot;: &quot;synthetic&quot;,
+      &quot;bytes&quot;: 267,
+      &quot;sha256&quot;: &quot;2a0620ac9b8ca0a0fb322cbe8c19b938ebae9cfcf15f80c7eaa71b01a51070f1&quot;
+    }
+  ],
+  &quot;preservation&quot;: {
+    &quot;historicalReviewFiles&quot;: 24,
+    &quot;historicalHashes&quot;: &quot;PASS&quot;,
+    &quot;preexistingImmutableFiles&quot;: 116,
+    &quot;previous090Update&quot;: &quot;BYTE_IDENTICAL&quot;,
+    &quot;independentMaster&quot;: &quot;BYTE_IDENTICAL&quot;
+  },
+  &quot;noPersonalOAuthClaim&quot;: true,
+  &quot;noPhysicalIPhoneClaim&quot;: true,
+  &quot;noAbsoluteSecurityOrCopyrightCertification&quot;: true
+}
+</pre></details></main><footer>Entrega fechada y atribuida al equipo de implementación por IA. Historial conservado. Sin afirmaciones de seguridad absoluta ni certificación jurídica.</footer><script type="application/json" id="release-receipt">{"schema":1,"product":"accreatio","version":"0.9.1","delivery":"FINAL_PRODUCT_DELIVERED_BY_AI","completedAtUtc":"2026-10-21T17:30:25.764Z","sourceRevision":"a16c53dba5c29c5da15ff31e9f41d5a7610ad7d1","scope":"Final product delivery under the owner's current instruction. Evidence limitations are disclosed, not additional human release/UAT conditions.","verification":{"status":"PASS","exitCode":0,"testsPassed":387,"testsFailed":0,"receiptSha256":"130a6ef89e1c27eca721e02090c8361a240b9fe8d3a2dacfbeef9ee60d3fb404","checks":[{"name":"Pruebas de unidad","scope":"387/387 aprobadas, sin fallos ni omisiones; dominio, snapshots, rutas, exportación, aislamiento y continuidad OAuth.","status":"PASS"},{"name":"Tipos, formato y builds","scope":"TypeScript App/Electron/Functions, formato, build web y desktop; mailer tests/types/dry-run y Functions compiladas.","status":"PASS"},{"name":"Smoke funcional de producto","scope":"Superficies web, ejecución Electron real con fixtures, 12 recorridos del mapa en 4 viewports, UI ES/EN a 320/390/760/1280.","status":"PASS"},{"name":"Cuentas y sesión con backend real local","scope":"SQLite y handlers reales con identidades sintéticas: cuota/idempotencia, A→logout→B, A→logout→A, cookie reemplazada, pestaña secundaria, resultados tardíos y preferencias independientes.","status":"PASS"},{"name":"Proveedores y continuidad","scope":"Navegador local con handlers reales y proveedores Google/GitHub sintéticos HTTPS; reautenticación/linking del mismo propietario conserva trabajo, logout y nuevo ingreso comienzan vacíos.","status":"PASS"},{"name":"Activos y límites","scope":"Branding fijado, Blog seed, ejemplos, mapa y paquete ZIP; auditoría de rendimiento/accesibilidad y excepción SEO noindex declarada.","status":"PASS"}],"lighthouse":{"performance":97,"accessibility":100,"bestPractices":100,"seo":69}},"deployment":{"status":"SUCCESS","id":"238ee6ee-e44b-4386-bb0a-290a807a8588","url":"https://accreatio.com/","createdAtUtc":"2026-10-21T17:24:24.423449Z","succeededAtUtc":"2026-10-21T17:24:26.854513Z"},"readback":{"status":"PASS","checkedAtUtc":"2026-10-21T17:28:28.396Z","sourceRevision":"a16c53dba5c29c5da15ff31e9f41d5a7610ad7d1","bundle":{"file":"assets/index-C4UbuF46.js","bytes":506718,"sha256":"ce408466d6cc4f41a39f0ba09b3022a63f1be3267f9a09d81098554c63392ea1","identicalToLocalBuild":true},"routes":[{"path":"/?view=about&lang=es","status":200},{"path":"/?view=blog&lang=en","status":200},{"path":"/legal/privacy.html","status":200},{"path":"/legal/terms.html","status":200},{"path":"/legal/cookies.html","status":200},{"path":"/examples/manifest.json","status":200}],"methods":{"google":true,"github":true,"emailOtp":false,"cacheControl":"no-store"}},"browser":{"status":"PASS","kind":"IAB_PUBLIC_ANONYMOUS","checkedAtUtc":"2026-10-21T17:30:25.764Z","summary":"Observación del navegador integrado en accreatio.com: Acerca de muestra 0.9.1, Nuevo proyecto muestra acceso Google/GitHub alineado y ningún aviso de borrador anterior. La pestaña instalada mostró inicialmente 0.9.0 y pasó a 0.9.1 tras una recarga normal adicional de la actualización PWA. Sin aceptar términos ni iniciar sesión con una identidad personal."},"security":{"status":"PASS","design":{"file":"SECURITY_INPUT_ABUSE_DESIGN_2026-10-21.md","scope":"Preserved before-state design and findings; current correction status is in the implementation receipt.","sha256":"204f64f9b308aa1868a5aa7676e223f3dbc7e33e18aee442da6b93d4b11ff33d"},"receipt":{"file":"SECURITY_INPUT_IMPLEMENTATION_2026-10-21.md","sha256":"625e4358ff61e56001616b4c7f608b6a23078943346cec0ef618d67cfe5f1f4b"},"attribution":"Astra ultra security design and implementation receipt; scope and primary sources remain in the linked report."},"evidence":[{"id":"account-isolation","label":"Aislamiento entre cuentas y pestañas","kind":"synthetic","scope":"Backend real local SQLite, navegador Chromium y cuentas de prueba.","status":"PASS","summary":"Siete comprobaciones del recibo de aislamiento aprobadas: logout A→B y A→A vacíos; contexto, opciones, navegación, adjuntos y recuperación borrados; cambio de cookie bloquea el editor; logout de pestaña secundaria invalida trabajo pendiente; cookie preferences y cuota previa conservadas."},{"id":"identity-continuity","label":"Google/GitHub y reautenticación","kind":"synthetic","scope":"Handlers reales y SQLite local con Google/GitHub sintéticos HTTPS; ningún grant personal de producción.","status":"PASS","summary":"Linking y prueba del mismo propietario conservan borrador con rotación de sesión, exportación de identidades y eliminación verificados. Handoff de redirección es de un solo uso, diez minutos, sólo etiquetas opacas; marcador antiguo retirado antes de iniciar cualquier nuevo acceso."},{"id":"iab-synthetic","label":"Recorrido visual en navegador integrado","kind":"synthetic","scope":"Fixture de cuentas A/B local; capturas previas al último ajuste no visual de handoff.","status":"PASS","summary":"Logout de A y acceso de B dejan nombre vacío. SQL y scripts educativos se muestran como texto; no se ejecutó código. Contadores 20000/10000 visibles; Opciones avanzadas morado y alineado. Esta evidencia visual no se presenta como login de producción ni como equivalencia byte a byte del último build."},{"id":"zip-boundaries","label":"ZIP real en límites de adjuntos","kind":"synthetic","scope":"Build final index-C4UbuF46.js; selector y descarga reales, API de autorización sintética.","status":"PASS","summary":"20 archivos/100 MiB y un archivo/20 MiB descargados, extraídos y comparados byte a byte y SHA-256. ZIP de 104882708 y 20989774 bytes. Generación 478.5 ms y 95.1 ms; tecla Tab procesada en 3 ms y 2 ms. Sólo mediciones de esta máquina, sin comparación con otro build."},{"id":"pwa-upgrade","label":"Actualización PWA y borradores","kind":"synthetic","scope":"Upgrade local desde activos legacy, navegador y sesión sintética.","status":"PASS","summary":"Regresión de prompts repetidos recuperada, borrador legacy sin dueño descartado, borrador de sesión verificada retenido, sin recargas automáticas de actualización y OTP inline conserva trabajo. Proceso final exit 0."},{"id":"webkit-directed","label":"Reproducción dirigida WebKit","kind":"synthetic","scope":"WebKit 26.5 contra el mismo build final; un solo recorrido dirigido sin relajar assertions.","status":"PASS","summary":"Nombre→fase→contexto→recarga→revisión→dry-run→ZIP PASS, sin pageErrors. La corrida combinada previa conserva 12 PASS y un timeout WebKit no reproducido; la causa sigue sin determinar y ambos recibos se publican."},{"id":"security-targeted","label":"Fronteras de seguridad corregidas","kind":"synthetic","scope":"Suite de regresión contextual, Electron y tipos antes de la verificación integral final.","status":"PASS","summary":"121/121 pruebas de seguridad aprobadas; snapshots inválidos, Markdown/YAML, rutas ZIP/filesystem, emisor IPC y selección de adjuntos. Se preserva el diseño inicial independiente de Astra ultra y el recibo de cambios separado."},{"id":"dependency-inventory","label":"Inventario de dependencias","kind":"source-review","scope":"709 componentes instalados de desarrollo/build; dependencias sin cambios en esta entrega.","status":"PASS","summary":"Inventario completado: 0 vulnerabilidades altas/críticas, 8 moderadas en la cadena Electron/build. PASS significa inventario ejecutado y límites publicados, no ausencia de toda vulnerabilidad."},{"id":"production-readback","label":"Artefacto público y controles HTTP","kind":"public-readback","scope":"Readback anónimo de accreatio.com y despliegue exacto de Cloudflare.","status":"PASS","summary":"Bundle de 506718 bytes idéntico al build probado; rutas públicas y legales 200, ejemplos idénticos, cuenta anónima 401/no-store, métodos Google/GitHub activos y OTP propio deshabilitado. CSP script-src self, object-src none, nosniff y frame DENY presentes. ACCOUNT_DB conservada sin migración ni nuevos secretos."}],"evidenceLimits":["No existe garantía de seguridad absoluta. La validación contextual no es antivirus ni analiza semánticamente binarios, PDF u Office; tampoco garantiza inmunidad a prompt injection en herramientas externas.","No se determina automáticamente si una idea viola copyright ni se bloquean cuentas por palabras. Los ToS fijan obligaciones, la creación sigue local y no se añadió vigilancia del contenido ni un servicio de moderación pagado.","La corrida adicional combinada del build final terminó con 12 PASS y un timeout WebKit esperando la selección de fase. Una única reproducción dirigida sobre el mismo asset aprobó todo el recorrido. No se demostró la causa del fallo intermitente; ambos recibos quedan conservados sin sustituir el resultado fallido por una afirmación de todas las corridas verdes.","No se realizó OAuth con consentimiento personal de producción ni exportación autenticada de una cuenta real en esta entrega; sí handlers/backend reales locales con proveedores sintéticos y readback público real. WebKit local no equivale a Safari en un iPhone físico.","La comprobación del repositorio hermano upstream de AEKR se omitió por depender de otro checkout; sí aprobaron el branding fijado, la verificación offline y las copias ZIP vendorizadas. No se presentan como una auditoría nueva del repositorio upstream.","Se detectan 8 vulnerabilidades moderadas de la cadena Electron/build y 0 altas/críticas según el inventario fechado. Lighthouse SEO69 conserva la política noindex de beta; los demás puntajes tampoco certifican accesibilidad universal.","Electron permanece congelado: se comprobaron localmente sus correcciones de frontera sin distribuir un nuevo instalador. No hay sandbox atómico contra un proceso local hostil que modifique directorios simultáneamente.","Los chequeos visuales y las fixtures automatizadas no predicen todos los usos humanos o dispositivos. La entrega final está completada por IA y estos límites no introducen gates humanos."],"attachments":[{"file":"iab-production-0.9.1.png","classification":"public-anonymous","bytes":41399,"sha256":"789b50bd118df2ba7788434e2c8f2e679da2539ced2d97edf40d02f649854091"},{"file":"iab-account-b-empty.png","classification":"synthetic","bytes":41884,"sha256":"0120656f9132e39abab27933384221da39785e45dad2d865d21d756f044832e2"},{"file":"iab-final-review-purple.png","classification":"synthetic","bytes":56330,"sha256":"2a78de0ed8ac1ca2edd9f73feed501e47b07607551de16354e2a2c28c7bc5eb2"},{"file":"iab-synthetic-receipt.json","classification":"synthetic","bytes":864,"sha256":"cad57a26198d47e1973bc50506fb311b5b2aba178d634a041b1de64ad0908b92"},{"file":"account-isolation-receipt.json","classification":"synthetic","bytes":427,"sha256":"be414f9c4d25582d4ae8b7efdb6af6b4f3d46fba6284b8d76315cb7c43a818d4"},{"file":"identity-continuity-receipt.json","classification":"synthetic","bytes":725,"sha256":"d0b25c8244696cfabbaa5f0681328286c5c47276387a2eb51dfd71d6376858f3"},{"file":"integrated-functional-combined.json","classification":"synthetic","bytes":2605,"sha256":"00ccdd9326951b4ce61ed4d99e77f08776fa960cc46d3983a10e90aa5fbbf65c"},{"file":"integrated-functional-webkit-directed.json","classification":"synthetic","bytes":475,"sha256":"00192f5f546e01d72facf9492d2e4df1612758232be29ee632cbcf4b0c573b81"},{"file":"export-load.json","classification":"synthetic","bytes":13384,"sha256":"e44ca5cff91862879df60a75e5265848e5bea2edf052691eb83ccb63f75cedc0"},{"file":"dependency-inventory.json","classification":"synthetic","bytes":267,"sha256":"2a0620ac9b8ca0a0fb322cbe8c19b938ebae9cfcf15f80c7eaa71b01a51070f1"}],"preservation":{"historicalReviewFiles":24,"historicalHashes":"PASS","preexistingImmutableFiles":116,"previous090Update":"BYTE_IDENTICAL","independentMaster":"BYTE_IDENTICAL"},"noPersonalOAuthClaim":true,"noPhysicalIPhoneClaim":true,"noAbsoluteSecurityOrCopyrightCertification":true}</script></body></html>

@@ -1,5 +1,13 @@
 # checkaccreatioandgivefeedback
 
+<!-- final-release-091:start -->
+
+## Última entrega / Latest delivery — 0.9.1
+
+[Producto final entregado por IA / Final product delivered by AI](https://edlopezpm-ops.github.io/checkaccreatioandgivefeedback/final-release-2026-10-21.html) · [Markdown](https://edlopezpm-ops.github.io/checkaccreatioandgivefeedback/FINAL_PRODUCT_RELEASE_2026-10-21.md) · [JSON](https://edlopezpm-ops.github.io/checkaccreatioandgivefeedback/releases/0.9.1-2026-10-21/release-summary.json). Producción SUCCESS, verificación y readback PASS. No se añade una condición de UAT o gate humano. Las limitaciones de evidencia están declaradas. Las secciones siguientes conservan snapshots históricos y la actualización anterior 0.9.0, cuyos estados no describen esta entrega actual.
+
+<!-- final-release-091:end -->
+
 **Actualización posterior:** [Implementación y despliegue 0.9.0 · 21 de octubre](update-2026-10-21.html) · [Markdown](IMPLEMENTATION_UPDATE_2026-10-21.md). Informe autoinformado, estado 0 NO COMPLETADO: producción desplegada y readback público PASS; preview protegida por Access y pruebas autenticadas pendientes. El snapshot histórico se conserva.
 
 

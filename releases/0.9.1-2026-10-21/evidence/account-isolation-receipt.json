@@ -1,0 +1,12 @@
+{
+  "result": "PASS",
+  "checks": [
+    "different internal accounts share one fixture DB",
+    "A logout to B blank",
+    "A logout to A blank",
+    "name/context/restrictions/options/navigation/attachments/recovery reset",
+    "cookie replacement blocks editor while checking and resets before B",
+    "secondary-tab logout invalidates pending primary work",
+    "cookie preference and original quota receipt preserved"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "testedAt": "2026-10-21T17:24:51.960Z",
+  "version": "0.9.1",
+  "source": "working candidate; tie to manifest before release",
+  "selectedEngine": "webkit",
+  "environment": "Local production bundle; account/provider/Blog API fixtures; real browser ZIP generation and download",
+  "records": [
+    {
+      "name": "webkit ES mobile viewport main journey",
+      "result": "PASS",
+      "browser": "26.5",
+      "physicalMobile": false,
+      "pageErrors": []
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "result": "PASS",
+  "componentCount": 709,
+  "vulnerabilities": {
+    "info": 0,
+    "low": 0,
+    "moderate": 8,
+    "high": 0,
+    "critical": 0,
+    "total": 8
+  },
+  "scope": "Installed development and build dependency inventory; no project or account data"
+}

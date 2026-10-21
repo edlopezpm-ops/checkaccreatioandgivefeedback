@@ -1,0 +1,279 @@
+{
+  "schema": 1,
+  "product": "accreatio",
+  "version": "0.9.1",
+  "delivery": "FINAL_PRODUCT_DELIVERED_BY_AI",
+  "completedAtUtc": "2026-10-21T17:30:25.764Z",
+  "sourceRevision": "a16c53dba5c29c5da15ff31e9f41d5a7610ad7d1",
+  "scope": "Final product delivery under the owner's current instruction. Evidence limitations are disclosed, not additional human release/UAT conditions.",
+  "verification": {
+    "status": "PASS",
+    "exitCode": 0,
+    "testsPassed": 387,
+    "testsFailed": 0,
+    "receiptSha256": "130a6ef89e1c27eca721e02090c8361a240b9fe8d3a2dacfbeef9ee60d3fb404",
+    "checks": [
+      {
+        "name": "Pruebas de unidad",
+        "scope": "387/387 aprobadas, sin fallos ni omisiones; dominio, snapshots, rutas, exportación, aislamiento y continuidad OAuth.",
+        "status": "PASS"
+      },
+      {
+        "name": "Tipos, formato y builds",
+        "scope": "TypeScript App/Electron/Functions, formato, build web y desktop; mailer tests/types/dry-run y Functions compiladas.",
+        "status": "PASS"
+      },
+      {
+        "name": "Smoke funcional de producto",
+        "scope": "Superficies web, ejecución Electron real con fixtures, 12 recorridos del mapa en 4 viewports, UI ES/EN a 320/390/760/1280.",
+        "status": "PASS"
+      },
+      {
+        "name": "Cuentas y sesión con backend real local",
+        "scope": "SQLite y handlers reales con identidades sintéticas: cuota/idempotencia, A→logout→B, A→logout→A, cookie reemplazada, pestaña secundaria, resultados tardíos y preferencias independientes.",
+        "status": "PASS"
+      },
+      {
+        "name": "Proveedores y continuidad",
+        "scope": "Navegador local con handlers reales y proveedores Google/GitHub sintéticos HTTPS; reautenticación/linking del mismo propietario conserva trabajo, logout y nuevo ingreso comienzan vacíos.",
+        "status": "PASS"
+      },
+      {
+        "name": "Activos y límites",
+        "scope": "Branding fijado, Blog seed, ejemplos, mapa y paquete ZIP; auditoría de rendimiento/accesibilidad y excepción SEO noindex declarada.",
+        "status": "PASS"
+      }
+    ],
+    "lighthouse": {
+      "performance": 97,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 69
+    }
+  },
+  "deployment": {
+    "status": "SUCCESS",
+    "id": "238ee6ee-e44b-4386-bb0a-290a807a8588",
+    "url": "https://accreatio.com/",
+    "createdAtUtc": "2026-10-21T17:24:24.423449Z",
+    "succeededAtUtc": "2026-10-21T17:24:26.854513Z"
+  },
+  "readback": {
+    "status": "PASS",
+    "checkedAtUtc": "2026-10-21T17:28:28.396Z",
+    "sourceRevision": "a16c53dba5c29c5da15ff31e9f41d5a7610ad7d1",
+    "bundle": {
+      "file": "assets/index-C4UbuF46.js",
+      "bytes": 506718,
+      "sha256": "ce408466d6cc4f41a39f0ba09b3022a63f1be3267f9a09d81098554c63392ea1",
+      "identicalToLocalBuild": true
+    },
+    "routes": [
+      {
+        "path": "/?view=about&lang=es",
+        "status": 200
+      },
+      {
+        "path": "/?view=blog&lang=en",
+        "status": 200
+      },
+      {
+        "path": "/legal/privacy.html",
+        "status": 200
+      },
+      {
+        "path": "/legal/terms.html",
+        "status": 200
+      },
+      {
+        "path": "/legal/cookies.html",
+        "status": 200
+      },
+      {
+        "path": "/examples/manifest.json",
+        "status": 200
+      }
+    ],
+    "methods": {
+      "google": true,
+      "github": true,
+      "emailOtp": false,
+      "cacheControl": "no-store"
+    }
+  },
+  "browser": {
+    "status": "PASS",
+    "kind": "IAB_PUBLIC_ANONYMOUS",
+    "checkedAtUtc": "2026-10-21T17:30:25.764Z",
+    "summary": "Observación del navegador integrado en accreatio.com: Acerca de muestra 0.9.1, Nuevo proyecto muestra acceso Google/GitHub alineado y ningún aviso de borrador anterior. La pestaña instalada mostró inicialmente 0.9.0 y pasó a 0.9.1 tras una recarga normal adicional de la actualización PWA. Sin aceptar términos ni iniciar sesión con una identidad personal."
+  },
+  "security": {
+    "status": "PASS",
+    "design": {
+      "file": "SECURITY_INPUT_ABUSE_DESIGN_2026-10-21.md",
+      "scope": "Preserved before-state design and findings; current correction status is in the implementation receipt.",
+      "sha256": "204f64f9b308aa1868a5aa7676e223f3dbc7e33e18aee442da6b93d4b11ff33d"
+    },
+    "receipt": {
+      "file": "SECURITY_INPUT_IMPLEMENTATION_2026-10-21.md",
+      "sha256": "625e4358ff61e56001616b4c7f608b6a23078943346cec0ef618d67cfe5f1f4b"
+    },
+    "attribution": "Astra ultra security design and implementation receipt; scope and primary sources remain in the linked report."
+  },
+  "evidence": [
+    {
+      "id": "account-isolation",
+      "label": "Aislamiento entre cuentas y pestañas",
+      "kind": "synthetic",
+      "scope": "Backend real local SQLite, navegador Chromium y cuentas de prueba.",
+      "status": "PASS",
+      "summary": "Siete comprobaciones del recibo de aislamiento aprobadas: logout A→B y A→A vacíos; contexto, opciones, navegación, adjuntos y recuperación borrados; cambio de cookie bloquea el editor; logout de pestaña secundaria invalida trabajo pendiente; cookie preferences y cuota previa conservadas."
+    },
+    {
+      "id": "identity-continuity",
+      "label": "Google/GitHub y reautenticación",
+      "kind": "synthetic",
+      "scope": "Handlers reales y SQLite local con Google/GitHub sintéticos HTTPS; ningún grant personal de producción.",
+      "status": "PASS",
+      "summary": "Linking y prueba del mismo propietario conservan borrador con rotación de sesión, exportación de identidades y eliminación verificados. Handoff de redirección es de un solo uso, diez minutos, sólo etiquetas opacas; marcador antiguo retirado antes de iniciar cualquier nuevo acceso."
+    },
+    {
+      "id": "iab-synthetic",
+      "label": "Recorrido visual en navegador integrado",
+      "kind": "synthetic",
+      "scope": "Fixture de cuentas A/B local; capturas previas al último ajuste no visual de handoff.",
+      "status": "PASS",
+      "summary": "Logout de A y acceso de B dejan nombre vacío. SQL y scripts educativos se muestran como texto; no se ejecutó código. Contadores 20000/10000 visibles; Opciones avanzadas morado y alineado. Esta evidencia visual no se presenta como login de producción ni como equivalencia byte a byte del último build."
+    },
+    {
+      "id": "zip-boundaries",
+      "label": "ZIP real en límites de adjuntos",
+      "kind": "synthetic",
+      "scope": "Build final index-C4UbuF46.js; selector y descarga reales, API de autorización sintética.",
+      "status": "PASS",
+      "summary": "20 archivos/100 MiB y un archivo/20 MiB descargados, extraídos y comparados byte a byte y SHA-256. ZIP de 104882708 y 20989774 bytes. Generación 478.5 ms y 95.1 ms; tecla Tab procesada en 3 ms y 2 ms. Sólo mediciones de esta máquina, sin comparación con otro build."
+    },
+    {
+      "id": "pwa-upgrade",
+      "label": "Actualización PWA y borradores",
+      "kind": "synthetic",
+      "scope": "Upgrade local desde activos legacy, navegador y sesión sintética.",
+      "status": "PASS",
+      "summary": "Regresión de prompts repetidos recuperada, borrador legacy sin dueño descartado, borrador de sesión verificada retenido, sin recargas automáticas de actualización y OTP inline conserva trabajo. Proceso final exit 0."
+    },
+    {
+      "id": "webkit-directed",
+      "label": "Reproducción dirigida WebKit",
+      "kind": "synthetic",
+      "scope": "WebKit 26.5 contra el mismo build final; un solo recorrido dirigido sin relajar assertions.",
+      "status": "PASS",
+      "summary": "Nombre→fase→contexto→recarga→revisión→dry-run→ZIP PASS, sin pageErrors. La corrida combinada previa conserva 12 PASS y un timeout WebKit no reproducido; la causa sigue sin determinar y ambos recibos se publican."
+    },
+    {
+      "id": "security-targeted",
+      "label": "Fronteras de seguridad corregidas",
+      "kind": "synthetic",
+      "scope": "Suite de regresión contextual, Electron y tipos antes de la verificación integral final.",
+      "status": "PASS",
+      "summary": "121/121 pruebas de seguridad aprobadas; snapshots inválidos, Markdown/YAML, rutas ZIP/filesystem, emisor IPC y selección de adjuntos. Se preserva el diseño inicial independiente de Astra ultra y el recibo de cambios separado."
+    },
+    {
+      "id": "dependency-inventory",
+      "label": "Inventario de dependencias",
+      "kind": "source-review",
+      "scope": "709 componentes instalados de desarrollo/build; dependencias sin cambios en esta entrega.",
+      "status": "PASS",
+      "summary": "Inventario completado: 0 vulnerabilidades altas/críticas, 8 moderadas en la cadena Electron/build. PASS significa inventario ejecutado y límites publicados, no ausencia de toda vulnerabilidad."
+    },
+    {
+      "id": "production-readback",
+      "label": "Artefacto público y controles HTTP",
+      "kind": "public-readback",
+      "scope": "Readback anónimo de accreatio.com y despliegue exacto de Cloudflare.",
+      "status": "PASS",
+      "summary": "Bundle de 506718 bytes idéntico al build probado; rutas públicas y legales 200, ejemplos idénticos, cuenta anónima 401/no-store, métodos Google/GitHub activos y OTP propio deshabilitado. CSP script-src self, object-src none, nosniff y frame DENY presentes. ACCOUNT_DB conservada sin migración ni nuevos secretos."
+    }
+  ],
+  "evidenceLimits": [
+    "No existe garantía de seguridad absoluta. La validación contextual no es antivirus ni analiza semánticamente binarios, PDF u Office; tampoco garantiza inmunidad a prompt injection en herramientas externas.",
+    "No se determina automáticamente si una idea viola copyright ni se bloquean cuentas por palabras. Los ToS fijan obligaciones, la creación sigue local y no se añadió vigilancia del contenido ni un servicio de moderación pagado.",
+    "La corrida adicional combinada del build final terminó con 12 PASS y un timeout WebKit esperando la selección de fase. Una única reproducción dirigida sobre el mismo asset aprobó todo el recorrido. No se demostró la causa del fallo intermitente; ambos recibos quedan conservados sin sustituir el resultado fallido por una afirmación de todas las corridas verdes.",
+    "No se realizó OAuth con consentimiento personal de producción ni exportación autenticada de una cuenta real en esta entrega; sí handlers/backend reales locales con proveedores sintéticos y readback público real. WebKit local no equivale a Safari en un iPhone físico.",
+    "La comprobación del repositorio hermano upstream de AEKR se omitió por depender de otro checkout; sí aprobaron el branding fijado, la verificación offline y las copias ZIP vendorizadas. No se presentan como una auditoría nueva del repositorio upstream.",
+    "Se detectan 8 vulnerabilidades moderadas de la cadena Electron/build y 0 altas/críticas según el inventario fechado. Lighthouse SEO69 conserva la política noindex de beta; los demás puntajes tampoco certifican accesibilidad universal.",
+    "Electron permanece congelado: se comprobaron localmente sus correcciones de frontera sin distribuir un nuevo instalador. No hay sandbox atómico contra un proceso local hostil que modifique directorios simultáneamente.",
+    "Los chequeos visuales y las fixtures automatizadas no predicen todos los usos humanos o dispositivos. La entrega final está completada por IA y estos límites no introducen gates humanos."
+  ],
+  "attachments": [
+    {
+      "file": "iab-production-0.9.1.png",
+      "classification": "public-anonymous",
+      "bytes": 41399,
+      "sha256": "789b50bd118df2ba7788434e2c8f2e679da2539ced2d97edf40d02f649854091"
+    },
+    {
+      "file": "iab-account-b-empty.png",
+      "classification": "synthetic",
+      "bytes": 41884,
+      "sha256": "0120656f9132e39abab27933384221da39785e45dad2d865d21d756f044832e2"
+    },
+    {
+      "file": "iab-final-review-purple.png",
+      "classification": "synthetic",
+      "bytes": 56330,
+      "sha256": "2a78de0ed8ac1ca2edd9f73feed501e47b07607551de16354e2a2c28c7bc5eb2"
+    },
+    {
+      "file": "iab-synthetic-receipt.json",
+      "classification": "synthetic",
+      "bytes": 864,
+      "sha256": "cad57a26198d47e1973bc50506fb311b5b2aba178d634a041b1de64ad0908b92"
+    },
+    {
+      "file": "account-isolation-receipt.json",
+      "classification": "synthetic",
+      "bytes": 427,
+      "sha256": "be414f9c4d25582d4ae8b7efdb6af6b4f3d46fba6284b8d76315cb7c43a818d4"
+    },
+    {
+      "file": "identity-continuity-receipt.json",
+      "classification": "synthetic",
+      "bytes": 725,
+      "sha256": "d0b25c8244696cfabbaa5f0681328286c5c47276387a2eb51dfd71d6376858f3"
+    },
+    {
+      "file": "integrated-functional-combined.json",
+      "classification": "synthetic",
+      "bytes": 2605,
+      "sha256": "00ccdd9326951b4ce61ed4d99e77f08776fa960cc46d3983a10e90aa5fbbf65c"
+    },
+    {
+      "file": "integrated-functional-webkit-directed.json",
+      "classification": "synthetic",
+      "bytes": 475,
+      "sha256": "00192f5f546e01d72facf9492d2e4df1612758232be29ee632cbcf4b0c573b81"
+    },
+    {
+      "file": "export-load.json",
+      "classification": "synthetic",
+      "bytes": 13384,
+      "sha256": "e44ca5cff91862879df60a75e5265848e5bea2edf052691eb83ccb63f75cedc0"
+    },
+    {
+      "file": "dependency-inventory.json",
+      "classification": "synthetic",
+      "bytes": 267,
+      "sha256": "2a0620ac9b8ca0a0fb322cbe8c19b938ebae9cfcf15f80c7eaa71b01a51070f1"
+    }
+  ],
+  "preservation": {
+    "historicalReviewFiles": 24,
+    "historicalHashes": "PASS",
+    "preexistingImmutableFiles": 116,
+    "previous090Update": "BYTE_IDENTICAL",
+    "independentMaster": "BYTE_IDENTICAL"
+  },
+  "noPersonalOAuthClaim": true,
+  "noPhysicalIPhoneClaim": true,
+  "noAbsoluteSecurityOrCopyrightCertification": true
+}
