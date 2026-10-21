@@ -1,0 +1,92 @@
+{
+  "zipSha256": "1e24bf0320113c13139eaff9063579a8df3f7da794641bb144b445dac98f0590",
+  "zipBytes": 62231,
+  "uncompressedBytes": 59261,
+  "entries": [
+    {
+      "file": "huerto-comunitario/START.md",
+      "bytes": 836,
+      "sha256": "4ec790b8794aac924cd30525b2328a3c5ff64f94a2c86e7d59d571cb4ebb6003"
+    },
+    {
+      "file": "huerto-comunitario/CLAUDE.md",
+      "bytes": 11709,
+      "sha256": "bcb6a5c97165d80be957b61e86b1048d2ee71facb1b141986ed01c51cad6fa6a"
+    },
+    {
+      "file": "huerto-comunitario/AGENTS.md",
+      "bytes": 11709,
+      "sha256": "bcb6a5c97165d80be957b61e86b1048d2ee71facb1b141986ed01c51cad6fa6a"
+    },
+    {
+      "file": "huerto-comunitario/CODEX.md",
+      "bytes": 11709,
+      "sha256": "bcb6a5c97165d80be957b61e86b1048d2ee71facb1b141986ed01c51cad6fa6a"
+    },
+    {
+      "file": "huerto-comunitario/.claude/settings.json",
+      "bytes": 58,
+      "sha256": "6325509a6bc50fa4bb0fb45f63fc007735e9720be8f37f47f1ea035b7ea1f0c9"
+    },
+    {
+      "file": "huerto-comunitario/OWNER_PROFILE.md",
+      "bytes": 497,
+      "sha256": "b4505c51d39b07e11c98b62af8eb35d31daa027839d6e00202df119b24ff8b46"
+    },
+    {
+      "file": "huerto-comunitario/docs/master.md",
+      "bytes": 3428,
+      "sha256": "85743c0d63d495eb3c3a44df4c721c89a1f9ab362c6731add05afd84e191f06d"
+    },
+    {
+      "file": "huerto-comunitario/docs/delivery/definition-of-done.md",
+      "bytes": 3275,
+      "sha256": "8e43bf384d949349a9d4f3ac4af4cf461be6060b5c004a0261f29ba95eb2c56b"
+    },
+    {
+      "file": "huerto-comunitario/docs/delivery/orchestration-loop.md",
+      "bytes": 3538,
+      "sha256": "2d2d2ed50cae66bc9730cefeb654266e78cde95f84e528cec06847dea3f6a11c"
+    },
+    {
+      "file": "huerto-comunitario/docs/delivery/audit-checklist.md",
+      "bytes": 3510,
+      "sha256": "119d7e0bd7c7b496f63c288e5f4522a7eaecb6857d854c2913f30cc74e4a3076"
+    },
+    {
+      "file": "huerto-comunitario/docs/delivery/participants.md",
+      "bytes": 902,
+      "sha256": "3333f944c860f7fcebb1c07eff2a4327119b7a22c40f7f7636e79fa64f6e87ae"
+    },
+    {
+      "file": "huerto-comunitario/docs/adr/0001-record-architecture-decisions.md",
+      "bytes": 965,
+      "sha256": "fd40c331268ba455dc1485c3b233a19f2917e94043e3d3d37d10bd8119a87abf"
+    },
+    {
+      "file": "huerto-comunitario/docs/product/discovery.md",
+      "bytes": 333,
+      "sha256": "35454502db50ebc1b5a35ea4da33eec99b16b1201f712f755a23c2acc3e1ad62"
+    },
+    {
+      "file": "huerto-comunitario/PROJECT_PROMPT.md",
+      "bytes": 644,
+      "sha256": "42a8575768ef8ea1a3aba32fbe916a04b94d0c50d52739f86f1a58a607e24f4f"
+    },
+    {
+      "file": "huerto-comunitario/orchestrator/BUILD_ORCHESTRATOR.md",
+      "bytes": 5502,
+      "sha256": "f1522e1af598dddeb88ece05e418f867f8a9d2bd728500c974022c729d6a791f"
+    },
+    {
+      "file": "huerto-comunitario/.accreatio/project.json",
+      "bytes": 517,
+      "sha256": "788b626ea8f7274cfb4c1ec69594b2a52a31fa959d47b729724d59b76075397f"
+    },
+    {
+      "file": "huerto-comunitario/SETUP.md",
+      "bytes": 129,
+      "sha256": "f66775ff873b0a85369496d6ef1e2eef6625f2399502ebff43d8e68da65cbb7c"
+    }
+  ]
+}

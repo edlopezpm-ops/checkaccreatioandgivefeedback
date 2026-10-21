@@ -1,0 +1,28 @@
+# Start here
+
+## One step
+
+Open this folder in your IDE and paste this into its AI chat:
+
+```
+Read START.md, CLAUDE.md and docs/master.md. Then build the orchestrator
+following orchestrator/BUILD_ORCHESTRATOR.md and tell me what I still need
+to configure on my machine before we start.
+```
+
+That's it. The AI takes it from there.
+
+## What's here
+
+| Folder | What it is |
+| --- | --- |
+| `CLAUDE.md` · `AGENTS.md` · `CODEX.md` | The engineering rules. Identical copies, one per tool. |
+| `docs/` | Project status, done criteria, decisions. |
+| `orchestrator/` | How to build the orchestrator. No scripts: your AI writes them. |
+
+## Before you start
+
+We did not check your machine — this was generated in a browser and cannot see
+your computer. Your AI will tell you what's missing in the first step.
+
+Project: **Huerto comunitario**

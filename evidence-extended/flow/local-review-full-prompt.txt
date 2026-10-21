@@ -1,0 +1,62 @@
+Skip to content
+accreatio
+New project
+independent-review
+Blog
+About
+Local PWA · beta
+Go back
+New draft
+Step 8 of 8
+Final review
+Your project, ready to review
+Check your answers. The next step will ask for your final confirmation.
+Ready to confirm
+Foundation · edit
+Context · edit
+Team · edit
+Delivery · edit
+Huerto Vecinal
+Starting idea
+
+Una aplicación web para coordinar un huerto vecinal. Permite registrar parcelas, tareas y turnos de riego para veinte vecinos; evita que se dupliquen tareas y que queden cultivos sin agua. Primera versión: solo lista sem…
+
+Team
+Generalist
+Delivery
+Downloadable project ZIP
+Attached files
+None
+Files and delivery limits
+Step-by-step plan
+View full prompt
+Full prompt
+Copy
+Download .md
+Create project [Huerto Vecinal].
+
+Current phase: [Idea]
+Known context: [Una aplicación web para coordinar un huerto vecinal. Permite registrar parcelas, tareas y turnos de riego para veinte vecinos; evita que se dupliquen tareas y que queden cultivos sin agua. Primera versión: solo lista semanal compartida de turnos. Vista móvil obligatoria.]
+Known constraints: [Sin pagos, sin servicios de coste obligatorio y sin publicar datos personales de los vecinos.]
+Route: [local]
+Planned participants (1):
+1. [participant-01] Generalist — Global view and coordination
+Expected action: [repository]
+Attached discovery sources: [None]
+
+Follow toolkit/MASTER_SOP.md and toolkit/project-scaffolds/project-lifecycle/SOP.md.
+Review without writing
+On by default
+
+Dry run: no files will be created and no download will be requested.
+
+Review and confirm
+Preview without creating files
+Back
+
+You can go back and change your answers. You confirm at the end.
+
+FAQ
+ToS
+Cookie preferences
+BUILT WITH AEKR

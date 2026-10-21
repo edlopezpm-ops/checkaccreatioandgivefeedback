@@ -1,0 +1,6 @@
+### Result
+{"viewport":[390,844],"googleButton":{"top":906.2973022460938,"height":43.99620819091797},"policyFont":"11.9px","policyHeight":294.5549011230469,"documentHeight":1423}
+### Ran Playwright code
+```js
+await (async (page) => { await page.evaluate(() => scrollTo(0,0)); return await page.evaluate(() => {const button=[...document.querySelectorAll('button')].find(el=>el.textContent.includes('Continue with Google'));const policy=document.querySelector('.web-signin__policy p');return {viewport:[innerWidth,innerHeight],googleButton:button?{top:button.getBoundingClientRect().top,height:button.getBoundingClientRect().height}:null,policyFont:policy?getComputedStyle(policy).fontSize:null,policyHeight:document.querySelector('.web-signin__policy')?.getBoundingClientRect().height,documentHeight:document.documentElement.scrollHeight};}); })(page);
+```

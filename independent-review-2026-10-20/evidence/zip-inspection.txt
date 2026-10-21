@@ -1,0 +1,95 @@
+
+Algorithm : SHA256
+Hash      : 1E24BF0320113C13139EAFF9063579A8DF3F7DA794641BB144B445DAC98F0590
+Path      : C:\Users\edlop\OneDrive\Documents\VS Code\accreatio\.local\logs\independent-review-2026-10-20\product\.playwright-cli\huerto-comunitario.zip
+
+
+FullName                                                          Length
+--------                                                          ------
+huerto-comunitario/START.md                                          836
+huerto-comunitario/CLAUDE.md                                       11709
+huerto-comunitario/AGENTS.md                                       11709
+huerto-comunitario/CODEX.md                                        11709
+huerto-comunitario/.claude/settings.json                              58
+huerto-comunitario/OWNER_PROFILE.md                                  497
+huerto-comunitario/docs/master.md                                   3428
+huerto-comunitario/docs/delivery/definition-of-done.md              3275
+huerto-comunitario/docs/delivery/orchestration-loop.md              3538
+huerto-comunitario/docs/delivery/audit-checklist.md                 3510
+huerto-comunitario/docs/delivery/participants.md                     902
+huerto-comunitario/docs/adr/0001-record-architecture-decisions.md    965
+huerto-comunitario/docs/product/discovery.md                         333
+huerto-comunitario/PROJECT_PROMPT.md                                 644
+huerto-comunitario/orchestrator/BUILD_ORCHESTRATOR.md               5502
+huerto-comunitario/.accreatio/project.json                           517
+huerto-comunitario/SETUP.md                                          129
+
+{
+  "entries": 17,
+  "bytes": 59261.0,
+  "promptPathsExist": 0,
+  "orchestrationConfigPresent": 0
+}
+huerto-comunitario/START.md
+# Start here
+
+## One step
+
+Open this folder in your IDE and paste this into its AI chat:
+
+```
+Read START.md, CLAUDE.md and docs/master.md. Then build the orchestrator
+following orchestrator/BUILD_ORCHESTRATOR.md and tell me what I still need
+to configure on my machine before we start.
+```
+
+That's it. The AI takes it from there.
+
+## What's here
+
+| Folder | What it is |
+| --- | --- |
+| `CLAUDE.md` · `AGENTS.md` · `CODEX.md` | The engineering rules. Identical copies, one per tool. |
+| `docs/` | Project status, done criteria, decisions. |
+| `orchestrator/` | How to build the orchestrator. No scripts: your AI writes them. |
+
+## Before you start
+
+We did not check your machine — this was generated in a browser and cannot see
+your computer. Your AI will tell you what's missing in the first step.
+
+Project: **Huerto comunitario**
+
+huerto-comunitario/docs/product/discovery.md
+# Discovery
+
+## Context
+
+Una app local para que veinte vecinos reserven turnos de riego del huerto y vean las tareas pendientes. El problema actual es que coordinan por mensajes y duplican los turnos.
+
+## Constraints
+
+Cero servicios de pago. Primera version para Windows; sin datos personales salvo nombres elegidos por los vecinos.
+
+huerto-comunitario/PROJECT_PROMPT.md
+Create project [Huerto comunitario].
+
+Current phase: [Idea]
+Known context: [Una app local para que veinte vecinos reserven turnos de riego del huerto y vean las tareas pendientes. El problema actual es que coordinan por mensajes y duplican los turnos.]
+Known constraints: [Cero servicios de pago. Primera version para Windows; sin datos personales salvo nombres elegidos por los vecinos.]
+Route: [local]
+Planned participants (1):
+1. [participant-01] Generalist — Global view and coordination
+Expected action: [repository]
+Attached discovery sources: [None]
+
+Follow toolkit/MASTER_SOP.md and toolkit/project-scaffolds/project-lifecycle/SOP.md.
+huerto-comunitario/SETUP.md
+# Setup
+
+The browser can't run these steps for you. From the folder where you extracted this ZIP:
+
+```
+cd huerto-comunitario
+```
+

@@ -1,0 +1,120 @@
+{
+  "reviewDateLocal": "2026-10-20",
+  "timezone": "America/New_York",
+  "localHead": "70612512e2115036fa71a08075a596a04bbff942",
+  "note": "Final selection including navigation observations. Public and local fixture evidence are separate; no production source parity or backend verification claimed.",
+  "files": [
+    {
+      "file": "contrast-measurements.json",
+      "bytes": 776,
+      "width": null,
+      "height": null,
+      "sha256": "8DFD50AF6D2AC774FACD5D8506AAE29BA52AF920D1F44BBD496236ED7FF53F4E"
+    },
+    {
+      "file": "huerto-comunitario-sample.zip",
+      "bytes": 62231,
+      "width": null,
+      "height": null,
+      "sha256": "1E24BF0320113C13139EAFF9063579A8DF3F7DA794641BB144B445DAC98F0590"
+    },
+    {
+      "file": "inspect-navigation.mjs",
+      "bytes": 2521,
+      "width": null,
+      "height": null,
+      "sha256": "751F42B4CA118CECC66D2A633C342B7AB0605C3DE423B4EAD8933EA13CC7DF17"
+    },
+    {
+      "file": "local-builder-desktop.png",
+      "bytes": 315083,
+      "width": 1440,
+      "height": 1000,
+      "sha256": "725B5BDAA6E4A742D63DE5D4A2FDCDC36E8AD597053011664D504F3F7EEF0025"
+    },
+    {
+      "file": "local-output-fixture.png",
+      "bytes": 425014,
+      "width": 1113,
+      "height": 1686,
+      "sha256": "8D402E90D801931546B5EEC4AA5364D303D9B9B00184BD86E2B806C7030D615B"
+    },
+    {
+      "file": "navigation-after-browser-back.json",
+      "bytes": 54,
+      "width": null,
+      "height": null,
+      "sha256": "6F55134186897856AFA4A4A6F5D26071562D3F794EABF7676E2714DA83F35B2F"
+    },
+    {
+      "file": "navigation-after-browser-forward.json",
+      "bytes": 1755,
+      "width": null,
+      "height": null,
+      "sha256": "DDE5080008C0BE2B2F125951C3692C9137FA3538761F448F7408015BD0019697"
+    },
+    {
+      "file": "navigation-before-browser-back.json",
+      "bytes": 1890,
+      "width": null,
+      "height": null,
+      "sha256": "56B1DF0CD3FED58611D537A32A30EE35E4B0340FA4A1AF0F05628C23C1ED4DA4"
+    },
+    {
+      "file": "navigation-recovered-idea.json",
+      "bytes": 1834,
+      "width": null,
+      "height": null,
+      "sha256": "AE57C5E7FE00BF1199455FBB27BDD5944FB0635A9809C0F35ABA6CD29F13C3A7"
+    },
+    {
+      "file": "public-access-mobile.png",
+      "bytes": 129113,
+      "width": 390,
+      "height": 1445,
+      "sha256": "E7C033EC2804F7C493A79560F060B5D163E8C69F242145AB1289C0DEB068FD2A"
+    },
+    {
+      "file": "public-blog-snapshot.txt",
+      "bytes": 14289,
+      "width": null,
+      "height": null,
+      "sha256": "CB035E6B0C06A8A624E7FBB0C603E6F6CE43D2BDADB2594592A5802983A897B6"
+    },
+    {
+      "file": "public-mobile-blog-reading.png",
+      "bytes": 136424,
+      "width": 390,
+      "height": 844,
+      "sha256": "5A9133FA263CED5DA47023A2175ABE431220514F102643607F7452B2CD90FC95"
+    },
+    {
+      "file": "public-signin-measurements.txt",
+      "bytes": 856,
+      "width": null,
+      "height": null,
+      "sha256": "7F38339A48E61F604A1711C8158D4864411FF103F21EDA8EF2AE9A34DAF69035"
+    },
+    {
+      "file": "public-welcome-desktop.png",
+      "bytes": 676705,
+      "width": 1440,
+      "height": 1109,
+      "sha256": "975A062EBACDF65E92071E5E218141F966C399AAEACA5CEC7D1CF2EBD27C7435"
+    },
+    {
+      "file": "review-fixture.mjs",
+      "bytes": 1725,
+      "width": null,
+      "height": null,
+      "sha256": "6CDB72E736409EEB5388B166BBCD929A9C67EEF9DCD027D3E59E6FAC3BE1C64B"
+    },
+    {
+      "file": "zip-inspection.txt",
+      "bytes": 3864,
+      "width": null,
+      "height": null,
+      "sha256": "E65F2D861C974A012F48EE3D3FD435BC10B0A6CA315F122F9C8399BF34CAF6FC"
+    }
+  ]
+}

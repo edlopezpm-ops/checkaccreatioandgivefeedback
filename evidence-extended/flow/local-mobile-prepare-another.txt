@@ -1,0 +1,103 @@
+Skip to content
+accreatio
+New project
+independent-review
+Blog
+About
+Download the same ZIP again
+Retry an accepted authorization within 48 hours without using extra allowance.
+Go back
+New draft
+Step 8 of 8
+Final review
+Your project, ready to review
+Check your answers. The next step will ask for your final confirmation.
+Ready to confirm
+Foundation · edit
+Context · edit
+Team · edit
+Delivery · edit
+Huerto Vecinal
+Starting idea
+
+Una aplicación web para coordinar un huerto vecinal. Permite registrar parcelas, tareas y turnos de riego para veinte vecinos; evita que se dupliquen tareas y que queden cultivos sin agua. Primera versión: solo lista sem…
+
+Team
+Generalist
+Delivery
+Downloadable project ZIP
+Attached files
+None
+Files and delivery limits
+Step-by-step plan
+View full prompt
+Review without writing
+On by default
+
+We'll prepare a downloadable ZIP after your final confirmation.
+
+Review and confirm
+Review ZIP download
+Back
+
+You can go back and change your answers. You confirm at the end.
+
+FAQ
+ToS
+Cookie preferences
+
+- link "Skip to content":
+  - /url: "#app-content"
+- banner:
+  - button "Go to accreatio home":
+    - strong: accreatio
+  - navigation "Product":
+    - button "New project"
+    - button "Account for independent-review": independent-review
+    - button "Blog"
+    - button "About"
+  - button "Switch to Spanish"
+- button "Download the same ZIP again"
+- text: Retry an accepted authorization within 48 hours without using extra allowance.
+- main:
+  - button "Go back"
+  - button "New draft"
+  - text: Step 8 of 8
+  - strong: Final review
+  - progressbar "Project progress"
+  - heading "Your project, ready to review" [level=1]
+  - text: Check your answers. The next step will ask for your final confirmation.
+  - strong: Ready to confirm
+  - button "Foundation · edit"
+  - button "Context · edit"
+  - button "Team · edit"
+  - button "Delivery · edit"
+  - heading "Huerto Vecinal" [level=2]
+  - text: Starting idea
+  - paragraph: "Una aplicación web para coordinar un huerto vecinal. Permite registrar parcelas, tareas y turnos de riego para veinte vecinos; evita que se dupliquen tareas y que queden cultivos sin agua. Primera versión: solo lista sem…"
+  - term: Team
+  - definition: Generalist
+  - term: Delivery
+  - definition: Downloadable project ZIP
+  - term: Attached files
+  - definition: None
+  - group: Files and delivery limits
+  - group: Step-by-step plan
+  - group: View full prompt
+  - checkbox "Review without writing On by default"
+  - strong: Review without writing
+  - text: On by default
+  - paragraph: We'll prepare a downloadable ZIP after your final confirmation.
+  - button "Review and confirm Review ZIP download"
+  - button "Back"
+  - paragraph: You can go back and change your answers. You confirm at the end.
+  - navigation "Help and terms":
+    - button "FAQ"
+    - button "Terms of Service": ToS
+- button "Cookie preferences"
+- link "Instagram (opens in a new tab)":
+  - /url: https://www.instagram.com/__aekr/
+- img "X (profile pending)"
+- img "LinkedIn (profile pending)"
+- link "Built with AEKR (opens in a new tab)":
+  - /url: https://aekr.io

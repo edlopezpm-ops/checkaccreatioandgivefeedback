@@ -1,0 +1,7 @@
+# Setup
+
+The browser can't run these steps for you. From the folder where you extracted this ZIP:
+
+```
+cd huerto-comunitario
+```

@@ -1,0 +1,12 @@
+Create project [Huerto comunitario].
+
+Current phase: [Idea]
+Known context: [Una app local para que veinte vecinos reserven turnos de riego del huerto y vean las tareas pendientes. El problema actual es que coordinan por mensajes y duplican los turnos.]
+Known constraints: [Cero servicios de pago. Primera version para Windows; sin datos personales salvo nombres elegidos por los vecinos.]
+Route: [local]
+Planned participants (1):
+1. [participant-01] Generalist — Global view and coordination
+Expected action: [repository]
+Attached discovery sources: [None]
+
+Follow toolkit/MASTER_SOP.md and toolkit/project-scaffolds/project-lifecycle/SOP.md.

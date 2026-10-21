@@ -1,0 +1,523 @@
+{
+  "schema": 1,
+  "dateLocal": "2026-10-20",
+  "timezone": "America/New_York",
+  "builtAtUtc": "2026-10-21T02:55:21.242Z",
+  "repository": "edlopezpm-ops/checkaccreatioandgivefeedback",
+  "publicSite": "https://edlopezpm-ops.github.io/checkaccreatioandgivefeedback/",
+  "productVersion": "0.8.0",
+  "sourceHead": "70612512e2115036fa71a08075a596a04bbff942",
+  "sourceRepositoryVisibility": "private",
+  "mainHtmlContainsPreviousVerdicts": false,
+  "previousReviewsSeparate": true,
+  "screenshots": 35,
+  "sourceExcerpts": 30,
+  "appTestsExecutedForDossier": false,
+  "productChanges": false,
+  "limits": [
+    "public and local fixture observations are separate",
+    "no exact production/source parity assertion",
+    "no real account data or secrets",
+    "static source observations are not runtime verification"
+  ],
+  "files": [
+    {
+      "file": "independent-review-2026-10-20/evidence/contrast-measurements.json",
+      "original": "docs/independent-review-2026-10-20/evidence/contrast-measurements.json",
+      "originalSha256": "8dfd50af6d2ac774facd5d8506aae29ba52af920d1f44bbd496236ed7ff53f4e",
+      "publishedSha256": "8dfd50af6d2ac774facd5d8506aae29ba52af920d1f44bbd496236ed7ff53f4e",
+      "purpose": "Selected original review evidence"
+    },
+    {
+      "file": "independent-review-2026-10-20/evidence/huerto-comunitario-sample.zip",
+      "original": "docs/independent-review-2026-10-20/evidence/huerto-comunitario-sample.zip",
+      "originalSha256": "1e24bf0320113c13139eaff9063579a8df3f7da794641bb144b445dac98f0590",
+      "publishedSha256": "1e24bf0320113c13139eaff9063579a8df3f7da794641bb144b445dac98f0590",
+      "purpose": "Selected original review evidence"
+    },
+    {
+      "file": "independent-review-2026-10-20/evidence/inspect-navigation.mjs",
+      "original": "docs/independent-review-2026-10-20/evidence/inspect-navigation.mjs",
+      "originalSha256": "751f42b4ca118cecc66d2a633c342b7ab0605c3de423b4ead8933ea13cc7df17",
+      "publishedSha256": "751f42b4ca118cecc66d2a633c342b7ab0605c3de423b4ead8933ea13cc7df17",
+      "purpose": "Selected original review evidence"
+    },
+    {
+      "file": "independent-review-2026-10-20/evidence/local-builder-desktop.png",
+      "original": "docs/independent-review-2026-10-20/evidence/local-builder-desktop.png",
+      "originalSha256": "725b5bdaa6e4a742d63de5d4a2fdcdc36e8ad597053011664d504f3f7eef0025",
+      "publishedSha256": "725b5bdaa6e4a742d63de5d4a2fdcdc36e8ad597053011664d504f3f7eef0025",
+      "purpose": "Selected original review evidence"
+    },
+    {
+      "file": "independent-review-2026-10-20/evidence/local-output-fixture.png",
+      "original": "docs/independent-review-2026-10-20/evidence/local-output-fixture.png",
+      "originalSha256": "8d402e90d801931546b5eec4aa5364d303d9b9b00184bd86e2b806c7030d615b",
+      "publishedSha256": "8d402e90d801931546b5eec4aa5364d303d9b9b00184bd86e2b806c7030d615b",
+      "purpose": "Selected original review evidence"
+    },
+    {
+      "file": "independent-review-2026-10-20/evidence/navigation-after-browser-back.json",
+      "original": "docs/independent-review-2026-10-20/evidence/navigation-after-browser-back.json",
+      "originalSha256": "6f55134186897856afa4a4a6f5d26071562d3f794eabf7676e2714da83f35b2f",
+      "publishedSha256": "6f55134186897856afa4a4a6f5d26071562d3f794eabf7676e2714da83f35b2f",
+      "purpose": "Selected original review evidence"
+    },
+    {
+      "file": "independent-review-2026-10-20/evidence/navigation-after-browser-forward.json",
+      "original": "docs/independent-review-2026-10-20/evidence/navigation-after-browser-forward.json",
+      "originalSha256": "dde5080008c0be2b2f125951c3692c9137fa3538761f448f7408015bd0019697",
+      "publishedSha256": "dde5080008c0be2b2f125951c3692c9137fa3538761f448f7408015bd0019697",
+      "purpose": "Selected original review evidence"
+    },
+    {
+      "file": "independent-review-2026-10-20/evidence/navigation-before-browser-back.json",
+      "original": "docs/independent-review-2026-10-20/evidence/navigation-before-browser-back.json",
+      "originalSha256": "56b1df0cd3fed58611d537a32a30ee35e4b0340fa4a1af0f05628c23c1ed4da4",
+      "publishedSha256": "56b1df0cd3fed58611d537a32a30ee35e4b0340fa4a1af0f05628c23c1ed4da4",
+      "purpose": "Selected original review evidence"
+    },
+    {
+      "file": "independent-review-2026-10-20/evidence/navigation-recovered-idea.json",
+      "original": "docs/independent-review-2026-10-20/evidence/navigation-recovered-idea.json",
+      "originalSha256": "ae57c5e7fe00bf1199455fbb27bdd5944fb0635a9809c0f35aba6cd29f13c3a7",
+      "publishedSha256": "ae57c5e7fe00bf1199455fbb27bdd5944fb0635a9809c0f35aba6cd29f13c3a7",
+      "purpose": "Selected original review evidence"
+    },
+    {
+      "file": "independent-review-2026-10-20/evidence/public-access-mobile.png",
+      "original": "docs/independent-review-2026-10-20/evidence/public-access-mobile.png",
+      "originalSha256": "e7c033ec2804f7c493a79560f060b5d163e8c69f242145ab1289c0deb068fd2a",
+      "publishedSha256": "e7c033ec2804f7c493a79560f060b5d163e8c69f242145ab1289c0deb068fd2a",
+      "purpose": "Selected original review evidence"
+    },
+    {
+      "file": "independent-review-2026-10-20/evidence/public-blog-snapshot.txt",
+      "original": "docs/independent-review-2026-10-20/evidence/public-blog-snapshot.txt",
+      "originalSha256": "cb035e6b0c06a8a624e7fbb0c603e6f6ce43d2bdadb2594592a5802983a897b6",
+      "publishedSha256": "cb035e6b0c06a8a624e7fbb0c603e6f6ce43d2bdadb2594592a5802983a897b6",
+      "purpose": "Selected original review evidence"
+    },
+    {
+      "file": "independent-review-2026-10-20/evidence/public-mobile-blog-reading.png",
+      "original": "docs/independent-review-2026-10-20/evidence/public-mobile-blog-reading.png",
+      "originalSha256": "5a9133fa263ced5da47023a2175abe431220514f102643607f7452b2cd90fc95",
+      "publishedSha256": "5a9133fa263ced5da47023a2175abe431220514f102643607f7452b2cd90fc95",
+      "purpose": "Selected original review evidence"
+    },
+    {
+      "file": "independent-review-2026-10-20/evidence/public-signin-measurements.txt",
+      "original": "docs/independent-review-2026-10-20/evidence/public-signin-measurements.txt",
+      "originalSha256": "7f38339a48e61f604a1711c8158d4864411ff103f21eda8ef2ae9a34daf69035",
+      "publishedSha256": "7f38339a48e61f604a1711c8158d4864411ff103f21eda8ef2ae9a34daf69035",
+      "purpose": "Selected original review evidence"
+    },
+    {
+      "file": "independent-review-2026-10-20/evidence/public-welcome-desktop.png",
+      "original": "docs/independent-review-2026-10-20/evidence/public-welcome-desktop.png",
+      "originalSha256": "975a062ebacdf65e92071e5e218141f966c399aaeaca5cec7d1cf2ebd27c7435",
+      "publishedSha256": "975a062ebacdf65e92071e5e218141f966c399aaeaca5cec7d1cf2ebd27c7435",
+      "purpose": "Selected original review evidence"
+    },
+    {
+      "file": "independent-review-2026-10-20/evidence/review-fixture.mjs",
+      "original": "docs/independent-review-2026-10-20/evidence/review-fixture.mjs",
+      "originalSha256": "6cdb72e736409eeb5388b166bbcd929a9c67eef9dcd027d3e59e6fac3be1c64b",
+      "publishedSha256": "6cdb72e736409eeb5388b166bbcd929a9c67eef9dcd027d3e59e6fac3be1c64b",
+      "purpose": "Selected original review evidence"
+    },
+    {
+      "file": "independent-review-2026-10-20/evidence/zip-inspection.txt",
+      "original": "docs/independent-review-2026-10-20/evidence/zip-inspection.txt",
+      "originalSha256": "e65f2d861c974a012f48ee3d3fd435bc10b0a6ca315f122f9c8399bf34caf6fc",
+      "publishedSha256": "e65f2d861c974a012f48ee3d3fd435bc10b0a6ca315f122f9c8399bf34caf6fc",
+      "purpose": "Selected original review evidence"
+    },
+    {
+      "file": "independent-review-2026-10-20/evidence/manifest.json",
+      "original": "docs/independent-review-2026-10-20/evidence/manifest.json",
+      "originalSha256": "fa3eaeb5ed4135967ef6b59429022478862a33d60c189bc09641c15cc707bc37",
+      "publishedSha256": "fa3eaeb5ed4135967ef6b59429022478862a33d60c189bc09641c15cc707bc37",
+      "purpose": "Original evidence manifest"
+    },
+    {
+      "file": "independent-review-2026-10-20/evidence/manifest-v2.json",
+      "original": "docs/independent-review-2026-10-20/evidence/manifest-v2.json",
+      "originalSha256": "a783a9b64ebd62b9d7d2d3669fbb2c4429a0c12b4094ccdfcd8849d36d1d9587",
+      "publishedSha256": "a783a9b64ebd62b9d7d2d3669fbb2c4429a0c12b4094ccdfcd8849d36d1d9587",
+      "purpose": "Original evidence manifest"
+    },
+    {
+      "file": "assets/screenshots/flow/public-mobile.png",
+      "original": ".local/logs/independent-review-2026-10-20/flow/public-mobile.png",
+      "originalSha256": "021a7464ce7de5835de930c28427cdde7be812aa32f05967ddd6c3f16b55e9b2",
+      "publishedSha256": "021a7464ce7de5835de930c28427cdde7be812aa32f05967ddd6c3f16b55e9b2",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "assets/screenshots/root/public-es-privacy.png",
+      "original": ".local/logs/independent-review-2026-10-20/root/public-es-privacy.png",
+      "originalSha256": "89ea41149587e72dfc9498193cdf0695f0284c30e945bc618f667fa392b3c259",
+      "publishedSha256": "89ea41149587e72dfc9498193cdf0695f0284c30e945bc618f667fa392b3c259",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "assets/screenshots/design/public-mobile-cookie.png",
+      "original": ".local/logs/independent-review-2026-10-20/design/public-mobile-cookie.png",
+      "originalSha256": "12de791bf73c8cd8c2f6589532c543bcea26f8e65cc20b1c3bd5fe95981bcf06",
+      "publishedSha256": "12de791bf73c8cd8c2f6589532c543bcea26f8e65cc20b1c3bd5fe95981bcf06",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "assets/screenshots/root/public-es-access.png",
+      "original": ".local/logs/independent-review-2026-10-20/root/public-es-access.png",
+      "originalSha256": "ba074e5741ce9b610a5b0202bb75f429aeb93aa17e1bf97356331fa68a8293d8",
+      "publishedSha256": "ba074e5741ce9b610a5b0202bb75f429aeb93aa17e1bf97356331fa68a8293d8",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "assets/screenshots/root/public-es-about.png",
+      "original": ".local/logs/independent-review-2026-10-20/root/public-es-about.png",
+      "originalSha256": "55aa8b1ea49d0c46f68328d0a4644fd30d811b407a13ca949db0acc29bc35ab3",
+      "publishedSha256": "55aa8b1ea49d0c46f68328d0a4644fd30d811b407a13ca949db0acc29bc35ab3",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "assets/screenshots/design/public-mobile-about-top.png",
+      "original": ".local/logs/independent-review-2026-10-20/design/public-mobile-about-top.png",
+      "originalSha256": "5f932903a26321a93d2325c5d07a4ea2d9039db550c26421c023f9f3e59c43b9",
+      "publishedSha256": "5f932903a26321a93d2325c5d07a4ea2d9039db550c26421c023f9f3e59c43b9",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "assets/screenshots/root/public-es-blog.png",
+      "original": ".local/logs/independent-review-2026-10-20/root/public-es-blog.png",
+      "originalSha256": "f55356a936ffebb95a3488bf87836f641a982d6fd8a9625f2e2acf872380df75",
+      "publishedSha256": "f55356a936ffebb95a3488bf87836f641a982d6fd8a9625f2e2acf872380df75",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "assets/screenshots/design/public-mobile-blog-top.png",
+      "original": ".local/logs/independent-review-2026-10-20/design/public-mobile-blog-top.png",
+      "originalSha256": "92e2759ff66b31e7d4a1a4c3c0c9211add85a903e2add6844807f46b260761cf",
+      "publishedSha256": "92e2759ff66b31e7d4a1a4c3c0c9211add85a903e2add6844807f46b260761cf",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "assets/screenshots/design/local-builder-mobile.png",
+      "original": ".local/logs/independent-review-2026-10-20/design/local-builder-mobile.png",
+      "originalSha256": "3c2770be693fa58761a84b046d4683410f4af4090c3d7d10f5324e22d0fabbc9",
+      "publishedSha256": "3c2770be693fa58761a84b046d4683410f4af4090c3d7d10f5324e22d0fabbc9",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "assets/screenshots/design/local-step-2-desktop.png",
+      "original": ".local/logs/independent-review-2026-10-20/design/local-step-2-desktop.png",
+      "originalSha256": "9fd9a61ec1f06781f4d26d26574cbb12091c3dc1598332209e634736cdb3ee7b",
+      "publishedSha256": "9fd9a61ec1f06781f4d26d26574cbb12091c3dc1598332209e634736cdb3ee7b",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "assets/screenshots/design/local-step-3-desktop.png",
+      "original": ".local/logs/independent-review-2026-10-20/design/local-step-3-desktop.png",
+      "originalSha256": "2523d6bed3a8393f5c6cf8e411c824f2f00ac827444aba100a0aafefc7dd7f60",
+      "publishedSha256": "2523d6bed3a8393f5c6cf8e411c824f2f00ac827444aba100a0aafefc7dd7f60",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "assets/screenshots/design/local-step-4-desktop.png",
+      "original": ".local/logs/independent-review-2026-10-20/design/local-step-4-desktop.png",
+      "originalSha256": "cbecb7cd98a581d7a085191facfd362e85f64cf0f1bcdd1b8cc1519efeb3238c",
+      "publishedSha256": "cbecb7cd98a581d7a085191facfd362e85f64cf0f1bcdd1b8cc1519efeb3238c",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "assets/screenshots/design/local-step-5-desktop.png",
+      "original": ".local/logs/independent-review-2026-10-20/design/local-step-5-desktop.png",
+      "originalSha256": "94c3c52e675cbf9ace59540d12c224482adab78312d94845d119775d1a33295b",
+      "publishedSha256": "94c3c52e675cbf9ace59540d12c224482adab78312d94845d119775d1a33295b",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "assets/screenshots/design/local-step-6-desktop.png",
+      "original": ".local/logs/independent-review-2026-10-20/design/local-step-6-desktop.png",
+      "originalSha256": "824de073dbcacf3f80539ae5aef414a255595ea1ce55cda82906707f8fd29ba5",
+      "publishedSha256": "824de073dbcacf3f80539ae5aef414a255595ea1ce55cda82906707f8fd29ba5",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "assets/screenshots/design/local-roles-expanded-desktop.png",
+      "original": ".local/logs/independent-review-2026-10-20/design/local-roles-expanded-desktop.png",
+      "originalSha256": "ce4529dee258f09be191207f31e0e87ed1c5f458e9dd200f3fbcd93b41483af3",
+      "publishedSha256": "ce4529dee258f09be191207f31e0e87ed1c5f458e9dd200f3fbcd93b41483af3",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "assets/screenshots/design/local-roles-expanded-mobile.png",
+      "original": ".local/logs/independent-review-2026-10-20/design/local-roles-expanded-mobile.png",
+      "originalSha256": "874a42a5b76fae427c019a20aafd5ec275046c244ea5a9ed6348ffae217147c5",
+      "publishedSha256": "874a42a5b76fae427c019a20aafd5ec275046c244ea5a9ed6348ffae217147c5",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "assets/screenshots/design/local-step-7-desktop.png",
+      "original": ".local/logs/independent-review-2026-10-20/design/local-step-7-desktop.png",
+      "originalSha256": "27acaf5c82e8fb5830cdd62f99f03ee0f9917ef9b5c6c5f1b4a52eaf8e4bfc7e",
+      "publishedSha256": "27acaf5c82e8fb5830cdd62f99f03ee0f9917ef9b5c6c5f1b4a52eaf8e4bfc7e",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "assets/screenshots/design/local-step-8-desktop.png",
+      "original": ".local/logs/independent-review-2026-10-20/design/local-step-8-desktop.png",
+      "originalSha256": "def721e24fc727c77b36bd2b085277716660f86559e67090a934ea1d2a1c4ae3",
+      "publishedSha256": "def721e24fc727c77b36bd2b085277716660f86559e67090a934ea1d2a1c4ae3",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "assets/screenshots/design/local-step-8-mobile.png",
+      "original": ".local/logs/independent-review-2026-10-20/design/local-step-8-mobile.png",
+      "originalSha256": "3c5afac9c82b6c6b54414b8ae5f667f0d95f0bd966e537d6b6e8d527c05d3e2c",
+      "publishedSha256": "3c5afac9c82b6c6b54414b8ae5f667f0d95f0bd966e537d6b6e8d527c05d3e2c",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "assets/screenshots/copy/local-fixture-confirm-es.png",
+      "original": ".local/logs/independent-review-2026-10-20/copy/local-fixture-confirm-es.png",
+      "originalSha256": "9d537499fbfd3636c03f15940a8faa599085123e536ccc6418377c7dd7137986",
+      "publishedSha256": "9d537499fbfd3636c03f15940a8faa599085123e536ccc6418377c7dd7137986",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "assets/screenshots/design/local-confirm-mobile.png",
+      "original": ".local/logs/independent-review-2026-10-20/design/local-confirm-mobile.png",
+      "originalSha256": "2530ab9c9ba7e293186eec1ba1b6285429f97535ea867e9e38c46a931a87a0d2",
+      "publishedSha256": "2530ab9c9ba7e293186eec1ba1b6285429f97535ea867e9e38c46a931a87a0d2",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "assets/screenshots/flow/local-dryrun-confirmation.png",
+      "original": ".local/logs/independent-review-2026-10-20/flow/local-dryrun-confirmation.png",
+      "originalSha256": "bc4cccb3e8a0f33ffa94840724a9bd3d1020707e3317ffab83d36b9bd6ff0073",
+      "publishedSha256": "bc4cccb3e8a0f33ffa94840724a9bd3d1020707e3317ffab83d36b9bd6ff0073",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "assets/screenshots/flow/local-dryrun-result.png",
+      "original": ".local/logs/independent-review-2026-10-20/flow/local-dryrun-result.png",
+      "originalSha256": "12dc51bae0c953867eeba32e70066beac43ce8d0e38dd6d02a3a276bc64739d6",
+      "publishedSha256": "12dc51bae0c953867eeba32e70066beac43ce8d0e38dd6d02a3a276bc64739d6",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "assets/screenshots/flow/local-zip-confirmation.png",
+      "original": ".local/logs/independent-review-2026-10-20/flow/local-zip-confirmation.png",
+      "originalSha256": "bb36141becb60c4c1d0edd24bedab266c1d51455e67190c4323dbc790fc30086",
+      "publishedSha256": "bb36141becb60c4c1d0edd24bedab266c1d51455e67190c4323dbc790fc30086",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "assets/screenshots/flow/local-zip-result.png",
+      "original": ".local/logs/independent-review-2026-10-20/flow/local-zip-result.png",
+      "originalSha256": "7edcaa2f98df601bde863ccf0d3f7762dac38c5cfd3524ac775921393d6ea6a4",
+      "publishedSha256": "7edcaa2f98df601bde863ccf0d3f7762dac38c5cfd3524ac775921393d6ea6a4",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "assets/screenshots/flow/local-mobile-result.png",
+      "original": ".local/logs/independent-review-2026-10-20/flow/local-mobile-result.png",
+      "originalSha256": "c577c90de0bf1c066e7313eb77952ff85d5264cf48aa02016cf6845f375a05f8",
+      "publishedSha256": "c577c90de0bf1c066e7313eb77952ff85d5264cf48aa02016cf6845f375a05f8",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "assets/screenshots/flow/navigation-before-browser-back.png",
+      "original": ".local/logs/independent-review-2026-10-20/flow/navigation-before-browser-back.png",
+      "originalSha256": "de0e21ef21c6fd4b69c8725acc889637517abc5809357ba484f1827e6ffa2f02",
+      "publishedSha256": "de0e21ef21c6fd4b69c8725acc889637517abc5809357ba484f1827e6ffa2f02",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "assets/screenshots/flow/navigation-after-browser-back.png",
+      "original": ".local/logs/independent-review-2026-10-20/flow/navigation-after-browser-back.png",
+      "originalSha256": "cb9c3b8047859412e8abcaed51ad9ecefb4bd820c8849af4992e593d500d1836",
+      "publishedSha256": "cb9c3b8047859412e8abcaed51ad9ecefb4bd820c8849af4992e593d500d1836",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "assets/screenshots/flow/navigation-after-browser-forward.png",
+      "original": ".local/logs/independent-review-2026-10-20/flow/navigation-after-browser-forward.png",
+      "originalSha256": "abd41f7855b440ab41dc14ea12390e9fd7d32c66a680fef96624704ef925865e",
+      "publishedSha256": "abd41f7855b440ab41dc14ea12390e9fd7d32c66a680fef96624704ef925865e",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "assets/screenshots/flow/navigation-recovered-idea.png",
+      "original": ".local/logs/independent-review-2026-10-20/flow/navigation-recovered-idea.png",
+      "originalSha256": "d10a24f88253e09f0d8496f128be0e61a252d15b3a5831291361ece19bca9873",
+      "publishedSha256": "d10a24f88253e09f0d8496f128be0e61a252d15b3a5831291361ece19bca9873",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "assets/screenshots/flow/local-mobile-reload.png",
+      "original": ".local/logs/independent-review-2026-10-20/flow/local-mobile-reload.png",
+      "originalSha256": "a9370678f94e3f8a836e563b34915b8e11ff0bd0f8b0281e6199855c6a825d3a",
+      "publishedSha256": "a9370678f94e3f8a836e563b34915b8e11ff0bd0f8b0281e6199855c6a825d3a",
+      "purpose": "Visually reviewed gallery selection"
+    },
+    {
+      "file": "independent-review-2026-10-20/01-producto.md",
+      "original": "docs/independent-review-2026-10-20/01-producto.md",
+      "originalSha256": "d3b35a3f442841fb03dcee1c4c38187485249880a89ecf7475879612f3f84a9e",
+      "publishedSha256": "d3b35a3f442841fb03dcee1c4c38187485249880a89ecf7475879612f3f84a9e",
+      "purpose": "Complete audit text; only machine-local attachment links relocated"
+    },
+    {
+      "file": "independent-review-2026-10-20/02-diseno-visual.md",
+      "original": "docs/independent-review-2026-10-20/02-diseno-visual.md",
+      "originalSha256": "c90d293bb4bc4caa5204bb4b0bf63fc6d1cb709f1b370183b827dc35a0505dd9",
+      "publishedSha256": "6229e21f8fff445c4adf500e673825207744fa86fd15074464712b6b89c1bdd3",
+      "purpose": "Complete audit text; only machine-local attachment links relocated"
+    },
+    {
+      "file": "independent-review-2026-10-20/03-comunicacion.md",
+      "original": "docs/independent-review-2026-10-20/03-comunicacion.md",
+      "originalSha256": "5d9f18831706d0ca52868b9fc10e9d3cad89c3121cf2bfcee4907027f3483ef1",
+      "publishedSha256": "5d9f18831706d0ca52868b9fc10e9d3cad89c3121cf2bfcee4907027f3483ef1",
+      "purpose": "Complete audit text; only machine-local attachment links relocated"
+    },
+    {
+      "file": "evidence-extended/flow/local-expanded-plan.png",
+      "original": ".local/logs/independent-review-2026-10-20/flow/local-expanded-plan.png",
+      "originalSha256": "32e5046ff32d7ece52f5078ffd3200a6ca40a88bb0d500546be237dccabedf15",
+      "publishedSha256": "32e5046ff32d7ece52f5078ffd3200a6ca40a88bb0d500546be237dccabedf15",
+      "purpose": "Explicitly linked and reviewed audit attachment"
+    },
+    {
+      "file": "evidence-extended/flow/local-expanded-plan.json",
+      "original": ".local/logs/independent-review-2026-10-20/flow/local-expanded-plan.json",
+      "originalSha256": "caa1b5f67acbb5e77415e25a048a2775255a980f13d56f3905d88c511c9435d8",
+      "publishedSha256": "caa1b5f67acbb5e77415e25a048a2775255a980f13d56f3905d88c511c9435d8",
+      "purpose": "Explicitly linked and reviewed audit attachment"
+    },
+    {
+      "file": "evidence-extended/flow/local-review-full-prompt.txt",
+      "original": ".local/logs/independent-review-2026-10-20/flow/local-review-full-prompt.txt",
+      "originalSha256": "661aaf6632ffe26a358deadda7bcb265472fbf78cdd66d7d0cb5bc79ae81abb8",
+      "publishedSha256": "661aaf6632ffe26a358deadda7bcb265472fbf78cdd66d7d0cb5bc79ae81abb8",
+      "purpose": "Explicitly linked and reviewed audit attachment"
+    },
+    {
+      "file": "evidence-extended/flow/START.md.txt",
+      "original": ".local/logs/independent-review-2026-10-20/flow/START.md.txt",
+      "originalSha256": "b2af222ca017c74a601a8f446986fd9c720d5da16a04182f85762cf273eec4d4",
+      "publishedSha256": "b2af222ca017c74a601a8f446986fd9c720d5da16a04182f85762cf273eec4d4",
+      "purpose": "Explicitly linked and reviewed audit attachment"
+    },
+    {
+      "file": "evidence-extended/flow/zip-inventory.json",
+      "original": ".local/logs/independent-review-2026-10-20/flow/zip-inventory.json",
+      "originalSha256": "1f6acb6f6aafd0bcca8c49fdabca805ad65126e6d09881f8cb210265d27d57ba",
+      "publishedSha256": "1f6acb6f6aafd0bcca8c49fdabca805ad65126e6d09881f8cb210265d27d57ba",
+      "purpose": "Explicitly linked and reviewed audit attachment"
+    },
+    {
+      "file": "evidence-extended/flow/local-step-8-review.png",
+      "original": ".local/logs/independent-review-2026-10-20/flow/local-step-8-review.png",
+      "originalSha256": "a4c8bb4bad49bd2e20c7ff9ea982359670027a1ff922e896c081034160b849e9",
+      "publishedSha256": "a4c8bb4bad49bd2e20c7ff9ea982359670027a1ff922e896c081034160b849e9",
+      "purpose": "Explicitly linked and reviewed audit attachment"
+    },
+    {
+      "file": "evidence-extended/flow/local-review-edit-context.png",
+      "original": ".local/logs/independent-review-2026-10-20/flow/local-review-edit-context.png",
+      "originalSha256": "a6dcd5b1db9e01ff37fed5e2a38f39af9ec7bd42034ecbab8855e8e506f45a4e",
+      "publishedSha256": "a6dcd5b1db9e01ff37fed5e2a38f39af9ec7bd42034ecbab8855e8e506f45a4e",
+      "purpose": "Explicitly linked and reviewed audit attachment"
+    },
+    {
+      "file": "evidence-extended/flow/public-desktop.png",
+      "original": ".local/logs/independent-review-2026-10-20/flow/public-desktop.png",
+      "originalSha256": "ea9f8de3e532af458858a1026efaa07747a9081a243040892677e9ba77e67e9c",
+      "publishedSha256": "ea9f8de3e532af458858a1026efaa07747a9081a243040892677e9ba77e67e9c",
+      "purpose": "Explicitly linked and reviewed audit attachment"
+    },
+    {
+      "file": "evidence-extended/flow/public-signin.png",
+      "original": ".local/logs/independent-review-2026-10-20/flow/public-signin.png",
+      "originalSha256": "e15ea65f65d7b59f36ba1406ec46d474a88cc81a66be21a4700bccd9e6181dad",
+      "publishedSha256": "e15ea65f65d7b59f36ba1406ec46d474a88cc81a66be21a4700bccd9e6181dad",
+      "purpose": "Explicitly linked and reviewed audit attachment"
+    },
+    {
+      "file": "evidence-extended/flow/local-welcome-2.png",
+      "original": ".local/logs/independent-review-2026-10-20/flow/local-welcome-2.png",
+      "originalSha256": "ea1192bdc216962e9e175e50a2d143cd3fc4b9185f5ccebb231aa7636c6053ec",
+      "publishedSha256": "ea1192bdc216962e9e175e50a2d143cd3fc4b9185f5ccebb231aa7636c6053ec",
+      "purpose": "Explicitly linked and reviewed audit attachment"
+    },
+    {
+      "file": "evidence-extended/flow/local-step-6.png",
+      "original": ".local/logs/independent-review-2026-10-20/flow/local-step-6.png",
+      "originalSha256": "0aa28b92d3567142415509896e36e5eccd0d66a9a03f9d638a14dddf1a7e3e15",
+      "publishedSha256": "0aa28b92d3567142415509896e36e5eccd0d66a9a03f9d638a14dddf1a7e3e15",
+      "purpose": "Explicitly linked and reviewed audit attachment"
+    },
+    {
+      "file": "evidence-extended/flow/local-step-7.png",
+      "original": ".local/logs/independent-review-2026-10-20/flow/local-step-7.png",
+      "originalSha256": "a7eba9fb030531081528b2a5db3a0c90ca77de2b0588680bf33f37988ab653e3",
+      "publishedSha256": "a7eba9fb030531081528b2a5db3a0c90ca77de2b0588680bf33f37988ab653e3",
+      "purpose": "Explicitly linked and reviewed audit attachment"
+    },
+    {
+      "file": "evidence-extended/flow/local-mobile-prepare-another.txt",
+      "original": ".local/logs/independent-review-2026-10-20/flow/local-mobile-prepare-another.txt",
+      "originalSha256": "8b5ce2eac4a2b9efdac8238abf6686e2a847e39becba59828f3d6be95c1d98ee",
+      "publishedSha256": "8b5ce2eac4a2b9efdac8238abf6686e2a847e39becba59828f3d6be95c1d98ee",
+      "purpose": "Explicitly linked and reviewed audit attachment"
+    },
+    {
+      "file": "evidence-extended/flow/local-top-back-destination.png",
+      "original": ".local/logs/independent-review-2026-10-20/flow/local-top-back-destination.png",
+      "originalSha256": "d2e84529b097c3c574717a68b51ac3401a19b5931dc9dc5ca700f323bbfe7c6a",
+      "publishedSha256": "d2e84529b097c3c574717a68b51ac3401a19b5931dc9dc5ca700f323bbfe7c6a",
+      "purpose": "Explicitly linked and reviewed audit attachment"
+    },
+    {
+      "file": "evidence-extended/flow/local-step-2.png",
+      "original": ".local/logs/independent-review-2026-10-20/flow/local-step-2.png",
+      "originalSha256": "e7dba0c1b5a7521a9c2ef43d0fce4e732d100018e1bbc17ffe96198cc68f8647",
+      "publishedSha256": "e7dba0c1b5a7521a9c2ef43d0fce4e732d100018e1bbc17ffe96198cc68f8647",
+      "purpose": "Explicitly linked and reviewed audit attachment"
+    },
+    {
+      "file": "evidence-extended/flow/local-mobile-prepare-another.png",
+      "original": ".local/logs/independent-review-2026-10-20/flow/local-mobile-prepare-another.png",
+      "originalSha256": "7d2515ad5626376fd37fccce8ce4e9495c91365dda92d07397a51dc776a59edb",
+      "publishedSha256": "7d2515ad5626376fd37fccce8ce4e9495c91365dda92d07397a51dc776a59edb",
+      "purpose": "Explicitly linked and reviewed audit attachment"
+    },
+    {
+      "file": "independent-review-2026-10-20/04-flujo.md",
+      "original": "docs/independent-review-2026-10-20/04-flujo.md",
+      "originalSha256": "7a69b3f2a24cc4450a88f28aef97ba2f13419c23475e881f61c5f36ed9ada469",
+      "publishedSha256": "6b35ef0c523d72f119e2a911055b4054f13a46e57922d44cba991d5c3008415f",
+      "purpose": "Complete audit text; only machine-local attachment links relocated"
+    },
+    {
+      "file": "independent-review-2026-10-20/EVIDENCE.md",
+      "original": "docs/independent-review-2026-10-20/EVIDENCE.md",
+      "originalSha256": "06723f478cd13d89f9f731804e8b89a89c7bb8edc067a1202fb426b5ef9c1a6f",
+      "publishedSha256": "06723f478cd13d89f9f731804e8b89a89c7bb8edc067a1202fb426b5ef9c1a6f",
+      "purpose": "Complete audit text; only machine-local attachment links relocated"
+    },
+    {
+      "file": "INDEPENDENT_REVIEW_MASTER_2026-10-20.md",
+      "original": "docs/INDEPENDENT_REVIEW_MASTER_2026-10-20.md",
+      "originalSha256": "0e169f5e531c35a9572ba38c25aa1d22cc8abb9939adea52aa07144b839a5df8",
+      "publishedSha256": "0e169f5e531c35a9572ba38c25aa1d22cc8abb9939adea52aa07144b839a5df8",
+      "purpose": "Complete independent review master, unchanged"
+    }
+  ],
+  "productUrl": "https://accreatio.com/"
+}

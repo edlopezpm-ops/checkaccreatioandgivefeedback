@@ -1,0 +1,12 @@
+{
+  "method": "Relative sRGB luminance; (Llight + 0.05) / (Ldark + 0.05). Colors read from computed styles in local-measurements.json.",
+  "neutralInputBorder": [43, 50, 70],
+  "neutralInputFill": [13, 16, 25],
+  "borderAgainstInputFillRatio": 1.4904982125159614,
+  "exteriorCardSample": [15, 17, 27],
+  "borderAgainstExteriorCardRatio": 1.4757436007602769,
+  "exteriorSampleSource": "local-builder-desktop.png pixel (410,400); border pixel (420,400); fill pixel (430,400), see field-pixel-samples.json",
+  "inputText": [238, 240, 247],
+  "textAgainstInputFillRatio": 16.686053926501042,
+  "limitation": "This isolates the opaque input and its opaque border. It does not certify every interface component or the composited translucent card against the changing background."
+}

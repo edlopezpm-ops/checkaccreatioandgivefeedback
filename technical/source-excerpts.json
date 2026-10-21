@@ -1,0 +1,242 @@
+[
+  {
+    "file": "shared/domain.ts",
+    "start": 113,
+    "end": 139,
+    "sourceSha256": "9e225a85d98ef8782379a827b8226df9edae68d25902f60ec3aaf6db778dc724",
+    "excerptSha256": "69a578f000e08c2d6a70a28429870d3df46f45660f7cff05161d7af2f1e4d4bc",
+    "title": "Definición de proyecto"
+  },
+  {
+    "file": "shared/domain.ts",
+    "start": 205,
+    "end": 234,
+    "sourceSha256": "9e225a85d98ef8782379a827b8226df9edae68d25902f60ec3aaf6db778dc724",
+    "excerptSha256": "da4b15bdcddba48f49fcdd9d1fb1602feecbe471b197d5bb53c82196dbddca18",
+    "title": "Validación del dominio"
+  },
+  {
+    "file": "shared/domain.ts",
+    "start": 533,
+    "end": 569,
+    "sourceSha256": "9e225a85d98ef8782379a827b8226df9edae68d25902f60ec3aaf6db778dc724",
+    "excerptSha256": "3ab178ac7eef8ae0331c57520c1ef408bad2ff384a32e00e2a21d3c6bf749a6b",
+    "title": "Prompt y procedencia"
+  },
+  {
+    "file": "src/core.ts",
+    "start": 55,
+    "end": 127,
+    "sourceSha256": "d1aa1b49207067f54aeb6b6b9ee49dfd7916a25b7e179c93a5aea6c692c690d9",
+    "excerptSha256": "4151ce09d1799693e805b067870213b76cef6de11333be4f0ed47675a14b8afe",
+    "title": "Previsualización por host"
+  },
+  {
+    "file": "src/core.ts",
+    "start": 129,
+    "end": 184,
+    "sourceSha256": "d1aa1b49207067f54aeb6b6b9ee49dfd7916a25b7e179c93a5aea6c692c690d9",
+    "excerptSha256": "7c6cedaf6c2661c50a6581608be10315d5b0bbaf2e2c259baeebecd7be2aab6c",
+    "title": "Plan de preparación"
+  },
+  {
+    "file": "src/core.ts",
+    "start": 227,
+    "end": 249,
+    "sourceSha256": "d1aa1b49207067f54aeb6b6b9ee49dfd7916a25b7e179c93a5aea6c692c690d9",
+    "excerptSha256": "edb1e60bd31f44a1d2f2ae57d28b8f19d2990838e495eb3d15e3aef8181d5763",
+    "title": "Pasos que el navegador no ejecuta"
+  },
+  {
+    "file": "shared/exportManifest.ts",
+    "start": 49,
+    "end": 113,
+    "sourceSha256": "7c6f3618c68a224f9f8dac9134a849337c0a9c2012b2a792ac1dfef16b4b5138",
+    "excerptSha256": "e437cc09215ecc502616826d5da0ebb32f8efa309bb3b81adf934b9b0ddcbe2e",
+    "title": "Punto de entrada del paquete"
+  },
+  {
+    "file": "shared/exportManifest.ts",
+    "start": 247,
+    "end": 313,
+    "sourceSha256": "7c6f3618c68a224f9f8dac9134a849337c0a9c2012b2a792ac1dfef16b4b5138",
+    "excerptSha256": "467918d0041766424ed2ff398962f9a32af46779c868d0ba312ddf95b385f222",
+    "title": "Manifiesto web"
+  },
+  {
+    "file": "src/webExport.ts",
+    "start": 7,
+    "end": 17,
+    "sourceSha256": "3225a96dd61e1a46a7d33013e224de954234f7bd8216f39e46b7e8cf95502065",
+    "excerptSha256": "2dac6de416721be4bb66f9ca52e26021752aa9082cb990685e45abb3c4c7a5b9",
+    "title": "Límites específicos web"
+  },
+  {
+    "file": "src/webExport.ts",
+    "start": 87,
+    "end": 139,
+    "sourceSha256": "3225a96dd61e1a46a7d33013e224de954234f7bd8216f39e46b7e8cf95502065",
+    "excerptSha256": "da087c6173e5d6d9fa8d275a290b77648477c3f6b497a865b166752cb93e3c69",
+    "title": "Montaje de archivos y adjuntos"
+  },
+  {
+    "file": "src/bridge/web.ts",
+    "start": 127,
+    "end": 202,
+    "sourceSha256": "9d5af0c02b5d518c0fde5f8413b6ab04c1cd9aa62764e53234a6f93b97033d70",
+    "excerptSha256": "2a0b173314c85e02ee19301f6201929ed0c698a24f1fb1ce1926065fc71bfa8d",
+    "title": "Simulación, autorización y ZIP"
+  },
+  {
+    "file": "src/bridge/web.ts",
+    "start": 245,
+    "end": 272,
+    "sourceSha256": "9d5af0c02b5d518c0fde5f8413b6ab04c1cd9aa62764e53234a6f93b97033d70",
+    "excerptSha256": "82e5ae550df36a516b62c21085735b9aab2bed4d68e1569bc5f198b211ab4774",
+    "title": "Límite de la evidencia de descarga"
+  },
+  {
+    "file": "src/draftStore.ts",
+    "start": 56,
+    "end": 84,
+    "sourceSha256": "7f2e9fff82f45eac68b981e8a5619b6393a4852b3c6d355ef9dc549896cef3cf",
+    "excerptSha256": "e6229b81871db935914905edc6a927f39fffd4ce11d5cd29ac94c0ccdee43dd8",
+    "title": "Persistencia sin bytes de adjuntos"
+  },
+  {
+    "file": "src/App.tsx",
+    "start": 397,
+    "end": 400,
+    "sourceSha256": "b30fc3aec299f90d420febef08de19572de074bc5d38fec607f29264a71ca7a2",
+    "excerptSha256": "d2c0079baaacf17d0430f7437f9859d25b317a2bc27734e943ea3450b8d28ece",
+    "title": "Posición inicial"
+  },
+  {
+    "file": "src/App.tsx",
+    "start": 625,
+    "end": 646,
+    "sourceSha256": "b30fc3aec299f90d420febef08de19572de074bc5d38fec607f29264a71ca7a2",
+    "excerptSha256": "5b8c86aafc73ad11f6ecb217a274dcdf62a7d3619fc14cb9e557b380efbddb56",
+    "title": "Guardado diferido"
+  },
+  {
+    "file": "src/main.web.tsx",
+    "start": 19,
+    "end": 44,
+    "sourceSha256": "a4bcf50ef1eff17afe39df486b46a7bcc67c7d649f2e918207219c95921cb79f",
+    "excerptSha256": "e411069ce43cc61d5607010b485880ad8d712276564e44313a395a2f02e55e4d",
+    "title": "Composición web"
+  },
+  {
+    "file": "src/main.desktop.tsx",
+    "start": 1,
+    "end": 7,
+    "sourceSha256": "3d1c369d51cb9473fd03f5e78115731f2335fab02fc7e8d3a1036ee25a2dff67",
+    "excerptSha256": "a6500bb0df53685782a930745e212450978fe02e320a8750fd6e4d48640a8db4",
+    "title": "Entrada de escritorio"
+  },
+  {
+    "file": "src/bridge/index.ts",
+    "start": 1,
+    "end": 11,
+    "sourceSha256": "e58e075639ca3fbb17d1005da9573fe3e134ac4a7a4311ea488819506c9d1c90",
+    "excerptSha256": "d5823c419b7d554fb72a9d51153a670ba10e9ea0a1df7f3a478f0cb66b7bb062",
+    "title": "Selección de host"
+  },
+  {
+    "file": "electron/main.ts",
+    "start": 310,
+    "end": 344,
+    "sourceSha256": "dd8ca1c983180caa0587d45e64f5a66b25c8b766ecc1d0fd664ff5ea0f3db617",
+    "excerptSha256": "3dc74fe4089596c54da7a652a77a8aa0ae0669fcc34fbbc5ff9621796108c925",
+    "title": "Escritor de escritorio retenido"
+  },
+  {
+    "file": "electron/main.ts",
+    "start": 763,
+    "end": 771,
+    "sourceSha256": "dd8ca1c983180caa0587d45e64f5a66b25c8b766ecc1d0fd664ff5ea0f3db617",
+    "excerptSha256": "a7b923a01779dfd84d82aa3f3262419518d7cee0bb0b25b3b87e89d1648c8331",
+    "title": "Conexión IPC al escritor"
+  },
+  {
+    "file": "electron/files.ts",
+    "start": 5,
+    "end": 42,
+    "sourceSha256": "435a457de1ceddcc44b396039b6f1aa83d55f94ed887f497e2de18fde45800fc",
+    "excerptSha256": "fb1b25cbc27db3c1d74c9e2fcb29b7fd78a93c83a2eb13cc0c5c3c977ef06cec",
+    "title": "Escrituras exclusivas y versionadas"
+  },
+  {
+    "file": "src/account/webClient.ts",
+    "start": 313,
+    "end": 330,
+    "sourceSha256": "5838aab3c1e9ea00f09f12a9c5a52de5a52a411cf25fe125287ca6f55664c57d",
+    "excerptSha256": "2fac6375d63ed13f8a88ff425619aeae9e1f4a1850b373a5c515f5287213f791",
+    "title": "Autorización web: payload"
+  },
+  {
+    "file": "functions/_lib/accounts.ts",
+    "start": 834,
+    "end": 858,
+    "sourceSha256": "151809811b1a65f2d360f8fc843094992151f53aa8dd4b1c57a8248f9c036773",
+    "excerptSha256": "4048763269837970a50146ae4c97f65642924286b72f8deb74a5760a370643bd",
+    "title": "Validación del endpoint de autorización"
+  },
+  {
+    "file": "shared/accountPolicy.ts",
+    "start": 1,
+    "end": 13,
+    "sourceSha256": "f865eaafcec1fe1f30e41e3ed8b3fa05785201078a0108d09eb37fa524ae2c81",
+    "excerptSha256": "d972787309ed90aff0f4941cf6a6c19641c429dac1649a05338a1a1cb1fb51f2",
+    "title": "Versiones de política"
+  },
+  {
+    "file": "vite.config.mts",
+    "start": 14,
+    "end": 52,
+    "sourceSha256": "1beb9d8d24b01b089764659b10fae1e63790fd66e576661aa62d0e08f5f60a89",
+    "excerptSha256": "ded5e76c32724ec78810ea2334b13b368c48e02d2a5643f478e80f3f49866259",
+    "title": "Separación de builds y PWA"
+  },
+  {
+    "file": "src/components/creation/guidedFlow.ts",
+    "start": 1,
+    "end": 58,
+    "sourceSha256": "1c002f0978e675704b3d2fd111673579af577fb3b4f881876cb7bab3079ddeb2",
+    "excerptSha256": "6e8460c3e23b97a2bb4758e06b3d5f7d28b315a2e758bda55d2680a4016d81d0",
+    "title": "Preguntas y navegación"
+  },
+  {
+    "file": "src/components/creation/ReviewStage.tsx",
+    "start": 162,
+    "end": 203,
+    "sourceSha256": "3eb77e230ea6f3c95842f165d37cb2ad0f7e5dee883aee70d6bcee963c881184",
+    "excerptSha256": "07abbfce0680faa112fd9b6503a2c97bf06a2122702c46fa89b93aae0f3912b3",
+    "title": "Resumen que ve la persona"
+  },
+  {
+    "file": "src/components/creation/ReviewStage.tsx",
+    "start": 262,
+    "end": 309,
+    "sourceSha256": "3eb77e230ea6f3c95842f165d37cb2ad0f7e5dee883aee70d6bcee963c881184",
+    "excerptSha256": "3b03865be7a5d83005da9b30365aad1ecfb73312ac3b5876922825399978d285",
+    "title": "Revisión y confirmación"
+  },
+  {
+    "file": "src/components/creation/OutcomePanel.tsx",
+    "start": 130,
+    "end": 161,
+    "sourceSha256": "14aba8022afa5321b70706fe9547e503d4ca57f86d751075600be5745aa9d6fa",
+    "excerptSha256": "62064548e7c3ef01907ea91329a1a55a45c476b8751586b7e64a021fff763906",
+    "title": "Orientación del resultado"
+  },
+  {
+    "file": "src/components/creation/OutcomePanel.tsx",
+    "start": 241,
+    "end": 258,
+    "sourceSha256": "14aba8022afa5321b70706fe9547e503d4ca57f86d751075600be5745aa9d6fa",
+    "excerptSha256": "b86beb3a388858cafd8d3e962d8d55816eb744705e326422def0ca8f37c41707",
+    "title": "Acción posterior a entrega"
+  }
+]
