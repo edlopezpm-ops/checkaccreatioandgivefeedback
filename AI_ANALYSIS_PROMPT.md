@@ -1,5 +1,8 @@
 # Encargo de análisis abierto de accreatio
 
+> **Separación de versiones:** el overview principal, su galería y este protocolo conservan el snapshot 0.8.0 del 20 de octubre. La [actualización autoinformada 0.9.0 del 21 de octubre](IMPLEMENTATION_UPDATE_2026-10-21.md) ([HTML](update-2026-10-21.html)) describe el código vigente `97f0b485c14374ebb9711015b8f2914578f83cb9`, pipeline final PASS y deployment de producción `434eef0b`, con readback público acotado PASS y botones corregidos. El primer despliegue `3027a9b5`/0dec26d y sus capturas quedan como hitos anteriores distintos. La preview sigue BLOCKED por Cloudflare Access; OAuth real, ZIP autenticado de producción, Safari físico y aceptación final siguen pendientes. Es un informe de implementación y despliegue, no una nueva auditoría independiente ni readiness global de producción. No atribuyas al candidato nuevo las pantallas históricas ni conviertas una comprobación pública en validación autenticada.
+
+
 Protocolo para ChatGPT y otras IA. Preparado el 20 de octubre de 2026 para acompañar un dossier público HTML. Es un encargo de evaluación; no autoriza implementar, publicar, iniciar sesión ni modificar servicios.
 
 ## Objetivo

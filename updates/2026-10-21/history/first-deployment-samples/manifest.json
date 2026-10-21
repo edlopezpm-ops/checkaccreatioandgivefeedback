@@ -1,0 +1,328 @@
+{
+  "generatedAt": "2026-10-21T12:00:00.000Z",
+  "appVersion": "0.9.0",
+  "sourceRevision": "70612512e2115036fa71a08075a596a04bbff942",
+  "exportContractVersion": "2026-10-21.1",
+  "sourceHashes": {
+    "src/webExport.ts": "2907a54e1f39b596a1376559d9bce62ba60a0d0da26474823dd22ff794f3b38d",
+    "src/core.ts": "f3752ee1ac96d7d4ddb4e697513ed13a675abbe85521907f00ea48170d2222bd",
+    "shared/exportManifest.ts": "348f0f747d610377fb737e6c2fc17f3ba6fb3578c8c10145aba1aa39cda33293",
+    "shared/projectTemplates.ts": "0a35658b36b52128da5012002165841701165b696cd53d7dded9c0ba92954a21",
+    "shared/domain.ts": "e47eff23ad999cfc6c27d849b7214736ecd93454d6390b3ffdaee9fe8bead067",
+    "shared/aekrPayload.generated.ts": "0f9bc9420a03bcd73e5e9a23b28633fcd08cd86cfb41b058eecc06c4a8c58110",
+    "shared/providerRegistry.ts": "6d9e5709a1ebfda40fe6c32d110859ddddc25a69849f16694c75a2ea5fb94682",
+    "shared/funding.ts": "31debf6ad0ca90fbef92cc58050a2bcec73f21ede2af517ee4469b10a8c53eb9",
+    "scripts/generate-export-examples.mjs": "c3e39fdb684f4fd632edd37baad2f9f1f4bf6c38fcbeb095b0270956c63d02d6"
+  },
+  "provenance": "Generated with buildWebExport and client-zip; actual ZIP bytes extracted and compared to every generator entry. Fictitious inputs only; source hashes identify the modified generator independent of repository HEAD. No human handoff or runtime execution is established by these checks.",
+  "samples": [
+    {
+      "filename": "accreatio-basic-sample.zip",
+      "locale": "es",
+      "orchestrationEnabled": false,
+      "projectRoot": "herramientas-del-barrio",
+      "sha256": "abb8a7bea2be1ee3630d6485e9e95003027870819c6f8e03f93d52e5a763a733",
+      "bytes": 19635,
+      "files": [
+        {
+          "path": "herramientas-del-barrio/START.md",
+          "kind": "generated",
+          "bytes": 1906,
+          "sha256": "d071d84a9da68f8f3ca4d051de679547ef1dbaa244b24bf86c1e2b6df2528835"
+        },
+        {
+          "path": "herramientas-del-barrio/AGENTS.md",
+          "kind": "generated",
+          "bytes": 2333,
+          "sha256": "8dd2202d07b97a57bcc073733181028aa1faadd9d82963a510f95df883bef876"
+        },
+        {
+          "path": "herramientas-del-barrio/CLAUDE.md",
+          "kind": "generated",
+          "bytes": 167,
+          "sha256": "fea067bb6fa08a57cb60f326e16c4c68feb5ae55a75e2ec2ee077c6480d60c73"
+        },
+        {
+          "path": "herramientas-del-barrio/CODEX.md",
+          "kind": "generated",
+          "bytes": 132,
+          "sha256": "8fdf28cb4b3c8cb8b0d1431f00b6f57ba849bf4cbce4bf89d0fd71668bf33b82"
+        },
+        {
+          "path": "herramientas-del-barrio/.claude/settings.json",
+          "kind": "generated",
+          "bytes": 58,
+          "sha256": "6325509a6bc50fa4bb0fb45f63fc007735e9720be8f37f47f1ea035b7ea1f0c9"
+        },
+        {
+          "path": "herramientas-del-barrio/OWNER_PROFILE.md",
+          "kind": "generated",
+          "bytes": 172,
+          "sha256": "b6718e509913729d30908dad85c3f64ed1859f7dfe87e7c9f1f5cfc5bbd1ca5b"
+        },
+        {
+          "path": "herramientas-del-barrio/PROJECT_PROMPT.md",
+          "kind": "generated",
+          "bytes": 1002,
+          "sha256": "dc2ae7936173c5e2ef0428a81957046cdc5b5be65cde79c3471eb5f8c08df7c6"
+        },
+        {
+          "path": "herramientas-del-barrio/docs/master.md",
+          "kind": "generated",
+          "bytes": 1734,
+          "sha256": "6862be32c237994ff05a228ebc4d38ecd614fb32c30810c817b715adfa50449d"
+        },
+        {
+          "path": "herramientas-del-barrio/docs/product/discovery.md",
+          "kind": "generated",
+          "bytes": 1027,
+          "sha256": "7628ddd0e60d9b5c12f573316bea44e37a64c546614819e4ce0768852b0ab1db"
+        },
+        {
+          "path": "herramientas-del-barrio/docs/delivery/participants.md",
+          "kind": "generated",
+          "bytes": 869,
+          "sha256": "0c87a8cc7a01042bc4a866ef261f22ef1b85eb703e0f43a904601e374376aa4b"
+        },
+        {
+          "path": "herramientas-del-barrio/docs/delivery/definition-of-done.md",
+          "kind": "generated",
+          "bytes": 573,
+          "sha256": "2eacdfca1c8959f7934f6431d66dd648cdb9d52a0cfb3fe1926d0260ec06a3a3"
+        },
+        {
+          "path": "herramientas-del-barrio/docs/delivery/audit-checklist.md",
+          "kind": "generated",
+          "bytes": 481,
+          "sha256": "290bc7c740aaf2162d7b31caf29de4b3583cefe7c1e77024c37f974141b6c019"
+        },
+        {
+          "path": "herramientas-del-barrio/docs/adr/0001-record-architecture-decisions.md",
+          "kind": "generated",
+          "bytes": 390,
+          "sha256": "f87136b8585b6aa37d86b701ba7640d4cdb907e8a4bd9b0156296faea67cbd88"
+        },
+        {
+          "path": "herramientas-del-barrio/docs/tool-entrypoints.md",
+          "kind": "generated",
+          "bytes": 633,
+          "sha256": "ce429b87d392b97554613f20a2a97fb34fe8583c0d360c36a1e0b6c089004756"
+        },
+        {
+          "path": "herramientas-del-barrio/LICENSES/AEKR-TEMPLATES.txt",
+          "kind": "generated",
+          "bytes": 1349,
+          "sha256": "fa138a953a6c531e43113361f013ddbf4d3b203c72e04f27dc7a8dcb6a9a3f1c"
+        },
+        {
+          "path": "herramientas-del-barrio/EXPORT_NOTICE.md",
+          "kind": "generated",
+          "bytes": 580,
+          "sha256": "016003de805ddc151684c26828d0de48a7a22d13aedb25c3e7087acc35370ffd"
+        },
+        {
+          "path": "herramientas-del-barrio/.accreatio/project.json",
+          "kind": "generated",
+          "bytes": 810,
+          "sha256": "b7191a3c9bd81fe181733dba79ca8af475daf50e8f0b213922dd1e745e162d6b"
+        },
+        {
+          "path": "herramientas-del-barrio/.accreatio/contract.json",
+          "kind": "generated",
+          "bytes": 1105,
+          "sha256": "b8c178bbefd6f10d3891d52aaec7779135e5727df010fd1f1fc8c955b018986b"
+        },
+        {
+          "path": "herramientas-del-barrio/SETUP.md",
+          "kind": "generated",
+          "bytes": 134,
+          "sha256": "81dbe8f7187a92d5b463ecc639fcea8c3f265590d6789ff4a62832b65ab17312"
+        },
+        {
+          "path": "herramientas-del-barrio/docs/product/sources/project-brief.txt",
+          "kind": "attachment",
+          "bytes": 184,
+          "sha256": "4002fc0ded23a76e20b8d2095426fbb6ca2d955b45781e2e9c373d71872b57d6"
+        },
+        {
+          "path": "herramientas-del-barrio/docs/product/sources/constraints.json",
+          "kind": "attachment",
+          "bytes": 102,
+          "sha256": "ee9bfb90985f54535b4213cb261d66ad7769edd4504ad9dc16bc5487f42aaa23"
+        }
+      ]
+    },
+    {
+      "filename": "accreatio-orchestration-sample.zip",
+      "locale": "en",
+      "orchestrationEnabled": true,
+      "projectRoot": "neighborhood-tools-advanced",
+      "sha256": "7d292f8750fabe8935aa86afa97eecaf9909c651b723e561686d9ea7d09675d9",
+      "bytes": 28607,
+      "files": [
+        {
+          "path": "neighborhood-tools-advanced/START.md",
+          "kind": "generated",
+          "bytes": 1852,
+          "sha256": "d15b1f40fc437d864f68a3748ca19f12fa74b509a21851869cf3ba0704d15ba2"
+        },
+        {
+          "path": "neighborhood-tools-advanced/AGENTS.md",
+          "kind": "generated",
+          "bytes": 2397,
+          "sha256": "e4fcdd0d8c9b370d23f91e1a8f084e293805cf6f52414ecd852c45d55d070f79"
+        },
+        {
+          "path": "neighborhood-tools-advanced/CLAUDE.md",
+          "kind": "generated",
+          "bytes": 167,
+          "sha256": "fea067bb6fa08a57cb60f326e16c4c68feb5ae55a75e2ec2ee077c6480d60c73"
+        },
+        {
+          "path": "neighborhood-tools-advanced/CODEX.md",
+          "kind": "generated",
+          "bytes": 132,
+          "sha256": "8fdf28cb4b3c8cb8b0d1431f00b6f57ba849bf4cbce4bf89d0fd71668bf33b82"
+        },
+        {
+          "path": "neighborhood-tools-advanced/.claude/settings.json",
+          "kind": "generated",
+          "bytes": 58,
+          "sha256": "6325509a6bc50fa4bb0fb45f63fc007735e9720be8f37f47f1ea035b7ea1f0c9"
+        },
+        {
+          "path": "neighborhood-tools-advanced/OWNER_PROFILE.md",
+          "kind": "generated",
+          "bytes": 172,
+          "sha256": "b6718e509913729d30908dad85c3f64ed1859f7dfe87e7c9f1f5cfc5bbd1ca5b"
+        },
+        {
+          "path": "neighborhood-tools-advanced/PROJECT_PROMPT.md",
+          "kind": "generated",
+          "bytes": 1047,
+          "sha256": "305fe58dbda1f140cecb3048a6f0d53023e05c904125f4cb9bfb1bc5707a3159"
+        },
+        {
+          "path": "neighborhood-tools-advanced/docs/master.md",
+          "kind": "generated",
+          "bytes": 1646,
+          "sha256": "096880350b970554495b7742bbedf07058fcde877843e97f0588b88bd6569114"
+        },
+        {
+          "path": "neighborhood-tools-advanced/docs/product/discovery.md",
+          "kind": "generated",
+          "bytes": 1027,
+          "sha256": "b098168ab9193ba647e15b48f0184690430db7107afaa3b211fc459084ace85d"
+        },
+        {
+          "path": "neighborhood-tools-advanced/docs/delivery/participants.md",
+          "kind": "generated",
+          "bytes": 995,
+          "sha256": "5a7966d8525509a948f3de68ccfd24b6e043b4e90f14debcc79ea53028c7ce5b"
+        },
+        {
+          "path": "neighborhood-tools-advanced/docs/delivery/definition-of-done.md",
+          "kind": "generated",
+          "bytes": 573,
+          "sha256": "2eacdfca1c8959f7934f6431d66dd648cdb9d52a0cfb3fe1926d0260ec06a3a3"
+        },
+        {
+          "path": "neighborhood-tools-advanced/docs/delivery/audit-checklist.md",
+          "kind": "generated",
+          "bytes": 481,
+          "sha256": "290bc7c740aaf2162d7b31caf29de4b3583cefe7c1e77024c37f974141b6c019"
+        },
+        {
+          "path": "neighborhood-tools-advanced/docs/adr/0001-record-architecture-decisions.md",
+          "kind": "generated",
+          "bytes": 390,
+          "sha256": "f87136b8585b6aa37d86b701ba7640d4cdb907e8a4bd9b0156296faea67cbd88"
+        },
+        {
+          "path": "neighborhood-tools-advanced/docs/tool-entrypoints.md",
+          "kind": "generated",
+          "bytes": 633,
+          "sha256": "ce429b87d392b97554613f20a2a97fb34fe8583c0d360c36a1e0b6c089004756"
+        },
+        {
+          "path": "neighborhood-tools-advanced/LICENSES/AEKR-TEMPLATES.txt",
+          "kind": "generated",
+          "bytes": 1349,
+          "sha256": "fa138a953a6c531e43113361f013ddbf4d3b203c72e04f27dc7a8dcb6a9a3f1c"
+        },
+        {
+          "path": "neighborhood-tools-advanced/EXPORT_NOTICE.md",
+          "kind": "generated",
+          "bytes": 580,
+          "sha256": "016003de805ddc151684c26828d0de48a7a22d13aedb25c3e7087acc35370ffd"
+        },
+        {
+          "path": "neighborhood-tools-advanced/.ai-engineering/orchestration.yaml",
+          "kind": "generated",
+          "bytes": 1313,
+          "sha256": "70d1b57a43f224def03dc60c7b1928928089129ce6aa004a541a90a88ce3a80e"
+        },
+        {
+          "path": "neighborhood-tools-advanced/orchestrator/BUILD_ORCHESTRATOR.md",
+          "kind": "generated",
+          "bytes": 2081,
+          "sha256": "3d5aff863822ee530b1fb2001531feb0f1f4d4e8a1bc84dc993ac21217601656"
+        },
+        {
+          "path": "neighborhood-tools-advanced/orchestrator/CONFIGURATION.md",
+          "kind": "generated",
+          "bytes": 1173,
+          "sha256": "194f63159f389af6d8701037f01808c8408dc288470b7de13d0fb17dd2dde3b9"
+        },
+        {
+          "path": "neighborhood-tools-advanced/orchestrator/RUNTIME_CONTRACT.md",
+          "kind": "generated",
+          "bytes": 1379,
+          "sha256": "b382c1f3e71d2c78918900779e6d22f9e04cb02f4d1b71e8f5e77dda6fcf5deb"
+        },
+        {
+          "path": "neighborhood-tools-advanced/orchestrator/GATES.md",
+          "kind": "generated",
+          "bytes": 610,
+          "sha256": "37d4d031a537eb9d2d00100fef8f604b764c9df1b55be6087267e7185ca2f3c8"
+        },
+        {
+          "path": "neighborhood-tools-advanced/docs/delivery/orchestration-loop.md",
+          "kind": "generated",
+          "bytes": 385,
+          "sha256": "e3ff1e7ae274f35e6d2160f10d76ae46d19e1d0de26be085e45de430c43bcc1b"
+        },
+        {
+          "path": "neighborhood-tools-advanced/.accreatio/project.json",
+          "kind": "generated",
+          "bytes": 1032,
+          "sha256": "97b5bb32250606406ed54bc5deca86d35132c3cae8e5b228cd23be6d846ed14d"
+        },
+        {
+          "path": "neighborhood-tools-advanced/.accreatio/contract.json",
+          "kind": "generated",
+          "bytes": 1425,
+          "sha256": "30045dfb5f8cbbdb97805f625ab0fcb857deabbc3d8f50a6e1b0930b4fbc62f2"
+        },
+        {
+          "path": "neighborhood-tools-advanced/SETUP.md",
+          "kind": "generated",
+          "bytes": 138,
+          "sha256": "0e7668822ae9b67ccd0dd8803cbb71e5cd4e0f68e02e7bf9946beaaefc08dea3"
+        },
+        {
+          "path": "neighborhood-tools-advanced/docs/product/sources/project-brief.txt",
+          "kind": "attachment",
+          "bytes": 150,
+          "sha256": "9fa847253063ae6d11b8e5852b0c29f11560a6a5bf5d3e149e29ca08ce59d727"
+        },
+        {
+          "path": "neighborhood-tools-advanced/docs/product/sources/constraints.json",
+          "kind": "attachment",
+          "bytes": 102,
+          "sha256": "ee9bfb90985f54535b4213cb261d66ad7769edd4504ad9dc16bc5487f42aaa23"
+        }
+      ]
+    }
+  ]
+}

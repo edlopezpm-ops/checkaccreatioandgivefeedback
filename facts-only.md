@@ -1,5 +1,8 @@
 # accreatio · dossier factual para análisis profundo
 
+> Este documento conserva el snapshot factual del 20 de octubre. Existe una [actualización posterior de implementación y despliegue 0.9.0](IMPLEMENTATION_UPDATE_2026-10-21.md), autoinformada, con readback público de producción y gates autenticados pendientes; no reemplaza silenciosamente los hechos históricos que siguen.
+
+
 Snapshot del **20 de octubre de 2026 · America/New_York**. Versión declarada **0.8.0**. Fuente local **70612512e2115036fa71a08075a596a04bbff942**. La captura UTC nocturna es del 21 de octubre.
 
 ## 1. Cómo usar este material

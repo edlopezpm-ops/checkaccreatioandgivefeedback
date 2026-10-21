@@ -1,0 +1,231 @@
+{
+  "scope": "Dated historical deployment receipts, not global readiness acceptance.",
+  "releases": [
+    {
+      "sourceCommit": "0dec26d9fc299e8612b32fd8b93f090361cc25cc",
+      "documentationCommit": "e72116f640c86c785eda40766bc847f7f7213e08",
+      "production": {
+        "id": "3027a9b5-f62e-4f68-99eb-45731f06a630",
+        "createdAt": "2026-10-21T15:53:00Z",
+        "successAt": "2026-10-21T15:53:03Z",
+        "url": "https://accreatio.com/",
+        "sourceCommit": "0dec26d9fc299e8612b32fd8b93f090361cc25cc",
+        "authorization": "Owner explicitly authorized deployment on .com; executed, no longer pending.",
+        "publicReadback": {
+          "result": "PASS",
+          "observedAt": "2026-10-21T15:53:54Z",
+          "asset": {
+            "file": "index-CbFRb9nV.js",
+            "bytes": 488184,
+            "sha256": "b3007c5b6cc7f106cda2b1bdf8df51d17b6f86ca074750351e4d82413456c5b7",
+            "scope": "Local full verification, uploaded deployment artifact and limited public production readback. Preview authenticated readback remains blocked."
+          },
+          "assetByteIdenticalToLocal": true,
+          "basicSample": {
+            "bytes": 19635,
+            "sha256": "abb8a7bea2be1ee3630d6485e9e95003027870819c6f8e03f93d52e5a763a733",
+            "byteIdenticalToLocal": true
+          },
+          "methods": {
+            "cacheControl": "no-store",
+            "google": true,
+            "github": true,
+            "emailOtp": false
+          },
+          "publicRoutesHttp200": [
+            "About ES",
+            "Blog EN",
+            "privacy",
+            "terms",
+            "cookies",
+            "manifest"
+          ],
+          "noticeVersionsPresent": [
+            "2026-10-21-privacy",
+            "2026-10-21-beta"
+          ],
+          "browserObservation": "Current welcome, expanded example and provider buttons observed in IAB; no real sign-in or personal acceptance.",
+          "serviceWorker": "Initial old cache updated on next reload without clearing the draft."
+        },
+        "accountMigration": {
+          "store": "Existing production store, no reset or fork",
+          "additiveMigration": "0006",
+          "backupRestoredInIsolatedSQLite": true,
+          "allOriginalColumnsComparedAndPreserved": true,
+          "aggregateRecords": {
+            "accounts": 2,
+            "identities": 2,
+            "policyReceipts": 1,
+            "exportReceipts": 1,
+            "sessions": 0,
+            "transactions": 0
+          },
+          "personalDataDecrypted": false,
+          "maintenance": "Existing compatible production cron unchanged"
+        },
+        "authenticatedProjectExport": {
+          "result": "NOT RUN"
+        },
+        "realOAuth": {
+          "result": "NOT RUN"
+        },
+        "globalProductionReadyMilestone": false,
+        "screenshots": [
+          {
+            "file": "updates/2026-10-21/production-google-github.png",
+            "bytes": 54095,
+            "sha256": "d4eb5e00c397f26ccba8d92071f7db99c9d567ad46b83b915db94f687be701fc",
+            "origin": "Public IAB production observation after first 15:53 deployment; no personal data or real OAuth.",
+            "establishes": "Public welcome/example or advertised Google/GitHub buttons only."
+          },
+          {
+            "file": "updates/2026-10-21/production-welcome-example.png",
+            "bytes": 69655,
+            "sha256": "abf87755fcb040b7a7da11cef785045ed6d7ebf779ba3beabea219eedd82678d",
+            "origin": "Public IAB production observation after first 15:53 deployment; no personal data or real OAuth.",
+            "establishes": "Public welcome/example or advertised Google/GitHub buttons only."
+          }
+        ]
+      },
+      "preview": {
+        "id": "176390b5-2148-4010-8bac-de88f2b592c9",
+        "acknowledgedAt": "2026-10-21T15:45:12Z",
+        "stage": "success",
+        "url": "https://176390b5.accreatio.pages.dev",
+        "alias": "https://google-oidc-preview.accreatio.pages.dev",
+        "administrativeApiReadback": {
+          "sourceCommitConfirmed": "0dec26d9fc299e8612b32fd8b93f090361cc25cc",
+          "isolatedAccountBindingConfirmed": true
+        },
+        "applicationSmoke": {
+          "result": "BLOCKED",
+          "reason": "Cloudflare Access requires owner-authorized personal sign-in.",
+          "ownerNotified": true,
+          "applicationCapabilitiesReadback": null,
+          "authenticatedAssetReadback": null,
+          "realOAuthRun": false
+        },
+        "initialOldUiObservation": "Recorded as cache state, excluded as candidate verification evidence.",
+        "previewVerifiedMilestone": false
+      },
+      "pipeline": {
+        "status": "PASS",
+        "command": "npm run verify",
+        "exitCode": 0,
+        "reportedAt": "2026-10-21",
+        "evidenceLogName": "2026-10-21T15-38-11-245Z-verify-9bd10e53-848c-40c0-a41a-da53563e82af.log",
+        "applicationCodeCommit": "0dec26d9fc299e8612b32fd8b93f090361cc25cc",
+        "documentationCommit": "e72116f640c86c785eda40766bc847f7f7213e08",
+        "artifact": {
+          "file": "index-CbFRb9nV.js",
+          "bytes": 488184,
+          "sha256": "b3007c5b6cc7f106cda2b1bdf8df51d17b6f86ca074750351e4d82413456c5b7",
+          "scope": "Local full verification, uploaded deployment artifact and limited public production readback. Preview authenticated readback remains blocked."
+        }
+      },
+      "qualification": "First production deployment, before the later provider-button adjustment."
+    },
+    {
+      "sourceCommit": "97f0b485c14374ebb9711015b8f2914578f83cb9",
+      "documentationCommit": "20e5053f3d0a41c10cbef2e561fa3b2949703683",
+      "production": {
+        "id": "434eef0b-6693-46c1-a789-d356d4b37e25",
+        "createdAt": "2026-10-21T16:07:38Z",
+        "successAt": "2026-10-21T16:07:42Z",
+        "url": "https://accreatio.com/",
+        "sourceCommit": "97f0b485c14374ebb9711015b8f2914578f83cb9",
+        "authorization": "Owner explicitly authorized deployment on .com; executed, no longer pending.",
+        "publicReadback": {
+          "result": "PASS",
+          "observedAt": "2026-10-21T16:08:09Z",
+          "asset": {
+            "file": "index-BO-vhWup.js",
+            "bytes": 488442,
+            "sha256": "7fd03978c22af76fe65b3ad9020e82292899794019113f571160876e8e0e5470",
+            "scope": "Final local full verification and current production public byte readback. Real OAuth and authenticated export remain unverified."
+          },
+          "assetByteIdenticalToLocal": true,
+          "basicSample": {
+            "bytes": 19635,
+            "sha256": "bbf72008cecfdf648718ba85c86f1e234e14877f2c5c2d33b56f21b2d9225b57",
+            "byteIdenticalToLocal": true
+          },
+          "methods": {
+            "cacheControl": "no-store",
+            "google": true,
+            "github": true,
+            "emailOtp": false
+          },
+          "publicRoutesHttp200": [
+            "About ES",
+            "Blog EN",
+            "privacy",
+            "terms",
+            "cookies",
+            "manifest"
+          ],
+          "noticeVersionsPresent": [
+            "2026-10-21-privacy",
+            "2026-10-21-beta"
+          ],
+          "browserObservation": "Current aligned Google/GitHub buttons visually confirmed in the integrated browser; presentation only, no personal sign-in or acceptance."
+        },
+        "accountMigration": {
+          "store": "Existing production store, no reset or fork",
+          "additiveMigration": "0006",
+          "backupRestoredInIsolatedSQLite": true,
+          "allOriginalColumnsComparedAndPreserved": true,
+          "aggregateRecords": {
+            "accounts": 2,
+            "identities": 2,
+            "policyReceipts": 1,
+            "exportReceipts": 1,
+            "sessions": 0,
+            "transactions": 0
+          },
+          "personalDataDecrypted": false,
+          "maintenance": "Existing compatible production cron unchanged",
+          "changesAfterMigration0006": false
+        },
+        "authenticatedProjectExport": {
+          "result": "NOT RUN"
+        },
+        "realOAuth": {
+          "result": "NOT RUN"
+        },
+        "globalProductionReadyMilestone": false,
+        "screenshots": [
+          {
+            "file": "updates/2026-10-21/production-buttons-aligned.png",
+            "bytes": 46319,
+            "sha256": "0cdbebdb780901cda306bdb0b1f33542a4ab953a1547eef40146e050d0a5398d",
+            "origin": "Public integrated-browser observation of production deployment 434eef0b; no personal data.",
+            "establishes": "Aligned equal-size public Google/GitHub buttons in this view, not real OAuth or authenticated export."
+          }
+        ],
+        "documentationCommit": "20e5053f3d0a41c10cbef2e561fa3b2949703683"
+      },
+      "pipeline": {
+        "status": "PASS",
+        "command": "npm run log -- verify",
+        "exitCode": 0,
+        "reportedAt": "2026-10-21",
+        "evidenceLogName": "2026-10-21T16-04-47-541Z-verify-5b7242e8-d5b5-4111-aa44-1717ed014ec4.log",
+        "applicationCodeCommit": "97f0b485c14374ebb9711015b8f2914578f83cb9",
+        "documentationCommit": "20e5053f3d0a41c10cbef2e561fa3b2949703683",
+        "unitTestsPassed": 355,
+        "unitTestsFailed": 0,
+        "buildsPassed": true,
+        "artifact": {
+          "file": "index-BO-vhWup.js",
+          "bytes": 488442,
+          "sha256": "7fd03978c22af76fe65b3ad9020e82292899794019113f571160876e8e0e5470",
+          "scope": "Final local full verification and current production public byte readback. Real OAuth and authenticated export remain unverified."
+        },
+        "qualification": "Complete local integrated pipeline. Does not establish personal OAuth, authenticated production project export, physical Safari or release acceptance."
+      },
+      "qualification": "Current production deployment after provider-button alignment and stable example verification; earlier deployment remains a separate historical receipt."
+    }
+  ],
+  "currentProductionDeployment": "434eef0b-6693-46c1-a789-d356d4b37e25"
+}

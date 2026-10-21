@@ -1,5 +1,13 @@
 # accreatio review dossier
 
+## Later implementation update
+- [2026-10-21 0.9.0 implementation and deployment self-report](https://edlopezpm-ops.github.io/checkaccreatioandgivefeedback/IMPLEMENTATION_UPDATE_2026-10-21.md)
+- [HTML update](https://edlopezpm-ops.github.io/checkaccreatioandgivefeedback/update-2026-10-21.html)
+- [Sanitized verification summary](https://edlopezpm-ops.github.io/checkaccreatioandgivefeedback/updates/2026-10-21/verification-summary.json)
+
+Global state 0, incomplete. Production 0.9.0 is deployed with limited public readback PASS. Real OAuth, authenticated production project export, physical iPhone Safari and final acceptance remain pending. Preview smoke is BLOCKED by Cloudflare Access. No new independent audit or global production readiness is claimed. The following links retain the historical snapshot.
+
+
 Public, static review materials. Snapshot 2026-10-20; source 70612512e2115036fa71a08075a596a04bbff942.
 
 ## Read first

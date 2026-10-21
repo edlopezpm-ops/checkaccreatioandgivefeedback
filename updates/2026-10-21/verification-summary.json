@@ -1,0 +1,344 @@
+{
+  "date": "2026-10-21",
+  "origin": "Implementation self-report; not a new independent audit.",
+  "candidateVersion": "0.9.0",
+  "globalState": {
+    "number": 0,
+    "label": "NO COMPLETADO — EN CURSO O BLOQUEADO"
+  },
+  "unitTests": {
+    "passed": 355,
+    "failed": 0,
+    "scope": "Local deterministic suite, not real OAuth or production."
+  },
+  "finalIntegratedPipeline": {
+    "status": "PASS",
+    "command": "npm run log -- verify",
+    "exitCode": 0,
+    "reportedAt": "2026-10-21",
+    "evidenceLogName": "2026-10-21T16-04-47-541Z-verify-5b7242e8-d5b5-4111-aa44-1717ed014ec4.log",
+    "applicationCodeCommit": "97f0b485c14374ebb9711015b8f2914578f83cb9",
+    "documentationCommit": "20e5053f3d0a41c10cbef2e561fa3b2949703683",
+    "unitTestsPassed": 355,
+    "unitTestsFailed": 0,
+    "buildsPassed": true,
+    "artifact": {
+      "file": "index-BO-vhWup.js",
+      "bytes": 488442,
+      "sha256": "7fd03978c22af76fe65b3ad9020e82292899794019113f571160876e8e0e5470",
+      "scope": "Final local full verification and current production public byte readback. Real OAuth and authenticated export remain unverified."
+    },
+    "qualification": "Complete local integrated pipeline. Does not establish personal OAuth, authenticated production project export, physical Safari or release acceptance."
+  },
+  "lighthouse": {
+    "performance": 96,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 69,
+    "qualification": "Final complete 97f0b485 pipeline: existing gate admits private-beta noindex; SEO 69 is not a claimed 90 pass. Scores do not certify accessibility, security or search outcomes.",
+    "applicationCodeCommit": "97f0b485c14374ebb9711015b8f2914578f83cb9"
+  },
+  "functional": {
+    "testedAt": "2026-10-21T15:25:39.371Z",
+    "environment": "Local production bundle; account/provider/Blog API fixtures; real browser ZIP generation and download",
+    "records": [
+      {
+        "name": "Immediate reload retains last edit and position",
+        "result": "PASS",
+        "elapsedToReloadMs": 103,
+        "browser": "155.0.4283.62"
+      },
+      {
+        "name": "Review shows full idea/constraints and browser Back/Forward retains position",
+        "result": "PASS"
+      },
+      {
+        "name": "Advanced options and position survive reload with a single H1",
+        "result": "PASS"
+      },
+      {
+        "name": "Check consumes no allowance; real ZIP, shared starting instruction and byte-identical retry",
+        "result": "PASS",
+        "entries": 19,
+        "bytes": 18477,
+        "sha256": "c1b3ec493727a261f97eb44fd7895d677dd2c0fe513a9b9fa6751a893c08fd63",
+        "newAuthorizations": 1
+      },
+      {
+        "name": "Second tab cannot silently overwrite first tab draft",
+        "result": "PASS"
+      },
+      {
+        "name": "Attachment count survives reload without names/bytes and omission requires explicit action",
+        "result": "PASS"
+      },
+      {
+        "name": "OAuth-style return without lang restores saved Spanish, position and content",
+        "result": "PASS",
+        "realProvider": false
+      },
+      {
+        "name": "Article/list canonical and title reset on navigation and browser Back",
+        "result": "PASS"
+      },
+      {
+        "name": "Field boundary contrast, focus, reduced motion and narrow reflow",
+        "result": "PASS",
+        "contrast": {
+          "border": "rgb(116, 125, 156)",
+          "background": "rgb(13, 16, 25)",
+          "ratio": 4.66503320900427
+        },
+        "focus": {
+          "outline": "solid",
+          "width": "3px"
+        },
+        "viewports": [
+          320,
+          390,
+          720
+        ],
+        "pageErrors": []
+      },
+      {
+        "name": "Unavailable IndexedDB and exhausted storage do not freeze fields or claim saved",
+        "result": "PASS"
+      },
+      {
+        "name": "Future draft schema is preserved without freezing the form",
+        "result": "PASS"
+      },
+      {
+        "name": "firefox ES mobile viewport main journey",
+        "result": "PASS",
+        "browser": "153.0",
+        "physicalMobile": false
+      },
+      {
+        "name": "webkit ES mobile viewport main journey",
+        "result": "PASS",
+        "browser": "26.5",
+        "physicalMobile": false
+      }
+    ],
+    "artifactQualification": "Earlier local browser fixture receipt, retained with its original timings (including the 103 ms reload observation). These timings are not measurements of the final BO-vhWup frontend. The final integrated pipeline has its separate complete receipt."
+  },
+  "cleanHandoff": {
+    "basic": "Fresh isolated assistant started from START and wrote a useful problem/success-criterion proposal without package repair.",
+    "advanced": "Fresh isolated assistant produced the proposal and checked the optional orchestration contract without building or executing a runtime.",
+    "humanAcceptance": false
+  },
+  "independentDiffReview": {
+    "findings": 7,
+    "closed": 7,
+    "priorities": {
+      "P1": 1,
+      "P2": 6
+    },
+    "scope": "Bounded source diff and targeted regressions, not release acceptance or a hosted audit."
+  },
+  "dependencyAudit": {
+    "critical": 0,
+    "high": 0,
+    "moderate": 8,
+    "scope": "Unchanged pinned retained-desktop/development dependency chain, not a broad security certification."
+  },
+  "previewAccountMigration": {
+    "isolatedStore": true,
+    "restoreAndAdditiveMigrations": "PASS",
+    "originalColumnsPreserved": true,
+    "accountsPreserved": 2,
+    "identitiesPreserved": 2,
+    "historicalPolicyBackfill": 0,
+    "integrity": "PASS",
+    "foreignKeyErrors": 0,
+    "productionStoreChanged": false,
+    "applicationPreviewVerified": false
+  },
+  "remaining": [
+    "Owner-authorized personal Cloudflare Access sign-in and preview application smoke",
+    "Real authorized Google/GitHub OAuth and explicit linking/action-bound controls",
+    "Authenticated production project export and UI ZIP inspection",
+    "Physical iPhone Safari journey",
+    "Human release acceptance"
+  ],
+  "currentProduction": {
+    "version": "0.9.0",
+    "newCandidateDeployed": true,
+    "publicReadback": "PASS, limited scope",
+    "authenticatedProjectExport": "NOT RUN",
+    "globalReady": false,
+    "applicationCodeCommit": "97f0b485c14374ebb9711015b8f2914578f83cb9",
+    "deploymentId": "434eef0b-6693-46c1-a789-d356d4b37e25",
+    "documentationCommit": "20e5053f3d0a41c10cbef2e561fa3b2949703683"
+  },
+  "previewApplicationDeployment": {
+    "id": "176390b5-2148-4010-8bac-de88f2b592c9",
+    "acknowledgedAt": "2026-10-21T15:45:12Z",
+    "stage": "success",
+    "url": "https://176390b5.accreatio.pages.dev",
+    "alias": "https://google-oidc-preview.accreatio.pages.dev",
+    "administrativeApiReadback": {
+      "sourceCommitConfirmed": "0dec26d9fc299e8612b32fd8b93f090361cc25cc",
+      "isolatedAccountBindingConfirmed": true
+    },
+    "applicationSmoke": {
+      "result": "BLOCKED",
+      "reason": "Cloudflare Access requires owner-authorized personal sign-in.",
+      "ownerNotified": true,
+      "applicationCapabilitiesReadback": null,
+      "authenticatedAssetReadback": null,
+      "realOAuthRun": false
+    },
+    "initialOldUiObservation": "Recorded as cache state, excluded as candidate verification evidence.",
+    "previewVerifiedMilestone": false
+  },
+  "lastDemonstratedMilestones": [
+    "Complete local verification",
+    "Isolated preview account migration",
+    "Preview deployment acknowledged by administrative API",
+    "Production deployment and limited public readback"
+  ],
+  "previewVerifiedMilestone": false,
+  "evidenceCorrelation": {
+    "finalSourceCommit": "97f0b485c14374ebb9711015b8f2914578f83cb9",
+    "documentationCommitSameCode": "20e5053f3d0a41c10cbef2e561fa3b2949703683",
+    "finalLocalFullVerifyArtifact": {
+      "file": "index-BO-vhWup.js",
+      "bytes": 488442,
+      "sha256": "7fd03978c22af76fe65b3ad9020e82292899794019113f571160876e8e0e5470",
+      "scope": "Final local full verification and current production public byte readback. Real OAuth and authenticated export remain unverified."
+    },
+    "previousCompleteFullVerifyArtifact": {
+      "file": "index-CbFRb9nV.js",
+      "bytes": 488184,
+      "sha256": "b3007c5b6cc7f106cda2b1bdf8df51d17b6f86ca074750351e4d82413456c5b7",
+      "scope": "Local full verification, uploaded deployment artifact and limited public production readback. Preview authenticated readback remains blocked."
+    },
+    "loadMeasurementArtifact": {
+      "file": "index-CfNKP_Lr.js",
+      "sha256": "d16e4a691f16942bb528002d00050ba9f1a325f19adb249909c2260f7357e673"
+    },
+    "loadAndFinalJavaScriptByteIdentity": false,
+    "browserPackageGeneratorSourceHashesUnchanged": true,
+    "sampleVerificationScriptChangedForStableProvenance": true,
+    "currentSampleSourceRevision": "357d297e2c0ff1889d20e8449dcf4f78438fa1d4",
+    "currentSampleZipOnlyChangedField": ".accreatio/project.json.sourceRevision",
+    "finalExampleRegenerationCheck": "PASS",
+    "qualification": "Final full verification ran on BO-vhWup. Earlier CfNKP_Lr load metrics and earlier functional timings remain measurements of their own artifacts. Unchanged browser generator sources and byte-identical non-provenance ZIP entries support package-contract correlation only."
+  },
+  "githubIdentityAvailability": {
+    "previewConfiguredEnabled": true,
+    "productionAdvertisedAvailable": true,
+    "qualification": "Advertised methods are not real OAuth verification."
+  },
+  "productionDeployment": {
+    "id": "434eef0b-6693-46c1-a789-d356d4b37e25",
+    "createdAt": "2026-10-21T16:07:38Z",
+    "successAt": "2026-10-21T16:07:42Z",
+    "url": "https://accreatio.com/",
+    "sourceCommit": "97f0b485c14374ebb9711015b8f2914578f83cb9",
+    "authorization": "Owner explicitly authorized deployment on .com; executed, no longer pending.",
+    "publicReadback": {
+      "result": "PASS",
+      "observedAt": "2026-10-21T16:08:09Z",
+      "asset": {
+        "file": "index-BO-vhWup.js",
+        "bytes": 488442,
+        "sha256": "7fd03978c22af76fe65b3ad9020e82292899794019113f571160876e8e0e5470",
+        "scope": "Final local full verification and current production public byte readback. Real OAuth and authenticated export remain unverified."
+      },
+      "assetByteIdenticalToLocal": true,
+      "basicSample": {
+        "bytes": 19635,
+        "sha256": "bbf72008cecfdf648718ba85c86f1e234e14877f2c5c2d33b56f21b2d9225b57",
+        "byteIdenticalToLocal": true
+      },
+      "methods": {
+        "cacheControl": "no-store",
+        "google": true,
+        "github": true,
+        "emailOtp": false
+      },
+      "publicRoutesHttp200": [
+        "About ES",
+        "Blog EN",
+        "privacy",
+        "terms",
+        "cookies",
+        "manifest"
+      ],
+      "noticeVersionsPresent": [
+        "2026-10-21-privacy",
+        "2026-10-21-beta"
+      ],
+      "browserObservation": "Current aligned Google/GitHub buttons visually confirmed in the integrated browser; presentation only, no personal sign-in or acceptance."
+    },
+    "accountMigration": {
+      "store": "Existing production store, no reset or fork",
+      "additiveMigration": "0006",
+      "backupRestoredInIsolatedSQLite": true,
+      "allOriginalColumnsComparedAndPreserved": true,
+      "aggregateRecords": {
+        "accounts": 2,
+        "identities": 2,
+        "policyReceipts": 1,
+        "exportReceipts": 1,
+        "sessions": 0,
+        "transactions": 0
+      },
+      "personalDataDecrypted": false,
+      "maintenance": "Existing compatible production cron unchanged",
+      "changesAfterMigration0006": false
+    },
+    "authenticatedProjectExport": {
+      "result": "NOT RUN"
+    },
+    "realOAuth": {
+      "result": "NOT RUN"
+    },
+    "globalProductionReadyMilestone": false,
+    "screenshots": [
+      {
+        "file": "updates/2026-10-21/production-buttons-aligned.png",
+        "bytes": 46319,
+        "sha256": "0cdbebdb780901cda306bdb0b1f33542a4ab953a1547eef40146e050d0a5398d",
+        "origin": "Public integrated-browser observation of production deployment 434eef0b; no personal data.",
+        "establishes": "Aligned equal-size public Google/GitHub buttons in this view, not real OAuth or authenticated export."
+      }
+    ],
+    "documentationCommit": "20e5053f3d0a41c10cbef2e561fa3b2949703683"
+  },
+  "previousCompleteIntegratedPipeline": {
+    "status": "PASS",
+    "command": "npm run verify",
+    "exitCode": 0,
+    "reportedAt": "2026-10-21",
+    "evidenceLogName": "2026-10-21T15-38-11-245Z-verify-9bd10e53-848c-40c0-a41a-da53563e82af.log",
+    "applicationCodeCommit": "0dec26d9fc299e8612b32fd8b93f090361cc25cc",
+    "documentationCommit": "e72116f640c86c785eda40766bc847f7f7213e08",
+    "artifact": {
+      "file": "index-CbFRb9nV.js",
+      "bytes": 488184,
+      "sha256": "b3007c5b6cc7f106cda2b1bdf8df51d17b6f86ca074750351e4d82413456c5b7",
+      "scope": "Local full verification, uploaded deployment artifact and limited public production readback. Preview authenticated readback remains blocked."
+    }
+  },
+  "providerButtons": {
+    "summary": "updates/2026-10-21/provider-buttons-summary.json",
+    "localFixtureChecksPassed": 6,
+    "realOAuth": false,
+    "currentProductionVisual": {
+      "file": "updates/2026-10-21/production-buttons-aligned.png",
+      "bytes": 46319,
+      "sha256": "0cdbebdb780901cda306bdb0b1f33542a4ab953a1547eef40146e050d0a5398d",
+      "origin": "Public integrated-browser observation of production deployment 434eef0b; no personal data.",
+      "establishes": "Aligned equal-size public Google/GitHub buttons in this view, not real OAuth or authenticated export."
+    }
+  },
+  "examplesProvenanceComparison": {
+    "summary": "updates/2026-10-21/examples-provenance-comparison.json",
+    "onlyChangedZipField": ".accreatio/project.json.sourceRevision",
+    "otherEntriesAndHandoffDocumentsByteIdentical": true
+  }
+}

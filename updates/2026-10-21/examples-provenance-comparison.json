@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "sourceRevision": "357d297e2c0ff1889d20e8449dcf4f78438fa1d4",
+  "changedGeneratorSources": [
+    "scripts/generate-export-examples.mjs"
+  ],
+  "samples": [
+    {
+      "zip": "accreatio-basic-sample.zip",
+      "entries": 21,
+      "onlyChangedEntry": "herramientas-del-barrio/.accreatio/project.json",
+      "onlyChangedField": "sourceRevision",
+      "from": "70612512e2115036fa71a08075a596a04bbff942",
+      "to": "357d297e2c0ff1889d20e8449dcf4f78438fa1d4",
+      "beforeSha256": "abb8a7bea2be1ee3630d6485e9e95003027870819c6f8e03f93d52e5a763a733",
+      "afterSha256": "bbf72008cecfdf648718ba85c86f1e234e14877f2c5c2d33b56f21b2d9225b57",
+      "bytes": 19635,
+      "allOtherEntriesByteIdentical": true
+    },
+    {
+      "zip": "accreatio-orchestration-sample.zip",
+      "entries": 27,
+      "onlyChangedEntry": "neighborhood-tools-advanced/.accreatio/project.json",
+      "onlyChangedField": "sourceRevision",
+      "from": "70612512e2115036fa71a08075a596a04bbff942",
+      "to": "357d297e2c0ff1889d20e8449dcf4f78438fa1d4",
+      "beforeSha256": "7d292f8750fabe8935aa86afa97eecaf9909c651b723e561686d9ea7d09675d9",
+      "afterSha256": "594dcf2fad4f3878e9aaf0bcaabf8af0002503984e919103146878d0ee4c7003",
+      "bytes": 28607,
+      "allOtherEntriesByteIdentical": true
+    }
+  ],
+  "startingInstructionsAndPromptsByteIdentical": true,
+  "isolatedHandoffProposalsUnchanged": true
+}

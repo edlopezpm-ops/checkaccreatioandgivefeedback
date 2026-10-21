@@ -1,0 +1,147 @@
+{
+  "observedAt": "2026-10-21T16:01:12.759Z",
+  "browser": "Microsoft Edge 155.0.4283.62, headless",
+  "environment": "Local Vite HMR, real Edge headless, fixture capabilities/account401; no build, no real provider login; mobile sizes are viewports",
+  "sourceCommit": "97f0b485c14374ebb9711015b8f2914578f83cb9",
+  "checks": [
+    {
+      "locale": "en",
+      "viewportWidth": 1280,
+      "result": "PASS",
+      "direction": "row",
+      "buttons": [
+        {
+          "width": 250.140625,
+          "height": 44
+        },
+        {
+          "width": 250.15625,
+          "height": 44
+        }
+      ],
+      "gapPx": 12.0,
+      "detailsGapPx": 20,
+      "navigationGapPx": 20,
+      "labelsUncropped": true,
+      "documentFitsViewport": true
+    },
+    {
+      "locale": "en",
+      "viewportWidth": 390,
+      "result": "PASS",
+      "direction": "column",
+      "buttons": [
+        {
+          "width": 262,
+          "height": 44
+        },
+        {
+          "width": 262,
+          "height": 44
+        }
+      ],
+      "gapPx": 12,
+      "detailsGapPx": 20,
+      "navigationGapPx": 20,
+      "labelsUncropped": true,
+      "documentFitsViewport": true
+    },
+    {
+      "locale": "en",
+      "viewportWidth": 320,
+      "result": "PASS",
+      "direction": "column",
+      "buttons": [
+        {
+          "width": 246,
+          "height": 44
+        },
+        {
+          "width": 246,
+          "height": 44
+        }
+      ],
+      "gapPx": 12.0,
+      "detailsGapPx": 20.0,
+      "navigationGapPx": 20.0,
+      "labelsUncropped": true,
+      "documentFitsViewport": true
+    },
+    {
+      "locale": "es",
+      "viewportWidth": 1280,
+      "result": "PASS",
+      "direction": "row",
+      "buttons": [
+        {
+          "width": 250.140625,
+          "height": 44
+        },
+        {
+          "width": 250.15625,
+          "height": 44
+        }
+      ],
+      "gapPx": 12.0,
+      "detailsGapPx": 20.0,
+      "navigationGapPx": 20.0,
+      "labelsUncropped": true,
+      "documentFitsViewport": true
+    },
+    {
+      "locale": "es",
+      "viewportWidth": 390,
+      "result": "PASS",
+      "direction": "column",
+      "buttons": [
+        {
+          "width": 262,
+          "height": 44
+        },
+        {
+          "width": 262,
+          "height": 44
+        }
+      ],
+      "gapPx": 12.0,
+      "detailsGapPx": 20.0,
+      "navigationGapPx": 20.0,
+      "labelsUncropped": true,
+      "documentFitsViewport": true
+    },
+    {
+      "locale": "es",
+      "viewportWidth": 320,
+      "result": "PASS",
+      "direction": "column",
+      "buttons": [
+        {
+          "width": 246,
+          "height": 44
+        },
+        {
+          "width": 246,
+          "height": 44
+        }
+      ],
+      "gapPx": 12.0,
+      "detailsGapPx": 20.0,
+      "navigationGapPx": 20.0,
+      "labelsUncropped": true,
+      "documentFitsViewport": true
+    }
+  ],
+  "qualification": "Local presentation with fixture identity capabilities; not real sign-in, hosted verification or a physical-device test.",
+  "currentProductionPresentation": {
+    "deploymentId": "434eef0b-6693-46c1-a789-d356d4b37e25",
+    "sourceCommit": "97f0b485c14374ebb9711015b8f2914578f83cb9",
+    "screenshot": {
+      "file": "updates/2026-10-21/production-buttons-aligned.png",
+      "bytes": 46319,
+      "sha256": "0cdbebdb780901cda306bdb0b1f33542a4ab953a1547eef40146e050d0a5398d",
+      "origin": "Public integrated-browser observation of production deployment 434eef0b; no personal data.",
+      "establishes": "Aligned equal-size public Google/GitHub buttons in this view, not real OAuth or authenticated export."
+    },
+    "qualification": "Public integrated-browser visual observation only. The six precise viewport measurements above remain local fixture measurements."
+  }
+}

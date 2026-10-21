@@ -1,5 +1,8 @@
 # checkaccreatioandgivefeedback
 
+**Actualización posterior:** [Implementación y despliegue 0.9.0 · 21 de octubre](update-2026-10-21.html) · [Markdown](IMPLEMENTATION_UPDATE_2026-10-21.md). Informe autoinformado, estado 0 NO COMPLETADO: producción desplegada y readback público PASS; preview protegida por Access y pruebas autenticadas pendientes. El snapshot histórico se conserva.
+
+
 Dossier público de accreatio para análisis profundo y recomendaciones. Snapshot del 20 de octubre de 2026.
 
 - **[Abrir dossier HTML](https://edlopezpm-ops.github.io/checkaccreatioandgivefeedback/)**

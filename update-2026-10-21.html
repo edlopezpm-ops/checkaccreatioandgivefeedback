@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Actualización autoinformada local de accreatio 0.9.0, con gates pendientes y snapshot histórico conservado."><title>Implementación y despliegue 0.9.0 · accreatio · 21 octubre 2026</title><link rel="canonical" href="https://edlopezpm-ops.github.io/checkaccreatioandgivefeedback/update-2026-10-21.html"><link rel="icon" href="data:,"><style>:root{color-scheme:light;--paper:#f5f4f1;--ink:#182030;--muted:#566171;--line:#dbdedf;--accent:#6244bf;--dark:#111827}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:28px}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:#5336a8;text-underline-offset:3px}a:hover{color:#321e6d}a:focus-visible{outline:3px solid #b89cff;outline-offset:4px}button{font:inherit}img{max-width:100%;height:auto}.skip{position:absolute;top:-100px;left:20px;z-index:10;padding:10px;background:white}.skip:focus{top:12px}.masthead{background:var(--dark);color:white;padding:42px max(6vw,24px) 48px}.eyebrow{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#cbbcff}.masthead h1{font-size:clamp(30px,4vw,52px);line-height:1.12;letter-spacing:-.035em;max-width:1000px;margin:16px 0}.dek{max-width:850px;font-size:18px;color:#cbd1de;margin:0 0 22px}.meta{display:flex;flex-wrap:wrap;gap:10px;font-size:12px}.meta span{border:1px solid #424d62;border-radius:5px;padding:5px 10px}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}.actions a{display:inline-block;background:#e3d9ff;color:#30205d;border-radius:5px;padding:10px 15px;text-decoration:none;font-size:14px;font-weight:650}.actions a.secondary{background:transparent;color:#f1ebff;border:1px solid #727d92}.layout{max-width:1580px;margin:auto;display:grid;grid-template-columns:245px minmax(0,1fr);gap:48px;padding:42px 44px 80px}.sidebar{position:sticky;top:24px;align-self:start;max-height:calc(100vh - 48px);overflow:auto;font-size:13px}.sidebar strong{display:block;font-size:11px;letter-spacing:.12em;color:var(--muted);text-transform:uppercase;margin-bottom:14px}.sidebar a{display:block;padding:8px 10px;border-left:2px solid var(--line);color:#3e495c;text-decoration:none;line-height:1.45}.sidebar a:hover{background:white;border-left-color:var(--accent)}main{min-width:0;max-width:1120px}.document>h1{font-size:26px;margin:0 0 12px}.document h2{font-size:28px;line-height:1.25;letter-spacing:-.02em;border-top:1px solid var(--line);padding-top:30px;margin-top:50px}.document h2:first-of-type{margin-top:30px}.document h3{font-size:20px;line-height:1.35;margin-top:32px}.document h4{font-size:17px}.document p,.document li{max-width:94ch}.document p{margin:16px 0}.document ul,.document ol{padding-left:24px}.document li{margin:7px 0}.document blockquote{margin:22px 0;padding:8px 22px;border-left:4px solid #8d71d4;background:#ece7f6}.document code{font:13px/1.6 ui-monospace,SFMono-Regular,Consolas,monospace;background:#e9e9ed;padding:2px 5px;border-radius:3px;overflow-wrap:anywhere}.document pre{background:#171e2c;color:#e4e8f1;border-radius:7px;padding:22px;overflow:auto;max-width:100%;font-size:12px;line-height:1.65}.document pre code{background:none;color:inherit;padding:0;white-space:pre;overflow-wrap:normal}.table-wrap{overflow-x:auto;margin:24px 0;border:1px solid var(--line);border-radius:6px;background:white}.document table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.6}.document th,.document td{padding:12px 14px;text-align:left;vertical-align:top;border-bottom:1px solid #e1e4e6;min-width:110px}.document th{background:#ebe9f1;font-size:12px;font-weight:750}.document tr:last-child td{border-bottom:0}.document th:first-child,.document td:first-child{min-width:100px}.callout{padding:22px 25px;background:#ece7f8;border:1px solid #d3c7eb;border-radius:7px;margin:24px 0}.callout h2{margin:0;padding:0;border:0;font-size:20px}.callout p{margin:10px 0 0}.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:25px 0}.figure{margin:0;background:white;border:1px solid var(--line);border-radius:8px;overflow:hidden}.figure .visual{height:280px;display:flex;background:#e8e8ed;padding:12px;align-items:center;justify-content:center}.figure .visual img{max-height:256px;width:100%;object-fit:contain}.figure figcaption{padding:18px;font-size:13px;line-height:1.6}.figure .tag{display:inline-block;font-size:10px;font-weight:750;letter-spacing:.06em;text-transform:uppercase;padding:3px 7px;border-radius:4px;background:#e4edf8;color:#29435f}.figure .tag.fixture{background:#eee6fa;color:#51376d}.figure h3{font-size:17px;margin:10px 0}.figure p{margin:8px 0}.figure .limits{color:#586271;border-top:1px solid #e5e6e8;padding-top:10px}.figure .spec{font-size:11px;color:#667184}.sequence{padding:18px;background:#f0eaf8;border-left:3px solid #8560c7}.footer{background:#e9e8e5;border-top:1px solid var(--line);padding:28px max(6vw,24px);font-size:12px;color:#4d5969}.footer a{margin-right:14px}.document hr{border:0;border-top:1px solid var(--line);margin:45px 0}@media(min-width:1650px){.layout{gap:65px}}@media(max-width:1050px){.layout{grid-template-columns:1fr;padding:26px 25px 60px;gap:24px}.sidebar{position:static;max-height:none;display:flex;gap:4px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:18px}.sidebar strong{width:100%}.sidebar a{border:1px solid var(--line);border-radius:4px;padding:5px 9px;font-size:12px}.document h2{font-size:25px}.gallery{gap:15px}}@media(max-width:650px){body{font-size:15px}.masthead{padding:30px 20px}.dek{font-size:16px}.meta{font-size:10px}.layout{padding:22px 16px 45px}.gallery{grid-template-columns:1fr}.figure .visual{height:260px}.figure .visual img{max-height:236px}.document h2{font-size:23px;overflow-wrap:anywhere}.document h3{font-size:18px;overflow-wrap:anywhere}.document pre{padding:15px;font-size:11px}.actions a{font-size:12px;padding:9px 11px}.document th,.document td{padding:10px;font-size:12px}.document>h1{font-size:23px}.callout{padding:18px}.footer{overflow-wrap:anywhere}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{body{background:white;font-size:11pt}.sidebar,.actions{display:none}.layout{display:block;padding:0;max-width:none}.masthead{background:white;color:black;padding:0}.dek,.eyebrow{color:black}.document h2{break-after:avoid}.figure{break-inside:avoid}.gallery{display:block}.figure .visual{height:auto}.figure .visual img{max-height:500px}.document pre{white-space:pre-wrap;background:#eee;color:#111}.document pre code{white-space:pre-wrap}.footer{background:white}}.document{overflow-wrap:anywhere}.update-layout{max-width:1200px;margin:auto;padding:36px 24px 72px}.update-layout .document{max-width:none}</style></head><body><a class="skip" href="#content">Ir al contenido</a><header class="masthead"><div class="eyebrow">accreatio / Actualización fechada</div><h1>Implementación y despliegue 0.9.0</h1><p class="dek">21 de octubre de 2026 · Informe del equipo de implementación; no es una nueva auditoría independiente.</p><div class="meta"><span>Estado 0 · NO COMPLETADO</span><span>Producción 0.9.0 desplegada; gates pendientes</span><span>OAuth real y pruebas autenticadas pendientes</span></div><nav class="actions" aria-label="Documentos"><a href="IMPLEMENTATION_UPDATE_2026-10-21.md">Markdown para IA</a><a href="index.html">Snapshot histórico</a><a href="updates/2026-10-21/verification-summary.json">Resultados y límites</a><a href="updates/2026-10-21/samples/accreatio-basic-sample.zip" download>Ejemplo básico</a><a class="secondary" href="audits.html">Revisiones del 20 de octubre</a></nav></header><div class="update-layout"><main id="content" class="document"><p>21 de octubre de 2026. <strong>Origen: informe del equipo de implementación; no es una nueva auditoría independiente.</strong></p>
+<p><strong>Estado global 0: NO COMPLETADO — EN CURSO O BLOQUEADO.</strong> La versión 0.9.0 está desplegada en <a href="https://accreatio.com/">accreatio.com</a>, con readback público acotado PASS. Siguen pendientes OAuth real, exportación autenticada desde producción, Safari en iPhone físico y aceptación final de release. No se declara preview verificada ni el hito global de producción READY dentro del alcance completo.</p>
+<p><a href="update-2026-10-21.html">Versión HTML</a> · <a href="facts-only.md">Snapshot factual del 20 de octubre</a> · <a href="INDEPENDENT_REVIEW_MASTER_2026-10-20.md">Master histórico conservado</a> · <a href="updates/2026-10-21/update-provenance.json">Procedencia</a></p>
+<h2 id="1-procedencia-y-estado">1. Procedencia y estado</h2>
+<p>Las cuatro revisiones y su master del 20 de octubre permanecen íntegros, con sus fechas y conclusiones. Esta actualización añade lo implementado y observado después; no reescribe capturas para aparentar que los defectos no existieron. Los hallazgos sobre 0.8.0 no se trasladan automáticamente a 0.9.0, ni los resultados locales del candidato a producción.</p>
+<p>La base de la aplicación es <code>70612512e2115036fa71a08075a596a04bbff942</code>. El código actual de 0.9.0 es <strong><code>97f0b485c14374ebb9711015b8f2914578f83cb9</code></strong>, desplegado en producción. El pipeline final y el deployment vigente usan <strong><code>index-BO-vhWup.js</code></strong>, 488.442 bytes, SHA-256 <code>7fd03978c22af76fe65b3ad9020e82292899794019113f571160876e8e0e5470</code>. El commit documental final es <code>20e5053f3d0a41c10cbef2e561fa3b2949703683</code>, con el mismo código de aplicación. El readback público de producción confirmó el mismo tamaño y hash local; la preview autenticada continúa bloqueada por Access. No se publica código privado, logs privados, credenciales ni datos de cuentas.</p>
+<p>El código anterior <code>0dec26d9fc299e8612b32fd8b93f090361cc25cc</code>, su commit documental <code>e72116f640c86c785eda40766bc847f7f7213e08</code> y el despliegue <code>3027a9b5</code> constituyen el <strong>primer hito de producción</strong>, preservado en el <a href="updates/2026-10-21/release-history.json">historial de releases</a>. Usaban <code>index-CbFRb9nV.js</code>, 488.184 bytes, SHA-256 <code>b3007c5b6cc7f106cda2b1bdf8df51d17b6f86ca074750351e4d82413456c5b7</code>. El candidato actual añade el ajuste de botones y una corrección del verificador de muestras, con su propio pipeline y recibo de despliegue; no se le atribuyen los resultados anteriores por igualdad de versión.</p>
+<p>El pipeline integrado final <code>npm run verify</code>, sobre <strong>97f0b485</strong>, terminó con <strong>exit 0 y 355/355 pruebas PASS</strong>. Su recibo canónico comenzó a las 16:04:47 UTC del 21 de octubre. Esto acredita esa ejecución local, sin sustituir las rondas reales de identidad, la exportación autenticada de producción ni la aceptación humana. El pipeline anterior de 0dec26d se conserva como evidencia histórica separada.</p>
+<p>Últimos hitos demostrados: verificación local completa, migración aislada de cuenta de preview, despliegues reconocidos y despliegue de producción con readback público acotado. <strong>No se ha alcanzado el hito 2, PREVIEW VERIFICADO, ni el hito global 3 de readiness completa.</strong> El propietario autorizó explícitamente desplegar en el dominio .com; esa autorización ya se ejecutó y no está pendiente.</p>
+<h2 id="2-producto-y-recorrido">2. Producto y recorrido</h2>
+<p>accreatio organiza una idea, sus límites y materiales en un encargo y un ZIP para continuar con un asistente de programación. El navegador genera el paquete de forma determinista, sin inferencia de modelos ni claves de IA. El producto no construye por sí solo la aplicación descrita. El servicio de cuenta y cuota sigue separado del contenido local del proyecto.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Área</th>
+<th>Cambio implementado localmente</th>
+<th>Límite</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Preparación básica</td>
+<td>Cinco preguntas: nombre, fase, idea, límites y revisión; discovery añade adjuntos como sexta pregunta. Generalista, ruta local y orquestación desactivada inicialmente.</td>
+<td>Roles describen trabajo futuro, no agentes disponibles o ejecutándose.</td>
+</tr>
+<tr>
+<td>Opciones avanzadas</td>
+<td>Equipo, ruta, guías y orquestación se ajustan desde revisión.</td>
+<td>Stack, presupuesto y aprobaciones no se inventan.</td>
+</tr>
+<tr>
+<td>Revisión</td>
+<td>Idea y límites completos; roles, ruta, orquestación, guías, entrega y adjuntos visibles.</td>
+<td>Los detalles técnicos siguen disponibles como referencia desplegable.</td>
+</tr>
+<tr>
+<td>Acción</td>
+<td>Una elección en revisión: comprobar sin descargar o crear y descargar ZIP. El diálogo final confirma esa elección.</td>
+<td>La comprobación sale antes de crear ZIP y no consume autorización nueva.</td>
+</tr>
+<tr>
+<td>Continuación</td>
+<td>START, instrucción compartida ES/EN y edición para otra exportación.</td>
+<td>Solicitar una descarga no prueba que el archivo se guardó físicamente.</td>
+</tr>
+<tr>
+<td>Reintento</td>
+<td>Mismo ZIP retenido y recibo real de autorización de 48 horas.</td>
+<td>Requiere que el ZIP permanezca en la pestaña y el recibo siga vigente.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="3-zip-y-primer-uso">3. ZIP y primer uso</h2>
+<p>START dirige primero a AGENTS, PROJECT_PROMPT, discovery y master. AGENTS es canónico; CLAUDE es un adaptador corto y CODEX un puntero manual, sin afirmar carga automática universal. El master contiene Status, fase y perfil Lean, con preguntas pendientes explícitas.</p>
+<p>El básico no requiere AEKR instalado, un checkout privado ni construir un orquestador. El avanzado incluye guías de configuración, runtime y gates con un único contrato <code>.ai-engineering/orchestration.yaml</code>. Su preparación es trabajo adicional sujeto a revisión humana. No se distribuye un runtime ni se considera seguro un script por generarse localmente. Se comprobaron referencias obligatorias y conservación de adjuntos.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Ejemplo del generador real</th>
+<th>Contenido</th>
+<th>Acceso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Básico ES</td>
+<td>21 archivos; proyecto ficticio y dos adjuntos; orquestación desactivada.</td>
+<td><a href="updates/2026-10-21/samples/accreatio-basic-sample.zip">ZIP básico</a></td>
+</tr>
+<tr>
+<td>Avanzado EN</td>
+<td>27 archivos; proyecto ficticio, dos adjuntos y configuración opcional.</td>
+<td><a href="updates/2026-10-21/samples/accreatio-orchestration-sample.zip">ZIP avanzado</a></td>
+</tr>
+<tr>
+<td>Procedencia</td>
+<td>Fecha, versión, entradas y hashes del generador. sourceRevision registra la base; los hashes distinguen las fuentes modificadas.</td>
+<td><a href="updates/2026-10-21/samples/manifest.json">Manifiesto</a></td>
+</tr>
+<tr>
+<td>Inicio</td>
+<td>Misma fuente para ZIP, ejemplo y botón posterior a exportar.</td>
+<td><a href="updates/2026-10-21/samples/START.es.md">ES</a> · <a href="updates/2026-10-21/samples/START.en.md">EN</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>Un asistente aislado recibió solo cada paquete extraído, comenzó por START y produjo una propuesta útil del problema y un criterio observable de éxito, sin reparar el paquete ni elegir stack. En el avanzado conservó el plan de tres roles y dejó el runtime pendiente de revisión. Los documentos creados después de extraer son <a href="updates/2026-10-21/handoff-basic-problem-proposal.md">resultado básico</a> y <a href="updates/2026-10-21/handoff-advanced-problem-proposal.md">resultado avanzado</a>. No representan software construido, agentes ejecutados ni aceptación humana.</p>
+<p>La aplicación mantiene su licencia privada. Los avisos MIT de plantillas reutilizables se incluyen en los ZIP; no conceden derechos sobre la aplicación, las marcas o los adjuntos de terceros.</p>
+<p>Después del primer despliegue se corrigió el verificador de ejemplos: <code>--check</code> reproduce el SHA de procedencia registrado en el manifiesto, validado como SHA de cuarenta caracteres, y recalcula los hashes de las fuentes actuales. Generar ejemplos sigue usando el HEAD del checkout. Así un commit posterior no cambia por sí solo la muestra que se está comprobando.</p>
+<p>Las muestras vigentes registran <code>sourceRevision</code> <code>357d297e2c0ff1889d20e8449dcf4f78438fa1d4</code>. La comparación de ambos ZIP extraídos encontró una sola entrada diferente por paquete, <code>.accreatio/project.json</code>, y un único campo diferente, <code>sourceRevision</code>. El resto de las entradas, adjuntos, prompts, instrucciones y documentos R11 se conserva byte a byte; no era corrupción del ZIP. <a href="updates/2026-10-21/examples-provenance-comparison.json">Comparación saneada</a>. Las <a href="updates/2026-10-21/history/first-deployment-samples/manifest.json">muestras del primer despliegue</a> se conservan por separado.</p>
+<h2 id="4-borrador-y-recuperacion">4. Borrador y recuperación</h2>
+<p>Respuestas, opciones, posición e idioma se guardan mediante un journal local inmediato e IndexedDB. Para adjuntos se conserva solo la cantidad, sin nombres ni bytes. Reseleccionar u omitir archivos exige una acción explícita. El borrador no es una copia de seguridad y no se sincroniza con la cuenta.</p>
+<p>Se comprobaron recarga inmediata, último cambio y posición, Atrás/Adelante, retorno de estilo OAuth sin idioma explícito, errores de almacenamiento, dos pestañas y esquemas futuros. Se corrigieron precedencia del journal obsoleto, borrado desde pestaña obsoleta y versiones futuras. La interfaz distingue guardado confirmado de error y no anuncia recuperación que no ocurrió.</p>
+<h2 id="5-identidad-implementado-frente-a-habilitado">5. Identidad: implementado frente a habilitado</h2>
+<p>GitHub App se implementó para identidad de usuario, conservando Google y los IDs internos. El backend usa Authorization Code, PKCE S256 y state breve, de un solo uso y vinculado al navegador, proveedor, retorno y propósito. Comprueba la identidad con GitHub y emite su propia sesión revocable; no retiene el token del proveedor como credencial de cuenta.</p>
+<p>Conectar un segundo proveedor es explícito desde la cuenta iniciada; coincidir en correo no fusiona cuentas. Los controles sensibles requieren nueva prueba ligada a la acción específica. Cuota y controles corresponden a la misma cuenta interna. Pruebas deterministas y UI sintética no equivalen a OAuth real.</p>
+<p>Se configuraron Apps GitHub separadas para entorno controlado y producción: lectura de correo, sin permisos de repositorios u organizaciones. La configuración está habilitada en preview y el endpoint público de producción anuncia Google y GitHub disponibles, con OTP deshabilitado. Las Apps y secretos necesarios ya están preparados; no se requieren ni publican más credenciales para esta preparación. El flag de preview y la capacidad pública de producción no demuestran un login real operativo.</p>
+<p>Para evitar escritores anteriores incompatibles se preparó un store de cuenta aislado de preview. El respaldo cifrado se restauró y las migraciones necesarias pasaron con igualdad de columnas originales, dos cuentas/dos identidades preservadas, sin backfill histórico de aceptación, integridad correcta y cero errores de claves foráneas. El cambio de binding de mantenimiento de preview fue desplegado; no constituye una preview de la aplicación verificada. En producción se conservó el store existente y se aplicó la migración aditiva 0006, según el recibo de la sección siguiente. No se publican identificadores privados de infraestructura ni datos de cuentas.</p>
+<p>La API de administración reconoció el despliegue <code>176390b5-2148-4010-8bac-de88f2b592c9</code>, etapa de despliegue <code>success</code>, el <strong>21 de octubre de 2026 a las 15:45:12 UTC</strong>, y confirmó el SHA del código y el binding al nuevo store aislado. Direcciones: <a href="https://176390b5.accreatio.pages.dev">deployment de preview</a> y <a href="https://google-oidc-preview.accreatio.pages.dev">alias controlado</a>. Este readback corresponde al plano de administración, no al funcionamiento de las APIs de cuenta.</p>
+<p>El smoke hosted está <strong>BLOCKED por Cloudflare Access</strong>, que requiere el acceso personal autorizado del propietario; ya se notificó esa acción. No se probaron OAuth real, capacidades de la aplicación ni el asset servido tras ese control. El equipo documentó una primera vista con UI antigua como estado de caché y no la contabiliza como evidencia del candidato 0.9.0. El reconocimiento de despliegue no sustituye el smoke autenticado pendiente.</p>
+<h2 id="6-comunicacion-y-arquitectura">6. Comunicación y arquitectura</h2>
+<p>La bienvenida permite inspeccionar un ejemplo antes del acceso. El copy ES/EN distingue preparación de proyecto terminado, cuenta remota de contenido local, roles de agentes y solicitud de descarga de guardado físico. FAQ, About, navegación y notas históricas del Blog se reconciliaron, preservando fechas y autorías. Electron se describe como desarrollo congelado.</p>
+<p>El propietario aprobó los textos y versiones <code>2026-10-21-privacy</code> y <code>2026-10-21-beta</code>, aplicados y presentes en el readback público de producción. Esto no representa revisión jurídica formal. Cookies opcionales y tratamiento necesario de cuenta siguen separados, sin aceptación histórica inventada.</p>
+<p>La arquitectura conserva React/TypeScript/Vite, Cloudflare Pages/Functions y D1 separados para cuenta y Blog, con generación del ZIP en navegador. No se añadieron inferencia IA, pagos, suscripciones, sincronización de proyectos, acceso a repositorios ni telemetría. <a href="updates/2026-10-21/stack.json">Versiones declaradas del stack</a>.</p>
+<h3 id="ajuste-posterior-de-botones-googlegithub">Ajuste posterior de botones Google/GitHub</h3>
+<p>El propietario observó que los botones estaban pegados y desalineados después del primer despliegue. El candidato posterior iguala sus dimensiones, alinea sus etiquetas y añade separación explícita; en pantallas estrechas los apila. El diagnóstico usó Edge real headless con capacidades y cuenta sintéticas, en Vite local: no fue una prueba de login ni de producción.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Viewport</th>
+<th>Dimensión observada de cada botón</th>
+<th>Disposición y separación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Escritorio 1280 px</td>
+<td>Aproximadamente 250 × 44 px, ambos iguales.</td>
+<td>Fila alineada, separación de 12 px.</td>
+</tr>
+<tr>
+<td>390 px</td>
+<td>262 × 44 px.</td>
+<td>Apilados, separación de 12 px.</td>
+</tr>
+<tr>
+<td>320 px</td>
+<td>246 × 44 px.</td>
+<td>Apilados, separación de 12 px.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Las seis combinaciones ES/EN y viewport pasaron sin recortar etiquetas; los detalles quedan a 20 px de los botones. Son medidas de esos viewports emulados, no de teléfonos físicos. <a href="updates/2026-10-21/provider-buttons-summary.json">Resumen saneado del diagnóstico</a>.</p>
+<p><img alt="Producción vigente 434eef0b: botones Google y GitHub alineados y separados" src="updates/2026-10-21/production-buttons-aligned.png" /></p>
+<p>Captura pública del deployment vigente <code>434eef0b</code>, observada en el navegador integrado. Confirma la presentación corregida de ambos botones en esa vista; no acredita OAuth real ni una sesión autenticada.</p>
+<h2 id="7-verificacion-y-limites">7. Verificación y límites</h2>
+<p>El pipeline local completo final, sobre 97f0b485, pasó con 355 pruebas, typecheck, formato, builds y sus smokes establecidos. Lighthouse informó rendimiento 96, accesibilidad 100, buenas prácticas 100 y SEO 69. El gate vigente admite noindex de la beta privada; no se presenta SEO 69 como un umbral de 90 superado. Su recibo se distingue del primer pipeline de 0dec26d. Esos indicadores no certifican accesibilidad completa, seguridad ni posicionamiento.</p>
+<h3 id="deployment-vigente-de-produccion-434eef0b">Deployment vigente de producción: 434eef0b</h3>
+<p>El despliegue vigente <strong><code>434eef0b-6693-46c1-a789-d356d4b37e25</code></strong>, creado el <strong>21 de octubre de 2026 a las 16:07:38 UTC</strong>, terminó en <code>success</code> a las <strong>16:07:42 UTC</strong> en <a href="https://accreatio.com/">accreatio.com</a>. Usa el código <strong>97f0b485</strong> del pipeline final PASS. El readback de las <strong>16:08:09 UTC</strong> confirmó el mismo store de producción y:</p>
+<ul>
+<li><code>./assets/index-BO-vhWup.js</code>, 488.442 bytes, SHA-256 <code>7fd03978c22af76fe65b3ad9020e82292899794019113f571160876e8e0e5470</code>, idéntico al bundle local final.</li>
+<li><a href="https://accreatio.com/examples/accreatio-basic-sample.zip">Ejemplo básico vigente</a>, 19.635 bytes, SHA-256 <code>bbf72008cecfdf648718ba85c86f1e234e14877f2c5c2d33b56f21b2d9225b57</code>, idéntico a la muestra local regenerada. Esto no es una exportación de proyecto autenticada.</li>
+<li>Métodos con <code>no-store</code>: Google y GitHub disponibles, OTP deshabilitado; rutas públicas y avisos legales HTTP 200, con las mismas versiones aprobadas.</li>
+</ul>
+<p>El navegador integrado confirmó los botones actuales alineados. No se hicieron cambios adicionales de D1 después de la migración aditiva 0006. La autorización para desplegar en .com ya se ejecutó; faltan las pruebas autenticadas y la aceptación final, no una autorización de promoción nueva.</p>
+<p>Los recorridos usaron navegadores reales de escritorio y backend sintético: Edge, Firefox y WebKit de Playwright, ES/EN, teclado/foco/errores, revisión, descarga/reintento, rutas y viewports móviles emulados. El borde de campo medido dio 4,67:1 y se conservó foco visible. WebKit no acredita Safari en iPhone físico. <a href="updates/2026-10-21/verification-summary.json">Resumen saneado</a>.</p>
+<p>La revisión independiente enfocada del diff informó siete hallazgos accionables —un P1 y seis P2— cerrados con correcciones y revalidación proporcionada. Su alcance era la fuente local y comprobaciones determinadas; no una aceptación de release. Este addendum resume ese resultado desde implementación, sin atribuirse independencia adicional.</p>
+<p>El inventario npm informó cero vulnerabilidades high/critical y ocho moderate en la cadena retenida de desarrollo/escritorio, con versiones fijadas sin cambios. No es una auditoría integral de seguridad ni ausencia de defectos.</p>
+<h3 id="primer-despliegue-de-produccion-readback-publico-acotado">Primer despliegue de producción: readback público acotado</h3>
+<p>El despliegue <code>3027a9b5-f62e-4f68-99eb-45731f06a630</code>, creado el <strong>21 de octubre de 2026 a las 15:53:00 UTC</strong>, terminó en <code>success</code> a las <strong>15:53:03 UTC</strong> en <a href="https://accreatio.com/">https://accreatio.com/</a>, con el mismo código <code>0dec26d9fc299e8612b32fd8b93f090361cc25cc</code> probado localmente. A las <strong>15:53:54 UTC</strong>, el readback público confirmó:</p>
+<ul>
+<li>JavaScript <code>./assets/index-CbFRb9nV.js</code>, 488.184 bytes, SHA-256 <code>b3007c5b6cc7f106cda2b1bdf8df51d17b6f86ca074750351e4d82413456c5b7</code>, idéntico al artefacto local de ese primer hito.</li>
+<li>Ejemplo básico leído en aquel despliegue, 19.635 bytes, SHA-256 <code>abb8a7bea2be1ee3630d6485e9e95003027870819c6f8e03f93d52e5a763a733</code>, idéntico a la <a href="updates/2026-10-21/history/first-deployment-samples/accreatio-basic-sample.zip">muestra local de ese hito conservada</a>. Descargar esa muestra pública no equivale a exportar un proyecto autenticado desde producción.</li>
+<li>Endpoint de métodos con <code>Cache-Control: no-store</code>: Google disponible, GitHub disponible y OTP deshabilitado. Esto comprueba la capacidad anunciada, no el flujo OAuth.</li>
+<li>Respuesta HTTP 200 en las rutas públicas comprobadas de About ES, Blog EN, privacidad, términos, cookies y manifiesto; versiones de avisos del 21 de octubre presentes.</li>
+</ul>
+<p>El navegador integrado mostró la bienvenida actual, el ejemplo desplegado y los botones Google/GitHub, sin completar identidad ni aceptar por la persona. Un estado inicial antiguo del service worker se actualizó en la siguiente recarga sin borrar el borrador; esa primera vista antigua no se usó como prueba del candidato.</p>
+<p>El respaldo protegido de producción fue restaurado en SQLite aislado y contrastado antes de aplicar 0006 al store existente. Se preservaron todas las columnas originales: dos cuentas, dos identidades, un recibo de política y un recibo de exportación; había cero sesiones y cero transacciones en ese corte. No se descifró PII ni se hizo reset o bifurcación del store de producción. El mantenimiento de producción conservó su cron compatible. Son resultados agregados de custodia y migración, no publicación de datos de cuenta.</p>
+<p><img alt="Producción: bienvenida actual y ejemplo público expandido, sin datos personales" src="updates/2026-10-21/production-welcome-example.png" /></p>
+<p>Captura pública del primer despliegue de producción, antes del ajuste posterior de botones. Muestra la bienvenida y la muestra accesible antes de iniciar sesión; no demuestra creación autenticada ni utilidad de una aplicación terminada.</p>
+<p><img alt="Producción: botones públicos de Google y GitHub, sin sesión de usuario" src="updates/2026-10-21/production-google-github.png" /></p>
+<p>Captura pública del primer despliegue de producción, antes del ajuste posterior de botones. Muestra los métodos anunciados y el aviso de continuación; no demuestra OAuth real, vinculación de cuenta, aceptación humana ni consumo de cuota.</p>
+<p>El smoke de preview sigue BLOCKED por Cloudflare Access, que no se retiró ni se evitó. Safari de iPhone físico también sigue BLOCKED. OAuth real y la exportación de un proyecto autenticado desde la UI de producción permanecen NOT RUN. Por ello el estado global continúa siendo 0.</p>
+<h2 id="8-exportacion-de-carga">8. Exportación de carga</h2>
+<p>Desde UI real se exportaron dos casos ficticios con Edge 155.0.4283.62, headless, Windows x64, 1440×1000 y movimiento reducido. Cuenta/autorización eran fixtures. El generador de producción creó el ZIP y el navegador lo descargó. Cada adjunto se extrajo y comparó byte a byte y por SHA-256.</p>
+<p>Esta medición corresponde al bundle local anterior <code>index-CfNKP_Lr.js</code>, SHA-256 <code>d16e4a691f16942bb528002d00050ba9f1a325f19adb249909c2260f7357e673</code>. Sus bytes JavaScript difieren de CbFRb9nV y del candidato posterior BO-vhWup. Las fuentes del generador de paquetes usado por el navegador conservan sus hashes; el script de muestras cambió únicamente la reproducción de procedencia. La comparación de entradas conserva la correlación del contrato de exportación, <strong>sin convertir estas cifras en una medición del frontend final</strong>. El primer pipeline completo documentado se ejecutó sobre CbFRb9nV; el pipeline final PASS tiene su propio registro sobre BO-vhWup. Los tiempos funcionales anteriores, incluido el caso de recarga de 103 ms, conservan su recibo original y tampoco se atribuyen al frontend final.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Caso</th>
+<th>ZIP descargado</th>
+<th>Generación</th>
+<th>Confirmación hasta descarga y éxito</th>
+<th>Respuesta durante generación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20 × 5 MiB = 100 MiB</td>
+<td>104.882.708 bytes; 20 adjuntos idénticos.</td>
+<td>372,9 ms</td>
+<td>807 ms</td>
+<td>38 ticks de 10 ms; intervalo máximo 17,0 ms; 22 frames; Tab confiable recibido en 2 ms.</td>
+</tr>
+<tr>
+<td>Un archivo de 20 MiB</td>
+<td>20.989.774 bytes; adjunto idéntico.</td>
+<td>76,8 ms</td>
+<td>262 ms</td>
+<td>8 ticks; intervalo máximo 25,3 ms; 4 frames; Tab confiable recibido en 1 ms.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Los límites exactos fueron aceptados; al llegar a veinte archivos se deshabilitó añadir más. Temporizadores, frames y teclado se observaron durante la creación real del ZIP. <strong>No se midió código anterior: no se afirma mejora ni ausencia de regresión frente a otro baseline.</strong> Es una medición de esta máquina y ejecución, no garantía para todos los dispositivos ni carga de producción. <a href="updates/2026-10-21/export-load-summary.json">Método, resultados y hashes saneados</a>.</p>
+<h2 id="9-pendientes-para-cerrar-readiness">9. Pendientes para cerrar readiness</h2>
+<h3 id="matriz-publica-r01r12">Matriz pública R01–R12</h3>
+<p>Esta matriz resume los criterios de readiness del candidato vigente y sus límites. Los PASS tienen el alcance indicado; no se suman para declarar aceptación global. Es una síntesis de implementación, sin una nueva auditoría.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Criterio</th>
+<th>Estado</th>
+<th>Evidencia y límite pendiente</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R01 — Base, alcance, instrucciones y entornos</td>
+<td>PASS</td>
+<td>Candidato identificado; producción sirve los bytes del build final probado.</td>
+</tr>
+<tr>
+<td>R02 — Referencias, contexto, fase, decisiones y adjuntos</td>
+<td>BLOCKED</td>
+<td>ZIP locales y muestras públicas fieles; falta el ZIP básico generado desde la UI autenticada de producción.</td>
+</tr>
+<tr>
+<td>R03 — Básico autónomo y avanzado autocontenido</td>
+<td>PASS</td>
+<td>Paquetes reales ES/EN, procedencia, licencias, dependencias y configuración única comprobados localmente.</td>
+</tr>
+<tr>
+<td>R04 — Identidad estable y proveedores</td>
+<td>BLOCKED</td>
+<td>PKCE/state, conexión explícita y regresiones locales; faltan OAuth real y enlaces autorizados. Preview sigue bloqueada por Access.</td>
+</tr>
+<tr>
+<td>R05 — Google, cuota, controles y conservación</td>
+<td>BLOCKED</td>
+<td>Migraciones y preservación comprobadas; faltan cuenta, cuota y controles con proveedores reales.</td>
+</tr>
+<tr>
+<td>R06 — Borrador, posición, adjuntos y multitab</td>
+<td>PASS</td>
+<td>Recarga, guardado y fallos locales comprobados en los navegadores declarados. No constituye backup entre dispositivos.</td>
+</tr>
+<tr>
+<td>R07 — Revisión, acción, continuación y reintento</td>
+<td>BLOCKED</td>
+<td>Recorrido local y descarga/reintento real comprobados; falta completar el recorrido autenticado en producción.</td>
+</tr>
+<tr>
+<td>R08 — Comunicación C01–C64 y ejemplo real</td>
+<td>PASS</td>
+<td>Copy ES/EN, muestra pública y avisos aprobados publicados. No equivale a revisión jurídica formal.</td>
+</tr>
+<tr>
+<td>R09 — Accesibilidad y compatibilidad declarada</td>
+<td>BLOCKED</td>
+<td>Teclado, foco, contraste y viewports emulados comprobados; falta Safari en iPhone físico.</td>
+</tr>
+<tr>
+<td>R10 — Rutas, recarga, callbacks y caché</td>
+<td>BLOCKED</td>
+<td>Pruebas locales y rutas públicas comprobadas; faltan callback/cuenta reales y preview tras Access.</td>
+</tr>
+<tr>
+<td>R11 — Handoff aislado útil</td>
+<td>PASS</td>
+<td>Ambos paquetes produjeron una primera propuesta útil sin reparación; no sustituye el ZIP autenticado de R02/R12.</td>
+</tr>
+<tr>
+<td>R12 — Release y criterios de aceptación</td>
+<td>BLOCKED</td>
+<td>Despliegue .com autorizado y ejecutado, bytes y custodia comprobados; faltan ZIP autenticado, controles reales y aceptación final.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Resultado: <strong>cinco PASS y siete BLOCKED; estado global 0, NO COMPLETADO</strong>. La autorización para desplegar ya se ejecutó; no está pendiente una nueva autorización de promoción.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Pendiente</th>
+<th>Acción necesaria</th>
+<th>Consecuencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Acceso personal a preview</td>
+<td>Completar Cloudflare Access y ejecutar el smoke hosted del candidato exacto.</td>
+<td>El smoke está BLOCKED; no hay readback verificado del asset ni de capacidades de la aplicación.</td>
+</tr>
+<tr>
+<td>OAuth real</td>
+<td>Rondas autorizadas Google/GitHub, conexión explícita y controles específicos.</td>
+<td>Identidad real del candidato aún no acreditada.</td>
+</tr>
+<tr>
+<td>Hosted</td>
+<td>Desplegar y comprobar el mismo candidato en entorno controlado compatible.</td>
+<td>No se declara preview verificada.</td>
+</tr>
+<tr>
+<td>Producción autenticada</td>
+<td>Completar identidad real, controles/cuota y preparar, descargar e inspeccionar un ZIP desde la UI autenticada.</td>
+<td>El despliegue y readback público ya pasaron; esta prueba autenticada sigue NOT RUN.</td>
+</tr>
+<tr>
+<td>Safari físico</td>
+<td>Recorrer el flujo principal en Safari de iPhone real.</td>
+<td>Emulación y WebKit no sustituyen este gate.</td>
+</tr>
+<tr>
+<td>Release</td>
+<td>Decisión humana explícita del propietario con evidencia.</td>
+<td>Ningún agente o reporte se concede esa autoridad.</td>
+</tr>
+</tbody>
+</table></div>
+<p>El estado continúa siendo <strong>0 — NO COMPLETADO</strong>, aunque el pipeline y distintas comprobaciones locales estén en PASS.</p></main></div><footer class="footer">Preparado localmente. La publicación y el estado hosted requieren recibos reales; este documento no concede aceptación de release.</footer></body></html>

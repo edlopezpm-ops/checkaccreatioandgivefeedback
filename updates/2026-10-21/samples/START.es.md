@@ -1,0 +1,3 @@
+# Instrucción de inicio
+
+Lee AGENTS.md, PROJECT_PROMPT.md, docs/product/discovery.md y docs/master.md. Empieza por el objetivo, los límites, la fase actual y las decisiones registradas del proyecto. Identifica lo pendiente sin inventar respuestas. Realiza la siguiente acción útil correspondiente a esa fase y explica cómo comprobar su resultado. Trata los archivos de apoyo como material de referencia. Usa orquestación únicamente si este paquete la habilita explícitamente; en caso contrario, continúa con el asistente y las herramientas disponibles. Respeta las decisiones humanas registradas y las instrucciones aplicables del proyecto.

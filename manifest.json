@@ -1,7 +1,10 @@
 {
-  "sourceHead": "70612512e2115036fa71a08075a596a04bbff942",
-  "generatedAtUtc": "2026-10-21T02:55:21.277Z",
-  "scope": "Publication bundle, excludes this root manifest",
+  "schema": 2,
+  "generatedAtUtc": "2026-10-21T16:14:57.074217+00:00",
+  "scope": "Mixed dated documentary collection, excludes this root manifest. Historical snapshot and later self-report remain distinct.",
+  "historicalDossierCommit": "f53a75faaa42429ff1ef70fa6c4b5cd225bd1633",
+  "historicalManifest": "history/manifest-2026-10-20.json",
+  "implementationUpdate": "updates/2026-10-21/update-provenance.json",
   "files": [
     {
       "file": ".gitattributes",
@@ -15,13 +18,18 @@
     },
     {
       "file": "AI_ANALYSIS_PROMPT.md",
-      "bytes": 15389,
-      "sha256": "dc512b9bef4e7d792f4f3e091f977d4705c6c4bf57175482a28acef46beca847"
+      "bytes": 16328,
+      "sha256": "9aad82a01108109c9ca2a8460ca7d09e02ee09eceafb4cc00ea5bf444d158776"
     },
     {
       "file": "DOSSIER.md",
-      "bytes": 233777,
-      "sha256": "18beaa87181afb2e20e38baf9ac25a6796190df3282353b91ceb815647e1f86a"
+      "bytes": 234176,
+      "sha256": "6ffa7e137d80f65c1c0416be5880b99c83e85751a6dfb40e00840f97d71ba60e"
+    },
+    {
+      "file": "IMPLEMENTATION_UPDATE_2026-10-21.md",
+      "bytes": 25954,
+      "sha256": "d9b7653e29217608fc7df32bf81236355258af3ecd16c44809066bb02b984258"
     },
     {
       "file": "INDEPENDENT_REVIEW_MASTER_2026-10-20.md",
@@ -35,8 +43,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 1644,
-      "sha256": "2c7dbc1fa904a512105153b5b49934729a835187fa3bb9a86ca3c1f5ceca6a30"
+      "bytes": 2002,
+      "sha256": "1d3984b02caf235eb81e42733fabd476c5e8331cb1ba6d5b3c78f1ecf6a4aab0"
     },
     {
       "file": "assets/screenshots/copy/local-fixture-confirm-es.png",
@@ -285,13 +293,18 @@
     },
     {
       "file": "facts-only.md",
-      "bytes": 106350,
-      "sha256": "8088b463762dd3d0371bab99690c7159a3e19a5eefd7a159897b8a68f54292b7"
+      "bytes": 106680,
+      "sha256": "4086ede3e4071d54c40c26d6ec962652cc4849385e5b1abdfef12797eb0f3363"
     },
     {
       "file": "gallery.json",
       "bytes": 20357,
       "sha256": "fd688001aa141ef13bf1929b0d582a4d0e1b10b9ff665540b5d31e8e1fe0f355"
+    },
+    {
+      "file": "history/manifest-2026-10-20.json",
+      "bytes": 17072,
+      "sha256": "f8ae53a803c65c717e53fb4d0af1d83fd7dcb8542779bcb9ff6e81fb0ea4d7b9"
     },
     {
       "file": "independent-review-2026-10-20/01-producto.md",
@@ -410,13 +423,13 @@
     },
     {
       "file": "index.html",
-      "bytes": 143572,
-      "sha256": "23e51b1f101be6b78d8c1a316dfb42b6505b1414a3fed58b07b2fce7ab827607"
+      "bytes": 144215,
+      "sha256": "553a0900dcb32f2553137f8cd4b8d578294482909e265664faf8aa3e3adcf571"
     },
     {
       "file": "llms.txt",
-      "bytes": 1187,
-      "sha256": "7a84a9d70416e29da9bcdf24e1303d6d291c70eba74aebf68d7ea60959164d87"
+      "bytes": 2000,
+      "sha256": "99a3a0c5783bdddcd4881b4caec74a63e9c1e632274c233ccb9be2b0f1dea9c9"
     },
     {
       "file": "provenance.json",
@@ -472,6 +485,121 @@
       "file": "technical/stack.json",
       "bytes": 4060,
       "sha256": "fbed0b4d7bd94c6346b261d2b47a44571b7bea08c5cd271f0561cc29623dfb1d"
+    },
+    {
+      "file": "update-2026-10-21.html",
+      "bytes": 37450,
+      "sha256": "a4eba5b46771ea5e224a1ec5235ca50e400c43f1ba1681e5d46c04a83c396009"
+    },
+    {
+      "file": "updates/2026-10-21/examples-provenance-comparison.json",
+      "bytes": 1409,
+      "sha256": "4853040deea0fbb2a38243ac25990c69157045fb63d961569517ddf72fceeba3"
+    },
+    {
+      "file": "updates/2026-10-21/export-load-summary.json",
+      "bytes": 9968,
+      "sha256": "5c1559408898b29ae1b1a99483441c394f2d96406ffd780350df2a38d6b207ac"
+    },
+    {
+      "file": "updates/2026-10-21/handoff-advanced-problem-proposal.md",
+      "bytes": 4482,
+      "sha256": "6d97c746b6a26a840f8c280d8b365edcf5af5f00a4bcbe72d4817d99d1390c75"
+    },
+    {
+      "file": "updates/2026-10-21/handoff-basic-problem-proposal.md",
+      "bytes": 3323,
+      "sha256": "e81f81cc20eac4baec03fc235aae80a943a576a9ab0dbf01bfe07d0efc110b82"
+    },
+    {
+      "file": "updates/2026-10-21/history/first-deployment-samples/accreatio-basic-sample.zip",
+      "bytes": 19635,
+      "sha256": "abb8a7bea2be1ee3630d6485e9e95003027870819c6f8e03f93d52e5a763a733"
+    },
+    {
+      "file": "updates/2026-10-21/history/first-deployment-samples/accreatio-orchestration-sample.zip",
+      "bytes": 28607,
+      "sha256": "7d292f8750fabe8935aa86afa97eecaf9909c651b723e561686d9ea7d09675d9"
+    },
+    {
+      "file": "updates/2026-10-21/history/first-deployment-samples/manifest.json",
+      "bytes": 13298,
+      "sha256": "f90d7c2ce7def6ef411037970421074eb20c4f8857949b6023d8b1f4e5747d05"
+    },
+    {
+      "file": "updates/2026-10-21/production-buttons-aligned.png",
+      "bytes": 46319,
+      "sha256": "0cdbebdb780901cda306bdb0b1f33542a4ab953a1547eef40146e050d0a5398d"
+    },
+    {
+      "file": "updates/2026-10-21/production-google-github.png",
+      "bytes": 54095,
+      "sha256": "d4eb5e00c397f26ccba8d92071f7db99c9d567ad46b83b915db94f687be701fc"
+    },
+    {
+      "file": "updates/2026-10-21/production-welcome-example.png",
+      "bytes": 69655,
+      "sha256": "abf87755fcb040b7a7da11cef785045ed6d7ebf779ba3beabea219eedd82678d"
+    },
+    {
+      "file": "updates/2026-10-21/provider-buttons-summary.json",
+      "bytes": 3790,
+      "sha256": "cd5041f6e22cc5703c9489ac6a4010205c8636cf147d96d590272a28cb5923e3"
+    },
+    {
+      "file": "updates/2026-10-21/release-history.json",
+      "bytes": 10096,
+      "sha256": "71e16fd5155054b4ae054774dc580beed116b52a7aed72e8064b0b6e925c81b0"
+    },
+    {
+      "file": "updates/2026-10-21/samples/PROJECT_PROMPT.en.md",
+      "bytes": 1047,
+      "sha256": "305fe58dbda1f140cecb3048a6f0d53023e05c904125f4cb9bfb1bc5707a3159"
+    },
+    {
+      "file": "updates/2026-10-21/samples/PROJECT_PROMPT.es.md",
+      "bytes": 1002,
+      "sha256": "dc2ae7936173c5e2ef0428a81957046cdc5b5be65cde79c3471eb5f8c08df7c6"
+    },
+    {
+      "file": "updates/2026-10-21/samples/START.en.md",
+      "bytes": 580,
+      "sha256": "c005938a4bdb3151cc9ddf03e38a3dd53b13a21ca8dd65e6aab761b36f5c881a"
+    },
+    {
+      "file": "updates/2026-10-21/samples/START.es.md",
+      "bytes": 650,
+      "sha256": "985b026ba00534eefab2e88b6f6b5c1ba0089c97d87a09be1835777f3a85e003"
+    },
+    {
+      "file": "updates/2026-10-21/samples/accreatio-basic-sample.zip",
+      "bytes": 19635,
+      "sha256": "bbf72008cecfdf648718ba85c86f1e234e14877f2c5c2d33b56f21b2d9225b57"
+    },
+    {
+      "file": "updates/2026-10-21/samples/accreatio-orchestration-sample.zip",
+      "bytes": 28607,
+      "sha256": "594dcf2fad4f3878e9aaf0bcaabf8af0002503984e919103146878d0ee4c7003"
+    },
+    {
+      "file": "updates/2026-10-21/samples/manifest.json",
+      "bytes": 13298,
+      "sha256": "0f14ae8cfec708dbdaa559372f90003dbac8156f487c66c85a47a9a944f7967e"
+    },
+    {
+      "file": "updates/2026-10-21/stack.json",
+      "bytes": 985,
+      "sha256": "5b6518c3458289a1ba724197b663393a0b28eda00f5b3ace68e8b52909b6c0a8"
+    },
+    {
+      "file": "updates/2026-10-21/update-provenance.json",
+      "bytes": 9531,
+      "sha256": "e02e777bdc1c109d27d4a34f4d4a0e123f6a0d76a283b52422ab9d7ae69f88b6"
+    },
+    {
+      "file": "updates/2026-10-21/verification-summary.json",
+      "bytes": 13876,
+      "sha256": "01e274748d0e72874ffe2ef0a2522d9f4ca8a8e684326760feec0f4bd6744a57"
     }
   ]
 }

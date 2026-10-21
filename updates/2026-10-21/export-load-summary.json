@@ -1,0 +1,246 @@
+{
+  "observedAt": "2026-10-21T15:24:31.362Z",
+  "candidate": {
+    "appVersion": "0.9.0",
+    "asset": "index-CfNKP_Lr.js",
+    "assetSha256": "d16e4a691f16942bb528002d00050ba9f1a325f19adb249909c2260f7357e673"
+  },
+  "browser": {
+    "channel": "Microsoft Edge",
+    "version": "155.0.4283.62",
+    "headless": true,
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "reducedMotion": "reduce"
+  },
+  "backend": "Synthetic account and authorization fixture; no real identity provider or production load.",
+  "methodology": "Select deterministic fictitious local files through the real browser file chooser. Use the built UI and production generator, request a real download, extract the actual ZIP and compare every attachment byte and SHA-256. A transparent observer around native Response.blob records only application/zip archive start/end; 10ms timer and requestAnimationFrame samples record scheduling during the unmodified archive operation. A trusted Playwright Tab key is sent when ZIP generation starts; its arrival/focus transition is observed. Idle measurements use this same candidate only, not an earlier code baseline. No performance regression comparison is claimed.",
+  "cases": [
+    {
+      "id": "20-files-100-mib",
+      "status": "PASS",
+      "attachmentCount": 20,
+      "attachmentBytesEach": 5242880,
+      "attachmentBytesTotal": 104857600,
+      "attachmentSelectionMs": 33,
+      "confirmationToDownloadedAndSuccessMs": 807,
+      "archiveGeneration": {
+        "durationMs": 372.90000000596046,
+        "timerTicks": 38,
+        "timerPeriodMs": 10,
+        "maxTimerGapMs": 17,
+        "p95TimerGapMs": 16.69999998807907,
+        "animationFrames": 22,
+        "maxFrameGapMs": 16.90000000000009,
+        "longTasks": []
+      },
+      "trustedKeyRequestToArrivalMs": 2,
+      "limits": {
+        "maxCount": 20,
+        "maxFileBytes": 20971520,
+        "maxTotalBytes": 104857600,
+        "exactCountBoundaryAccepted": true,
+        "exactFileBoundaryAccepted": false,
+        "exactTotalBoundaryAccepted": true
+      },
+      "zip": {
+        "bytes": 104882708,
+        "sha256": "5513375822cec39d70f21bb0726b4b4edfc07ec9d0934c2bb69274223f94fb1b",
+        "entries": 39
+      },
+      "attachments": [
+        {
+          "name": "fictitious-load-01.txt",
+          "bytes": 5242880,
+          "sha256": "cb57a4b88b212623489101444a229aaa5bcfadb5e1da06a8047f20d5ac7aba97",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-02.txt",
+          "bytes": 5242880,
+          "sha256": "a50c830cc6c69dab25f1ee3f5d936ca34a391b940bb35ffe8e2eaf97e706154a",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-03.txt",
+          "bytes": 5242880,
+          "sha256": "63bc88046bc6fd43dc72d1fb692d4afca3d8aaf9ec582351e995bc8f02abf66c",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-04.txt",
+          "bytes": 5242880,
+          "sha256": "1f1998cc8d6b9078a9703f52032cec951465eac168f00edef9e6aa6a30c2f6f0",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-05.txt",
+          "bytes": 5242880,
+          "sha256": "d8a338688e9ed3ac65e47c3bc1a34325d15743263301cb20614b3fc74c81e6cd",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-06.txt",
+          "bytes": 5242880,
+          "sha256": "0a7911f3ed0d0507b8d5b01aae70b4d1b5883d19e80bb7b61f5e4fd304f9d6f6",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-07.txt",
+          "bytes": 5242880,
+          "sha256": "aaf7a7d23fc87c2d42dec6dcb995891b51bf58882f055eb3130a7e5e73931eb8",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-08.txt",
+          "bytes": 5242880,
+          "sha256": "4de4ba09bd55bc497ce19f80cf26039081b9dd7b35c9851393c3d798edb0fa54",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-09.txt",
+          "bytes": 5242880,
+          "sha256": "bd3ca36232b0430cbd62b1ff9a379951cc8656152262b520aeae1667fe0429bb",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-10.txt",
+          "bytes": 5242880,
+          "sha256": "0e2a59700cc54984bd8a4a8017c364014c2451eee30b8db5ee8a6ab616d03181",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-11.txt",
+          "bytes": 5242880,
+          "sha256": "a13685fcc779c804ac9185ff76ddb4e0baf5bace142ff730e59a98d38c7be4b7",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-12.txt",
+          "bytes": 5242880,
+          "sha256": "a40940d2a1c4a2182ae6c4975c64eca0a663cee5c8a57acac50f1a71f77f91a4",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-13.txt",
+          "bytes": 5242880,
+          "sha256": "bb7f16f5b5e9691eadd7394fd83fb5830b4e84ac5bea3335b3416d3ecf2cfee3",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-14.txt",
+          "bytes": 5242880,
+          "sha256": "e3bfd74ff4f6f92cf403553ee8ac8780bdadc0d14621a4210d1f7bb650c8ce08",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-15.txt",
+          "bytes": 5242880,
+          "sha256": "9a40c2ae6eeeec0bff6833cab2a7ff6e0dce3d42db72e7567134dc8c04466351",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-16.txt",
+          "bytes": 5242880,
+          "sha256": "8ae173b4d1433e20faa925e24b95f6c71cff22293408bf031105ac81c8bbfacf",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-17.txt",
+          "bytes": 5242880,
+          "sha256": "2f0b2ecee52886870b3570e75a1ab21a03d93809d7bffab58386326492b9a8c8",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-18.txt",
+          "bytes": 5242880,
+          "sha256": "2fe1cecbcc85f0a9741ab36939bc49336ee20664fa7c02754cf72801f2207a33",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-19.txt",
+          "bytes": 5242880,
+          "sha256": "e67f68abcdcf971652b5303d36adc5b67aa774f039b53a636b2f6abf27020b28",
+          "byteComparison": "PASS"
+        },
+        {
+          "name": "fictitious-load-20.txt",
+          "bytes": 5242880,
+          "sha256": "c1073e0b1b35c954a5098b167130262c0cefe38977b6716a53ceffc3a6966d14",
+          "byteComparison": "PASS"
+        }
+      ]
+    },
+    {
+      "id": "1-file-20-mib",
+      "status": "PASS",
+      "attachmentCount": 1,
+      "attachmentBytesEach": 20971520,
+      "attachmentBytesTotal": 20971520,
+      "attachmentSelectionMs": 17,
+      "confirmationToDownloadedAndSuccessMs": 262,
+      "archiveGeneration": {
+        "durationMs": 76.80000001192093,
+        "timerTicks": 8,
+        "timerPeriodMs": 10,
+        "maxTimerGapMs": 25.299999982118607,
+        "p95TimerGapMs": 25.299999982118607,
+        "animationFrames": 4,
+        "maxFrameGapMs": 16.800000000000068,
+        "longTasks": []
+      },
+      "trustedKeyRequestToArrivalMs": 1,
+      "limits": {
+        "maxCount": 20,
+        "maxFileBytes": 20971520,
+        "maxTotalBytes": 104857600,
+        "exactCountBoundaryAccepted": false,
+        "exactFileBoundaryAccepted": true,
+        "exactTotalBoundaryAccepted": false
+      },
+      "zip": {
+        "bytes": 20989774,
+        "sha256": "dfc3b0f6ca6527c54f658470241c62e05e483c4e46f4903bd74535c0fa307b10",
+        "entries": 20
+      },
+      "attachments": [
+        {
+          "name": "fictitious-load-01.txt",
+          "bytes": 20971520,
+          "sha256": "efd1663ca422d3e7694ac8c26cb8b5110facb3044da8a99d512905b693aaab04",
+          "byteComparison": "PASS"
+        }
+      ]
+    }
+  ],
+  "interpretation": "Both requested boundary exports completed and retained every attachment byte. Timers, frames and a trusted key progressed during actual archive generation. Measurements describe this machine, built candidate and fixture run only. No earlier-code baseline, universal performance guarantee, real-backend/production load, physical-device result or paid service was used.",
+  "finalCandidateCorrelation": {
+    "finalSourceCommit": "97f0b485c14374ebb9711015b8f2914578f83cb9",
+    "documentationCommitSameCode": "20e5053f3d0a41c10cbef2e561fa3b2949703683",
+    "finalLocalFullVerifyArtifact": {
+      "file": "index-BO-vhWup.js",
+      "bytes": 488442,
+      "sha256": "7fd03978c22af76fe65b3ad9020e82292899794019113f571160876e8e0e5470",
+      "scope": "Final local full verification and current production public byte readback. Real OAuth and authenticated export remain unverified."
+    },
+    "previousCompleteFullVerifyArtifact": {
+      "file": "index-CbFRb9nV.js",
+      "bytes": 488184,
+      "sha256": "b3007c5b6cc7f106cda2b1bdf8df51d17b6f86ca074750351e4d82413456c5b7",
+      "scope": "Local full verification, uploaded deployment artifact and limited public production readback. Preview authenticated readback remains blocked."
+    },
+    "loadMeasurementArtifact": {
+      "file": "index-CfNKP_Lr.js",
+      "sha256": "d16e4a691f16942bb528002d00050ba9f1a325f19adb249909c2260f7357e673"
+    },
+    "loadAndFinalJavaScriptByteIdentity": false,
+    "browserPackageGeneratorSourceHashesUnchanged": true,
+    "sampleVerificationScriptChangedForStableProvenance": true,
+    "currentSampleSourceRevision": "357d297e2c0ff1889d20e8449dcf4f78438fa1d4",
+    "currentSampleZipOnlyChangedField": ".accreatio/project.json.sourceRevision",
+    "finalExampleRegenerationCheck": "PASS",
+    "qualification": "Final full verification ran on BO-vhWup. Earlier CfNKP_Lr load metrics and earlier functional timings remain measurements of their own artifacts. Unchanged browser generator sources and byte-identical non-provenance ZIP entries support package-contract correlation only."
+  }
+}
