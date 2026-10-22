@@ -1,0 +1,126 @@
+{
+  "schema": 1,
+  "date": "2026-10-22",
+  "publicationState": "PUBLISHED",
+  "sourceRepositoryVisibility": "private",
+  "publicRepository": "edlopezpm-ops/checkaccreatioandgivefeedback",
+  "currentUpdate": "SECURITY_AND_DESIGN_UPDATE_2026-10-22.md",
+  "html": "update-2026-10-22.html",
+  "deliverySummary": "updates/2026-10-22/delivery-summary.json",
+  "sealedAuditSummary": "updates/2026-10-22/independent-audit-summary.json",
+  "originalCanonicalReportSha256": "66813c83e3a9e93473ca18ac10fa2e6f7c2aa539d179664026d42ba21f90c724",
+  "baselineSourceRevision": "c2235dccf759da2ff106d84d63a8496a5befcc65",
+  "scanId": "381e927b-528f-4962-88f9-4aee8c91eccd",
+  "earlierTodayDeliveries": [
+    {
+      "kind": "First pearl design",
+      "sourceRevision": "82b9ac3b2680a6f2735441bb7d2755ec9188f7d4",
+      "productionDeployment": "0c32f01a-95f0-45b2-a2de-baa3c74e67fc"
+    },
+    {
+      "kind": "Visual polish",
+      "sourceRevision": "a73944022af327c566a4ea66627b9215d6f04059",
+      "productionDeployment": "862e26ff-eb87-4e8e-983b-2df2a12edaa5"
+    },
+    {
+      "kind": "Account abuse protection and rights",
+      "sourceRevision": "73e2288df90843b81f2cfbb51dc90febe4f7cdd0",
+      "productionDeployment": "2c2558a5-31b1-495f-bf68-be8bf6f4de6e",
+      "receiptRevision": "57628bb1d3b7badb807d3a7f0c656eb53783a539"
+    }
+  ],
+  "finalDelivery": {
+    "sourceRevision": "e239ccb8bd8c9f3f715f6937eceaa685e1cee2bb",
+    "mergeRevision": "e239ccb8bd8c9f3f715f6937eceaa685e1cee2bb",
+    "implementationRevision": "e30c6983b7df569ff50af81865e7e865500b8048",
+    "sampleRevision": "fe8c14abb4a3d66e22acb1d732c998f9a1694db1",
+    "primaryMergeRevision": "a2fe8edee6358f5618b1013feb57d6fb7958a5c7",
+    "finalFaqCopyRevision": "232aa939af7a597a0b3fb0e5eaa6c943dd37c2d7",
+    "pullRequests": [
+      {
+        "number": 10,
+        "mergeRevision": "a2fe8edee6358f5618b1013feb57d6fb7958a5c7"
+      },
+      {
+        "number": 11,
+        "mergeRevision": "e239ccb8bd8c9f3f715f6937eceaa685e1cee2bb"
+      }
+    ],
+    "productionDeployment": "febdda0b-d860-4bf3-9cfc-48a123a72676",
+    "productionUrl": "https://accreatio.com/",
+    "immutableDeploymentUrl": "https://febdda0b.accreatio.pages.dev",
+    "verification": {
+      "fullLocalPipeline": {
+        "result": "PASS",
+        "sourceRevision": "e30c6983b7df569ff50af81865e7e865500b8048",
+        "unitTestsPassed": 452,
+        "attachmentSpecificIncluded": 14,
+        "scope": "Complete local verify on implementation source; subsequent sample and final UI/FAQ copy deltas are separately identified."
+      },
+      "finalFaqDelta": {
+        "result": "PASS",
+        "sourceRevision": "232aa939af7a597a0b3fb0e5eaa6c943dd37c2d7",
+        "affectedTestsPassed": 13,
+        "webBuild": "PASS",
+        "scope": "Four UI/FAQ/documentation copy files; no parser/security-runtime change."
+      },
+      "inAppBrowserHarness": {
+        "result": "PASS",
+        "passed": 10,
+        "total": 10,
+        "synthetic": true,
+        "productionUploads": false
+      },
+      "lighthouse": {
+        "performance": 91,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 69,
+        "seoException": "Deliberate beta noindex"
+      },
+      "npmAudit": {
+        "reportedVulnerabilities": 0,
+        "scope": "Known advisories, not proof against all application vulnerabilities."
+      },
+      "gitGuardian": "PASS",
+      "githubActions": {
+        "state": "FAILED_BEFORE_JOBS_STARTED",
+        "reason": "Account billing/spending restrictions prevented jobs from starting.",
+        "paidChangesMade": false
+      },
+      "freshCandidateReview": {
+        "pdfIssuesFoundAndFixed": 2,
+        "subsequentReview": "Interrupted by OpenAI security filter; no complete clean independent candidate verdict claimed."
+      }
+    },
+    "hostedReadback": {
+      "result": "PASS",
+      "path": "updates/2026-10-22/production-readback.json",
+      "checkedAtUtc": "2026-10-22T19:43:43.806Z",
+      "artifactsChecked": 13,
+      "byteExactArtifacts": 12,
+      "normalizedHtmlMatch": true,
+      "normalizationReason": "One expected Cloudflare Bot Fight Mode security injection; HTML is not byte-identical.",
+      "publicBlogStatus": 200,
+      "anonymousAccountSessionStatus": 401,
+      "hsts": "max-age=86400",
+      "pagesAliasStatuses": [
+        302,
+        302
+      ],
+      "pagesAliasRedirect": "Cloudflare Access before Functions",
+      "hostGuardLiveDenialObserved": false
+    },
+    "receiptRevision": "ec742854340550ac315bae689bd22152067912ce",
+    "receiptOnly": true
+  },
+  "privacy": "Selected anonymous public-product captures and credential-free security settings only. Raw navigation/accessibility records and source archives remain local.",
+  "history": "October20/21 snapshots retain original dates and evidence. Navigation changed to prefer October22; prior source documents are not rewritten as current.",
+  "legalVersions": {
+    "privacy": "2026-10-22b-privacy",
+    "terms": "2026-10-22b-beta",
+    "purpose": "account-core-v1",
+    "deployed": true,
+    "historicalAcceptanceBackfilled": false
+  }
+}
