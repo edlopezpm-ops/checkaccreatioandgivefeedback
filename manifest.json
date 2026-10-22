@@ -187,8 +187,8 @@
     },
     {
       "file": "audits.html",
-      "bytes": 137106,
-      "sha256": "4d3e89d9cf725b64dbd6e6fda7212c7458746ee3d72a2f3bb9ea42ecabed0225"
+      "bytes": 137312,
+      "sha256": "0fd411811b48914480132f7b023c92c428c1ea38c2c4198caf3a546006a88c65"
     },
     {
       "file": "DOSSIER.md",
@@ -287,8 +287,8 @@
     },
     {
       "file": "final-release-2026-10-21.html",
-      "bytes": 51542,
-      "sha256": "17a61c176696aab17ddbb9505271e74b98edbf24152612618057cc016fedadcf"
+      "bytes": 51748,
+      "sha256": "63c98ffa3928637c4a9487dfe360e2d5adbab6ef8d65bf0c6474e2f7ba6d1029"
     },
     {
       "file": "gallery.json",
@@ -482,8 +482,8 @@
     },
     {
       "file": "index.html",
-      "bytes": 145924,
-      "sha256": "9977e5720d10db3f081db8cc6e98b745861eb081dee47385e588c8fcc212026a"
+      "bytes": 146130,
+      "sha256": "aed13f78138006af3df35173485d3df359f7475244c7e95eedca9dbc1b81f6e8"
     },
     {
       "file": "llms.txt",
@@ -492,8 +492,8 @@
     },
     {
       "file": "NOTICE.md",
-      "bytes": 375,
-      "sha256": "c056b29afd6a47d6687c636dc32abcc334282ae8a85389171933e50fb9b30e2e"
+      "bytes": 914,
+      "sha256": "ccc20b560a789791bb23fb6ede3c3b91201302b06e31d790b93f3ed5889f1797"
     },
     {
       "file": "provenance.json",
@@ -502,8 +502,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 3985,
-      "sha256": "e406216c19d62905585ccba3e3abad81169b8a37718db8ce6a4141d611192010"
+      "bytes": 4524,
+      "sha256": "dc890496756efcc3192bb143807e14e525f8091bd048c42a7d358dbc9a5f49a9"
     },
     {
       "file": "releases/0.9.1-2026-10-21/evidence/account-isolation-receipt.json",
@@ -632,13 +632,13 @@
     },
     {
       "file": "update-2026-10-21.html",
-      "bytes": 37481,
-      "sha256": "194972692cca4b41586e5736a0063c5b5075231ed038b4dc6fb9cc41302869fe"
+      "bytes": 37687,
+      "sha256": "0facc6036259796818436ff127bce465dd28a0ea1d221865d3def0a4b8cbd437"
     },
     {
       "file": "update-2026-10-22.html",
-      "bytes": 29321,
-      "sha256": "e6b3a986cb2e6792f4cf59c15d2fd6bc24f9027ebe750c1ed55af4d2fb3eea80"
+      "bytes": 29527,
+      "sha256": "3f9e6c98bb7afcd62eb407ba6cc5746b96fddbe56b3f7e1fcf773c93097e38f4"
     },
     {
       "file": "updates/2026-10-21/examples-provenance-comparison.json",
@@ -794,6 +794,21 @@
       "file": "updates/2026-10-22/provenance.json",
       "bytes": 5100,
       "sha256": "25de46700c11e64ac0105e8c6ff1cc74519316a7f95e97cc535384b51ddae6a7"
+    },
+    {
+      "file": "privacy.html",
+      "bytes": 3848,
+      "sha256": "8bc302c0258db5664bc75929bfe84369b546626c8c31454484eb4aac81c99a59"
+    },
+    {
+      "file": "dossier-data-scope.json",
+      "bytes": 909,
+      "sha256": "d87e226d56ece3e42800f4eaed3131824b401cea3ffea188bac20fa9fef2140b"
+    },
+    {
+      "file": "PRIVACY_DATA_UPDATE_2026-10-22.md",
+      "bytes": 3241,
+      "sha256": "ca5012bb7718071b2d5314b276d3042b78171dfc1a2a7e08a99d2b44a3aa48f0"
     }
   ],
   "currentUpdate": "updates/2026-10-22/provenance.json",
@@ -802,5 +817,12 @@
     "README.md",
     "index.html",
     "llms.txt"
-  ]
+  ],
+  "privacyNoticeUpdate": {
+    "date": "2026-10-22",
+    "source": "Direct owner institutional declaration",
+    "changes": "Current publication shells link to product-specific institutional/privacy scope; historical source evidence and application behavior are not reclassified",
+    "representativeNameIncluded": false,
+    "applicationDataCollectionAdded": false
+  }
 }

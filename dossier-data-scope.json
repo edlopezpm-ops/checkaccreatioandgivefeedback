@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-22",
+  "product": "Public accreatio review dossier",
+  "scope": "Static publication; this is a scope manifest, not a personal export",
+  "applicationRetainsVisitorRecords": false,
+  "applicationOptionalCollector": false,
+  "applicationBrowserStorage": false,
+  "included": [
+    "Public repository documents and selected sanitized images available for download"
+  ],
+  "excluded": [
+    {
+      "system": "GitHub Pages connection records",
+      "reason": "Provider system; unavailable to this static publication"
+    },
+    {
+      "system": "Separately held AEKR correspondence",
+      "reason": "Institutional proportionately verified request; not an application record"
+    },
+    {
+      "system": "accreatio application accounts/projects",
+      "reason": "Separate product and authorization boundary"
+    }
+  ],
+  "contact": "aekr@aekr.io",
+  "optionalAcceptanceRequired": false
+}
