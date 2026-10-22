@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "baselineScanId": "381e927b-528f-4962-88f9-4aee8c91eccd",
+  "finalSourceRevision": "e239ccb8bd8c9f3f715f6937eceaa685e1cee2bb",
+  "asReportedBy": "implementation team",
+  "unitTests": {
+    "passed": 452,
+    "attachmentSpecificIncluded": 14
+  },
+  "inAppBrowserAttachmentHarness": {
+    "passed": 10,
+    "total": 10,
+    "synthetic": true,
+    "uploadsToProduction": false,
+    "screenshot": "images/attachment-validation-iab.png"
+  },
+  "dependencyAdvisoryCheck": {
+    "tool": "npm audit",
+    "reportedVulnerabilities": 0,
+    "scopeLimit": "Known advisory database at check time, not absence of all application vulnerabilities."
+  },
+  "freshCandidateReview": {
+    "pdfIssuesFoundAndFixed": 2,
+    "subsequentReview": "Interrupted by OpenAI security filter; no complete clean independent candidate verdict claimed."
+  },
+  "fullVerify": {
+    "result": "PASS",
+    "sourceRevision": "e30c6983b7df569ff50af81865e7e865500b8048",
+    "unitTestsPassed": 452,
+    "attachmentSpecificIncluded": 14,
+    "scope": "Complete local verify on implementation source; subsequent sample and final UI/FAQ copy deltas are separately identified."
+  },
+  "productionDeployment": "febdda0b-d860-4bf3-9cfc-48a123a72676",
+  "finalVerification": {
+    "fullLocalPipeline": {
+      "result": "PASS",
+      "sourceRevision": "e30c6983b7df569ff50af81865e7e865500b8048",
+      "unitTestsPassed": 452,
+      "attachmentSpecificIncluded": 14,
+      "scope": "Complete local verify on implementation source; subsequent sample and final UI/FAQ copy deltas are separately identified."
+    },
+    "finalFaqDelta": {
+      "result": "PASS",
+      "sourceRevision": "232aa939af7a597a0b3fb0e5eaa6c943dd37c2d7",
+      "affectedTestsPassed": 13,
+      "webBuild": "PASS",
+      "scope": "Four UI/FAQ/documentation copy files; no parser/security-runtime change."
+    },
+    "inAppBrowserHarness": {
+      "result": "PASS",
+      "passed": 10,
+      "total": 10,
+      "synthetic": true,
+      "productionUploads": false
+    },
+    "lighthouse": {
+      "performance": 91,
+      "accessibility": 100,
+      "bestPractices": 100,
+      "seo": 69,
+      "seoException": "Deliberate beta noindex"
+    },
+    "npmAudit": {
+      "reportedVulnerabilities": 0,
+      "scope": "Known advisories, not proof against all application vulnerabilities."
+    },
+    "gitGuardian": "PASS",
+    "githubActions": {
+      "state": "FAILED_BEFORE_JOBS_STARTED",
+      "reason": "Account billing/spending restrictions prevented jobs from starting.",
+      "paidChangesMade": false
+    },
+    "freshCandidateReview": {
+      "pdfIssuesFoundAndFixed": 2,
+      "subsequentReview": "Interrupted by OpenAI security filter; no complete clean independent candidate verdict claimed."
+    }
+  }
+}

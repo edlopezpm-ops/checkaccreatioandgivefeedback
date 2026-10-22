@@ -1,0 +1,32 @@
+{
+  "sourceRevision": "1b4b6f2d6192a88bd2846ceed36526a2575c8b85",
+  "productionDeployment": "238ee6ee-e44b-4386-bb0a-290a807a8588",
+  "capturedDate": "2026-10-22",
+  "files": [
+    {
+      "file": "before-desktop.png",
+      "bytes": 747099,
+      "sha256": "449f4c72e207703d874ef3f56b7208cf473c314baebeca33e0b6fb6269625970"
+    },
+    {
+      "file": "before-mobile.png",
+      "bytes": 137195,
+      "sha256": "1c44b74d2d7a5d982cbb7506699b4fb6cd408f3feb88deeca5a89fcd3b885c27"
+    },
+    {
+      "file": "design-source.zip",
+      "bytes": 1516256,
+      "sha256": "a6434e84d72bc3f3390246eef2952e0ffa5033972f0eca87b3912758088e45ee"
+    },
+    {
+      "file": "public-before.json",
+      "bytes": 521,
+      "sha256": "70adf4fa303c5b205fc02328d31492f2698ee08f9f172ed803ccb69034c77301"
+    },
+    {
+      "file": "README.md",
+      "bytes": 1367,
+      "sha256": "27ea77ec64c148105df5cbad4f122e9c94953357531e5ec1dccab37008061702"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "kind": "candidate-attachment-policy-summary",
+  "sourceDocumentInPrivateRepository": "docs/ATTACHMENT_SECURITY_2026-10-22.md",
+  "status": "Deployed in final source; complete base verification and final copy-delta checks recorded separately.",
+  "allowedExtensions": [
+    ".docx",
+    ".pdf",
+    ".png",
+    ".jpg",
+    ".jpeg"
+  ],
+  "contentBoundary": "Disposable same-origin worker; ten-second deadline; reconstructed immutable Blob plus exact-name memory proof; final archive boundary requires proof.",
+  "privacy": "File inspection stays in the browser; no project/file upload for analysis.",
+  "formats": [
+    {
+      "format": "DOCX",
+      "controls": "Parseo acotado de ZIP/OPC, CRC, nombres, rutas, expansión y XML/relaciones. Rechaza macros, OLE, objetos, campos activos, relaciones o plantillas externas, DTD/entidades y partes no admitidas. Reconstruye el paquete y sus imágenes PNG/JPEG. Enlaces externos y funciones complejas de Word pueden ser rechazados deliberadamente."
+    },
+    {
+      "format": "PDF",
+      "controls": "Parseo de objetos, streams y nombres codificados, incluidos object streams comprimidos; reescritura del documento. Rechaza cifrado, scripts, acciones activas/automáticas o remotas, archivos embebidos, formularios/XFA, rich media y codecs no admitidos. Admite navegación interna estática y enlaces HTTPS. PDF 1.0–1.7; PDF 2.0, predictors y combinaciones no admitidas fallan de forma cerrada."
+    },
+    {
+      "format": "PNG/JPEG",
+      "controls": "Firma y dimensiones comprobadas, decodificación real y exportación a bytes nuevos mediante canvas. Sin fallback al original. Conserva transparencia PNG y orientación decodificada; elimina metadatos y sufijos añadidos. No preserva animación. Sin Worker, bitmap decoding u OffscreenCanvas compatibles, se rechaza."
+    }
+  ],
+  "limits": "Límites de imágenes: 16 millones de píxeles y 8.192 píxeles por dimensión. DOCX: 512 entradas, 32 MiB de expansión total, 4 MiB por XML, profundidad 64 y 50.000 nodos XML. Límites PDF: 8 MiB por stream Flate, 32 MiB acumulados decodificados, 2.000 páginas, 20.000 objetos indirectos, 100.000 objetos parseados y profundidad 64. La validación de estructura antecede operaciones de alto nivel que podrían expandirla.",
+  "limitations": [
+    "Es admisión estricta de contenido activo y reconstrucción, no un antivirus general ni garantía frente a vulnerabilidades desconocidas de lectores. Los enlaces HTTPS siguen siendo destinos no confiables y el texto plano puede contener instrucciones; los agentes posteriores deben tratar los adjuntos como referencia no confiable.",
+    "Los documentos/configuraciones controlados que genera accreatio y los JSON de derechos de cuenta son salidas de producto separadas de los adjuntos de terceros. accreatio no aloja ni distribuye el ZIP de un usuario a otro."
+  ],
+  "verification": {
+    "asReportedBy": "implementation team",
+    "unitTests": {
+      "passed": 452,
+      "attachmentSpecificIncluded": 14
+    },
+    "inAppBrowserAttachmentHarness": {
+      "passed": 10,
+      "total": 10,
+      "synthetic": true,
+      "uploadsToProduction": false,
+      "screenshot": "images/attachment-validation-iab.png"
+    },
+    "dependencyAdvisoryCheck": {
+      "tool": "npm audit",
+      "reportedVulnerabilities": 0,
+      "scopeLimit": "Known advisory database at check time, not absence of all application vulnerabilities."
+    },
+    "freshCandidateReview": {
+      "pdfIssuesFoundAndFixed": 2,
+      "subsequentReview": "Interrupted by OpenAI security filter; no complete clean independent candidate verdict claimed."
+    },
+    "fullVerify": {
+      "result": "PASS",
+      "sourceRevision": "e30c6983b7df569ff50af81865e7e865500b8048",
+      "unitTestsPassed": 452,
+      "attachmentSpecificIncluded": 14,
+      "scope": "Complete local verify on implementation source; subsequent sample and final UI/FAQ copy deltas are separately identified."
+    },
+    "productionDeployment": "febdda0b-d860-4bf3-9cfc-48a123a72676"
+  },
+  "deployedSourceRevision": "e239ccb8bd8c9f3f715f6937eceaa685e1cee2bb"
+}

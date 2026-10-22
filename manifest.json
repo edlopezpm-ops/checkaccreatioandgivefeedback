@@ -1,14 +1,14 @@
 {
   "schema": 3,
-  "generatedAtUtc": "2026-10-21T17:33:20.719Z",
-  "scope": "Dated documentary collection; every file except .git and this manifest. Final AI delivery, previous 0.9.0 implementation update and historical snapshots remain separate.",
+  "generatedAtUtc": "2026-10-22T19:48:01.903Z",
+  "scope": "Dated documentary collection. October22 technical delivery, independent partial baseline audit, final verification and production receipts are separate from the preserved October20/21 history.",
   "historicalDossierCommit": "f53a75faaa42429ff1ef70fa6c4b5cd225bd1633",
   "historicalManifest": "history/manifest-2026-10-20.json",
   "implementationUpdate": "updates/2026-10-21/update-provenance.json",
   "finalProductRelease": "releases/0.9.1-2026-10-21/release-summary.json",
   "historicalReviewFilesByteIdentical": 24,
   "priorImmutableFilesByteIdentical": 116,
-  "localLinksChecked": 137,
+  "localLinksChecked": 199,
   "files": [
     {
       "file": ".gitattributes",
@@ -301,6 +301,61 @@
       "sha256": "f8ae53a803c65c717e53fb4d0af1d83fd7dcb8542779bcb9ff6e81fb0ea4d7b9"
     },
     {
+      "file": "images/attachment-validation-iab.png",
+      "bytes": 62089,
+      "sha256": "7a381e60bf0b49a9cd929ad1ed4e070e7d48e15c7dd5fbe9830ede8968368354"
+    },
+    {
+      "file": "images/design-blog-red.png",
+      "bytes": 153582,
+      "sha256": "11a3c3721bf2f8f857acdab179239e4b0b7d3151e1f032db3063d8a0b8e7cda4"
+    },
+    {
+      "file": "images/design-desktop-dark.png",
+      "bytes": 700707,
+      "sha256": "170ac028b44e68c6fe0cfe5f28ceb0d3af84375bab5bc2f99a28639c6eb8cf79"
+    },
+    {
+      "file": "images/design-desktop-pearl.png",
+      "bytes": 687733,
+      "sha256": "76930e634ab4d2338e0c0f952012e405837bb7999c977c74dda7afae01173317"
+    },
+    {
+      "file": "images/design-mobile-pearl.png",
+      "bytes": 105380,
+      "sha256": "e751ebb730796e8dd6d3355362850ea056daade0c2c8b945e971f724775e4ba9"
+    },
+    {
+      "file": "images/edge-ai-bot-policies.png",
+      "bytes": 55064,
+      "sha256": "a326bc84dd2093259596cd17b3e739f990a801b5cb8c5c9aee23849d5e250811"
+    },
+    {
+      "file": "images/edge-bot-fight-mode.png",
+      "bytes": 47167,
+      "sha256": "b348fc36252c39afec731956db009e0af4fe892065ea07a0f89bbc0fc588b43a"
+    },
+    {
+      "file": "images/edge-ddos-active.png",
+      "bytes": 57161,
+      "sha256": "f164a084091a038a4f974c71e919b82b78b63d67bc936b1007d5db58e9ac79df"
+    },
+    {
+      "file": "images/edge-rate-active.png",
+      "bytes": 72383,
+      "sha256": "5e81a752c89a1dc8e377ff9fa7bd4edee6a01cad124093a542c807e4b5021fc9"
+    },
+    {
+      "file": "images/edge-rate-parameters.png",
+      "bytes": 38490,
+      "sha256": "150887329b51bb2b085e207911bd0585a5ddb1d6ce68cb00f4e10249d5436ea6"
+    },
+    {
+      "file": "images/production-faq-attachment-policy.png",
+      "bytes": 49803,
+      "sha256": "1220af6a395564d453b375647a24005917409adef7c5636cc78e4d560793e66e"
+    },
+    {
       "file": "IMPLEMENTATION_UPDATE_2026-10-21.md",
       "bytes": 25954,
       "sha256": "d9b7653e29217608fc7df32bf81236355258af3ecd16c44809066bb02b984258"
@@ -427,13 +482,13 @@
     },
     {
       "file": "index.html",
-      "bytes": 144885,
-      "sha256": "04a5ae060d248399265f56465282f9ace104e393a8cce9233e2831fd62831390"
+      "bytes": 145924,
+      "sha256": "9977e5720d10db3f081db8cc6e98b745861eb081dee47385e588c8fcc212026a"
     },
     {
       "file": "llms.txt",
-      "bytes": 2800,
-      "sha256": "1346e16d025f2cb6e46ac8d2fe08a80e06741267f9d1af06ca99f8160cdf5829"
+      "bytes": 3995,
+      "sha256": "87f0db71322c442bbc0b4087c2cccc86804c18a15d469d89a9fbfbd3dc6653d5"
     },
     {
       "file": "NOTICE.md",
@@ -447,8 +502,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 2802,
-      "sha256": "78a9d07c19a62f1e4bc7e4feed4e4b8712f069d5d6ff96883f6c7aad34b0e24f"
+      "bytes": 3985,
+      "sha256": "e406216c19d62905585ccba3e3abad81169b8a37718db8ce6a4141d611192010"
     },
     {
       "file": "releases/0.9.1-2026-10-21/evidence/account-isolation-receipt.json",
@@ -551,6 +606,11 @@
       "sha256": "bcb19a6e0496da7ff60e122666aaefbeb8e6b2f81406c29d488dd8b5da93d642"
     },
     {
+      "file": "SECURITY_AND_DESIGN_UPDATE_2026-10-22.md",
+      "bytes": 20583,
+      "sha256": "b53db635f8de0a8fec3d5454372ad33faae31709c55786aff692d4cb470bcd57"
+    },
+    {
       "file": "source-excerpts.md",
       "bytes": 50043,
       "sha256": "feb260838918cb0fa89ddcf810e74472ff00946fe5324a145dbff46c12642764"
@@ -574,6 +634,11 @@
       "file": "update-2026-10-21.html",
       "bytes": 37481,
       "sha256": "194972692cca4b41586e5736a0063c5b5075231ed038b4dc6fb9cc41302869fe"
+    },
+    {
+      "file": "update-2026-10-22.html",
+      "bytes": 29321,
+      "sha256": "e6b3a986cb2e6792f4cf59c15d2fd6bc24f9027ebe750c1ed55af4d2fb3eea80"
     },
     {
       "file": "updates/2026-10-21/examples-provenance-comparison.json",
@@ -684,6 +749,58 @@
       "file": "updates/2026-10-21/verification-summary.json",
       "bytes": 13876,
       "sha256": "01e274748d0e72874ffe2ef0a2522d9f4ca8a8e684326760feec0f4bd6744a57"
+    },
+    {
+      "file": "updates/2026-10-22/attachment-policy-summary.json",
+      "bytes": 4121,
+      "sha256": "9ebec100c2b85d9e42627e717609cdea1bc959d57f8986887de1a4738bf86330"
+    },
+    {
+      "file": "updates/2026-10-22/candidate-verification-summary.json",
+      "bytes": 2755,
+      "sha256": "f808bebb379935ca09ae43f245543d40d5812c00ead7572eedfd81b288568617"
+    },
+    {
+      "file": "updates/2026-10-22/delivery-summary.json",
+      "bytes": 28743,
+      "sha256": "5831e4f9c78f3a65aa487487e17396bb858438b53de5df5da12d3929f8a0e3ca"
+    },
+    {
+      "file": "updates/2026-10-22/design-backup-provenance.json",
+      "bytes": 942,
+      "sha256": "78d78d394618c1df32cc94eace3fddf92fff3b5b919f38b19513b8d2dafcceb9"
+    },
+    {
+      "file": "updates/2026-10-22/design-hosted-readback.json",
+      "bytes": 10686,
+      "sha256": "5a608f6fd25f4187896eb76bb128f09fc30c1a2f46544865f898c1385e69098c"
+    },
+    {
+      "file": "updates/2026-10-22/edge-change-receipt.json",
+      "bytes": 2149,
+      "sha256": "37e381c7601546f11ff80cc0735257811d1f449966a1d576e73b5a3c49e16828"
+    },
+    {
+      "file": "updates/2026-10-22/independent-audit-summary.json",
+      "bytes": 2956,
+      "sha256": "bf9909ef9431d4f7ea3d9f51128d4d7ba0cbd08c1d7d7a5c55f448a705daab35"
+    },
+    {
+      "file": "updates/2026-10-22/production-readback.json",
+      "bytes": 6597,
+      "sha256": "087dd032b33c7e4ffb68f33380283eb6be34d46b7830adf302332aac92a3d417"
+    },
+    {
+      "file": "updates/2026-10-22/provenance.json",
+      "bytes": 5100,
+      "sha256": "25de46700c11e64ac0105e8c6ff1cc74519316a7f95e97cc535384b51ddae6a7"
     }
+  ],
+  "currentUpdate": "updates/2026-10-22/provenance.json",
+  "previousCollectionFilesByteIdentical": 132,
+  "updatedNavigationFiles": [
+    "README.md",
+    "index.html",
+    "llms.txt"
   ]
 }

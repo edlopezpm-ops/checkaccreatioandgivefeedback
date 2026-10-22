@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "documentType": "public-summary-of-sealed-independent-audit",
+  "scanId": "381e927b-528f-4962-88f9-4aee8c91eccd",
+  "baselineSourceRevision": "c2235dccf759da2ff106d84d63a8496a5befcc65",
+  "completedAtUtc": "2026-10-22T19:11:52.574744Z",
+  "canonicalReportOriginalSha256": "66813c83e3a9e93473ca18ac10fa2e6f7c2aa539d179664026d42ba21f90c724",
+  "canonicalSemanticArtifactHashes": [
+    {
+      "mediaType": "application/json",
+      "path": "findings.json",
+      "sha256": "0c2efe2dbf415a5c1d6254a6bd69c2ae276e17cfbb18fb7089d77466e46de294"
+    },
+    {
+      "mediaType": "application/json",
+      "path": "coverage.json",
+      "sha256": "740b1a7bf42026955d31f8fe4013a5cd6e68534cbd875c2cf7c6dd6274f26fa6"
+    }
+  ],
+  "coverage": {
+    "completeness": "partial",
+    "fullyReviewedFiles": 104,
+    "trackedInventory": 610,
+    "note": "Other files searched or selectively inspected. These counts are not a security percentage. Architecture mapping is not completed security coverage."
+  },
+  "findings": [
+    {
+      "severity": "medium",
+      "cwe": "CWE-1333",
+      "title": "Crafted public Blog URL may freeze the victim browser tab",
+      "affectedSurface": "Browser Blog slug validation",
+      "impact": "Client tab availability; no server/account compromise established.",
+      "validation": "Bounded isolated process timing; no crafted production request.",
+      "treatment": "Explicit length bound and a shared linear validator for URL and API slugs; fix-release verification remains separate."
+    },
+    {
+      "severity": "low",
+      "cwe": "CWE-426",
+      "title": "Unreleased Windows desktop prototype may select project-planted executables",
+      "affectedSurface": "Historical local Electron project preparation",
+      "impact": "Requires attacker-controlled existing local project files and deliberate use of the unreleased prototype. Not reachable through the web bridge.",
+      "validation": "Isolated benign executable --version canary only.",
+      "treatment": "Permanent web-only lifecycle and fail-closed documented desktop entry points. Historical source retained, never a shipped desktop product."
+    }
+  ],
+  "runtime": {
+    "productionResponses": 45,
+    "method": "GET",
+    "loggedIn": false,
+    "productionMutation": false,
+    "destructiveRequests": false,
+    "isolatedSimulations": [
+      "HTML escaping",
+      "ZIP path/collision containment",
+      "Own-browser storage robustness",
+      "Synthetic account-context changes"
+    ],
+    "limits": "Synthetic export authorization was only a local fixture, not a live quota bypass."
+  },
+  "publicationLimits": [
+    "Sanitized summary, not the canonical report or threat model.",
+    "No private database identifiers, absolute local paths, credentials, real account data, executable canary or exploit URL included.",
+    "No exhaustive dependency/advisory audit, production load test or real-user provider authentication journey."
+  ]
+}
