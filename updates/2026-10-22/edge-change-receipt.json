@@ -1,0 +1,62 @@
+{
+  "recordedAtUtc": "2026-10-22T19:20:06.5026436Z",
+  "method": "Authenticated Cloudflare dashboard through Codex in-app browser",
+  "scope": "accreatio.com zone",
+  "plan": "Free",
+  "before": {
+    "botFightMode": false,
+    "aiSearch": "allow",
+    "aiAgent": "allow",
+    "aiTraining": "allow",
+    "botPreferenceSync": true,
+    "rateLimitingRules": 0,
+    "customRules": 0,
+    "httpDdosProtection": "always active",
+    "managedProtection": "always active",
+    "browserIntegrityCheck": true,
+    "underAttackMode": false
+  },
+  "after": {
+    "botFightMode": true,
+    "aiSearch": "allow",
+    "aiAgent": "block all pages",
+    "aiTraining": "block all pages",
+    "botPreferenceSync": true,
+    "rateLimitingRules": 1,
+    "customRules": 0,
+    "httpDdosProtection": "always active",
+    "managedProtection": "always active",
+    "rateRule": {
+      "id": "58e2ebcb98ae4a718e7ad688278dc598",
+      "name": "accreatio-domain-burst-100-per-10s",
+      "expression": "(http.request.uri.path wildcard r\"/*\")",
+      "characteristic": "IP",
+      "requests": 100,
+      "periodSeconds": 10,
+      "action": "block",
+      "mitigationSeconds": 10,
+      "status": "Active",
+      "order": "First"
+    }
+  },
+  "validation": {
+    "uiSaveSuccess": true,
+    "ruleReopenedAndParametersReadBack": true,
+    "settingsReloadedAndPoliciesReadBack": true,
+    "ordinaryHomeAndBlogLoaded": true,
+    "floodTest": false,
+    "destructiveTest": false,
+    "authenticatedCallbackTest": false,
+    "rightsFlowTest": false
+  },
+  "limitations": [
+    "Free plan matcher is path-only: entire zone paths, not a hostname expression.",
+    "Rule is per IP and Cloudflare location; not an exact global request ceiling.",
+    "Edge controls do not include separate pages.dev hosts.",
+    "Known-AI classifications do not identify every adversarial agent.",
+    "Bot Fight Mode cannot be bypassed or customized with WAF Skip rules.",
+    "Third-party Cloudflare operational metadata is separate from the application HMAC abuse store."
+  ],
+  "secretsWritten": false,
+  "subscriptionsChanged": false
+}

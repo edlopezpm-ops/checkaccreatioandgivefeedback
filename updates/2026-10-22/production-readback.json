@@ -1,0 +1,194 @@
+{
+  "checkedAtUtc": "2026-10-22T19:43:43.806Z",
+  "sourceRevision": "e239ccb8bd8c9f3f715f6937eceaa685e1cee2bb",
+  "deploymentId": "febdda0b-d860-4bf3-9cfc-48a123a72676",
+  "pass": true,
+  "artifacts": [
+    {
+      "path": "/index.html",
+      "status": 200,
+      "bytes": 3331,
+      "sha256": "668b109f2003a378c99c20d3466a26df914c7c5763e52b4d9cfc8b315aafdd2b",
+      "localSha256": "b7345549f08e9a96844de29655d0c58768c43e37484982e7e619dfa6fe1eaa01",
+      "byteExact": false,
+      "normalizedMatch": true,
+      "providerSecurityInjection": true,
+      "match": true
+    },
+    {
+      "path": "/assets/index-BdHSXWsK.js",
+      "status": 200,
+      "bytes": 522083,
+      "sha256": "db0ccb60cd4eb596e87075957d05b8c566d225e0f07248b24de7bde0c70e6246",
+      "localSha256": "db0ccb60cd4eb596e87075957d05b8c566d225e0f07248b24de7bde0c70e6246",
+      "byteExact": true,
+      "normalizedMatch": false,
+      "providerSecurityInjection": false,
+      "match": true
+    },
+    {
+      "path": "/assets/index-Bx7MEYnf.css",
+      "status": 200,
+      "bytes": 111685,
+      "sha256": "3138e438b81aada607502050ff68e4fbf44129f460a604c8a0ca52a26d578478",
+      "localSha256": "3138e438b81aada607502050ff68e4fbf44129f460a604c8a0ca52a26d578478",
+      "byteExact": true,
+      "normalizedMatch": false,
+      "providerSecurityInjection": false,
+      "match": true
+    },
+    {
+      "path": "/assets/attachmentSecurityWorker-DhLx7jZX.js",
+      "status": 200,
+      "bytes": 512129,
+      "sha256": "b2c39e33dea7a72a616b6c499cc10aecd0fcbcd9d82006ad706b76e8e1292645",
+      "localSha256": "b2c39e33dea7a72a616b6c499cc10aecd0fcbcd9d82006ad706b76e8e1292645",
+      "byteExact": true,
+      "normalizedMatch": false,
+      "providerSecurityInjection": false,
+      "match": true
+    },
+    {
+      "path": "/sw.js",
+      "status": 200,
+      "bytes": 2826,
+      "sha256": "e36df28f941e598073b5f9dffc4d667749268e9572e3a6c4f11ec854ace0cc6f",
+      "localSha256": "e36df28f941e598073b5f9dffc4d667749268e9572e3a6c4f11ec854ace0cc6f",
+      "byteExact": true,
+      "normalizedMatch": false,
+      "providerSecurityInjection": false,
+      "match": true
+    },
+    {
+      "path": "/manifest.webmanifest",
+      "status": 200,
+      "bytes": 531,
+      "sha256": "efa1b732b2f29ae633c2f61af5a0005e642293bea30536032b65d3cecd1d832f",
+      "localSha256": "efa1b732b2f29ae633c2f61af5a0005e642293bea30536032b65d3cecd1d832f",
+      "byteExact": true,
+      "normalizedMatch": false,
+      "providerSecurityInjection": false,
+      "match": true
+    },
+    {
+      "path": "/legal/privacy.html",
+      "status": 200,
+      "bytes": 44530,
+      "sha256": "96885798fd7eb91f7df1c76cd2a559af5b8b6d1ed5a92dab861def1d12f1427d",
+      "localSha256": "96885798fd7eb91f7df1c76cd2a559af5b8b6d1ed5a92dab861def1d12f1427d",
+      "byteExact": true,
+      "normalizedMatch": false,
+      "providerSecurityInjection": false,
+      "match": true
+    },
+    {
+      "path": "/legal/terms.html",
+      "status": 200,
+      "bytes": 31339,
+      "sha256": "51f86d7fe266ffc47ebc5751736507557ffb35a5477e2d3bdb0d6c7e9585bb6c",
+      "localSha256": "51f86d7fe266ffc47ebc5751736507557ffb35a5477e2d3bdb0d6c7e9585bb6c",
+      "byteExact": true,
+      "normalizedMatch": false,
+      "providerSecurityInjection": false,
+      "match": true
+    },
+    {
+      "path": "/legal/cookies.html",
+      "status": 200,
+      "bytes": 36391,
+      "sha256": "584c954445eff7872d81987a66bbe1fbf4e2a8560a9b9cf3dc7a48ea46e0e655",
+      "localSha256": "584c954445eff7872d81987a66bbe1fbf4e2a8560a9b9cf3dc7a48ea46e0e655",
+      "byteExact": true,
+      "normalizedMatch": false,
+      "providerSecurityInjection": false,
+      "match": true
+    },
+    {
+      "path": "/legal/faq.html",
+      "status": 200,
+      "bytes": 22679,
+      "sha256": "9fd25c35fae50f30ea879a4a29689f0c8d93fb13da9ee3bc82df78cbe4da8834",
+      "localSha256": "9fd25c35fae50f30ea879a4a29689f0c8d93fb13da9ee3bc82df78cbe4da8834",
+      "byteExact": true,
+      "normalizedMatch": false,
+      "providerSecurityInjection": false,
+      "match": true
+    },
+    {
+      "path": "/examples/manifest.json",
+      "status": 200,
+      "bytes": 13725,
+      "sha256": "db61419a59ec02dafb79dce511b844656f8b519fe58e46f7ef4b20f992e8b75d",
+      "localSha256": "db61419a59ec02dafb79dce511b844656f8b519fe58e46f7ef4b20f992e8b75d",
+      "byteExact": true,
+      "normalizedMatch": false,
+      "providerSecurityInjection": false,
+      "match": true
+    },
+    {
+      "path": "/examples/accreatio-basic-sample.zip",
+      "status": 200,
+      "bytes": 21176,
+      "sha256": "b7ba922e814dad1995540fa556c19a13c7075f93b7c445fe66f9ce6437989a8b",
+      "localSha256": "b7ba922e814dad1995540fa556c19a13c7075f93b7c445fe66f9ce6437989a8b",
+      "byteExact": true,
+      "normalizedMatch": false,
+      "providerSecurityInjection": false,
+      "match": true
+    },
+    {
+      "path": "/examples/accreatio-orchestration-sample.zip",
+      "status": 200,
+      "bytes": 30162,
+      "sha256": "8647b9861423a71e59c69bda258b8551e8bbc3eba95e78b4c481fc2193553cf9",
+      "localSha256": "8647b9861423a71e59c69bda258b8551e8bbc3eba95e78b4c481fc2193553cf9",
+      "byteExact": true,
+      "normalizedMatch": false,
+      "providerSecurityInjection": false,
+      "match": true
+    }
+  ],
+  "api": [
+    {
+      "url": "https://accreatio.com/api/blog/posts",
+      "status": 200,
+      "expected": 200,
+      "pass": true,
+      "code": null,
+      "hsts": "max-age=86400",
+      "redirectHost": null
+    },
+    {
+      "url": "https://accreatio.com/api/account/session",
+      "status": 401,
+      "expected": 401,
+      "pass": true,
+      "code": "sign_in_required",
+      "hsts": "max-age=86400",
+      "redirectHost": null
+    },
+    {
+      "url": "https://accreatio.pages.dev/api/blog/posts",
+      "status": 302,
+      "expected": 302,
+      "pass": true,
+      "code": null,
+      "hsts": null,
+      "redirectHost": "accreatio-pages.cloudflareaccess.com"
+    },
+    {
+      "url": "https://febdda0b.accreatio.pages.dev/api/blog/posts",
+      "status": 302,
+      "expected": 302,
+      "pass": true,
+      "code": null,
+      "hsts": null,
+      "redirectHost": "accreatio-pages.cloudflareaccess.com"
+    }
+  ],
+  "limitations": [
+    "Read-only anonymous checks, no personal identity or destructive/load testing.",
+    "Pages aliases are protected by Access before Functions; host guard covered by local tests and deployed source, not a live denial behind Access.",
+    "HTML contains one Cloudflare Bot Fight Mode security injection; normalized shell matches. Other twelve files match exact bytes."
+  ]
+}

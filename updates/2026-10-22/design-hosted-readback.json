@@ -1,0 +1,380 @@
+{
+  "checkedAt": "2026-10-22T16:18:23.279Z",
+  "base": "https://accreatio.com",
+  "source": "a73944022af327c566a4ea66627b9215d6f04059",
+  "assets": [
+    {
+      "file": "index.html",
+      "bytes": 2393,
+      "sha256": "fcc796cf25540814ddacabe82a1adb1e805243eb759915aad109f677183d5c1c"
+    },
+    {
+      "file": "manifest.webmanifest",
+      "bytes": 531,
+      "sha256": "efa1b732b2f29ae633c2f61af5a0005e642293bea30536032b65d3cecd1d832f"
+    },
+    {
+      "file": "sw.js",
+      "bytes": 2696,
+      "sha256": "2c6c14c7b83678516921db32bfa8df2d4e173fcd0d58ac94ecc71af744394213"
+    },
+    {
+      "file": "assets/build-BkIkdflC.js",
+      "bytes": 3323,
+      "sha256": "1ec79290e1244ac44f163595f65326c62afa9d43a43905aedee4eff132243155"
+    },
+    {
+      "file": "assets/client-zip-scKVvBcw.js",
+      "bytes": 6345,
+      "sha256": "6363c2fecfdda6e0d69779a1fe2e94c8c9e7b2603db77b6d77b1237b4f19e755"
+    },
+    {
+      "file": "assets/index-CcFvSvvP.css",
+      "bytes": 111422,
+      "sha256": "668ff1a6fdfca67f82376781d40d9311785ccec0d3663f078273681f75efd862"
+    },
+    {
+      "file": "assets/index-CozAemfg.js",
+      "bytes": 506809,
+      "sha256": "9ff0a159b13642c7402a1ef0613efe51cc124d4c929cd32a7b9906f078319c7c"
+    },
+    {
+      "file": "assets/nebula-DYGYasLh.js",
+      "bytes": 9740,
+      "sha256": "9d556a2eb0e07e7d300b8217c53579be9171e1d1d6b249488699ed11773faaaf"
+    },
+    {
+      "file": "branding/accreatio-favicon-v2-32.png",
+      "bytes": 1294,
+      "sha256": "250c1622a4d5d087e8fdda294df6ca27c9ebd9b1765da59c7763eec49326a84a"
+    },
+    {
+      "file": "branding/accreatio-favicon-v2.svg",
+      "bytes": 10181,
+      "sha256": "96a02918710c4776796c9605aaa43d1646ed39ac4be9a45fd08504fd70ed85a3"
+    },
+    {
+      "file": "branding/accreatio-lockup-dark.svg",
+      "bytes": 192262,
+      "sha256": "b065cfbd9dabbc0b5e6031c0c912c63e79c3fadd536bf870545d826e6a521a62"
+    },
+    {
+      "file": "branding/accreatio-lockup-light.svg",
+      "bytes": 191505,
+      "sha256": "0f42f8891d275d8460ae041f717eba39d75ba75444d8cdd136f5460f38cae054"
+    },
+    {
+      "file": "branding/accreatio-lockup.png",
+      "bytes": 497610,
+      "sha256": "23ae87231062499944311bd54f20ce8d9f69c54af736bc7e74b8fcc8589e117a"
+    },
+    {
+      "file": "branding/accreatio-mark-dark.svg",
+      "bytes": 160244,
+      "sha256": "d1e935d3f4e44503903947f7a884e4b6a4a35e85a49967b83e62da1c24c2d0b5"
+    },
+    {
+      "file": "branding/accreatio-mark-light.svg",
+      "bytes": 159487,
+      "sha256": "5810cb9581830fd0a9595b215be667969262daceb1110c35374b696093e9e238"
+    },
+    {
+      "file": "branding/accreatio-mark.png",
+      "bytes": 119452,
+      "sha256": "166352f90972a84b111d320387d819bf36dbd40758550eed373697352a218c20"
+    },
+    {
+      "file": "branding/accreatio-web-192.png",
+      "bytes": 26494,
+      "sha256": "5628bd847742490a9346efd1a20be0dc721508cbd32c4827f5c96dad0851e3d2"
+    },
+    {
+      "file": "branding/accreatio-web-512.png",
+      "bytes": 102749,
+      "sha256": "8d1180b637a7e637e104c8f7258beb6fcfac315c1f2750a2addfa15188836d87"
+    },
+    {
+      "file": "branding/accreatio-web-social.png",
+      "bytes": 186387,
+      "sha256": "1e7c7212c46fe1980b9ac4306fd80e10bb2edc7e5c4e31c0e8aca166e3e7db57"
+    },
+    {
+      "file": "branding/accreatio-wordmark-dark.svg",
+      "bytes": 297580,
+      "sha256": "077fed305dd5ff246bd6fdc8cd5e81fb0f0fef62c0e68bf4f9251860d236c679"
+    },
+    {
+      "file": "branding/accreatio-wordmark-light.svg",
+      "bytes": 296823,
+      "sha256": "fc89446a87122d6713631d9c468ade98c0270c0d2d0d865dc4db86b99aa5ea4b"
+    },
+    {
+      "file": "branding/accreatio-wordmark.png",
+      "bytes": 222453,
+      "sha256": "021b2330f44102e573d5817b0a631a332446b20ff9cf177036cd236e946f9184"
+    },
+    {
+      "file": "legal/legal.css",
+      "bytes": 3062,
+      "sha256": "9949ee812ec8119f82a87e17ecc56dcff8b184ced043ad9c6450aef905c23205"
+    },
+    {
+      "file": "legal/theme.js",
+      "bytes": 385,
+      "sha256": "e7338c052114c7414cc40ca90cbaf60fe35b7f39849263ee6d29c55877e707ec"
+    },
+    {
+      "file": "legal/privacy.html",
+      "bytes": 36574,
+      "sha256": "c294987b5be892d8dd79a5035be8ceee418af6e00c2939a7319687d4bf35652f"
+    },
+    {
+      "file": "legal/cookies.html",
+      "bytes": 30155,
+      "sha256": "0a31d474da18af608cec466eff85a9c804efd5501913c9cc875ad67ec9433c22"
+    },
+    {
+      "file": "legal/terms.html",
+      "bytes": 26321,
+      "sha256": "b005443f3a3a32796b88a7a4ce841a17aa5c06f465ac901f5ce75ce3cac21158"
+    },
+    {
+      "file": "legal/faq.html",
+      "bytes": 22101,
+      "sha256": "ca4f9ac59c73a6d0f7b50159b2d3363dd4c1f69ed844bc04c1daec6870575509"
+    }
+  ],
+  "routes": [
+    {
+      "path": "/legal/privacy",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate, no-transform"
+    },
+    {
+      "path": "/legal/cookies",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate, no-transform"
+    },
+    {
+      "path": "/legal/terms",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate, no-transform"
+    },
+    {
+      "path": "/legal/faq",
+      "status": 200,
+      "cacheControl": "public, max-age=0, must-revalidate, no-transform"
+    },
+    {
+      "path": "/api/auth/v1/methods",
+      "status": 200,
+      "cacheControl": "no-store",
+      "methods": {
+        "google": {
+          "available": true
+        },
+        "github": {
+          "available": true
+        },
+        "emailOtp": {
+          "available": false
+        }
+      }
+    },
+    {
+      "path": "/api/account/session",
+      "status": 401,
+      "cacheControl": "no-store"
+    }
+  ],
+  "views": [
+    {
+      "label": "desktop",
+      "section": "welcome",
+      "theme": "light",
+      "background": "rgb(232, 234, 231)",
+      "heading": "rgb(48, 50, 53)",
+      "title": "accreatio | Inicio",
+      "logo": "url(\"https://accreatio.com/branding/accreatio-lockup-light.svg\")",
+      "favicon": [
+        "https://accreatio.com/branding/accreatio-favicon-v2-32.png",
+        "https://accreatio.com/branding/accreatio-favicon-v2.svg"
+      ],
+      "overflow": false,
+      "stored": null,
+      "density": ".88"
+    },
+    {
+      "label": "desktop",
+      "section": "welcome",
+      "theme": "dark",
+      "background": "rgb(36, 39, 38)",
+      "heading": "rgb(240, 241, 237)",
+      "title": "accreatio | Inicio",
+      "logo": "url(\"https://accreatio.com/branding/accreatio-lockup-dark.svg\")",
+      "favicon": [
+        "https://accreatio.com/branding/accreatio-favicon-v2-32.png",
+        "https://accreatio.com/branding/accreatio-favicon-v2.svg"
+      ],
+      "overflow": false,
+      "stored": "dark",
+      "density": ".88",
+      "logoPixels": {
+        "red": 272,
+        "light": 3459,
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "label": "desktop",
+      "section": "blog",
+      "title": "accreatio | Blog",
+      "theme": "dark",
+      "accent": "rgb(226, 35, 42)",
+      "headerImages": 0,
+      "overflow": false
+    },
+    {
+      "label": "desktop",
+      "section": "blog",
+      "title": "accreatio | Blog",
+      "theme": "light",
+      "accent": "rgb(226, 35, 42)",
+      "headerImages": 0,
+      "overflow": false
+    },
+    {
+      "label": "mobile",
+      "section": "welcome",
+      "theme": "light",
+      "background": "rgb(232, 234, 231)",
+      "heading": "rgb(48, 50, 53)",
+      "title": "accreatio | Inicio",
+      "logo": "url(\"https://accreatio.com/branding/accreatio-lockup-light.svg\")",
+      "favicon": [
+        "https://accreatio.com/branding/accreatio-favicon-v2-32.png",
+        "https://accreatio.com/branding/accreatio-favicon-v2.svg"
+      ],
+      "overflow": false,
+      "stored": null,
+      "density": ".88"
+    },
+    {
+      "label": "mobile",
+      "section": "welcome",
+      "theme": "dark",
+      "background": "rgb(36, 39, 38)",
+      "heading": "rgb(240, 241, 237)",
+      "title": "accreatio | Inicio",
+      "logo": "url(\"https://accreatio.com/branding/accreatio-lockup-dark.svg\")",
+      "favicon": [
+        "https://accreatio.com/branding/accreatio-favicon-v2-32.png",
+        "https://accreatio.com/branding/accreatio-favicon-v2.svg"
+      ],
+      "overflow": false,
+      "stored": "dark",
+      "density": ".88",
+      "logoPixels": {
+        "red": 272,
+        "light": 3459,
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "label": "mobile",
+      "section": "blog",
+      "title": "accreatio | Blog",
+      "theme": "dark",
+      "accent": "rgb(226, 35, 42)",
+      "headerImages": 0,
+      "overflow": false
+    },
+    {
+      "label": "mobile",
+      "section": "blog",
+      "title": "accreatio | Blog",
+      "theme": "light",
+      "accent": "rgb(226, 35, 42)",
+      "headerImages": 0,
+      "overflow": false
+    }
+  ],
+  "legal": [
+    {
+      "label": "desktop",
+      "section": "privacy",
+      "theme": "light",
+      "favicon": "https://accreatio.com/branding/accreatio-favicon-v2.svg",
+      "overflow": false,
+      "tableCells": true
+    },
+    {
+      "label": "desktop",
+      "section": "cookies",
+      "theme": "light",
+      "favicon": "https://accreatio.com/branding/accreatio-favicon-v2.svg",
+      "overflow": false,
+      "tableCells": true
+    },
+    {
+      "label": "desktop",
+      "section": "terms",
+      "theme": "light",
+      "favicon": "https://accreatio.com/branding/accreatio-favicon-v2.svg",
+      "overflow": false,
+      "tableCells": true
+    },
+    {
+      "label": "desktop",
+      "section": "faq",
+      "theme": "light",
+      "favicon": "https://accreatio.com/branding/accreatio-favicon-v2.svg",
+      "overflow": false,
+      "tableCells": true
+    },
+    {
+      "label": "mobile",
+      "section": "privacy",
+      "theme": "light",
+      "favicon": "https://accreatio.com/branding/accreatio-favicon-v2.svg",
+      "overflow": false,
+      "tableCells": true
+    },
+    {
+      "label": "mobile",
+      "section": "cookies",
+      "theme": "light",
+      "favicon": "https://accreatio.com/branding/accreatio-favicon-v2.svg",
+      "overflow": false,
+      "tableCells": true
+    },
+    {
+      "label": "mobile",
+      "section": "terms",
+      "theme": "light",
+      "favicon": "https://accreatio.com/branding/accreatio-favicon-v2.svg",
+      "overflow": false,
+      "tableCells": true
+    },
+    {
+      "label": "mobile",
+      "section": "faq",
+      "theme": "light",
+      "favicon": "https://accreatio.com/branding/accreatio-favicon-v2.svg",
+      "overflow": false,
+      "tableCells": true
+    }
+  ],
+  "errors": [],
+  "result": "PASS"
+}
