@@ -807,8 +807,8 @@
     },
     {
       "file": "PRIVACY_DATA_UPDATE_2026-10-22.md",
-      "bytes": 3218,
-      "sha256": "bd4f0298662abc1a633c8c72fb0e239790ece87b7cbf82428c63f730710ec379"
+      "bytes": 3241,
+      "sha256": "ca5012bb7718071b2d5314b276d3042b78171dfc1a2a7e08a99d2b44a3aa48f0"
     }
   ],
   "currentUpdate": "updates/2026-10-22/provenance.json",
