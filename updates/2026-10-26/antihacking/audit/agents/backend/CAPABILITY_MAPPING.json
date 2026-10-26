@@ -1,0 +1,130 @@
+{
+  "scope": "Evaluación local del snapshot; ningún proveedor externo, mailbox, D1/cron desplegado ni sesión personal se acredita con fixtures.",
+  "capabilities": [
+    {
+      "id": "C10",
+      "localConclusion": "PASS",
+      "evidence": [
+        "independent-results.json: OIDC transaction trusted-identity branch",
+        "independent-results.json: CAPTCHA rejects outage/wrong hostname"
+      ],
+      "externalConclusion": "UNKNOWN: Google/GitHub reales y token/siteverify externos no usados"
+    },
+    {
+      "id": "C11",
+      "localConclusion": "PASS",
+      "evidence": [
+        "independent-results.json: Explicit provider linking"
+      ],
+      "externalConclusion": "UNKNOWN: enlace por proveedores reales no ejecutado"
+    },
+    {
+      "id": "C12",
+      "localConclusion": "PASS",
+      "evidence": [
+        "independent-results.json: Logout revokes hashed session",
+        "independent-results.json: Three attributable abuse episodes"
+      ],
+      "externalConclusion": "UNKNOWN: custodia/revocación de sesión real alojada no probada"
+    },
+    {
+      "id": "C13",
+      "localConclusion": "PASS_BACKEND",
+      "evidence": [
+        "independent-results.json: Account deliberate continuation",
+        "tests/accountPolicy.test.ts",
+        "tests/accountCookiesNotice.test.ts"
+      ],
+      "remaining": "Revisar acoplamiento UI/aviso en evidencia root; no aceptación humana/legal inferida"
+    },
+    {
+      "id": "C14",
+      "localConclusion": "PASS_BACKEND",
+      "evidence": [
+        "independent-results.json: five rolling receipts",
+        "tests/accountsApi.test.ts:126-216",
+        "mutation-results.json:M-B02"
+      ],
+      "remaining": "UI check/cancel y cambio de ZIP deben integrarse con root; SQLite soporta sentencia condicional y pruebas concurrentes locales, no carga D1 live"
+    },
+    {
+      "id": "C15",
+      "localConclusion": "PASS_BACKEND",
+      "evidence": [
+        "independent-results.json: own-data/delete",
+        "independent-results.json: Rights-only",
+        "independent-results.json: final proof recheck",
+        "independent-results.json: suspension rights",
+        "mutation-results.json:M-B03"
+      ],
+      "externalConclusion": "UNKNOWN: ownership de proveedor personal y recovery copies externos"
+    },
+    {
+      "id": "C16",
+      "localConclusion": "PASS_BACKEND",
+      "evidence": [
+        "independent-results.json: Abuse anonymous network excess",
+        "independent-results.json: Three attributable episodes",
+        "functions/_lib/abuse.ts complete semantic review"
+      ],
+      "remaining": "Calibración NAT/capacidad/latencia de infraestructura no inferida"
+    },
+    {
+      "id": "C17",
+      "localConclusion": "PASS_BACKEND",
+      "evidence": [
+        "independent-results.json: Collect rejects unknown fields/GPC/expired/storage",
+        "independent-results.json: 200-record bound"
+      ],
+      "remaining": "Preferencias/quotas de navegador y tráfico UI corresponden a root/evaluation"
+    },
+    {
+      "id": "C18",
+      "localConclusion": "PASS_BACKEND",
+      "evidence": [
+        "independent-results.json: Collect novel payload withdrawal",
+        "mutation-results.json:M-B01"
+      ],
+      "remaining": "Cliente multitab/late grant/ledgers y mensaje visual pendiente corresponde a root; defecto CookiePreferences corroborado estáticamente"
+    },
+    {
+      "id": "C19",
+      "localConclusion": "PASS",
+      "evidence": [
+        "independent-results.json: Blog authenticated public handler",
+        "functions/_lib/access.ts",
+        "functions/_lib/blog.ts"
+      ],
+      "externalConclusion": "UNKNOWN: Access y publicación D1 reales no ejecutados; JWT/keyset local sintético explícito"
+    },
+    {
+      "id": "C20",
+      "localConclusion": "PASS_LOCAL",
+      "evidence": [
+        "independent-results.json: SQL migrations blank acceptance",
+        "independent-results.json: Scheduled maintenance",
+        "workers/account-maintenance/index.ts"
+      ],
+      "externalConclusion": "UNKNOWN: scheduler, estado migraciones y D1 remoto no consultados"
+    },
+    {
+      "id": "C21",
+      "localConclusion": "PASS_BACKEND",
+      "evidence": [
+        "independent-results.json: API host/envelope",
+        "functions/_lib/apiAdmission.ts",
+        "wrangler.toml"
+      ],
+      "remaining": "CSP/artefacto final/build credenciales cliente deben integrarse con root"
+    },
+    {
+      "id": "C29",
+      "localConclusion": "PASS_LOCAL",
+      "evidence": [
+        "independent-results.json: OTP novel code one-use/hash/expiry/failure",
+        "independent-results.json: Mailer accepted after provider"
+      ],
+      "externalConclusion": "UNKNOWN: entrega en buzón real y habilitación/entitlement externos; producción OTP false en configuración fuente"
+    }
+  ]
+}

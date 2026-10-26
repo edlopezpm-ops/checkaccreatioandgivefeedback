@@ -1,0 +1,8 @@
+{
+  "createdAt": "2026-10-26T19:25:25.986Z",
+  "command": "wrangler pages deployment list --project-name accreatio --environment production --json",
+  "exitCode": 1,
+  "parseError": true,
+  "deployments": [],
+  "scope": "Read-only listing; only deployment identity/commit/status fields projected. No runtime binding values, account backups, OAuth credentials or production writes."
+}

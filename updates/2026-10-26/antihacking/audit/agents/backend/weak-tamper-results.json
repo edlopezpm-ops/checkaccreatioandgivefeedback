@@ -1,0 +1,14 @@
+{
+  "finding": "B-W02",
+  "file": "tests/accountOidcStore.test.ts",
+  "line": 492,
+  "deterministicSearchAttempts": 111,
+  "actualProtectEmailEmitsExactFixture": true,
+  "originalAlreadyEndsWithFF": true,
+  "allegedlyAlteredEqualsOriginal": true,
+  "validOriginalDecrypts": true,
+  "testAssertionFailsOnCorrectProduct": true,
+  "actuallyModifiedByteRejected": true,
+  "oracle": "Changing a cryptographic test input must actually change at least one byte; replacing a random final byte by fixed ff does not guarantee tampering.",
+  "syntheticOnly": true
+}

@@ -1,0 +1,58 @@
+{
+  "tool": "Selective bespoke operators; Node v24.18.0",
+  "operators": [
+    {
+      "id": "publication-gate-noop",
+      "operation": "replace condition by always false"
+    },
+    {
+      "id": "confirm-callback-noop",
+      "operation": "omit required click effect"
+    }
+  ],
+  "scope": "Two targeted mutants and independent callback oracle; not a whole-repository mutation score",
+  "mutations": [
+    {
+      "name": "publication-gate-noop",
+      "path": "scripts/check-web-security-artifacts.mjs",
+      "baselineSha256": "0063f5c4286965b71338304a61329f0ff0c8c792c717d228b8b8d1636f2e737f",
+      "mutantSha256": "1abed76d50799753f263ef8c077c3bf23544c48b1845da38e7cf31424b5b1bff",
+      "restoredSha256": "0063f5c4286965b71338304a61329f0ff0c8c792c717d228b8b8d1636f2e737f",
+      "restored": true,
+      "existingTestExit": 1,
+      "existingTestSignal": null,
+      "evidence": "runs.json#publication-gate-noop"
+    },
+    {
+      "name": "confirm-callback-noop",
+      "path": "src/components/creation/ReviewStage.tsx",
+      "baselineSha256": "fa5ba6635baffd51790908d7e14da2a19ba8e87d7de9a0104d13ed96952082aa",
+      "mutantSha256": "5d98348f8dbf5c9f555249229a83ec61f866634ba5b9321b2ae713e1ebaae475",
+      "restoredSha256": "fa5ba6635baffd51790908d7e14da2a19ba8e87d7de9a0104d13ed96952082aa",
+      "restored": true,
+      "existingTestExit": 0,
+      "existingTestSignal": null,
+      "evidence": "runs.json#confirm-callback-noop",
+      "independentOracle": {
+        "baselineExit": 0,
+        "mutantExit": 1
+      }
+    }
+  ],
+  "runnerFailureControl": {
+    "label": "logged-runner-failure-7",
+    "args": [
+      "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+      "run",
+      "log",
+      "--",
+      "test"
+    ],
+    "exit": 7,
+    "signal": null,
+    "error": null,
+    "durationMs": 542.6668000000002,
+    "stdout": "\n> log\n> node scripts/run-logged.mjs test\n\nLog: .local\\logs\\2026-10-26T19-12-05-487Z-test-f1e7bfdd-3fa8-435e-9061-491b53656d6f.log\n\n> test\n> node -e \"process.exit(7)\"\n\n",
+    "stderr": ""
+  }
+}

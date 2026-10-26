@@ -1,0 +1,24 @@
+{
+  "tool": "selective direct mutation + independent Node assertions",
+  "version": "v24.18.0",
+  "operator": "replace generated prompt by constant",
+  "file": "shared/domain.ts",
+  "states": {
+    "detected": 1,
+    "survived": 0,
+    "uncovered": 0,
+    "equivalent": 0,
+    "invalid": 0,
+    "timeouts": 0
+  },
+  "exitCode": 1,
+  "failedChecks": [
+    "prompt preserves fresh source data; metamorphic isolation",
+    "real ZIP opens and contains input and all declared files"
+  ],
+  "baselineSha256": "61356ff37184db7a67e9126139a7e2d63e93bfae2db47ab369666d859348fec3",
+  "baselineUnchanged": true,
+  "mutantSha256": "764cd71505e4ee3f96e075cb97bc218923f20db5a82754e0e1f1bbbd923e7ca8",
+  "restoredSha256": "61356ff37184db7a67e9126139a7e2d63e93bfae2db47ab369666d859348fec3",
+  "restoredExactBaseline": true
+}

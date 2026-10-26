@@ -1,0 +1,42 @@
+{
+  "verifiedAt": "2026-10-26T19:44:39.384Z",
+  "scope": "Independent read-only final review; no product commands or source changes",
+  "checks": {
+    "scoreMatches": true,
+    "frozenIdsAndWeights": true,
+    "allEvidenceExists": true,
+    "c20MaintenanceAndEntryScopesSeparated": true,
+    "bw01SourcesCorrect": true,
+    "contractEvidencePrefixed": true,
+    "unsupportedHostedDocClaimRemoved": true
+  },
+  "totals": {
+    "PASS": 93,
+    "FAIL": 13,
+    "UNKNOWN": 18
+  },
+  "capabilities": 30,
+  "demonstratedCompliance": 75,
+  "decisionCoverage": 85.48387096774194,
+  "missingEvidence": [],
+  "productModified": false,
+  "observations": [
+    "No additional material inconsistencies found.",
+    "FINAL_IDENTITY and EVIDENCE_MANIFEST are root-owned sealing work; not judged missing until completed."
+  ],
+  "reviewedArtifacts": [
+    "REPORT.md",
+    "MATRIX.json",
+    "SCORECARD.json",
+    "FINDINGS.json",
+    "agents/contracts/MATRIX.frozen.json",
+    "evidence/independent-core-results.json",
+    "evidence/independent-ui-results.json",
+    "agents/backend/independent-results.json",
+    "evidence/public-readback.json",
+    "agents/evaluation/mutations.json",
+    "evidence/core-mutant-receipt.json",
+    "agents/evaluation/installed-lock-consistency.json",
+    "evidence/verify-execution.json"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "command": "node scripts/pwa-legal-smoke.mjs --legacy-dir ../pwa-legacy/dist --candidate-dir dist",
+  "startedUtc": "2026-10-26T19:22:12.0483015Z",
+  "endedUtc": "2026-10-26T19:22:15.2124479Z",
+  "exitCode": 0,
+  "legacyCommit": "d836e7ee8e03f83eb2d5b53e1ba655d7d6efef54"
+}

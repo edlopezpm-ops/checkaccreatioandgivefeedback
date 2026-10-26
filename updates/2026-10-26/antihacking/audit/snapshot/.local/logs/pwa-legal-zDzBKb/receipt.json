@@ -1,0 +1,197 @@
+{
+  "result": "PASS",
+  "scope": "Local generated-worker lifecycle and legal routing; no account or provider",
+  "bundles": {
+    "legacy": {
+      "directory": "C:\\Users\\edlop\\OneDrive\\Documents\\VS Code\\accreatio\\.local\\logs\\antihacking-20261026-full\\pwa-legacy\\dist",
+      "workerSha256": "edead738ff5804dabb839b423c627c33e2b4db2245f04c5a6d79ab5bbcf1b396",
+      "termsSha256": "51f86d7fe266ffc47ebc5751736507557ffb35a5477e2d3bdb0d6c7e9585bb6c"
+    },
+    "candidate": {
+      "directory": "C:\\Users\\edlop\\OneDrive\\Documents\\VS Code\\accreatio\\.local\\logs\\antihacking-20261026-full\\snapshot\\dist",
+      "workerSha256": "6f8db6133696d0a8c66df2fe3396ec5a78a77382d28a2912f277577348a3f43e",
+      "termsSha256": "9c38795ea2ed084e9ab685b064e0eecc6d9b52daa57ffc6c80d415641f56151d"
+    }
+  },
+  "legalRequests": [
+    {
+      "route": "/legal/terms.html",
+      "status": 200,
+      "documentStage": "legacy",
+      "bodyHash": "51f86d7fe266ffc47ebc5751736507557ffb35a5477e2d3bdb0d6c7e9585bb6c"
+    },
+    {
+      "route": "/legal/privacy.html",
+      "status": 200,
+      "documentStage": "legacy",
+      "bodyHash": "373e92d09fdecceb9786e53744dd7acca1f546a93ea7560b63404540a5e861fd"
+    },
+    {
+      "route": "/legal/faq.html",
+      "status": 200,
+      "documentStage": "legacy",
+      "bodyHash": "9fd25c35fae50f30ea879a4a29689f0c8d93fb13da9ee3bc82df78cbe4da8834"
+    },
+    {
+      "route": "/legal/cookies.html",
+      "status": 200,
+      "documentStage": "legacy",
+      "bodyHash": "4616820ef4ef71a42185437dc5fb5e6bd852da7eaab9b98185c55e2193c88bb1"
+    },
+    {
+      "route": "/legal/terms",
+      "status": 200,
+      "documentStage": "candidate",
+      "bodyHash": "9c38795ea2ed084e9ab685b064e0eecc6d9b52daa57ffc6c80d415641f56151d"
+    },
+    {
+      "route": "/legal/terms",
+      "status": 200,
+      "documentStage": "candidate",
+      "bodyHash": "9c38795ea2ed084e9ab685b064e0eecc6d9b52daa57ffc6c80d415641f56151d"
+    },
+    {
+      "route": "/legal/terms.html",
+      "status": 200,
+      "documentStage": "candidate",
+      "bodyHash": "9c38795ea2ed084e9ab685b064e0eecc6d9b52daa57ffc6c80d415641f56151d"
+    },
+    {
+      "route": "/legal/privacy",
+      "status": 200,
+      "documentStage": "candidate",
+      "bodyHash": "4b4923ad885daf3c5f0fa0f4d9e75e238e41d1badbe830fed1a332d9f9db5dc0"
+    },
+    {
+      "route": "/legal/privacy.html",
+      "status": 200,
+      "documentStage": "candidate",
+      "bodyHash": "4b4923ad885daf3c5f0fa0f4d9e75e238e41d1badbe830fed1a332d9f9db5dc0"
+    },
+    {
+      "route": "/legal/cookies",
+      "status": 200,
+      "documentStage": "candidate",
+      "bodyHash": "d76dd226878542a9495befcd21083b62f95fd61e35ea0cc91a3af062603e103a"
+    },
+    {
+      "route": "/legal/cookies.html",
+      "status": 200,
+      "documentStage": "candidate",
+      "bodyHash": "d76dd226878542a9495befcd21083b62f95fd61e35ea0cc91a3af062603e103a"
+    },
+    {
+      "route": "/legal/faq",
+      "status": 200,
+      "documentStage": "candidate",
+      "bodyHash": "21de97cc225f719fbf278a71e0ecb84f536a291ab8dec1dd575da451e2bd030f"
+    },
+    {
+      "route": "/legal/faq.html",
+      "status": 200,
+      "documentStage": "candidate",
+      "bodyHash": "21de97cc225f719fbf278a71e0ecb84f536a291ab8dec1dd575da451e2bd030f"
+    },
+    {
+      "route": "/legal/terms",
+      "status": 200,
+      "documentStage": "future",
+      "bodyHash": "a6e9bd2d30b41c5cf3431e5829651566da814a8c801eb2c958516bc088ad9584"
+    },
+    {
+      "route": "/legal/terms.html",
+      "status": 200,
+      "documentStage": "future",
+      "bodyHash": "a6e9bd2d30b41c5cf3431e5829651566da814a8c801eb2c958516bc088ad9584"
+    },
+    {
+      "route": "/legal/privacy",
+      "status": 200,
+      "documentStage": "future",
+      "bodyHash": "dccce100cf13deeb92c4209e16bb759303ea6eb5dc26567530031c432650cd5b"
+    },
+    {
+      "route": "/legal/privacy.html",
+      "status": 200,
+      "documentStage": "future",
+      "bodyHash": "dccce100cf13deeb92c4209e16bb759303ea6eb5dc26567530031c432650cd5b"
+    },
+    {
+      "route": "/legal/cookies",
+      "status": 200,
+      "documentStage": "future",
+      "bodyHash": "caaccadc4c3ac74ae12f6e81af45c50a4d57c6951336c89869e17dd2d2cac912"
+    },
+    {
+      "route": "/legal/cookies.html",
+      "status": 200,
+      "documentStage": "future",
+      "bodyHash": "caaccadc4c3ac74ae12f6e81af45c50a4d57c6951336c89869e17dd2d2cac912"
+    },
+    {
+      "route": "/legal/faq",
+      "status": 200,
+      "documentStage": "future",
+      "bodyHash": "ff9e3d3d9227c93b93a288d61c5a75ece570a862e472f468b09ed5475cf0edc1"
+    },
+    {
+      "route": "/legal/faq.html",
+      "status": 200,
+      "documentStage": "future",
+      "bodyHash": "ff9e3d3d9227c93b93a288d61c5a75ece570a862e472f468b09ed5475cf0edc1"
+    },
+    {
+      "route": "/legal",
+      "status": 404,
+      "documentStage": "future",
+      "bodyHash": "bfffcc9f7f590028c5da7922329bdcb0e998c2e51d75894a06f05672c4f0ada3"
+    },
+    {
+      "route": "/legal",
+      "status": 404,
+      "documentStage": "future",
+      "bodyHash": "bfffcc9f7f590028c5da7922329bdcb0e998c2e51d75894a06f05672c4f0ada3"
+    },
+    {
+      "route": "/legal/not-present",
+      "status": 404,
+      "documentStage": "future",
+      "bodyHash": "bfffcc9f7f590028c5da7922329bdcb0e998c2e51d75894a06f05672c4f0ada3"
+    },
+    {
+      "route": "/legal/terms",
+      "status": 503,
+      "documentStage": "future",
+      "bodyHash": "bfffcc9f7f590028c5da7922329bdcb0e998c2e51d75894a06f05672c4f0ada3"
+    },
+    {
+      "route": "/legal/terms",
+      "status": 200,
+      "documentStage": "future",
+      "bodyHash": "a6e9bd2d30b41c5cf3431e5829651566da814a8c801eb2c958516bc088ad9584"
+    }
+  ],
+  "baseline": {
+    "staleTermsReproduced": true,
+    "legalPrecacheEntries": 4,
+    "documentNetworkRequests": 0
+  },
+  "recovery": {
+    "replacementActivated": true,
+    "legalPrecacheEntries": 0,
+    "deliberateReloadShowsCurrentTerms": true
+  },
+  "online": {
+    "currentRoutes": 8,
+    "futureRoutesWithoutWorkerChange": 8,
+    "unknownRoutesReturn404": 3,
+    "unavailableReturns503": true
+  },
+  "offline": {
+    "legalNavigationsFail": 8,
+    "appShellFallbackRetained": true
+  },
+  "freshClient": {
+    "currentDocumentFromNetwork": true
+  }
+}

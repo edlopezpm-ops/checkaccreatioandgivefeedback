@@ -1,0 +1,24 @@
+{
+  "verifiedUtc": "2026-10-26T19:35:56.6156823Z",
+  "method": "Independent PowerShell grouping/sums and exact frozen-ID/weight comparison",
+  "capabilityCount": 30,
+  "idsUnique": true,
+  "frozenIdsPreserved": true,
+  "weightDriftCount": 0,
+  "counts": {
+    "PASS": 23,
+    "FAIL": 3,
+    "UNKNOWN": 4
+  },
+  "W": 124.0,
+  "P": 93.0,
+  "F": 13.0,
+  "U": 18.0,
+  "arithmeticInvariant": true,
+  "demonstratedCompliance": 75.0,
+  "decisionCoverage": 85.48387096774194,
+  "scorecardMatches": true,
+  "missingCapabilityEvidence": [],
+  "e02ScriptDiffContainsOnlyDeclaredPortChanges": true,
+  "reportExists": false
+}

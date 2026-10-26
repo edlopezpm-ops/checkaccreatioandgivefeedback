@@ -1,0 +1,85 @@
+[
+  {
+    "id": "B-W01",
+    "category": "WEAK_TEST",
+    "status": "CONFIRMED",
+    "severity": "P2",
+    "confidence": "high",
+    "title": "Dos escenarios de la prueba de carrera de revocación no llegan a ejecutar la revocación",
+    "requirement": "La auditoría exige verificar que la prueba alcance el efecto/carrera que afirma observar. El contrato de datos/borrado exige prueba reciente ligada a la acción.",
+    "requirementSources": [
+      {
+        "file": "docs/ABUSE_GUARD_2026-10-22.md",
+        "line": 51
+      },
+      {
+        "file": "functions/_lib/accounts.ts",
+        "line": 945
+      }
+    ],
+    "locations": [
+      {
+        "file": "tests/accountRollback.test.ts",
+        "startLine": 318,
+        "endLine": 354
+      }
+    ],
+    "snapshot": "0dcafbc426b01faea621d13121e36a54099b283a + snapshot local registrado por root",
+    "trajectory": "setup.googleLogin → sesión metadata verification_action NULL → h.call(data/delete) → comprobación recent → 401; no db.batch y nunca se ejecuta el hook que borra la sesión",
+    "minimalInput": "Ejecutar el test revocation between session read and write con sus parámetros originales; contador del hook h.db.batch.",
+    "expected": "Cada escenario de carrera llama al hook de revocación y luego rechaza el acceso por la revocación.",
+    "observed": "data/delete: 401 reauthentication_required y hook=0. authorize: hook=1. Añadir sólo la prueba ligada a la acción en la fixture hace que data/delete alcancen hook=1 y sigan rechazando correctamente.",
+    "reproduction": "node --import tsx .local/logs/antihacking-20261026-full/agents/backend/repro-weak-rollback.mts",
+    "evidence": [
+      "agents/backend/weak-rollback-results.json",
+      "agents/backend/repro-weak-rollback.mts"
+    ],
+    "impact": "La suite atribuye cobertura de carrera a dos escenarios que sólo prueban una precondición. No demuestra vulnerabilidad del producto ni invalida las otras pruebas de rights/export.",
+    "alternativesConsidered": [
+      "El rechazo temprano es legítimo del producto, pero no cumple el propósito descrito por ese test.",
+      "El escenario authorize sí llega al hook y no queda invalidado.",
+      "Nuestras verificaciones independientes ejercitan rights, borrado y revocación durante descifrado, y detectan la mutación de omitir el recheck final."
+    ],
+    "proposedCorrection": "En la fixture de data/delete emitir primero una prueba reciente ligada a la acción, contar/assertar que el hook se ejecuta exactamente una vez y conservar los asserts del efecto posterior. No modificar el producto para satisfacer el test.",
+    "attribution": "No determinada; no evidencia de intención ni manipulación indebida."
+  },
+  {
+    "id": "B-W02",
+    "category": "WEAK_TEST",
+    "status": "CONFIRMED",
+    "severity": "P3",
+    "confidence": "high",
+    "title": "La fixture de manipulación del ciphertext puede quedar idéntica y fallar ante código correcto",
+    "requirement": "El oráculo de una prueba negativa debe comprobar que su entrada efectivamente incumple el contrato. Un ciphertext no modificado sigue siendo válido.",
+    "requirementSources": [
+      {
+        "file": "tests/accountOidcStore.test.ts",
+        "line": 460
+      }
+    ],
+    "locations": [
+      {
+        "file": "tests/accountOidcStore.test.ts",
+        "startLine": 487,
+        "endLine": 496
+      }
+    ],
+    "snapshot": "0dcafbc426b01faea621d13121e36a54099b283a + snapshot local registrado por root",
+    "trajectory": "protectEmail genera IV aleatorio → test reemplaza último byte por ff → si ya era ff, no altera el ciphertext → revealEmail correcto resuelve → assert.rejects falla",
+    "minimalInput": "EmailRecord válido con ciphertext terminado en ff.",
+    "expected": "La prueba cambie un byte y verifique rechazo criptográfico del ciphertext modificado.",
+    "observed": "Entrada supuestamente alterada es idéntica al ciphertext correcto; reproduce fallo de assertion con descifrado correcto. Búsqueda local determinista encuentra un IV válido en 111 intentos, sin imprimir material criptográfico.",
+    "reproduction": "node --import tsx .local/logs/antihacking-20261026-full/agents/backend/repro-weak-tamper.mts",
+    "evidence": [
+      "agents/backend/weak-tamper-results.json",
+      "agents/backend/repro-weak-tamper.mts"
+    ],
+    "impact": "Fallo intermitente espurio de suite; no defecto de cifrado, bypass ni evidencia de evaluación manipulada.",
+    "alternativesConsidered": [
+      "El descifrado de ciphertext idéntico es el comportamiento correcto, no incumplimiento de privacidad.",
+      "La prueba de envelope OIDC sí cambia de modo condicional el sufijo; no se extiende este hallazgo a ella."
+    ],
+    "proposedCorrection": "Modificar el byte mediante XOR o elegir un sufijo que sea distinto al original y assertar igualdad negativa antes de assert.rejects.",
+    "attribution": "No determinada; ningún indicio de intención."
+  }
+]

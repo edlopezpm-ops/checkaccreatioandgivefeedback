@@ -1,0 +1,6 @@
+{
+  "command": "node --import tsx .local/logs/antihacking-20261026-full/repro/independent-ui.mjs",
+  "startedUtc": "2026-10-26T19:30:35.4544610Z",
+  "endedUtc": "2026-10-26T19:30:39.0216611Z",
+  "exitCode": 1
+}

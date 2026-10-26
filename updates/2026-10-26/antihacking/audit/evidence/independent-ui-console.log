@@ -1,0 +1,42 @@
+[
+  {
+    "name": "integrated privacy withdrawal status",
+    "status": "FAIL",
+    "preferenceAnalytics": false,
+    "staleEnabledMessage": true,
+    "necessaryOnlyMessage": true,
+    "oracle": "After successful withdrawal the current status must no longer say analytics enabled"
+  },
+  {
+    "name": "real browser worker reconstructs novel PNG and JPEG",
+    "status": "PASS",
+    "dimensions": [
+      13,
+      17
+    ]
+  },
+  {
+    "name": "new page restores answers and blocks export until files reselected",
+    "status": "PASS"
+  },
+  {
+    "name": "exported reconstructed images independently decoded from downloaded ZIP",
+    "status": "PASS",
+    "dimensions": [
+      13,
+      17
+    ],
+    "pngPixel": [
+      54,
+      162,
+      95,
+      255
+    ]
+  },
+  {
+    "name": "downloaded built-UI ZIP contains restored novel content with no project network transmission",
+    "status": "PASS",
+    "authorized": 1,
+    "leakedRequests": 0
+  }
+]

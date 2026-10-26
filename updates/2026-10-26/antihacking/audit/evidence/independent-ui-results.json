@@ -1,0 +1,188 @@
+{
+  "scope": "Fresh actual Vite build; real UI, workers and collector receiver+SQLite; product account session and allowance explicitly synthetic; serviceworker blocked for isolation, separately exercised by repository smokes",
+  "results": [
+    {
+      "name": "integrated privacy withdrawal status",
+      "status": "FAIL",
+      "preferenceAnalytics": false,
+      "staleEnabledMessage": true,
+      "necessaryOnlyMessage": true,
+      "oracle": "After successful withdrawal the current status must no longer say analytics enabled"
+    },
+    {
+      "name": "real browser worker reconstructs novel PNG and JPEG",
+      "status": "PASS",
+      "dimensions": [
+        13,
+        17
+      ]
+    },
+    {
+      "name": "new page restores answers and blocks export until files reselected",
+      "status": "PASS"
+    },
+    {
+      "name": "exported reconstructed images independently decoded from downloaded ZIP",
+      "status": "PASS",
+      "dimensions": [
+        13,
+        17
+      ],
+      "pngPixel": [
+        54,
+        162,
+        95,
+        255
+      ]
+    },
+    {
+      "name": "downloaded built-UI ZIP contains restored novel content with no project network transmission",
+      "status": "PASS",
+      "authorized": 1,
+      "leakedRequests": 0
+    }
+  ],
+  "pageErrors": [],
+  "network": [
+    {
+      "url": "http://127.0.0.1:4188/?view=project&lang=en",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:4188/assets/index-XluTHW5x.js",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:4188/assets/index-CHwLljjH.css",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:4188/branding/accreatio-lockup-light.svg",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:4188/api/auth/v1/methods",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:4188/api/account/session",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:4188/assets/build-BkIkdflC.js",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:4188/api/admin/blog/session",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:4188/api/auth/v1/methods",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:4188/api/auth/v1/methods",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:4188/api/collect/preference",
+      "method": "POST",
+      "body": "{\"purpose\":\"analytics\",\"action\":\"grant\",\"version\":\"2026-10-22-collect-v1\"}"
+    },
+    {
+      "url": "http://127.0.0.1:4188/api/collect/record",
+      "method": "POST",
+      "body": "{\"purpose\":\"analytics\",\"version\":\"2026-10-22-collect-v1\",\"id\":\"0f9802de-eedf-4042-8c40-f186a4661cbe\",\"payload\":{\"kind\":\"usage\",\"feature\":\"privacy\",\"outcome\":\"opened\",\"durationBand\":\"instant\",\"locale\":\"en\",\"device\":\"desktop\"}}"
+    },
+    {
+      "url": "http://127.0.0.1:4188/api/collect/preference",
+      "method": "POST",
+      "body": "{\"purpose\":\"analytics\",\"action\":\"revoke\"}"
+    },
+    {
+      "url": "http://127.0.0.1:4188/assets/attachmentSecurityWorker-DhLx7jZX.js",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:4188/assets/attachmentSecurityWorker-DhLx7jZX.js",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:4188/?view=project&lang=en",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:4188/assets/index-XluTHW5x.js",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:4188/assets/index-CHwLljjH.css",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:4188/branding/accreatio-lockup-light.svg",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:4188/api/auth/v1/methods",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:4188/api/account/session",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:4188/assets/build-BkIkdflC.js",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:4188/api/admin/blog/session",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:4188/assets/attachmentSecurityWorker-DhLx7jZX.js",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:4188/assets/attachmentSecurityWorker-DhLx7jZX.js",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:4188/branding/accreatio-mark-light.svg",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:4188/assets/client-zip-scKVvBcw.js",
+      "method": "GET",
+      "body": null
+    },
+    {
+      "url": "http://127.0.0.1:4188/api/account/authorize",
+      "method": "POST",
+      "body": "{\"operationId\":\"28243b45-a824-4bd9-8b16-2a6ed9aaff8a\",\"ownerKey\":\"v1:7777777777777777777777777777777777777777777777777777777777777777\",\"sessionKey\":\"v1:9999999999999999999999999999999999999999999999999999999999999999\"}"
+    }
+  ]
+}

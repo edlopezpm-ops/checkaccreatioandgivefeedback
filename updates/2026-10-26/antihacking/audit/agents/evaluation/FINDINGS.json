@@ -1,0 +1,95 @@
+[
+  {
+    "id": "E-01",
+    "category": "CONTRACT_FAILURE",
+    "status": "CONFIRMED",
+    "severity": "P2",
+    "capability": "C27",
+    "title": "El snapshot incumple su gate de dependencias high/critical",
+    "requirement": {
+      "source": ".github/workflows/ci.yml:27-30; docs/SECURITY.md:57-61",
+      "description": "npm audit --audit-level=high forma parte del gate CI; el inventario requerido debe fallar sobre high/critical."
+    },
+    "snapshot": "0dcafbc426b01faea621d13121e36a54099b283a",
+    "configuration": "Node 24.18.0; npm12.0.2; lockfile v3, Windows; dependencias instaladas coinciden con el lock",
+    "locations": [
+      {
+        "path": ".github/workflows/ci.yml",
+        "line": 28
+      },
+      {
+        "path": "package-lock.json",
+        "detail": "undici7.29.1,zod3.25.76,serialize-javascript7.0.7 y rollups de consumidores"
+      }
+    ],
+    "input": "npm.cmd audit --audit-level=high",
+    "expected": "0 con ausencia de entradas high/critical",
+    "observed": "Exit1;7 entradas de paquetes afectadas:4 high,2 moderate,1 low. Son5 advisories únicos;4 entradas son rollups, no7 vulnerabilidades independientes.",
+    "evidence": [
+      "agents/evaluation/npm-audit-high.log",
+      "evidence/npm-audit.json",
+      "agents/evaluation/installed-lock-consistency.json"
+    ],
+    "trajectory": "lock instalado → npm audit registry metadata → gate de CI",
+    "impact": "El gate requerido bloquearía este snapshot con el registro actual. Dependencias observadas son de tooling/build/emulación; no se ha demostrado explotación de la aplicación web ni su presencia como código remoto ejecutable en el bundle.",
+    "alternatives": [
+      "Las124 entradas ausentes son opcionales de otras plataformas;0 dependencias obligatorias ausentes y0 discrepancias de versión entre522 instaladas y lock. No es una instalación desalineada.",
+      "Clasificación npm rollup no acredita por sí sola explotabilidad del producto."
+    ],
+    "remediation": "Actualizar cadenas transitivas compatibles y overrides con nuevo snapshot; regenerar lock de forma revisable, volver a ejecutar audit, build y verificaciones pertinentes. No se aplicaron cambios.",
+    "verification": "Nuevo npm audit high exit 0, lock consistente y verify vigente."
+  },
+  {
+    "id": "E-02",
+    "category": "WEAK_TEST",
+    "additionalCategory": "FALSE_SUCCESS",
+    "status": "CONFIRMED",
+    "severity": "P2",
+    "capability": "C26",
+    "title": "Lighthouse puede aprobar un servidor ajeno después de fallar su propio preview",
+    "requirement": {
+      "source": "scripts/lighthouse-check.mjs:1,46-78; frozen C26",
+      "description": "El gate debe evaluar el build real y detectar fallos controlados de sus dependencias; un child de preview fallido no puede acreditar ese artefacto."
+    },
+    "snapshot": "0dcafbc426b01faea621d13121e36a54099b283a",
+    "configuration": "Vite 8.3.4,Lighthouse 13.4.1,Playwright 1.62.1,Node 24.18.0; únicamente4237/9238 sustituyen4174/9222 en copia aislada",
+    "locations": [
+      {
+        "path": "scripts/lighthouse-check.mjs",
+        "line": 46
+      },
+      {
+        "path": "scripts/lighthouse-check.mjs",
+        "line": 62
+      },
+      {
+        "path": "scripts/lighthouse-check.mjs",
+        "line": 73
+      },
+      {
+        "path": "scripts/lighthouse-check.mjs",
+        "line": 77
+      }
+    ],
+    "input": "Mantener un servidor HTTP de fixture ocupando el puerto; lanzar el CLI Vite real con --strictPort y después el gate con la misma configuración.",
+    "expected": "Vite retorna 1 por puerto ocupado; el gate debe terminar no cero sin puntuar contenido ajeno como su build.",
+    "observed": "CLI Vite real exit 1:\"Port4237 is already in use\". El gate retorna 0yPASS100/100/100/91contra HTML de fixture sin accreatio. Cuatro peticiones llegaron al servidor ajeno. Su proceso child se ignora y no se verifica la identidad del artefacto.",
+    "trajectory": "child spawn fallido → waitForServer acepta cualquier HTTP existente → Lighthouse puntúa /index.html del servidor ajeno → gate PASS",
+    "repro": "node .local/logs/antihacking-20261026-full/agents/evaluation/repro-lighthouse-port.mjs",
+    "evidence": [
+      "agents/evaluation/lighthouse-port-results-v2.json",
+      "agents/evaluation/lighthouse-port-results.json",
+      "agents/evaluation/repro-lighthouse-port.mjs",
+      "agents/evaluation/mutants/lighthouse-preoccupied-port/.local/logs/lighthouse/lhr.json"
+    ],
+    "impact": "Puede atribuir métricas y aprobación a otro contenido en un entorno con puerto ocupado. Es un falso éxito del verificador; no demuestra fallo funcional general ni manipulación intencional.",
+    "alternatives": [
+      "El primer control usó child ausente;se reforzó con Vite real yEADDRINUSE, conservando ambos recibos.",
+      "No se usaron respuestas de producción;solo loopback y archivos de auditoría.",
+      "Las corridas normales actuales no se invalidan automáticamente: no hay evidencia de colisión enellas.",
+      "El bypass SEO sigue limitado a is-crawlable y no esla causa."
+    ],
+    "remediation": "Vincular la disponibilidad HTTP al child vivo:capturar error/exit,fallar inmediatamente si termina,reservar puerto propio/efímero y verificar identidad/hash del entry servido antes de juzgarlo. Separar también el puerto DevTools por ejecución.",
+    "verification": "Nuevo snapshot:el control de puerto ocupado retorna no cero y no producePASSdel decoy;el target válido completa sus umbrales habituales."
+  }
+]

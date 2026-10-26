@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "snapshotHead": "0dcafbc426b01faea621d13121e36a54099b283a",
+  "matrixFrozenSha256": "0a189cdfe83f821cab3b5ab416469a5a1ada1177765be16c38ad36805ac47805",
+  "inventoryClosed": true,
+  "provisional": false,
+  "capabilityCounts": {
+    "PASS": 23,
+    "FAIL": 3,
+    "UNKNOWN": 4
+  },
+  "W": 124,
+  "P": 93,
+  "F": 13,
+  "U": 18,
+  "identity": "W = P + F + U",
+  "demonstratedCompliance": 75,
+  "decisionCoverage": 85.48387096774194,
+  "confirmedFailureWeight": 10.483870967741936,
+  "unknownWeight": 14.516129032258064,
+  "verdict": "FAIL",
+  "policy": "Weights are audit policy, not probability of hacking, AI authorship or exhaustive defect rate. UNKNOWN remains in denominator. Local PASS scope is explicit per capability; unverified external integration evidence remains UNKNOWN where that integration is the capability.",
+  "calculatedAt": "2026-10-26T19:43:45.610Z"
+}

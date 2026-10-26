@@ -1,0 +1,917 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-26T19:21:18.017Z",
+  "files": [
+    {
+      "file": "src/components/AboutExperience.tsx",
+      "path": "src/components/AboutExperience.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 281,
+      "sha256": "f03f42ddea06c7fc00e3fbe652f79931eb848affda8ff8235df50669403262f6"
+    },
+    {
+      "file": "src/components/AekrSignature.tsx",
+      "path": "src/components/AekrSignature.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 117,
+      "sha256": "0a5884a100c9d8fa01dabefe011156a196a2d90e0ba42727332d8a61009a3059"
+    },
+    {
+      "file": "src/components/AppFrame.tsx",
+      "path": "src/components/AppFrame.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 173,
+      "sha256": "a59a2a724758011bb8b093c04be581458dec3e2e554202ca701073813b7a74e1"
+    },
+    {
+      "file": "src/components/Atmosphere.tsx",
+      "path": "src/components/Atmosphere.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 229,
+      "sha256": "c20de9fa3826f987074eae0bf8fa5e87158423283d59e14eded9717a4292dc6a"
+    },
+    {
+      "file": "src/components/BlogExperience.css",
+      "path": "src/components/BlogExperience.css",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 409,
+      "sha256": "f168d74357b0ffe70a6857d9995b3e526c92f394ebc4a266ccc597fc996c4fdc"
+    },
+    {
+      "file": "src/components/BlogExperience.tsx",
+      "path": "src/components/BlogExperience.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 694,
+      "sha256": "96dd2b4bfc962b61bb893a1bc0b722a3ab962c22e7ed04af1be08ab6d34f8adc"
+    },
+    {
+      "file": "src/components/FormationMark.tsx",
+      "path": "src/components/FormationMark.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 39,
+      "sha256": "f4b351d1074acf06b0fa36d8b2db84c4acd49fdb5324ff1cb432d776a822da2d"
+    },
+    {
+      "file": "src/components/Onboarding.css",
+      "path": "src/components/Onboarding.css",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 13,
+      "sha256": "26c5c32390b12b4534077c2d357681157872930dde1dd1f5a1005641bde0c4ec"
+    },
+    {
+      "file": "src/components/Onboarding.tsx",
+      "path": "src/components/Onboarding.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 194,
+      "sha256": "c6c984911918490b61924592c47b65da9413e45f4943e9a19f67df3fb72e5eb8"
+    },
+    {
+      "file": "src/components/PublicContent.tsx",
+      "path": "src/components/PublicContent.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 25,
+      "sha256": "0ecb4855977733a1d41fb58b3ba4fe813d160aed9844bed7f322955ee325529f"
+    },
+    {
+      "file": "src/components/StarField.tsx",
+      "path": "src/components/StarField.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 278,
+      "sha256": "0d73b8cfc145c590651109205fded0ba30ee251edc6afb9f4654977327e04163"
+    },
+    {
+      "file": "src/components/StatusNotice.tsx",
+      "path": "src/components/StatusNotice.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 33,
+      "sha256": "3534742f9808a212a0b7d0361b776b3b92b123fc61a2c9e1e2a621004b745262"
+    },
+    {
+      "file": "src/components/WebExperience.tsx",
+      "path": "src/components/WebExperience.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 51,
+      "sha256": "70e7be71aaa44419b13a85ab5076e96e73981506ef807b970786b30751b029a4"
+    },
+    {
+      "file": "src/components/WebProjectInformation.tsx",
+      "path": "src/components/WebProjectInformation.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 231,
+      "sha256": "55f4fd38b40e23b9c8982b7b6407c286c98435fbf6331c7aac9eb79d0cabef7a"
+    },
+    {
+      "file": "src/components/account/AccountPolicyFields.tsx",
+      "path": "src/components/account/AccountPolicyFields.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 59,
+      "sha256": "01f72754a658710b87472ec2df8a90bc844259afc05398ed6cc3eb0fa6a8a371"
+    },
+    {
+      "file": "src/components/account/AccountRightsAccess.tsx",
+      "path": "src/components/account/AccountRightsAccess.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 430,
+      "sha256": "2f7103c841063a05595a2fa4c88b5bddf2bfb6ec9354dff0d9f782df8208d42a"
+    },
+    {
+      "file": "src/components/account/AccountShell.tsx",
+      "path": "src/components/account/AccountShell.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 42,
+      "sha256": "9b2f84e3f8aefb64bbd47c1d849a7ec5d650cb1e3b59e6104ea877bdb89d1b64"
+    },
+    {
+      "file": "src/components/account/AuthFlow.tsx",
+      "path": "src/components/account/AuthFlow.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 63,
+      "sha256": "ef84a1ed222aa59e510a09e81664b0f2b7d8881bd59e4080af88681a90bf4700"
+    },
+    {
+      "file": "src/components/account/CookiePreferences.tsx",
+      "path": "src/components/account/CookiePreferences.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 527,
+      "sha256": "d8062787e5d29b5a78f043b692dd570f19c6b85bca832aae93e47fcdbf7bcac4"
+    },
+    {
+      "file": "src/components/account/PrivacyControls.tsx",
+      "path": "src/components/account/PrivacyControls.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 37,
+      "sha256": "afb08ed8cc17a90e8bbb58cbe5339905db06d39549088a04aea2c2bfef6934e1"
+    },
+    {
+      "file": "src/components/account/SharedCaptcha.tsx",
+      "path": "src/components/account/SharedCaptcha.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 172,
+      "sha256": "867593cdf6407b099f3fe71fe263960cf27eea486018c404c915a830b1a998df"
+    },
+    {
+      "file": "src/components/account/WebAccountBoundary.tsx",
+      "path": "src/components/account/WebAccountBoundary.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 1495,
+      "sha256": "882771fc2a01e617317ee26b68e4d0c7f252416bfeeda7fa3a89293f0ebe7583"
+    },
+    {
+      "file": "src/components/account/WebAccountMenu.tsx",
+      "path": "src/components/account/WebAccountMenu.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 322,
+      "sha256": "165e38b32c1ff18fced9b5df59985fecf8391f0ebaa21eba9c7d906d8077cde5"
+    },
+    {
+      "file": "src/components/account/cookiePreferences.css",
+      "path": "src/components/account/cookiePreferences.css",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 164,
+      "sha256": "1da61dbbc05ba5ad50e80d67a0c59c82ccf64dcdf90ea3396804b31cd0ecb3f6"
+    },
+    {
+      "file": "src/components/account/sharedCaptcha.css",
+      "path": "src/components/account/sharedCaptcha.css",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 24,
+      "sha256": "a89003c462e5f1a844fcf4e15b37421697912759aeebae739bb77a31445cb8d6"
+    },
+    {
+      "file": "src/components/creation/AdvancedDisclosure.tsx",
+      "path": "src/components/creation/AdvancedDisclosure.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 19,
+      "sha256": "a534fccae98a395999f2f8a87b982f8873deabe3dcab3abe111eb7c00fb8d685"
+    },
+    {
+      "file": "src/components/creation/ContextStage.tsx",
+      "path": "src/components/creation/ContextStage.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 140,
+      "sha256": "d8ff787dda5013c348f6aa921eae5fe8d211645801d8883bea2a0f83fd5e7400"
+    },
+    {
+      "file": "src/components/creation/CreationWorkspace.tsx",
+      "path": "src/components/creation/CreationWorkspace.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 68,
+      "sha256": "2b3448c91b7451d800504cf5a8df3c688ee4ac7954cdf55e3074c1876372e146"
+    },
+    {
+      "file": "src/components/creation/DeliveryStage.tsx",
+      "path": "src/components/creation/DeliveryStage.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 299,
+      "sha256": "541606d6410abfdbcdeec79125fe37e140fe69bec4f369173e0980db38ef6d2a"
+    },
+    {
+      "file": "src/components/creation/FoundationStage.tsx",
+      "path": "src/components/creation/FoundationStage.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 312,
+      "sha256": "a18716ed5a6f7a19a3ab6e084a8698803833db18bec50edfb5546661d8de3817"
+    },
+    {
+      "file": "src/components/creation/GuidedAttachments.tsx",
+      "path": "src/components/creation/GuidedAttachments.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 160,
+      "sha256": "af276bf3a7dd64526cba4ad5ad2f896ec0d6175bf87b9a982dfd0b737adbc563"
+    },
+    {
+      "file": "src/components/creation/GuidedCreation.tsx",
+      "path": "src/components/creation/GuidedCreation.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 565,
+      "sha256": "3720063add06a394fc67323fc411f6fe5764daac93a44cfe70cb87be595bcd0f"
+    },
+    {
+      "file": "src/components/creation/LocalityNote.tsx",
+      "path": "src/components/creation/LocalityNote.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 20,
+      "sha256": "c09cfcf91a59a8fff65514f10b4770a33e80d39f266c73395e7b1f2c7b173050"
+    },
+    {
+      "file": "src/components/creation/OutcomePanel.tsx",
+      "path": "src/components/creation/OutcomePanel.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 405,
+      "sha256": "84614b31296b82b13df8ffc8ba52ba7bebfed3dc2c2e49b32f97d6e2491d141c"
+    },
+    {
+      "file": "src/components/creation/ProjectHelp.tsx",
+      "path": "src/components/creation/ProjectHelp.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 43,
+      "sha256": "d19b835abbfae8a89a4b9e0c179a880d4c1e9400a8c8e96a1008920c3b829086"
+    },
+    {
+      "file": "src/components/creation/ReviewManifest.tsx",
+      "path": "src/components/creation/ReviewManifest.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 120,
+      "sha256": "c39c558417d2c24a5d801ebd339f68592cc592b059324024c8c68c85b580344c"
+    },
+    {
+      "file": "src/components/creation/ReviewStage.tsx",
+      "path": "src/components/creation/ReviewStage.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 407,
+      "sha256": "fa5ba6635baffd51790908d7e14da2a19ba8e87d7de9a0104d13ed96952082aa"
+    },
+    {
+      "file": "src/components/creation/StageNavigation.tsx",
+      "path": "src/components/creation/StageNavigation.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 109,
+      "sha256": "447e64fe13f74497393115564a0f72a481e7f59335f508a149ff7fb4bab3d700"
+    },
+    {
+      "file": "src/components/creation/SummaryDrawer.tsx",
+      "path": "src/components/creation/SummaryDrawer.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 177,
+      "sha256": "e95aa831b72fc041e3fa201b80a9e2d0104ca6e0aa1152e2b86863fd62169aa1"
+    },
+    {
+      "file": "src/components/creation/TeamStage.tsx",
+      "path": "src/components/creation/TeamStage.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 375,
+      "sha256": "0e68126c845c4d15ffb829be1d52b690e354c1ab9fdb70e1f0b4c9b32734145c"
+    },
+    {
+      "file": "src/components/creation/guidedCreation.css",
+      "path": "src/components/creation/guidedCreation.css",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 464,
+      "sha256": "88794371412d9701540154d1ed38e0f0419e1572b2ce18822d73012b4c1829ed"
+    },
+    {
+      "file": "src/components/creation/guidedFlow.ts",
+      "path": "src/components/creation/guidedFlow.ts",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 67,
+      "sha256": "177efa4d2938366fe106bb2d0587d568376aaf8df07c3bdf0c9e8765e5b0dfad"
+    },
+    {
+      "file": "src/components/help/AboutPopover.tsx",
+      "path": "src/components/help/AboutPopover.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 164,
+      "sha256": "153f90fc30ed5a78ae01a38ea0ac5d73dadff5bdeaef5bd1561ce457143b63c8"
+    },
+    {
+      "file": "src/components/help/HelpDialog.tsx",
+      "path": "src/components/help/HelpDialog.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 89,
+      "sha256": "8a2922b5e6243552351e36f410c52cec48902cca99df41b56467eaa89a0669e0"
+    },
+    {
+      "file": "src/components/help/HelpSurfaces.css",
+      "path": "src/components/help/HelpSurfaces.css",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 120,
+      "sha256": "638c002947733c60166c840e2975e6db52c24deaef13d0f7c34e5aaf6ac27994"
+    },
+    {
+      "file": "src/components/help/HelpTips.tsx",
+      "path": "src/components/help/HelpTips.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 83,
+      "sha256": "c31cbb8b619cb48accc290ef76bd0b9f11c85e7a4436c8854bda537fe07dec44"
+    },
+    {
+      "file": "src/components/help/helpContent.ts",
+      "path": "src/components/help/helpContent.ts",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 299,
+      "sha256": "7591d784d140de6f9ee9e83dacb115258250bed49424ad18fe3127a3eaaae92d"
+    },
+    {
+      "file": "src/components/help/helpTips.css",
+      "path": "src/components/help/helpTips.css",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 107,
+      "sha256": "b0aa8129e0f35d77c971c0419531ad5de89f200316a252137093e4240cc839e8"
+    },
+    {
+      "file": "src/components/mode1/AutoGrowTaskField.tsx",
+      "path": "src/components/mode1/AutoGrowTaskField.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 71,
+      "sha256": "12c7994da1c96abd2385b8d59c959fac8ce1f8730b7611799efe30b002ea63f7"
+    },
+    {
+      "file": "src/components/mode1/Mode1ConfigurationDialog.tsx",
+      "path": "src/components/mode1/Mode1ConfigurationDialog.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 566,
+      "sha256": "15bd832d1000490120475d243cf7e56a2dae1de31f051f89005a6350f63582a9"
+    },
+    {
+      "file": "src/components/mode1/NumericDraftField.tsx",
+      "path": "src/components/mode1/NumericDraftField.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 58,
+      "sha256": "7b0e5fbf19d5dfb0f378180f5c41e415ba26c3be6abe6d51d0df4042fa62bea5"
+    },
+    {
+      "file": "src/components/mode1/mode1Draft.ts",
+      "path": "src/components/mode1/mode1Draft.ts",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 225,
+      "sha256": "27fb0bc377c3d53f216d9425aa642a3f684efdcd84814ad0285b3c19f2df70db"
+    },
+    {
+      "file": "src/components/nebula.ts",
+      "path": "src/components/nebula.ts",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 412,
+      "sha256": "3f85b2f4b1bbf8c617d6c7df1cb6723b4a479aeb4554d54ebc32cfbe60d8bb22"
+    },
+    {
+      "file": "src/components/useSectionTransition.ts",
+      "path": "src/components/useSectionTransition.ts",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 52,
+      "sha256": "a32312690ab34a7ac9bb7e65f17ed57ffece06d486f5485bd4eb0c5400eb5b52"
+    },
+    {
+      "file": "src/legacy/LegacyApp.tsx",
+      "path": "src/legacy/LegacyApp.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 2056,
+      "sha256": "356b4c2668dde93b028afec4ddf32dd53c14abf353feaf5ebbda0a5558300166"
+    },
+    {
+      "file": "src/legacy/LegacyReviewManifest.tsx",
+      "path": "src/legacy/LegacyReviewManifest.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 88,
+      "sha256": "11e3cddbd34c834db0cd37b1cee380a8d27e11e03e6aba468979a9955fe3b6e0"
+    },
+    {
+      "file": "src/legacy/LegacyReviewStage.tsx",
+      "path": "src/legacy/LegacyReviewStage.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 235,
+      "sha256": "f884b7bdd2030b1addf813d99f177b498bc1187537fe38c7614d68737de20141"
+    },
+    {
+      "file": "src/main.tsx",
+      "path": "src/main.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 46,
+      "sha256": "867256f23b986b554f503b3859b1b84bedd9525d6fb0ff2a9b6a8ddeab806f0c"
+    },
+    {
+      "file": "src/main.web.tsx",
+      "path": "src/main.web.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 45,
+      "sha256": "a4bcf50ef1eff17afe39df486b46a7bcc67c7d649f2e918207219c95921cb79f"
+    },
+    {
+      "file": "src/main.desktop.tsx",
+      "path": "src/main.desktop.tsx",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 8,
+      "sha256": "3d1c369d51cb9473fd03f5e78115731f2335fab02fc7e8d3a1036ee25a2dff67"
+    },
+    {
+      "file": "src/legal.ts",
+      "path": "src/legal.ts",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 10,
+      "sha256": "be7bdabc1f328b81646d02943cfd462805ee05648f41e1814e403fb7b2a3da3d"
+    },
+    {
+      "file": "vite.config.mts",
+      "path": "vite.config.mts",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 71,
+      "sha256": "c8917f33a6506d2a32fd94a3cac31146c6900878146f0c21db3c92cc064b0195"
+    },
+    {
+      "file": "src/styles.css",
+      "path": "src/styles.css",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 2396,
+      "sha256": "ca74e3533764a696e646720f3179bd7c4bcf557634119fe9ba0731cce2cbc2f1"
+    },
+    {
+      "file": "src/extras.css",
+      "path": "src/extras.css",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 930,
+      "sha256": "d08bd2ff0640efcf3710abbd7ac7994865b7d8a6d8311aa826602486b0a836a4"
+    },
+    {
+      "file": "src/responsive.css",
+      "path": "src/responsive.css",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 466,
+      "sha256": "e55d8dcf600f28bd14f513990a7ecb6122702137347939c860244a0b44a11fcf"
+    },
+    {
+      "file": "src/polish.css",
+      "path": "src/polish.css",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 94,
+      "sha256": "bec8b035e1c9047973c68a471900bf63c5a11e911ea43b09840c2c86c36ed368"
+    },
+    {
+      "file": "src/web-branding.css",
+      "path": "src/web-branding.css",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 1113,
+      "sha256": "49f5d08d992fdf51ba02029398998efddaf8d5d64cedcd419d48b614506f8126"
+    },
+    {
+      "file": "public/legal/legal-navigation.js",
+      "path": "public/legal/legal-navigation.js",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 29,
+      "sha256": "5c547844731696c14acbfda010531311eb71ac907dfed326c3ec36cac44f4238"
+    },
+    {
+      "file": "public/legal/terms-language.js",
+      "path": "public/legal/terms-language.js",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 17,
+      "sha256": "3c05e6bafebd49b6bd1cd2765e9850de978f4f74e182c6e16b37fd815507ba1f"
+    },
+    {
+      "file": "public/legal/theme.js",
+      "path": "public/legal/theme.js",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 13,
+      "sha256": "e7338c052114c7414cc40ca90cbaf60fe35b7f39849263ee6d29c55877e707ec"
+    },
+    {
+      "file": "public/legal/legal.css",
+      "path": "public/legal/legal.css",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 185,
+      "sha256": "497cad390a48e6bec45028d5773aacd9c8e91ede8e7f5b1bcdf1ebdeeb859298"
+    },
+    {
+      "file": "scripts/generate-help-slides.mjs",
+      "path": "scripts/generate-help-slides.mjs",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 357,
+      "sha256": "8c353f51afc9a7b5e3e2c6108748ce476970adbf1aabb1dddc7abe1f47c3b1e8"
+    },
+    {
+      "file": "scripts/render-brand-assets.mjs",
+      "path": "scripts/render-brand-assets.mjs",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 82,
+      "sha256": "e3f966f927fa488f0ecd8b01819a5a8fa61f05123524af1b17b5fda845e74715"
+    },
+    {
+      "file": "scripts/render-web-brand-assets.mjs",
+      "path": "scripts/render-web-brand-assets.mjs",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 249,
+      "sha256": "e0f28d1396f0623c268b4eb2a5c2b4f788213804a8b0fd03ab1e463b4215d15a"
+    },
+    {
+      "file": "scripts/project-map.template.html",
+      "path": "scripts/project-map.template.html",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 1800,
+      "sha256": "335af2fb23a77f55b096b766ad1d36c19c92528f412d42929ccbda3d20bc6d5c"
+    },
+    {
+      "file": "scripts/google-account-functional-smoke.mjs",
+      "path": "scripts/google-account-functional-smoke.mjs",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 1309,
+      "sha256": "44df5584e093aa9e9b6a12b8a4caf2f9003a815a6eebd980b12c6a1b6e6cb6c0"
+    },
+    {
+      "file": "scripts/account-rights-functional-smoke.mjs",
+      "path": "scripts/account-rights-functional-smoke.mjs",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 535,
+      "sha256": "886a3731448e268ce40d7dea5797ac9fb6ba402e6335ce0f887a0b3b0955b6cd"
+    },
+    {
+      "file": "scripts/collect-functional-smoke.mjs",
+      "path": "scripts/collect-functional-smoke.mjs",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa de código/estilos; segmentos truncados recuperados con lecturas dirigidas. No se ejecutó regeneración de assets ni variante legacy.",
+      "lines": 547,
+      "sha256": "305827df4da6a52a9bdef8bb95d610d0e131fc4b2276473d6e7da91d1ffa5012"
+    },
+    {
+      "file": "public/legal/cookies.html",
+      "path": "public/legal/cookies.html",
+      "status": "reviewed_statically",
+      "review": "semantic_text_and_structure_complete",
+      "method": "Texto completo extraído y leído en segmentos sin omitir texto truncado; estructura/links/scripts/atributos activos inventariados por parser de etiquetas. JS/CSS externo leído completo. No es revisión jurídica ni afirmación de ejecución hosted.",
+      "lines": 851,
+      "sha256": "d76dd226878542a9495befcd21083b62f95fd61e35ea0cc91a3af062603e103a"
+    },
+    {
+      "file": "public/legal/faq.html",
+      "path": "public/legal/faq.html",
+      "status": "reviewed_statically",
+      "review": "semantic_text_and_structure_complete",
+      "method": "Texto completo extraído y leído en segmentos sin omitir texto truncado; estructura/links/scripts/atributos activos inventariados por parser de etiquetas. JS/CSS externo leído completo. No es revisión jurídica ni afirmación de ejecución hosted.",
+      "lines": 456,
+      "sha256": "21de97cc225f719fbf278a71e0ecb84f536a291ab8dec1dd575da451e2bd030f"
+    },
+    {
+      "file": "public/legal/privacy.html",
+      "path": "public/legal/privacy.html",
+      "status": "reviewed_statically",
+      "review": "semantic_text_and_structure_complete",
+      "method": "Texto completo extraído y leído en segmentos sin omitir texto truncado; estructura/links/scripts/atributos activos inventariados por parser de etiquetas. JS/CSS externo leído completo. No es revisión jurídica ni afirmación de ejecución hosted.",
+      "lines": 892,
+      "sha256": "4b4923ad885daf3c5f0fa0f4d9e75e238e41d1badbe830fed1a332d9f9db5dc0"
+    },
+    {
+      "file": "public/legal/terms-es.html",
+      "path": "public/legal/terms-es.html",
+      "status": "reviewed_statically",
+      "review": "semantic_text_and_structure_complete",
+      "method": "Texto completo extraído y leído en segmentos sin omitir texto truncado; estructura/links/scripts/atributos activos inventariados por parser de etiquetas. JS/CSS externo leído completo. No es revisión jurídica ni afirmación de ejecución hosted.",
+      "lines": 575,
+      "sha256": "dc88fafdcb57e27158a949a52a84d69ab912e21a7e48eb8429e58e011509bc1e"
+    },
+    {
+      "file": "public/legal/terms.html",
+      "path": "public/legal/terms.html",
+      "status": "reviewed_statically",
+      "review": "semantic_text_and_structure_complete",
+      "method": "Texto completo extraído y leído en segmentos sin omitir texto truncado; estructura/links/scripts/atributos activos inventariados por parser de etiquetas. JS/CSS externo leído completo. No es revisión jurídica ni afirmación de ejecución hosted.",
+      "lines": 540,
+      "sha256": "9c38795ea2ed084e9ab685b064e0eecc6d9b52daa57ffc6c80d415641f56151d"
+    },
+    {
+      "file": "README.md",
+      "path": "README.md",
+      "status": "sampled",
+      "review": "contract_locator_and_consistency_sampling",
+      "method": "Secciones contractuales identificadas y contrastadas; no se declara lectura semántica completa de toda la historia/documentación.",
+      "sha256": "d2926888952afa2752bdef3c42d0905805c64a731d69f1f0efd4d407de9670b4"
+    },
+    {
+      "file": "PROJECT_MAP.md",
+      "path": "PROJECT_MAP.md",
+      "status": "sampled",
+      "review": "contract_locator_and_consistency_sampling",
+      "method": "Secciones contractuales identificadas y contrastadas; no se declara lectura semántica completa de toda la historia/documentación.",
+      "sha256": "2a2f63560755720fe718feb673db0124db81c708d169980d5d87efdde6440400"
+    },
+    {
+      "file": "project-map.json",
+      "path": "project-map.json",
+      "status": "sampled",
+      "review": "contract_locator_and_consistency_sampling",
+      "method": "Secciones contractuales identificadas y contrastadas; no se declara lectura semántica completa de toda la historia/documentación.",
+      "sha256": "681384c17783effcbd8d869e2f333ab4b0027997efc3e6adce374bfefe122666"
+    },
+    {
+      "file": "docs/SECURITY.md",
+      "path": "docs/SECURITY.md",
+      "status": "sampled",
+      "review": "contract_locator_and_consistency_sampling",
+      "method": "Secciones contractuales identificadas y contrastadas; no se declara lectura semántica completa de toda la historia/documentación.",
+      "sha256": "79dcfb56be8a30e925f988e9184ae01dd56f31afb94d0ce59614428c11308264"
+    },
+    {
+      "file": "docs/ACCOUNT_PRIVACY_OPERATIONS.md",
+      "path": "docs/ACCOUNT_PRIVACY_OPERATIONS.md",
+      "status": "sampled",
+      "review": "contract_locator_and_consistency_sampling",
+      "method": "Secciones contractuales identificadas y contrastadas; no se declara lectura semántica completa de toda la historia/documentación.",
+      "sha256": "83984766db710cf167e2932adc907b95b400f4344d5c53d1d906c722f307f947"
+    },
+    {
+      "file": "docs/ABUSE_GUARD_2026-10-22.md",
+      "path": "docs/ABUSE_GUARD_2026-10-22.md",
+      "status": "sampled",
+      "review": "contract_locator_and_consistency_sampling",
+      "method": "Secciones contractuales identificadas y contrastadas; no se declara lectura semántica completa de toda la historia/documentación.",
+      "sha256": "63cb17041a42f305833a04fca7b0d2bc4ac1a559bab6744fcd3fcad6744ddaf3"
+    },
+    {
+      "file": "docs/COLLECT_SECURITY_2026-10-22.md",
+      "path": "docs/COLLECT_SECURITY_2026-10-22.md",
+      "status": "sampled",
+      "review": "contract_locator_and_consistency_sampling",
+      "method": "Secciones contractuales identificadas y contrastadas; no se declara lectura semántica completa de toda la historia/documentación.",
+      "sha256": "9e1a819b9aa41c489566ba69c3ea0072e59e21fbc3d178035a267b7bf62b6b9b"
+    },
+    {
+      "file": "docs/ACCREATIO_BRANDING.md",
+      "path": "docs/ACCREATIO_BRANDING.md",
+      "status": "sampled",
+      "review": "contract_locator_and_consistency_sampling",
+      "method": "Secciones contractuales identificadas y contrastadas; no se declara lectura semántica completa de toda la historia/documentación.",
+      "sha256": "3ab92cda89b4c21310240aacd3d2e7c50e5868df1eed4f240422b52bb61ba7c1"
+    },
+    {
+      "file": "docs/HELP_AND_SHARED_CAPTCHA_RELEASE_2026-10-25.md",
+      "path": "docs/HELP_AND_SHARED_CAPTCHA_RELEASE_2026-10-25.md",
+      "status": "sampled",
+      "review": "contract_locator_and_consistency_sampling",
+      "method": "Secciones contractuales identificadas y contrastadas; no se declara lectura semántica completa de toda la historia/documentación.",
+      "sha256": "2bd48e4b6308d564fab854e763bdf6ba864d0e3ae74b53f75a9f07157d69f9e0"
+    },
+    {
+      "file": "docs/TOS_HARDENING_2026-10-25.md",
+      "path": "docs/TOS_HARDENING_2026-10-25.md",
+      "status": "sampled",
+      "review": "contract_locator_and_consistency_sampling",
+      "method": "Secciones contractuales identificadas y contrastadas; no se declara lectura semántica completa de toda la historia/documentación.",
+      "sha256": "5b6e2aad71e817256fe9476ad540ca1ad17f19a9162a025743cf9be6a919e1fc"
+    },
+    {
+      "file": "docs/PAGES_POLICY_RELEASE_READBACK_2026-10-25.md",
+      "path": "docs/PAGES_POLICY_RELEASE_READBACK_2026-10-25.md",
+      "status": "sampled",
+      "review": "contract_locator_and_consistency_sampling",
+      "method": "Secciones contractuales identificadas y contrastadas; no se declara lectura semántica completa de toda la historia/documentación.",
+      "sha256": "e259648270be12c1369d96c05ea4448c2a7f8f8feb93a77230af2fa5bf8312e6"
+    },
+    {
+      "file": "docs/SOP_WEB.md",
+      "path": "docs/SOP_WEB.md",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa para reconstrucción de requisitos y precedencia; recibos históricos no se toman como resultado corriente.",
+      "sha256": "c07531b9268e922adfe31513259d93b0f63d0691026efc5b42caee73b0baee42"
+    },
+    {
+      "file": "docs/ATTACHMENT_SECURITY_2026-10-22.md",
+      "path": "docs/ATTACHMENT_SECURITY_2026-10-22.md",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa para reconstrucción de requisitos y precedencia; recibos históricos no se toman como resultado corriente.",
+      "sha256": "e9a9f99cf310bd6450ec4e3270ec197bac285a7844c3570105e105c0dc94dfd5"
+    },
+    {
+      "file": "docs/WEB_ONLY_DELIVERY_2026-10-22.md",
+      "path": "docs/WEB_ONLY_DELIVERY_2026-10-22.md",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa para reconstrucción de requisitos y precedencia; recibos históricos no se toman como resultado corriente.",
+      "sha256": "d1b0572509b3def46536f4e5d10b56def0d916a171694fd9a94554e136007655"
+    },
+    {
+      "file": "docs/DESIGN_ICELAND_PEARL_2026-10-22.md",
+      "path": "docs/DESIGN_ICELAND_PEARL_2026-10-22.md",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa para reconstrucción de requisitos y precedencia; recibos históricos no se toman como resultado corriente.",
+      "sha256": "58e80e5c91e50400224ada329246722546abc0c8d5c3368dc1f3832701787a6b"
+    },
+    {
+      "file": "docs/TOS_PUBLIC_VERSION_LABEL_2026-10-25.md",
+      "path": "docs/TOS_PUBLIC_VERSION_LABEL_2026-10-25.md",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa para reconstrucción de requisitos y precedencia; recibos históricos no se toman como resultado corriente.",
+      "sha256": "02b1fbb3ac636139f58881e6bda727e27917fb9115fb976b22356a5c8985e532"
+    },
+    {
+      "file": "docs/TOS_PRESENTATION_2026-10-25.md",
+      "path": "docs/TOS_PRESENTATION_2026-10-25.md",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa para reconstrucción de requisitos y precedencia; recibos históricos no se toman como resultado corriente.",
+      "sha256": "0c2356e428b10f7049eefd2efea031cd304ebfec08cd633a7dd1f063dc449d26"
+    },
+    {
+      "file": "docs/FLOATING_EXAMPLE_RELEASE_2026-10-25.md",
+      "path": "docs/FLOATING_EXAMPLE_RELEASE_2026-10-25.md",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa para reconstrucción de requisitos y precedencia; recibos históricos no se toman como resultado corriente.",
+      "sha256": "9dd73c401c0c11de5017c2a04d0e54dd6a6fd29ce294c2013a37f4549b8fd3f9"
+    },
+    {
+      "file": "docs/TOS_LEGAL_NAVIGATION_FIX_2026-10-25.md",
+      "path": "docs/TOS_LEGAL_NAVIGATION_FIX_2026-10-25.md",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa para reconstrucción de requisitos y precedencia; recibos históricos no se toman como resultado corriente.",
+      "sha256": "ede26ea6089479e770487059290e1046560629c34c0214a7713e75bfc7eabba4"
+    },
+    {
+      "file": "docs/LEGAL_DOCUMENT_DELIVERY_2026-10-25.md",
+      "path": "docs/LEGAL_DOCUMENT_DELIVERY_2026-10-25.md",
+      "status": "reviewed_statically",
+      "review": "fully_read",
+      "method": "Lectura completa para reconstrucción de requisitos y precedencia; recibos históricos no se toman como resultado corriente.",
+      "sha256": "a0d9de6c31bea568d81e9a59e2928bcac807b3190680c2b7c1b774745aa6e9e6"
+    }
+  ],
+  "pending": [
+    "Binarios/assets: inventario y hash a cargo del coordinador; no lectura semántica byte por byte",
+    "Integraciones OAuth/mailbox reales y configuración remota activada fuera de esta pasada; no se sustituyen por fixtures"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "createdAt": "2026-10-26T19:15:58.675Z",
+  "scope": "Anonymous public GET only; no sign-in, tokens, remote D1 inspection or production mutation. Asset parity does not prove protected runtime bindings/cron/credentials.",
+  "results": [
+    {
+      "path": "/",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "sha256": "ae64feb78c4ba5e9a6b4b37591e9adf310b829ae5d77c38da0a575e459af7f86",
+      "bytes": 3410,
+      "scripts": [
+        {
+          "path": "/assets/index-BFXX_x0O.js",
+          "status": 200,
+          "sha256": "4c18bb764cafe7d5262bd96596aa2d34b9af89da078ea03155ea7a5c52a2e660",
+          "bytes": 579890,
+          "matchesLocalDist": false
+        }
+      ]
+    },
+    {
+      "path": "/api/auth/v1/methods",
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "cacheControl": "no-store",
+      "sha256": "f84ba4848e2265322e9651205e12dc2d1d5f63b171b5daf6b632379339dc743b",
+      "bytes": 185,
+      "capabilities": {
+        "version": "auth.v1",
+        "methods": {
+          "google": {
+            "available": true
+          },
+          "github": {
+            "available": true
+          },
+          "emailOtp": {
+            "available": false
+          }
+        },
+        "captchaRequired": true,
+        "siteKeyPresent": true
+      }
+    },
+    {
+      "path": "/api/account/session",
+      "status": 401,
+      "contentType": "application/json; charset=utf-8",
+      "cacheControl": "no-store",
+      "sha256": "28b33a8a84bb607ed524aa2080ba26996d96e2c0161c880093ef721f8510e44d",
+      "bytes": 70,
+      "expectedAnonymous401": true
+    },
+    {
+      "path": "/legal/privacy.html",
+      "error": "fetch failed"
+    },
+    {
+      "path": "/legal/terms.html",
+      "error": "fetch failed"
+    },
+    {
+      "path": "/legal/terms-es.html",
+      "error": "fetch failed"
+    },
+    {
+      "path": "/legal/cookies.html",
+      "error": "fetch failed"
+    }
+  ]
+}

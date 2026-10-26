@@ -1,0 +1,184 @@
+{
+  "scope": "Structural SVG inventory, not whole-image visual inspection or third-party source audit",
+  "files": 9,
+  "activeSignals": 0,
+  "externalSignals": 0,
+  "rows": [
+    {
+      "path": "public/branding/accreatio-favicon-v2.svg",
+      "sha256": "96a02918710c4776796c9605aaa43d1646ed39ac4be9a45fd08504fd70ed85a3",
+      "tags": [
+        "svg",
+        "title",
+        "style",
+        "defs",
+        "image",
+        "filter",
+        "feColorMatrix",
+        "feFlood",
+        "feComposite",
+        "feMerge",
+        "feMergeNode"
+      ],
+      "externalReferences": [],
+      "activeElementsOrHandlers": [],
+      "hasDoctype": false
+    },
+    {
+      "path": "public/branding/accreatio-lockup-dark.svg",
+      "sha256": "b065cfbd9dabbc0b5e6031c0c912c63e79c3fadd536bf870545d826e6a521a62",
+      "tags": [
+        "svg",
+        "title",
+        "defs",
+        "image",
+        "filter",
+        "feColorMatrix",
+        "feFlood",
+        "feComposite",
+        "feMerge",
+        "feMergeNode"
+      ],
+      "externalReferences": [],
+      "activeElementsOrHandlers": [],
+      "hasDoctype": false
+    },
+    {
+      "path": "public/branding/accreatio-lockup-light.svg",
+      "sha256": "48b29a682a46971362092b19bdc58b04a5fe45c1817e18125101a547b31268e0",
+      "tags": [
+        "svg",
+        "title",
+        "defs",
+        "image",
+        "filter",
+        "feColorMatrix",
+        "feFlood",
+        "feComposite",
+        "feMerge",
+        "feMergeNode"
+      ],
+      "externalReferences": [],
+      "activeElementsOrHandlers": [],
+      "hasDoctype": false
+    },
+    {
+      "path": "public/branding/accreatio-mark-dark.svg",
+      "sha256": "d1e935d3f4e44503903947f7a884e4b6a4a35e85a49967b83e62da1c24c2d0b5",
+      "tags": [
+        "svg",
+        "title",
+        "defs",
+        "image",
+        "filter",
+        "feColorMatrix",
+        "feFlood",
+        "feComposite",
+        "feMerge",
+        "feMergeNode"
+      ],
+      "externalReferences": [],
+      "activeElementsOrHandlers": [],
+      "hasDoctype": false
+    },
+    {
+      "path": "public/branding/accreatio-mark-light.svg",
+      "sha256": "efb455cabdd1cb239293f3f4b83470afc72474c2d0ab90aa8761b919dc283046",
+      "tags": [
+        "svg",
+        "title",
+        "defs",
+        "image",
+        "filter",
+        "feColorMatrix",
+        "feFlood",
+        "feComposite",
+        "feMerge",
+        "feMergeNode"
+      ],
+      "externalReferences": [],
+      "activeElementsOrHandlers": [],
+      "hasDoctype": false
+    },
+    {
+      "path": "public/branding/accreatio-wordmark-dark.svg",
+      "sha256": "077fed305dd5ff246bd6fdc8cd5e81fb0f0fef62c0e68bf4f9251860d236c679",
+      "tags": [
+        "svg",
+        "title",
+        "defs",
+        "image",
+        "filter",
+        "feColorMatrix",
+        "feFlood",
+        "feComposite",
+        "feMerge",
+        "feMergeNode"
+      ],
+      "externalReferences": [],
+      "activeElementsOrHandlers": [],
+      "hasDoctype": false
+    },
+    {
+      "path": "public/branding/accreatio-wordmark-light.svg",
+      "sha256": "9b5b3e8715b55ceee14e1504e9015a8416f0bdecbab0318fff9a494ae680aefa",
+      "tags": [
+        "svg",
+        "title",
+        "defs",
+        "image",
+        "filter",
+        "feColorMatrix",
+        "feFlood",
+        "feComposite",
+        "feMerge",
+        "feMergeNode"
+      ],
+      "externalReferences": [],
+      "activeElementsOrHandlers": [],
+      "hasDoctype": false
+    },
+    {
+      "path": "src/assets/accreatio-mark.svg",
+      "sha256": "0d447ddf136514206bb46ba31a76c52b0fe1529f3ba4cedb0d215d93c0fdccfc",
+      "tags": [
+        "svg",
+        "title",
+        "desc",
+        "defs",
+        "g",
+        "path",
+        "circle",
+        "ellipse",
+        "linearGradient",
+        "radialGradient",
+        "filter",
+        "feGaussianBlur",
+        "feMerge",
+        "feMergeNode",
+        "stop"
+      ],
+      "externalReferences": [],
+      "activeElementsOrHandlers": [],
+      "hasDoctype": false
+    },
+    {
+      "path": "src/assets/aekr-mark.svg",
+      "sha256": "2523744cb53e1392f771ef6a9b4637aab21844a404914f98f9cc63c5c4fad504",
+      "tags": [
+        "svg",
+        "title",
+        "desc",
+        "defs",
+        "g",
+        "circle",
+        "path",
+        "linearGradient",
+        "stop"
+      ],
+      "externalReferences": [],
+      "activeElementsOrHandlers": [],
+      "hasDoctype": false
+    }
+  ]
+}

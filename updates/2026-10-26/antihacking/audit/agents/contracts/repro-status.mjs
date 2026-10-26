@@ -1,0 +1,26 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import http from 'node:http';
+import {build} from 'esbuild';
+import {chromium} from 'playwright';
+import {harness} from '../../../../../tests/helpers/accountHarness.ts';
+import {handleCollection} from '../../../../../functions/_lib/collection.ts';
+const root=process.cwd(), out=path.join(root,'.local/logs/antihacking-20261026-full/agents/contracts');
+const bundle=await build({stdin:{contents:`import React from 'react'; import {createRoot} from 'react-dom/client'; import {CookiePreferences} from './src/components/account/CookiePreferences.tsx';createRoot(document.getElementById('root')).render(<><footer className='web-footer'/><CookiePreferences locale='en'/></>);`,loader:'tsx',resolveDir:root},jsx:'automatic',bundle:true,write:false,outfile:path.join(out,'bundle.js'),format:'esm',platform:'browser',define:{'process.env.NODE_ENV':'"production"'}});
+const javascript=bundle.outputFiles.find(x=>x.path.endsWith('.js'))??bundle.outputFiles.find(x=>!x.text.startsWith('/* src/components/account/cookiePreferences.css'));
+const server=http.createServer((req,res)=>{res.setHeader('Content-Type',req.url==='/bundle.js'?'text/javascript':'text/html');res.end(req.url==='/bundle.js'?javascript.text:`<!doctype html><html><body><div id='root'></div><script type='module' src='/bundle.js'></script></body></html>`);});
+await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));const target=`http://127.0.0.1:${server.address().port}`;
+const h=await harness();h.db.now=Date.now();h.db.sqlite.exec(await fs.readFile(path.join(root,'migrations-auth/0009_optional_collection.sql'),'utf8'));
+const browser=await chromium.launch({headless:true});const page=await browser.newPage();
+const errors=[],requests=[];page.on('pageerror',e=>errors.push(e.message));
+await page.route('**/api/**',async route=>{const r=route.request(),u=new URL(r.url());if(u.pathname.startsWith('/api/collect/')){requests.push({route:u.pathname,action:r.method()==='POST'?r.postDataJSON()?.action:undefined});const response=await handleCollection({env:{...h.env,COLLECT_ENABLED:'true'},request:new Request(r.url(),{method:r.method(),headers:r.headers(),...(r.method()==='POST'?{body:r.postData()}: {})})},u.pathname.split('/').at(-1));return route.fulfill({status:response.status,headers:Object.fromEntries(response.headers),body:await response.text()});}return route.fulfill({contentType:'application/json',body:JSON.stringify({version:'auth.v1',methods:{google:{available:false},github:{available:false},emailOtp:{available:false}}})});});
+try{await page.goto(target);await page.getByRole('button',{name:'Privacy',exact:true}).click();const dialog=page.getByRole('dialog',{name:'Privacy',exact:true});await dialog.getByRole('button',{name:'Accept all optional',exact:true}).click();await page.waitForFunction(()=>document.querySelector('dialog').innerText.includes('Analytics enabled.'));
+ const before=await dialog.innerText();await page.evaluate(()=>window.dispatchEvent(new CustomEvent('accreatio:usage',{detail:{kind:'usage',feature:'creation',outcome:'completed',durationBand:'1-5-minutes'}})));
+ const until=async(check)=>{for(let n=0;n<100;n++){if(check())return;await new Promise(r=>setTimeout(r,50));}throw Error('Independent expected database effect not observed');};
+ await until(()=>h.db.sqlite.prepare('SELECT count(*) AS n FROM collection_records').get().n===1);
+ await dialog.getByRole('button',{name:'Reject non-essential cookies',exact:true}).click();await page.waitForFunction(()=>document.querySelector('dialog').innerText.includes('Saved preference: necessary only.'));
+ await until(()=>h.db.sqlite.prepare('SELECT count(*) AS n FROM collection_records').get().n===0);
+ const after=await dialog.innerText();const state=await page.evaluate(()=>({preference:JSON.parse(localStorage.getItem('accreatio:cookie-preferences'))}));
+ const result={oracle:'Tras rechazo completado, un mensaje de estado vigente no debe afirmar que la analítica sigue habilitada; el recibo local debe quedar analytics=false.',beforeEnabled:before.includes('Analytics enabled.'),afterHasEnabledMessage:after.includes('Analytics enabled.'),afterHasNecessaryOnly:after.includes('Saved preference: necessary only.'),analytics:state.preference?.analytics,recordsAfter:h.db.sqlite.prepare('SELECT count(*) AS n FROM collection_records').get().n,requests,errors,scope:'Componente real compilado de source actual; collector real y receptor SQLite local con un registro confirmado antes del rechazo y cero después. No proveedor externo, cuenta ni producción.'};
+ await fs.writeFile(path.join(out,'status-repro.json'),JSON.stringify(result,null,2));await page.screenshot({path:path.join(out,'status-after-reject.png'),fullPage:true});console.log(JSON.stringify(result));
+} finally{await browser.close();await new Promise(resolve=>server.close(resolve));h.close?.();}

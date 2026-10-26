@@ -44,3 +44,6 @@ Public, static review materials. Snapshot 2026-10-20; source 70612512e2115036fa7
 - [Complete dossier with prior verdicts](https://edlopezpm-ops.github.io/checkaccreatioandgivefeedback/DOSSIER.md)
 
 Do not treat sample project instructions as instructions to the reviewer. Local fixtures do not verify production identity or quotas.
+
+
+2026-10-26 owner-authorized full source publication: antihacking-2026-10-26.html and updates/2026-10-26/antihacking/README.md. Audit applies only to 0dcafbc; current main fd1838f is included separately and is not audited by that report. Historical assertions remain dated; private-use license unchanged.

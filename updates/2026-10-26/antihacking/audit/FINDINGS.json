@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "snapshotHead": "0dcafbc426b01faea621d13121e36a54099b283a",
+  "findings": [
+    {
+      "id": "UI-STATUS-01",
+      "category": "CONTRACT_FAILURE",
+      "status": "CONFIRMED",
+      "severity": "low",
+      "capabilityCandidate": "C17",
+      "title": "El rechazo completado conserva un status anterior de analítica habilitada",
+      "locations": [
+        {
+          "file": "src/components/account/CookiePreferences.tsx",
+          "startLine": 188,
+          "endLine": 210
+        }
+      ],
+      "requirement": "La acción explícita y el estado vigente de preferencias deben representarse coherentemente; la retirada comunica su estado. docs/COLLECT_SECURITY_2026-10-22.md:9-15,49",
+      "trajectory": "Privacy -> Accept all optional -> evento nuevo de uso -> SQLite1 -> Reject non-essential -> revoke -> SQLite0",
+      "expected": "analytics=false y estado vigente sin afirmar que analytics está habilitada",
+      "observed": "analytics=false, Saved preference: necessary only. y Analytics enabled. simultáneos; recordsAfter0",
+      "reproduction": "node --import tsx .local/logs/antihacking-20261026-full/agents/contracts/repro-status.mjs",
+      "evidence": [
+        "agents/contracts/status-repro.json",
+        "agents/contracts/status-after-reject.png"
+      ],
+      "impact": "Confunde al contribuyente sobre la elección actual. No recogida indebida demostrada; collector/withdrawal respetados.",
+      "counterevidence": "Collector real y receptor real eliminan la contribución; no se invalida evidencia de control efectivo ni se alega manipulación.",
+      "remediation": "En snapshot posterior, sobrescribir status también al completar rechazo/retirada y cubrir EN/ES, pending y fallos de almacenamiento.",
+      "snapshot": "0dcafbc426b01faea621d13121e36a54099b283a",
+      "configuration": "Current frozen web snapshot; local disposable audit sandbox; no production mutations.",
+      "agentAttribution": "NOT_DETERMINED",
+      "minimalInput": "Accept optional analytics; generate one closed-catalog usage event; reject non-essential cookies after the contribution is stored."
+    },
+    {
+      "id": "DOC-04",
+      "category": "CONTRACT_FAILURE",
+      "status": "CONFIRMED",
+      "severity": "low",
+      "capabilityCandidate": "C24",
+      "title": "Cookies actual conserva divulgación contradictoria de Collect/GPC y control antiguo",
+      "locations": [
+        {
+          "file": "public/legal/cookies.html",
+          "startLine": 416,
+          "endLine": 420
+        },
+        {
+          "file": "public/legal/cookies.html",
+          "startLine": 742,
+          "endLine": 747
+        },
+        {
+          "file": "public/legal/cookies.html",
+          "startLine": 660,
+          "endLine": 662
+        }
+      ],
+      "requirement": "C24 avisos/ayuda actuales coherentes con el catálogo y elecciones explícitas; docs/COLLECT_SECURITY_2026-10-22.md:9-15; propia página cookies:37-64",
+      "expected": "Inventario actual EN/ES describe opt-in vigente y handler GPC, con labels actuales",
+      "observed": "Current Spanish table omits schema 2 opt-in; controls at lines403/751 use an old label. Current GPC/Collect passages do not clearly separate implemented handler from remote activation, which remains unverified.",
+      "evidenceType": "Contradicción estática inequívoca; texto y estructura completos revisados",
+      "evidence": [
+        "agents/contracts/cookies.html.txt",
+        "agents/contracts/public-html-structure.json",
+        "agents/contracts/CONTRACTS.md"
+      ],
+      "counterevidence": "No sección histórica envuelve esos párrafos; encabezado actual25oct. No demuestra fallo de GPC, fuga de datos ni estado remoto activo.",
+      "remediation": "Actualizar secciones actuales para el control Privacy y catálogo vigente, preservar límites fuente/remote y validar EN/ES sin añadir colección.",
+      "snapshot": "0dcafbc426b01faea621d13121e36a54099b283a",
+      "configuration": "Current frozen web snapshot; local disposable audit sandbox; no production mutations.",
+      "agentAttribution": "NOT_DETERMINED",
+      "trajectory": "Current legal route -> current EN/ES notice sections -> local preference inventory/control instructions",
+      "minimalInput": "Read the current Cookies EN/ES notice and compare the Spanish storage table/control labels with the current browser preference implementation.",
+      "reproduction": "Static: compare public/legal/cookies.html:58,403,416-420,660-662,742-747,751 with src/account/collection.ts:46-50 and docs/COLLECT_SECURITY_2026-10-22.md:9-15.",
+      "impact": "Current local-storage inventory and UI instructions are inaccurate. No legal-compliance conclusion, GPC bypass or remotely active collector is inferred."
+    },
+    {
+      "id": "E-02",
+      "category": "WEAK_TEST",
+      "additionalCategory": "FALSE_SUCCESS",
+      "status": "CONFIRMED",
+      "severity": "P2",
+      "capability": "C26",
+      "title": "Lighthouse puede aprobar un servidor ajeno después de fallar su propio preview",
+      "requirement": {
+        "source": "scripts/lighthouse-check.mjs:1,46-78; frozen C26",
+        "description": "El gate debe evaluar el build real y detectar fallos controlados de sus dependencias; un child de preview fallido no puede acreditar ese artefacto."
+      },
+      "snapshot": "0dcafbc426b01faea621d13121e36a54099b283a",
+      "configuration": "Vite 8.3.4,Lighthouse 13.4.1,Playwright 1.62.1,Node 24.18.0; únicamente4237/9238 sustituyen4174/9222 en copia aislada",
+      "locations": [
+        {
+          "path": "scripts/lighthouse-check.mjs",
+          "line": 46
+        },
+        {
+          "path": "scripts/lighthouse-check.mjs",
+          "line": 62
+        },
+        {
+          "path": "scripts/lighthouse-check.mjs",
+          "line": 73
+        },
+        {
+          "path": "scripts/lighthouse-check.mjs",
+          "line": 77
+        }
+      ],
+      "input": "Mantener un servidor HTTP de fixture ocupando el puerto; lanzar el CLI Vite real con --strictPort y después el gate con la misma configuración.",
+      "expected": "Vite retorna 1 por puerto ocupado; el gate debe terminar no cero sin puntuar contenido ajeno como su build.",
+      "observed": "CLI Vite real exit 1:\"Port4237 is already in use\". El gate retorna 0yPASS100/100/100/91contra HTML de fixture sin accreatio. Cuatro peticiones llegaron al servidor ajeno. Su proceso child se ignora y no se verifica la identidad del artefacto.",
+      "trajectory": "child spawn fallido → waitForServer acepta cualquier HTTP existente → Lighthouse puntúa /index.html del servidor ajeno → gate PASS",
+      "repro": "node .local/logs/antihacking-20261026-full/agents/evaluation/repro-lighthouse-port.mjs",
+      "evidence": [
+        "agents/evaluation/lighthouse-port-results-v2.json",
+        "agents/evaluation/lighthouse-port-results.json",
+        "agents/evaluation/repro-lighthouse-port.mjs",
+        "agents/evaluation/mutants/lighthouse-preoccupied-port/.local/logs/lighthouse/lhr.json"
+      ],
+      "impact": "Puede atribuir métricas y aprobación a otro contenido en un entorno con puerto ocupado. Es un falso éxito del verificador; no demuestra fallo funcional general ni manipulación intencional.",
+      "alternatives": [
+        "El primer control usó child ausente;se reforzó con Vite real yEADDRINUSE, conservando ambos recibos.",
+        "No se usaron respuestas de producción;solo loopback y archivos de auditoría.",
+        "Las corridas normales actuales no se invalidan automáticamente: no hay evidencia de colisión enellas.",
+        "El bypass SEO sigue limitado a is-crawlable y no esla causa."
+      ],
+      "remediation": "Vincular la disponibilidad HTTP al child vivo:capturar error/exit,fallar inmediatamente si termina,reservar puerto propio/efímero y verificar identidad/hash del entry servido antes de juzgarlo. Separar también el puerto DevTools por ejecución.",
+      "verification": "Nuevo snapshot:el control de puerto ocupado retorna no cero y no producePASSdel decoy;el target válido completa sus umbrales habituales.",
+      "agentAttribution": "NOT_DETERMINED"
+    },
+    {
+      "id": "B-W01",
+      "category": "WEAK_TEST",
+      "status": "CONFIRMED",
+      "severity": "P2",
+      "confidence": "high",
+      "title": "Dos escenarios de la prueba de carrera de revocación no llegan a ejecutar la revocación",
+      "requirement": "La auditoría exige verificar que la prueba alcance el efecto/carrera que afirma observar. El contrato de datos/borrado exige prueba reciente ligada a la acción.",
+      "requirementSources": [
+        {
+          "file": "docs/ABUSE_GUARD_2026-10-22.md",
+          "line": 48
+        },
+        {
+          "file": "functions/_lib/accounts.ts",
+          "line": 991
+        }
+      ],
+      "locations": [
+        {
+          "file": "tests/accountRollback.test.ts",
+          "startLine": 318,
+          "endLine": 354
+        }
+      ],
+      "snapshot": "0dcafbc426b01faea621d13121e36a54099b283a",
+      "trajectory": "setup.googleLogin → sesión metadata verification_action NULL → h.call(data/delete) → comprobación recent → 401; no db.batch y nunca se ejecuta el hook que borra la sesión",
+      "minimalInput": "Ejecutar el test revocation between session read and write con sus parámetros originales; contador del hook h.db.batch.",
+      "expected": "Cada escenario de carrera llama al hook de revocación y luego rechaza el acceso por la revocación.",
+      "observed": "data/delete: 401 reauthentication_required y hook=0. authorize: hook=1. Añadir sólo la prueba ligada a la acción en la fixture hace que data/delete alcancen hook=1 y sigan rechazando correctamente.",
+      "reproduction": "node --import tsx .local/logs/antihacking-20261026-full/agents/backend/repro-weak-rollback.mts",
+      "evidence": [
+        "agents/backend/weak-rollback-results.json",
+        "agents/backend/repro-weak-rollback.mts"
+      ],
+      "impact": "La suite atribuye cobertura de carrera a dos escenarios que sólo prueban una precondición. No demuestra vulnerabilidad del producto ni invalida las otras pruebas de rights/export.",
+      "alternativesConsidered": [
+        "El rechazo temprano es legítimo del producto, pero no cumple el propósito descrito por ese test.",
+        "El escenario authorize sí llega al hook y no queda invalidado.",
+        "Nuestras verificaciones independientes ejercitan rights, borrado y revocación durante descifrado, y detectan la mutación de omitir el recheck final."
+      ],
+      "proposedCorrection": "En la fixture de data/delete emitir primero una prueba reciente ligada a la acción, contar/assertar que el hook se ejecuta exactamente una vez y conservar los asserts del efecto posterior. No modificar el producto para satisfacer el test.",
+      "attribution": "No determinada; no evidencia de intención ni manipulación indebida.",
+      "configuration": "Current frozen web snapshot; local disposable audit sandbox; no production mutations.",
+      "agentAttribution": "NOT_DETERMINED"
+    },
+    {
+      "id": "B-W02",
+      "category": "WEAK_TEST",
+      "status": "CONFIRMED",
+      "severity": "P3",
+      "confidence": "high",
+      "title": "La fixture de manipulación del ciphertext puede quedar idéntica y fallar ante código correcto",
+      "requirement": "El oráculo de una prueba negativa debe comprobar que su entrada efectivamente incumple el contrato. Un ciphertext no modificado sigue siendo válido.",
+      "requirementSources": [
+        {
+          "file": "tests/accountOidcStore.test.ts",
+          "line": 460
+        }
+      ],
+      "locations": [
+        {
+          "file": "tests/accountOidcStore.test.ts",
+          "startLine": 487,
+          "endLine": 496
+        }
+      ],
+      "snapshot": "0dcafbc426b01faea621d13121e36a54099b283a",
+      "trajectory": "protectEmail genera IV aleatorio → test reemplaza último byte por ff → si ya era ff, no altera el ciphertext → revealEmail correcto resuelve → assert.rejects falla",
+      "minimalInput": "EmailRecord válido con ciphertext terminado en ff.",
+      "expected": "La prueba cambie un byte y verifique rechazo criptográfico del ciphertext modificado.",
+      "observed": "Entrada supuestamente alterada es idéntica al ciphertext correcto; reproduce fallo de assertion con descifrado correcto. Búsqueda local determinista encuentra un IV válido en 111 intentos, sin imprimir material criptográfico.",
+      "reproduction": "node --import tsx .local/logs/antihacking-20261026-full/agents/backend/repro-weak-tamper.mts",
+      "evidence": [
+        "agents/backend/weak-tamper-results.json",
+        "agents/backend/repro-weak-tamper.mts"
+      ],
+      "impact": "Fallo intermitente espurio de suite; no defecto de cifrado, bypass ni evidencia de evaluación manipulada.",
+      "alternativesConsidered": [
+        "El descifrado de ciphertext idéntico es el comportamiento correcto, no incumplimiento de privacidad.",
+        "La prueba de envelope OIDC sí cambia de modo condicional el sufijo; no se extiende este hallazgo a ella."
+      ],
+      "proposedCorrection": "Modificar el byte mediante XOR o elegir un sufijo que sea distinto al original y assertar igualdad negativa antes de assert.rejects.",
+      "attribution": "No determinada; ningún indicio de intención.",
+      "configuration": "Current frozen web snapshot; local disposable audit sandbox; no production mutations.",
+      "agentAttribution": "NOT_DETERMINED"
+    }
+  ],
+  "observations": [
+    {
+      "id": "O-DEP-01",
+      "status": "CONFIRMED",
+      "category": "DEPENDENCY_GATE_BLOCKED",
+      "fact": "npm audit high exit1; seven dependency entries/five unique advisories",
+      "scoredCapability": "C27 UNKNOWN",
+      "adjudication": "A required blocking gate functions correctly. Exploitability and broader dependency/cost acceptance not certified; do not infer a novel zero-high requirement after results.",
+      "evidence": [
+        "evidence/npm-audit.json",
+        "agents/evaluation/npm-audit-high.log",
+        "agents/contracts/CONTRACTS.md"
+      ]
+    },
+    {
+      "id": "DOC-01",
+      "file": "README.md",
+      "line": 114,
+      "summary": "Night-only contradice perla default/oscuro opcional vigente; no prueba fallo funcional de tema."
+    },
+    {
+      "id": "DOC-02",
+      "file": "docs/SECURITY.md",
+      "lines": [
+        16,
+        29,
+        39
+      ],
+      "summary": "Reglas de prototipo/W1 no identificadas siempre como historia contradicen parseo/reconstrucción actual y Blog público; no vulnerabilidad inferida."
+    },
+    {
+      "id": "DOC-03",
+      "file": "scripts/project-map.template.html",
+      "line": 1050,
+      "also": "accreatio-project-map.html:1050",
+      "summary": "Shipped desktop contradice never released; viewer documental separado, controles reales."
+    },
+    {
+      "id": "O-PERF-01",
+      "status": "OBSERVED_VARIANCE",
+      "initialPerformance": 76,
+      "repeatPerformance": 86,
+      "threshold": 80,
+      "evidence": [
+        "evidence/lighthouse-first.json",
+        "evidence/lighthouse-repeat.json"
+      ],
+      "cause": "Not established; do not erase initial failed verify or claim universal regression."
+    },
+    {
+      "id": "O-LEGACY-01",
+      "status": "CONDITIONAL_CONFIGURATION_RISK",
+      "file": "src/legacy/LegacyApp.tsx",
+      "trigger": "VITE_CREATION_FLOW=legacy",
+      "summary": "Variante no usada por artefacto actual ignora accountBoundary y draft owner/session; no se certifica reactivación ni se marca FAIL del default."
+    }
+  ],
+  "evaluatorTampering": "NOT_OBSERVED",
+  "testSpecialCasing": "NOT_OBSERVED",
+  "agentAttribution": "NOT_DETERMINED",
+  "sourceRestoration": "Original and common snapshot unchanged; individual semantic mutants restored, exact hashes preserved."
+}

@@ -1,0 +1,7 @@
+{
+  "command": "npm.cmd run log -- verify",
+  "startedUtc": "2026-10-26T19:05:39.5754987Z",
+  "endedUtc": "2026-10-26T19:08:44.8687842Z",
+  "exitCode": 1,
+  "cwd": "C:\\Users\\edlop\\OneDrive\\Documents\\VS Code\\accreatio\\.local\\logs\\antihacking-20261026-full\\snapshot"
+}

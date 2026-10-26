@@ -1,0 +1,3555 @@
+{
+  "method": "Babel AST syntax inventory; not semantic coverage",
+  "files": 73,
+  "tests": 473,
+  "sourceOnlyFiles": 8,
+  "assertions": {
+    "match": 641,
+    "doesNotMatch": 113,
+    "ok": 140,
+    "equal": 1265,
+    "notEqual": 22,
+    "rejects": 87,
+    "deepEqual": 203,
+    "throws": 42,
+    "fail": 2,
+    "doesNotThrow": 4
+  },
+  "filesDetail": [
+    {
+      "path": "tests/about.test.ts",
+      "bytes": 3383,
+      "sha256": "1b7ec600fd455e4f4fabae295fd5fa926b979a3090fa7c3e60c6fcf463d189b5",
+      "declarations": [
+        {
+          "name": "About preserves every administrative fact from the previous surface",
+          "line": 14
+        },
+        {
+          "name": "version and private-use license remain derived from their controlling sources",
+          "line": 31
+        },
+        {
+          "name": "web legal documents remain accessible with applicable versioned status",
+          "line": 52
+        },
+        {
+          "name": "editorial About explains the product model, limits, FAQ, and next action",
+          "line": 62
+        },
+        {
+          "name": "shared content is semantic and About collapses to one column on mobile",
+          "line": 80
+        }
+      ],
+      "assertions": {
+        "match": 25,
+        "doesNotMatch": 3,
+        "ok": 1
+      },
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "node:fs"
+      ],
+      "sourceOnly": true,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/abuseGuard.test.ts",
+      "bytes": 20942,
+      "sha256": "8b3bc7aa6c034ef6d8d8b158d66cbc7cf1173a87a4548c0a4f4106f3d2a20b81",
+      "declarations": [
+        {
+          "name": "network keys ignore caller forwarding, canonicalize mapped IP and bound rotating IPv6 to /64",
+          "line": 131
+        },
+        {
+          "name": "concurrent valid requests atomically reserve every dimension and denials do not extend blocks",
+          "line": 173
+        },
+        {
+          "name": "middleware charging is not repeated by authenticated guard and missing IP never creates a common ban",
+          "line": 225
+        },
+        {
+          "name": "fresh attributable episodes crossing the old state expiry still suspend within their rolling window",
+          "line": 252
+        },
+        {
+          "name": "network-only excess cannot sanction a signed-in victim sharing that network",
+          "line": 282
+        },
+        {
+          "name": "an active cooldown in any dimension cannot produce strikes or account episodes in another dimension",
+          "line": 298
+        },
+        {
+          "name": "three attributable episodes suspend for 10m then 1h then 24h and revoke full sessions only once",
+          "line": 326
+        },
+        {
+          "name": "invalid, expired, rights-only and business-ineligible calls never create account episodes",
+          "line": 417
+        },
+        {
+          "name": "capacity is bounded and reserved rights capacity remains available",
+          "line": 456
+        },
+        {
+          "name": "state cascades on account deletion, SQL predicates reject caller text and database failures fail closed",
+          "line": 488
+        },
+        {
+          "name": "a failed dimension write rolls back every bucket reservation",
+          "line": 517
+        },
+        {
+          "name": "requests inside an existing long cooldown never become new account episodes",
+          "line": 548
+        },
+        {
+          "name": "suspension, security-version increment and full-session revocation roll back together",
+          "line": 580
+        },
+        {
+          "name": "three-episode detection uses a rolling ten-minute window across an older first episode",
+          "line": 620
+        }
+      ],
+      "assertions": {
+        "equal": 51,
+        "notEqual": 1,
+        "ok": 3,
+        "rejects": 21,
+        "deepEqual": 7,
+        "throws": 1
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:sqlite",
+        "node:fs",
+        "node:test",
+        "../functions/_lib/abuse",
+        "../functions/_lib/http",
+        "../functions/_lib/accounts",
+        "../functions/_lib/platform"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/accessibility.test.ts",
+      "bytes": 8028,
+      "sha256": "ec2f0b4234e099fbefe0201e503cb6a3cfb8a8a8cd947b8e8ee7f860c78843f4",
+      "declarations": [
+        {
+          "name": "creation navigation keeps landmark, DOM order, native controls, and textual states",
+          "line": 35
+        },
+        {
+          "name": "a rejected mobile stage change has a visible and announced explanation",
+          "line": 59
+        },
+        {
+          "name": "the creation flow reports position as a labelled progress bar",
+          "line": 86
+        },
+        {
+          "name": "incomplete Review explains the cause and links to the next corrective action",
+          "line": 120
+        },
+        {
+          "name": "web draft failure and fatal boundary state cause plus recovery action",
+          "line": 161
+        },
+        {
+          "name": "History and provider-unavailable states communicate cause and next action",
+          "line": 178
+        },
+        {
+          "name": "app landmarks and heading ownership remain explicit across the rebuilt flow",
+          "line": 193
+        }
+      ],
+      "assertions": {
+        "match": 50,
+        "ok": 1,
+        "doesNotMatch": 2
+      },
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "node:fs",
+        "react",
+        "react-dom/server",
+        "../src/components/creation/StageNavigation",
+        "../src/components/creation/CreationWorkspace",
+        "../src/components/creation/ReviewStage",
+        "../src/components/WebExperience",
+        "../src/types",
+        "../shared/domain"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/accountAbuseIntegration.test.ts",
+      "bytes": 7919,
+      "sha256": "601f9744238ac69b1bd3221032b9c47b4d068c6c588ed752e02af867733cd9c0",
+      "declarations": [
+        {
+          "name": "suspension rejects product access and policy changes while scoped own-data remains available",
+          "line": 88
+        },
+        {
+          "name": "rights deletion works during suspension and clears only its own browser cookie",
+          "line": 140
+        },
+        {
+          "name": "ordinary logout revokes the rights proof and clears both necessary cookies",
+          "line": 169
+        },
+        {
+          "name": "logout remains idempotent after ordinary session revocation and revokes a remaining rights proof",
+          "line": 184
+        },
+        {
+          "name": "a rights cookie replaced by another tab cannot switch the account behind a pending deletion confirmation",
+          "line": 202
+        }
+      ],
+      "assertions": {
+        "equal": 23,
+        "match": 1,
+        "doesNotMatch": 1,
+        "ok": 1
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:test",
+        "../functions/_lib/auth/rights",
+        "./helpers/accountHarness",
+        "./helpers/accountHarness"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/accountContracts.test.ts",
+      "bytes": 2796,
+      "sha256": "3eba3f582d49d0b200377ec3c998db5ce3491cf176f1a6084fdef2807077a0a1",
+      "declarations": [
+        {
+          "name": "future account capabilities default entirely off",
+          "line": 7
+        },
+        {
+          "name": "mock provider covers passwordless lifecycle and local data requests",
+          "line": 16
+        },
+        {
+          "name": "mock exposes invalid and expired states without external I/O",
+          "line": 48
+        },
+        {
+          "name": "account boundary contains no network or credential primitives",
+          "line": 57
+        }
+      ],
+      "assertions": {
+        "deepEqual": 3,
+        "equal": 8,
+        "ok": 2,
+        "doesNotMatch": 2
+      },
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "node:fs",
+        "../src/account/contracts",
+        "../src/account/mockProvider"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/accountCookiesNotice.test.ts",
+      "bytes": 4355,
+      "sha256": "14b20db44a7cf703825b4f8a07ab5ca323a92d7b47ae3fc4fd9ffee6fc3ab922",
+      "declarations": [
+        {
+          "name": "0010 preserves existing receipts and leaves all cookies acknowledgements absent",
+          "line": 11
+        },
+        {
+          "name": "sign-in and repeated session reads never acknowledge cookies; own data remains available",
+          "line": 35
+        },
+        {
+          "name": "notice receipts bind to each verified account, roll back on failure and purge on deletion",
+          "line": 97
+        }
+      ],
+      "assertions": {
+        "deepEqual": 2,
+        "equal": 17
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:test",
+        "node:fs",
+        "node:sqlite",
+        "./helpers/accountHarness"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/accountOidcStore.test.ts",
+      "bytes": 17337,
+      "sha256": "88c96bf9f791dc158769f03adfb293d299ba45d00987fdef1cb8c12f559a46e7",
+      "declarations": [
+        {
+          "name": "Google-only login stores encrypted contact and hashed own session; stable subject preserves account and contact",
+          "line": 95
+        },
+        {
+          "name": "OAuth completion aborts every batch write when the clock reaches expiry between statements",
+          "line": 121
+        },
+        {
+          "name": "new-account writes also roll back at completion expiry and successful logins do not redate an existing receipt",
+          "line": 182
+        },
+        {
+          "name": "rights-only rotation rolls back its new session and preserves the old session if completion expires",
+          "line": 255
+        },
+        {
+          "name": "same email different subject never links; untrusted external email cannot sign up; no quota or account writes",
+          "line": 330
+        },
+        {
+          "name": "concurrent Google callbacks for one subject create one account and no orphan accounts",
+          "line": 349
+        },
+        {
+          "name": "transaction claim, cancellation and expiration prevent replay; admission keeps hourly receipts beyond secret TTL",
+          "line": 364
+        },
+        {
+          "name": "Google-only delete revokes all identities/sessions, purges PII and retains same principal and exhausted quota within 48h",
+          "line": 401
+        },
+        {
+          "name": "email encryption binds account/AAD and rejects tampering; backfill preserves legacy identity and receipt and is idempotent",
+          "line": 460
+        },
+        {
+          "name": "scheduled maintenance runs without requests and has no public operation; locator serialization is deterministic and scoped",
+          "line": 522
+        }
+      ],
+      "assertions": {
+        "ok": 6,
+        "equal": 41,
+        "match": 2,
+        "rejects": 10,
+        "deepEqual": 4,
+        "notEqual": 1
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:test",
+        "./helpers/accountHarness",
+        "../functions/_lib/auth/oidc-store",
+        "../functions/_lib/auth/privacy",
+        "../workers/account-maintenance/index",
+        "../functions/_lib/auth/oidc-contracts"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/accountOtp.test.ts",
+      "bytes": 20063,
+      "sha256": "4d50ae8b3ad7c75a01015fac39a30284e6d3d306c94dd8e805ebfbf39e4b80e2",
+      "declarations": [
+        {
+          "name": "own OTP is six digits, HMAC protected, email normalized and session cookie independent of Access",
+          "line": 23
+        },
+        {
+          "name": "local owner and session markers are purpose-separated, stable and never authenticate requests",
+          "line": 60
+        },
+        {
+          "name": "incorrect and expired OTP fail uniformly; attempt five may succeed; used code cannot be reused",
+          "line": 136
+        },
+        {
+          "name": "five wrong concurrent attempts lock the challenge including a later correct guess",
+          "line": 163
+        },
+        {
+          "name": "simultaneous verification of one OTP produces exactly one account and one session",
+          "line": 197
+        },
+        {
+          "name": "resend cooldown is atomic and a newly issued code invalidates its predecessor",
+          "line": 220
+        },
+        {
+          "name": "email, IP and global rolling delivery budgets apply atomically before transport",
+          "line": 260
+        },
+        {
+          "name": "OTP challenges bind code to purpose, challenge ID and account identity",
+          "line": 325
+        },
+        {
+          "name": "transport failure leaves no usable code and still consumes the delivery budget",
+          "line": 357
+        },
+        {
+          "name": "OTP rejects foreign origins, non-JSON, excess fields, unbounded bodies and unsafe configuration",
+          "line": 398
+        },
+        {
+          "name": "configurable account capacity still permits existing identity login and preserves quota",
+          "line": 495
+        },
+        {
+          "name": "deletion clears and invalidates pending email challenges, then re-registration retains rolling quota",
+          "line": 528
+        },
+        {
+          "name": "OTP migration revokes legacy sessions while preserving accounts and export receipts",
+          "line": 563
+        },
+        {
+          "name": "a failed session write rolls the whole OTP consumption transaction back",
+          "line": 595
+        },
+        {
+          "name": "OTP reuses the precise Access-era identity HMAC and its existing quota receipts",
+          "line": 616
+        }
+      ],
+      "assertions": {
+        "equal": 84,
+        "match": 3,
+        "notEqual": 6,
+        "throws": 1
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:test",
+        "node:sqlite",
+        "node:fs",
+        "./helpers/accountHarness"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/accountPolicy.test.ts",
+      "bytes": 15348,
+      "sha256": "c5638f9a2ed5cfacf2b5a400f53adb5a9ed2b7193f4b1daa3800b3d270a7fab4",
+      "declarations": [
+        {
+          "name": "additive migration preserves existing accounts/sessions without backfilling acceptance",
+          "line": 15
+        },
+        {
+          "name": "existing accounts receive no fictitious authorization; fresh rights and logout stay available",
+          "line": 56
+        },
+        {
+          "name": "policy endpoint validates affirmative current choices and same-origin without side effects",
+          "line": 79
+        },
+        {
+          "name": "affirmative receipt uses database time, is idempotent and is included in own-data export",
+          "line": 158
+        },
+        {
+          "name": "stale policy blocks old export receipts until a fresh explicit authorization",
+          "line": 198
+        },
+        {
+          "name": "Terms-only update preserves the prior receipt and data rights until deliberate renewal",
+          "line": 252
+        },
+        {
+          "name": "served policy documents disclose the expected public labels and retain approved boundaries",
+          "line": 300
+        },
+        {
+          "name": "authorization batch rechecks session revocation and export batch rechecks policy races",
+          "line": 377
+        },
+        {
+          "name": "policy batch rolls back on failure; deletion and compatible older writers purge authorization immediately",
+          "line": 412
+        },
+        {
+          "name": "OTP requires current affirmative authorization before issuing a code",
+          "line": 445
+        }
+      ],
+      "assertions": {
+        "deepEqual": 4,
+        "equal": 62,
+        "ok": 7,
+        "match": 23,
+        "doesNotMatch": 2
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:test",
+        "node:sqlite",
+        "node:fs",
+        "./helpers/accountHarness",
+        "../shared/accountPolicy"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/accountProfile.test.ts",
+      "bytes": 6808,
+      "sha256": "776e9f26ba0c09f4858e66d13752cf2c5cb7ca288b2c202aae0b85194f5dd19b",
+      "declarations": [
+        {
+          "name": "Google profile name is bounded Unicode display data only",
+          "line": 74
+        },
+        {
+          "name": "profile name is encrypted, refreshed and exported without changing identity, contact or quota",
+          "line": 104
+        },
+        {
+          "name": "legacy and pre-profile accounts retain fallback; rollback deletion trigger purges the additional ciphertext",
+          "line": 154
+        },
+        {
+          "name": "name encryption rejects email ciphertext and ciphertext from another account",
+          "line": 202
+        }
+      ],
+      "assertions": {
+        "ok": 3,
+        "equal": 22
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:test",
+        "./helpers/accountHarness",
+        "../functions/_lib/auth/oidc-store",
+        "../functions/_lib/auth/oidc",
+        "../functions/_lib/auth/privacy"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/accountRights.test.ts",
+      "bytes": 13461,
+      "sha256": "15edbc9c220657d97f314b4a424fa3140aec7d4484f45b5915ad8ea3112bd39e",
+      "declarations": [
+        {
+          "name": "rights-only verification without a current session issues only a five-minute scoped proof and preserves account/policy/quota",
+          "line": 99
+        },
+        {
+          "name": "rights-only GitHub proof resolves the exact linked subject without profile or email matching",
+          "line": 195
+        },
+        {
+          "name": "rights transactions have a separate atomic IP/global admission budget and never cancel ordinary browser transactions",
+          "line": 247
+        },
+        {
+          "name": "rights proof never matches email, admits an unknown/deleted subject, accepts a mismatched provider or completes an expired claim",
+          "line": 326
+        },
+        {
+          "name": "completion rolls back every rights session write when expiry or revocation races the batch",
+          "line": 377
+        }
+      ],
+      "assertions": {
+        "deepEqual": 5,
+        "equal": 26,
+        "throws": 2,
+        "rejects": 4
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:fs",
+        "node:test",
+        "../functions/_lib/auth/rights",
+        "../functions/_lib/auth/oidc-contracts",
+        "./helpers/accountHarness"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/accountRollback.test.ts",
+      "bytes": 11465,
+      "sha256": "9e279e369bf82d74d8f867624e268f9a7f71d8eb6a96b4a0540ea82f45750ca3",
+      "declarations": [
+        {
+          "name": "compatible rollback disables Google admission and preserves encrypted accounts, existing sessions and concurrent rolling quota",
+          "line": 101
+        },
+        {
+          "name": "rollback retains contact collision barriers and cannot downgrade a Google-only account to email OTP",
+          "line": 183
+        },
+        {
+          "name": "missing privacy key fails closed instead of bypassing an existing Google email reservation",
+          "line": 213
+        },
+        {
+          "name": "logout cancels a previously claimed OAuth transaction and prevents creating a replacement session",
+          "line": 247
+        },
+        {
+          "name": "backfill CAS cannot restore a concurrently deleted contact or change its identity key",
+          "line": 281
+        },
+        {
+          "name": "revocation between session read and write prevents data export, deletion and quota issuance",
+          "line": 318
+        }
+      ],
+      "assertions": {
+        "ok": 1,
+        "equal": 27,
+        "deepEqual": 5,
+        "notEqual": 3,
+        "rejects": 1
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:test",
+        "./helpers/accountHarness",
+        "../functions/_lib/auth/oidc-store",
+        "../functions/_lib/auth/oidc",
+        "../functions/_lib/auth/privacy"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/accountsApi.test.ts",
+      "bytes": 9713,
+      "sha256": "a87425b3e1b53283da3eaf68278eae8e49630157dda79205afdc1be8938a7296",
+      "declarations": [
+        {
+          "name": "legacy login returns only to the app without authentication; identity requires an own session",
+          "line": 5
+        },
+        {
+          "name": "Access assertions do not create product sessions",
+          "line": 43
+        },
+        {
+          "name": "export admission rejects absent, stale or foreign context before quota or receipt access",
+          "line": 54
+        },
+        {
+          "name": "six concurrent operations across two sessions admit exactly five; replay uses the original receipt",
+          "line": 126
+        },
+        {
+          "name": "midnight does not reset allowance; one slot returns at the exact rolling boundary",
+          "line": 160
+        },
+        {
+          "name": "logout revokes the app token; changing browser or deleting/re-registering preserves active quota",
+          "line": 218
+        },
+        {
+          "name": "own session ignores provider assertions; origin, arbitrary fields, database outage and kill switch fail closed",
+          "line": 259
+        },
+        {
+          "name": "expired app sessions fail without an external provider; old receipts are never free new exports",
+          "line": 315
+        }
+      ],
+      "assertions": {
+        "equal": 50,
+        "deepEqual": 2
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:test",
+        "./helpers/accountHarness"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/accountsEmailExport.test.ts",
+      "bytes": 1942,
+      "sha256": "e8c24a8143df575b457b9af1ecdb77f4111cc4c431fc1211c6687a1c19ee4945",
+      "declarations": [
+        {
+          "name": "email export requires a separate human owner allowlist and paginates without duplicates",
+          "line": 6
+        }
+      ],
+      "assertions": {
+        "equal": 9
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:test",
+        "../functions/api/admin/accounts/emails",
+        "./helpers/accountHarness"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/apiAdmission.test.ts",
+      "bytes": 9896,
+      "sha256": "fdf0036cd950e316d99a872fc87127eac153ffe8f3561c5a09f438d8ff6c644e",
+      "declarations": [
+        {
+          "name": "production API aliases cannot bypass the canonical edge hostname before D1",
+          "line": 20
+        },
+        {
+          "name": "invalid request envelopes stop before database/provider work",
+          "line": 67
+        },
+        {
+          "name": "agent-provider and user-agent spoofing cannot create a fresh network budget",
+          "line": 108
+        },
+        {
+          "name": "network middleware aggregates providers and encoded aliases before expensive handler execution",
+          "line": 155
+        },
+        {
+          "name": "unknown paths share one finite class rather than allocating arbitrary route keys",
+          "line": 205
+        },
+        {
+          "name": "reserved rights paths reach session validation without consuming anonymous bucket capacity",
+          "line": 236
+        },
+        {
+          "name": "disabled middleware preserves handlers, while failures remain generic and all responses get headers",
+          "line": 286
+        }
+      ],
+      "assertions": {
+        "equal": 29,
+        "fail": 2,
+        "ok": 1,
+        "deepEqual": 1,
+        "doesNotMatch": 2
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:test",
+        "./helpers/accountHarness",
+        "../functions/_lib/apiAdmission",
+        "../functions/api/_middleware",
+        "../functions/_lib/http"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/appShell.test.ts",
+      "bytes": 6497,
+      "sha256": "d39ad92852bacfbd41e5e470265f4d5181e46429018544168c657254e8c541e0",
+      "declarations": [
+        {
+          "name": "AppFrame exposes semantic product navigation and existing host destinations",
+          "line": 24
+        },
+        {
+          "name": "desktop retains its vector mark and web uses the supplied official raster lockup",
+          "line": 46
+        },
+        {
+          "name": "shell carries a subtle local AEKR build signature",
+          "line": 93
+        },
+        {
+          "name": "status is scoped, textual, and politely announced",
+          "line": 107
+        },
+        {
+          "name": "shell uses the specified responsive boundaries without a page minimum width",
+          "line": 117
+        },
+        {
+          "name": "language and theme actions retain keyboard-native button behavior",
+          "line": 131
+        }
+      ],
+      "assertions": {
+        "match": 53,
+        "doesNotMatch": 11,
+        "equal": 2,
+        "ok": 3
+      },
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "node:fs"
+      ],
+      "sourceOnly": true,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/atmosphere.test.ts",
+      "bytes": 9739,
+      "sha256": "b888a5eef1eb72c8cae9610ab5a24d2f7f0d61aa63139cc87d4001d6d1403a09",
+      "declarations": [
+        {
+          "name": "atmosphere persists in the shell and responds to product state",
+          "line": 32
+        },
+        {
+          "name": "procedural nebula moves autonomously and clicks sample visible gas",
+          "line": 47
+        },
+        {
+          "name": "renderer lifecycle pauses offscreen and falls back safely",
+          "line": 108
+        },
+        {
+          "name": "responsive atmosphere has no cursor decoration or mismatched canvas transform",
+          "line": 128
+        },
+        {
+          "name": "nebula picking respects bounds and opacity, caps bursts, and clears them after their lifetime",
+          "line": 137
+        }
+      ],
+      "assertions": {
+        "ok": 2,
+        "match": 46,
+        "doesNotMatch": 5,
+        "deepEqual": 4,
+        "notEqual": 1,
+        "equal": 13
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:fs",
+        "node:test",
+        "../src/components/nebula"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/attachmentSecurity.test.ts",
+      "bytes": 14920,
+      "sha256": "cc1918cef3950e9970623f5ae82acdf354c2bc748c3fd10c8e6044b096e1c9e3",
+      "declarations": [
+        {
+          "name": "static DOCX is parsed and reconstructed, and exact Blob proof cannot be forged",
+          "line": 46
+        },
+        {
+          "name": "extension and actual content must both be admitted",
+          "line": 80
+        },
+        {
+          "name": "DOCX macros, embeddings, active fields, external targets and XML entities are rejected",
+          "line": 111
+        },
+        {
+          "name": "DOCX rejects non-OOXML, traversal, duplicate names and excessive expansion",
+          "line": 155
+        },
+        {
+          "name": "DOCX mismatched local headers, encrypted flags, corrupt CRC and suffix polyglots fail closed",
+          "line": 191
+        },
+        {
+          "name": "static PDF is parsed and rewritten instead of passing through arbitrary trailing bytes",
+          "line": 227
+        },
+        {
+          "name": "PDF JavaScript in compressed object streams and form actions are rejected",
+          "line": 247
+        },
+        {
+          "name": "PDF escaped action and key names are decoded structurally",
+          "line": 292
+        },
+        {
+          "name": "PDF Flate expansion is bounded before object-stream/high-level parser allocation",
+          "line": 299
+        },
+        {
+          "name": "PDF page-tree DAGs and cycles are rejected before high-level page traversal",
+          "line": 326
+        },
+        {
+          "name": "PDF page-tree validation enforces parent links, actual counts and depth",
+          "line": 350
+        },
+        {
+          "name": "PDF stream external-file keys are rejected including escaped keys",
+          "line": 381
+        },
+        {
+          "name": "PDF static HTTPS links remain usable; non-HTTPS and launch actions fail closed",
+          "line": 396
+        },
+        {
+          "name": "image dimensions are bounded before browser decode, with no original-byte fallback",
+          "line": 437
+        }
+      ],
+      "assertions": {
+        "rejects": 1,
+        "notEqual": 1,
+        "equal": 8,
+        "match": 1,
+        "doesNotThrow": 2,
+        "throws": 3,
+        "deepEqual": 1,
+        "ok": 2
+      },
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "fflate",
+        "pdf-lib",
+        "../src/attachmentSecurity"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/blog.test.ts",
+      "bytes": 3998,
+      "sha256": "f1c95b5fed628f022e2ca737bd3732480c70f8a98541303ea80c3c822aa675a9",
+      "declarations": [
+        {
+          "name": "the deterministic editorial fixture contains the three owner-authorized posts",
+          "line": 31
+        },
+        {
+          "name": "legacy Claude AI posts use neutral bylines without rewriting stored content",
+          "line": 63
+        },
+        {
+          "name": "the web Blog reads the API and exposes append-only publishing controls",
+          "line": 87
+        },
+        {
+          "name": "Blog and its editorial client remain web-only",
+          "line": 101
+        }
+      ],
+      "assertions": {
+        "equal": 13,
+        "deepEqual": 3,
+        "match": 12,
+        "doesNotMatch": 3
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:crypto",
+        "node:fs",
+        "node:test",
+        "../src/blogAttribution"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/blogApi.test.ts",
+      "bytes": 23759,
+      "sha256": "33a6a8b8fd3beefbab60f6de56102d8f7eed31c6a88eb1cdd355d12eeabe1a44",
+      "declarations": [
+        {
+          "name": "admin capability requires a cryptographically verified Access token",
+          "line": 229
+        },
+        {
+          "name": "JWKS requests use Workers-compatible manual redirects and reject 302 responses",
+          "line": 282
+        },
+        {
+          "name": "session exposes only an allowlisted human or service actor's safe label",
+          "line": 312
+        },
+        {
+          "name": "anonymous readers can list posts without Access configuration or valid credentials",
+          "line": 376
+        },
+        {
+          "name": "anonymous and ordinary Access identities cannot publish or reach the write database",
+          "line": 395
+        },
+        {
+          "name": "publishing capability depends on admin identity, not database availability",
+          "line": 427
+        },
+        {
+          "name": "public reads expose only published content to anonymous, ordinary and admin visitors",
+          "line": 451
+        },
+        {
+          "name": "mixed human and service claim shapes fail closed",
+          "line": 497
+        },
+        {
+          "name": "operational error logs contain no token, identity, or post body",
+          "line": 509
+        },
+        {
+          "name": "browser publishing requires same-origin, custom header, JSON, and bounded exact fields",
+          "line": 546
+        },
+        {
+          "name": "publish is append-only and retries return the original post",
+          "line": 634
+        },
+        {
+          "name": "an allowlisted agent may publish without a browser Origin",
+          "line": 698
+        },
+        {
+          "name": "D1 failures are explicit for public readers and do not pretend that a read succeeded",
+          "line": 726
+        },
+        {
+          "name": "the canonical fixture preserves Ed's body and the real Claude revision",
+          "line": 744
+        }
+      ],
+      "assertions": {
+        "equal": 49,
+        "deepEqual": 13,
+        "ok": 1,
+        "match": 4,
+        "doesNotMatch": 2
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:crypto",
+        "node:fs",
+        "node:test",
+        "../functions/_lib/handlers",
+        "../functions/_lib/platform"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/blogSlug.test.ts",
+      "bytes": 1586,
+      "sha256": "6311cd5880498e859060767e08fab673ddf2930414e71fcbdc870ffe9c3a762d",
+      "declarations": [
+        {
+          "name": "Blog slug admission preserves published and trailing-hyphen slugs",
+          "line": 10
+        },
+        {
+          "name": "crafted Blog query and API slug fail within a bounded subprocess",
+          "line": 36
+        }
+      ],
+      "assertions": {
+        "equal": 8
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:child_process",
+        "node:test",
+        "../shared/blogSlug"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/brandTransparency.test.ts",
+      "bytes": 3960,
+      "sha256": "042ccc4bba36ec895384e073071ce8cbfd8951b740d7610849bbc0e76eb0e8e5",
+      "declarations": [
+        {
+          "name": "official logo keeps original custody and transparent theme contours",
+          "line": 7
+        }
+      ],
+      "assertions": {
+        "equal": 2,
+        "deepEqual": 1,
+        "ok": 3
+      },
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "node:crypto",
+        "node:fs/promises",
+        "playwright"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/bridge.test.ts",
+      "bytes": 14434,
+      "sha256": "28bf45f277a6a84e9637dfc39e7744616f05081a9764828e9aa15765fccde526",
+      "declarations": [
+        {
+          "name": "bridge selection uses the host API availability",
+          "line": 15
+        },
+        {
+          "name": "web provider detection reports unsupported host for every registry provider",
+          "line": 20
+        },
+        {
+          "name": "every unimplemented web bridge method explicitly reports unsupported",
+          "line": 35
+        },
+        {
+          "name": "a session reset while building a ZIP prevents preparation, authorization and download",
+          "line": 106
+        },
+        {
+          "name": "a session reset during authorization prevents the pending download",
+          "line": 145
+        },
+        {
+          "name": "web bridge execute reports validation errors without touching the DOM",
+          "line": 176
+        },
+        {
+          "name": "web bridge execute dry-run reports intent without producing a download",
+          "line": 186
+        },
+        {
+          "name": "web limits reject restored definitions before dry review or archive creation",
+          "line": 198
+        },
+        {
+          "name": "web bridge execute reports tracking-only as unsupported without touching the DOM",
+          "line": 273
+        },
+        {
+          "name": "web bridge coalesces concurrent exports into one archive and download",
+          "line": 281
+        },
+        {
+          "name": "web bridge passes attachment Blobs to the archive and rejects stale sidecars",
+          "line": 310
+        },
+        {
+          "name": "web bridge dry run never creates an archive when attachments are selected",
+          "line": 355
+        },
+        {
+          "name": "direct bridge calls inspect file bytes before archive, retained ZIP, quota or download",
+          "line": 387
+        },
+        {
+          "name": "web bridge distinguishes ZIP and download-request failures without delivery evidence",
+          "line": 430
+        }
+      ],
+      "assertions": {
+        "equal": 35,
+        "deepEqual": 14,
+        "rejects": 1,
+        "match": 6,
+        "ok": 1
+      },
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "../src/bridge",
+        "../src/bridge/web",
+        "../src/types",
+        "../shared/domain",
+        "../src/core",
+        "../src/webExport",
+        "./helpers/safeAttachment"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/collection.test.ts",
+      "bytes": 10411,
+      "sha256": "b2f517d52b1fc0f63bb3632438c448492e1b81dc0e4befa4d0f2bc456cd44202",
+      "declarations": [
+        {
+          "name": "optional receiver positively stores and exports only the granted purpose, with no account relationship",
+          "line": 132
+        },
+        {
+          "name": "missing, cross-purpose, incompatible, restrictive, inactive and forged grants fail closed",
+          "line": 155
+        },
+        {
+          "name": "research works independently of analytics; only explicit enumerated answers reach storage",
+          "line": 198
+        },
+        {
+          "name": "withdrawal deletes available records and blocks prepared/replayed writes, even when collection is inactive",
+          "line": 248
+        },
+        {
+          "name": "30-day logical expiry and capped physical cleanup remove records; restoration invalidates old capabilities",
+          "line": 272
+        },
+        {
+          "name": "per-purpose and global storage budgets bound writes without touching account rights",
+          "line": 301
+        },
+        {
+          "name": "client-registered capability retries are idempotent and early or completed withdrawal prevents grant resurrection",
+          "line": 313
+        }
+      ],
+      "assertions": {
+        "equal": 37,
+        "deepEqual": 2,
+        "match": 1,
+        "doesNotMatch": 1
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:test",
+        "node:sqlite",
+        "node:fs",
+        "../functions/_lib/collection",
+        "../shared/collection",
+        "../functions/_lib/accounts",
+        "../functions/_lib/platform"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/collectionClient.test.ts",
+      "bytes": 4619,
+      "sha256": "6cef136f8014c54f6b9c8a48fc3ca75e552aa337c9f48b0583785c7276050ee8",
+      "declarations": [
+        {
+          "name": "client choice gates local and server collection, research is independent, withdrawal cancels pending work",
+          "line": 25
+        },
+        {
+          "name": "storage failure never creates an opt-in",
+          "line": 134
+        }
+      ],
+      "assertions": {
+        "equal": 16,
+        "deepEqual": 1
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:test",
+        "../src/account/cookiePreferences",
+        "../shared/collection",
+        "../src/account/collection"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/collectionStorage.test.ts",
+      "bytes": 9007,
+      "sha256": "9212483ea209d30dc56b546ee714b14dfb7d592e797a7bfa143dd1b7784daa04",
+      "declarations": [
+        {
+          "name": "dynamic",
+          "line": 108
+        },
+        {
+          "name": "a failed positive rewrite also cannot leave an earlier positive choice authoritative",
+          "line": 184
+        },
+        {
+          "name": "a stale failed restriction never deletes a later explicit choice from an independent client",
+          "line": 198
+        },
+        {
+          "name": "blocked storage grants nothing and the failed client stays off until a new explicit choice after recovery",
+          "line": 231
+        }
+      ],
+      "assertions": {
+        "equal": 38,
+        "notEqual": 1,
+        "ok": 2
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:test",
+        "esbuild",
+        "../shared/collection"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/collectionTabs.test.ts",
+      "bytes": 7837,
+      "sha256": "3c9e7257b132d111e244d29d46597189dec5c39ea0bca0213ffbf9f233291a54",
+      "declarations": [
+        {
+          "name": "same-origin Web Lock serializes two independent tabs into one current purpose capability",
+          "line": 172
+        },
+        {
+          "name": "two concurrent grant responses retain every capability through repeated offline withdrawals and a successful retry",
+          "line": 186
+        },
+        {
+          "name": "withdrawal before a grant reaches the server prevents its late activation, including a lost response",
+          "line": 224
+        }
+      ],
+      "assertions": {
+        "notEqual": 1,
+        "equal": 26,
+        "ok": 2
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:test",
+        "node:fs",
+        "node:url",
+        "node:path",
+        "esbuild",
+        "./helpers/accountHarness",
+        "../functions/_lib/collection",
+        "../src/account/cookiePreferences"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/consent.test.ts",
+      "bytes": 908,
+      "sha256": "00ca48dcf655733d4a4d0af04ce33e56eafa81e57e589e83827e830a8a910751",
+      "declarations": [
+        {
+          "name": "necessary consent is separate while optional purposes default refused",
+          "line": 10
+        },
+        {
+          "name": "analytics and advertising adapters are inert no-ops",
+          "line": 24
+        }
+      ],
+      "assertions": {
+        "deepEqual": 2,
+        "equal": 5
+      },
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "../src/account/consent"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/cookiePreferences.test.ts",
+      "bytes": 2925,
+      "sha256": "0d3bff71ec2654e50c58905cd364e9b6f3a956038515a3cbada86eacdddee709",
+      "declarations": [
+        {
+          "name": "no cookie preference is written before an explicit rejection",
+          "line": 21
+        },
+        {
+          "name": "rejection persists only the necessary-only preference without an identifier",
+          "line": 27
+        },
+        {
+          "name": "expiry is enforced at 180 days and removes the expired local preference",
+          "line": 42
+        },
+        {
+          "name": "a forged optional grant, future record or unknown schema cannot enable collection",
+          "line": 53
+        },
+        {
+          "name": "blocked or malformed storage never prevents necessary-only use",
+          "line": 78
+        }
+      ],
+      "assertions": {
+        "equal": 12,
+        "deepEqual": 2,
+        "ok": 1
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:test",
+        "../src/account/cookiePreferences"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/copyBudget.test.ts",
+      "bytes": 4606,
+      "sha256": "a7b4d95289be9a1adf2a786ba7cf7b2fdb7a51a008b046777a9adb10e36e58af",
+      "declarations": [
+        {
+          "name": "each creation screen stays inside its instructional copy budget",
+          "line": 117
+        },
+        {
+          "name": "each creation screen presents at most one primary action",
+          "line": 136
+        }
+      ],
+      "assertions": {
+        "deepEqual": 1,
+        "ok": 1
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:test",
+        "react",
+        "react-dom/server",
+        "../src/components/creation/ContextStage",
+        "../src/components/creation/DeliveryStage",
+        "../src/components/creation/FoundationStage",
+        "../src/components/creation/TeamStage",
+        "../src/types"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/core.test.ts",
+      "bytes": 11085,
+      "sha256": "024119cd119c972a9fb65ccd5b5f0bc1cd426c63b8b86ba582a2a16e58b6b24b",
+      "declarations": [
+        {
+          "name": "portable deterministic slug",
+          "line": 47
+        },
+        {
+          "name": "requires identity, context, destination and at least one participant",
+          "line": 49
+        },
+        {
+          "name": "IDE and GitHub imply Git repository",
+          "line": 61
+        },
+        {
+          "name": "rejects unsafe attachment type and large file",
+          "line": 69
+        },
+        {
+          "name": "document allowlist excludes audio and video",
+          "line": 86
+        },
+        {
+          "name": "bilingual prompt includes participants, IDs, and sources",
+          "line": 91
+        },
+        {
+          "name": "action plan includes attachment, GitHub and signature governance",
+          "line": 105
+        },
+        {
+          "name": "tracking plan and preview advertise only the tracking artifact",
+          "line": 118
+        },
+        {
+          "name": "execution preview distinguishes desktop both and W1 ZIP semantics",
+          "line": 137
+        },
+        {
+          "name": "tracking path is a configuration error, not a destination error",
+          "line": 163
+        },
+        {
+          "name": "dry-run is recommended but never required",
+          "line": 171
+        },
+        {
+          "name": "repeated roles are valid and participant IDs remain unique",
+          "line": 175
+        },
+        {
+          "name": "participant count and identity grammar enforce the 1-6 contract",
+          "line": 194
+        },
+        {
+          "name": "Mode 1 associations must match participant IDs and order",
+          "line": 227
+        },
+        {
+          "name": "Mode 1 rejects unknown provider IDs without silently defaulting",
+          "line": 256
+        },
+        {
+          "name": "governance preserves instance order and audit independence language",
+          "line": 272
+        },
+        {
+          "name": "attachments are capped at twenty files",
+          "line": 295
+        },
+        {
+          "name": "structured attachment validation covers extension integrity and exact size boundaries",
+          "line": 307
+        },
+        {
+          "name": "structured attachment validation covers exact and excessive aggregate totals",
+          "line": 343
+        },
+        {
+          "name": "Spanish action plan is localized and expandable",
+          "line": 357
+        },
+        {
+          "name": "UI flag transitions preserve the shared Git invariant",
+          "line": 362
+        }
+      ],
+      "assertions": {
+        "equal": 20,
+        "deepEqual": 11,
+        "ok": 11,
+        "match": 6,
+        "throws": 1
+      },
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "../src/core",
+        "../src/types",
+        "../shared/domain"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/creationDelivery.test.ts",
+      "bytes": 4336,
+      "sha256": "f33ea884a56d895bf4d904f3841191a28fb464f778f4d4823470efae5dbd00a5",
+      "declarations": [
+        {
+          "name": "Team preserves ordered participants, repeated roles, responsibilities, and Mode 1 disclosure",
+          "line": 43
+        },
+        {
+          "name": "Delivery exposes equivalent action, destination, Git, GitHub, and IDE inputs",
+          "line": 68
+        },
+        {
+          "name": "web Delivery is truthful about ZIP output and local-tool limitations",
+          "line": 96
+        },
+        {
+          "name": "App wires Team and Delivery into stage validation and the shared workspace pattern",
+          "line": 115
+        }
+      ],
+      "assertions": {
+        "match": 17,
+        "doesNotMatch": 1,
+        "equal": 1
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:fs",
+        "node:test",
+        "react",
+        "react-dom/server",
+        "../src/components/creation/DeliveryStage",
+        "../src/components/creation/TeamStage",
+        "../src/types"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/creationStages.test.ts",
+      "bytes": 5163,
+      "sha256": "903481c0a49988d5e217bed5489cc496e79252fe7d32ce3357cae8b37bfb5d3e",
+      "declarations": [
+        {
+          "name": "creation navigation exposes five reversible stages with textual states",
+          "line": 20
+        },
+        {
+          "name": "question exit validates and focuses the first invalid Foundation or Context field",
+          "line": 33
+        },
+        {
+          "name": "every Team and Delivery validation path resolves to a focusable visible target",
+          "line": 51
+        },
+        {
+          "name": "Foundation and Context preserve the domain values as controlled inputs",
+          "line": 90
+        },
+        {
+          "name": "responsive stage navigation follows rail, strip, and selector breakpoints",
+          "line": 103
+        },
+        {
+          "name": "advanced and locality primitives communicate configured and transient state",
+          "line": 120
+        }
+      ],
+      "assertions": {
+        "match": 33,
+        "equal": 5
+      },
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "node:fs",
+        "../src/components/creation/TeamStage"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/desktopRetirement.test.ts",
+      "bytes": 3528,
+      "sha256": "d09f91b2f4dad27dad3bb32d4cb1130ae7dd2c0a343942b166ca53c1db5307d0",
+      "declarations": [
+        {
+          "name": "default delivery commands target the web without a desktop release gate",
+          "line": 19
+        },
+        {
+          "name": "documented desktop entry points fail closed with the retirement reason",
+          "line": 34
+        },
+        {
+          "name": "web surface verification succeeds without any desktop artifact",
+          "line": 62
+        }
+      ],
+      "assertions": {
+        "equal": 9,
+        "doesNotMatch": 2,
+        "match": 4,
+        "deepEqual": 1,
+        "ok": 1
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:child_process",
+        "node:fs",
+        "node:path",
+        "node:url",
+        "node:test"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/draftHandoff.test.ts",
+      "bytes": 3555,
+      "sha256": "99bfde8638b10338a087a7a86436cedec1fe2e8b4034b729c432ff43ec6ac603",
+      "declarations": [
+        {
+          "name": "OAuth draft handoff is one-use, owner-bound and contains no project data",
+          "line": 26
+        },
+        {
+          "name": "logout, expiry, malformed metadata and failed consumption never transfer a draft",
+          "line": 39
+        },
+        {
+          "name": "every new login must confirm removal of a stale handoff before creating another",
+          "line": 69
+        },
+        {
+          "name": "silent removal failures and a blocked sessionStorage getter fail closed without breaking logout cleanup",
+          "line": 93
+        }
+      ],
+      "assertions": {
+        "deepEqual": 2,
+        "equal": 11,
+        "throws": 3,
+        "doesNotThrow": 1
+      },
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "../src/account/draftHandoff"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/draftPersistence.test.ts",
+      "bytes": 18408,
+      "sha256": "a49c3d9bc46b357362868f32f07ac68161daf17b4d2cef4f7c7e97451acd69d8",
+      "declarations": [
+        {
+          "name": "malformed persisted draft opens a blank fallback with a recovery warning",
+          "line": 88
+        },
+        {
+          "name": "acknowledged IndexedDB edits survive failed journal write and cleanup",
+          "line": 101
+        },
+        {
+          "name": "immediate journal writes preserve last input, navigation and count without attachment names",
+          "line": 117
+        },
+        {
+          "name": "without Web Locks stale tab cannot overwrite or clear a newer draft",
+          "line": 134
+        },
+        {
+          "name": "unavailable durable stores reject save instead of acknowledging it",
+          "line": 146
+        },
+        {
+          "name": "future draft version rejects writes and preserves the stored payload",
+          "line": 156
+        },
+        {
+          "name": "a future schema in either durable store cannot be hidden by revision ordering",
+          "line": 167
+        },
+        {
+          "name": "account draft I/O requires a validated binding and never adopts legacy unowned data",
+          "line": 184
+        },
+        {
+          "name": "owner or new sign-in changes discard answers options navigation and attachment count",
+          "line": 205
+        },
+        {
+          "name": "same-session reload and explicit live same-owner reauthentication retain the draft",
+          "line": 220
+        },
+        {
+          "name": "a nonwriter can purge a future draft and stale writers cannot resurrect it",
+          "line": 238
+        },
+        {
+          "name": "purge synchronously invalidates an in-flight queued write before its transaction completes",
+          "line": 255
+        },
+        {
+          "name": "failed cleanup in both stores cannot expose a former owner's bytes to the next session",
+          "line": 273
+        },
+        {
+          "name": "only an external different context invalidates the bound tab and emits a local event",
+          "line": 290
+        },
+        {
+          "name": "external logout tombstones and removed context emit sessionEnded without restoring the old session",
+          "line": 306
+        },
+        {
+          "name": "external owner session and generation changes emit sessionEnded false for account recheck",
+          "line": 322
+        },
+        {
+          "name": "stale-account purge cannot erase the new account's context or draft",
+          "line": 339
+        },
+        {
+          "name": "transactional context rejects a stale queued writer even before storage events arrive",
+          "line": 352
+        },
+        {
+          "name": "same-session binding preserves a future payload but another account can discard it",
+          "line": 368
+        },
+        {
+          "name": "a changed durable context cannot be hidden by the old matching journal",
+          "line": 381
+        }
+      ],
+      "assertions": {
+        "equal": 2
+      },
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "node:child_process",
+        "node:url"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/draftStore.test.ts",
+      "bytes": 10680,
+      "sha256": "c6d83e563c563e109b752e59ccdf3ba3e4bc70cae630cc67a260437eb8f83611",
+      "declarations": [
+        {
+          "name": "onboarding completion is versioned, local, and does not alter drafts",
+          "line": 54
+        },
+        {
+          "name": "onboarding storage failures fail open with a truthful recovery state",
+          "line": 76
+        },
+        {
+          "name": "normalizeDraft migrates a legacy project without orchestration",
+          "line": 92
+        },
+        {
+          "name": "normalizeDraft reads the versioned envelope and rejects corrupt values",
+          "line": 102
+        },
+        {
+          "name": "draft restoration rejects malformed renderable values before installation",
+          "line": 111
+        },
+        {
+          "name": "unfinished valid drafts remain restorable after shape validation",
+          "line": 135
+        },
+        {
+          "name": "v1 direct and v2 envelopes migrate losslessly by ID, order, label, task, provider, and limits",
+          "line": 149
+        },
+        {
+          "name": "v5 attachment schema is stable, future versions fail closed, and corrupt IDs recover visibly",
+          "line": 176
+        },
+        {
+          "name": "v5 serializer strips attachment metadata and retains only a count marker",
+          "line": 208
+        },
+        {
+          "name": "account context stays outside the domain project and navigation survives normalization",
+          "line": 221
+        },
+        {
+          "name": "v4 to v5 migration strips legacy attachment values and caps the count-only notice",
+          "line": 246
+        },
+        {
+          "name": "both registered providers and mixed assignments remain stable",
+          "line": 263
+        },
+        {
+          "name": "missing funding migrates to subscription while explicit invalid funding is preserved",
+          "line": 280
+        },
+        {
+          "name": "unknown provider IDs are preserved, warned, and block validation",
+          "line": 325
+        }
+      ],
+      "assertions": {
+        "deepEqual": 16,
+        "equal": 24,
+        "match": 1,
+        "ok": 3,
+        "doesNotMatch": 1
+      },
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "../src/draftStore",
+        "../shared/domain",
+        "../shared/domain",
+        "../src/types"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/executionEvidenceUi.test.ts",
+      "bytes": 3661,
+      "sha256": "ffbc983cf1bdacdc459b37c7e3a9f234052d5479caf02194c00f85adcd426462",
+      "declarations": [
+        {
+          "name": "execution evidence UI includes localized outcome and recovery copy",
+          "line": 15
+        },
+        {
+          "name": "execution evidence UI avoids browser-save certainty and announces results",
+          "line": 36
+        },
+        {
+          "name": "creation switches to the dedicated outcome and offers only safe follow-up actions",
+          "line": 48
+        },
+        {
+          "name": "only a successful web dry-run offers the guarded ZIP callback and disables it while busy",
+          "line": 57
+        }
+      ],
+      "assertions": {
+        "match": 16,
+        "doesNotMatch": 8
+      },
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "node:fs",
+        "react",
+        "react-dom/server",
+        "../src/components/creation/OutcomePanel",
+        "../src/types"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/exportManifest.test.ts",
+      "bytes": 7980,
+      "sha256": "bd59dac551393180c9ac87401b3db21702c3edc7e75d6d4051aa567a0c457a3c",
+      "declarations": [
+        {
+          "name": "dynamic",
+          "line": 59
+        },
+        {
+          "name": "basic package starts with project context and imposes no runtime setup",
+          "line": 113
+        },
+        {
+          "name": "advanced package uses one config and includes all setup dependencies",
+          "line": 138
+        },
+        {
+          "name": "AGENTS is canonical; adapters do not duplicate policy or imply universal CODEX loading",
+          "line": 165
+        },
+        {
+          "name": "template license and pinned provenance are retained without granting application rights",
+          "line": 181
+        },
+        {
+          "name": "all phases get a meaningful state and an appropriate first action without fabricated approval",
+          "line": 200
+        },
+        {
+          "name": "paths preview matches the exact generated contract",
+          "line": 219
+        }
+      ],
+      "assertions": {
+        "ok": 15,
+        "equal": 9,
+        "match": 15,
+        "doesNotMatch": 3,
+        "notEqual": 1,
+        "deepEqual": 2
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:test",
+        "node:path",
+        "node:fs",
+        "../shared/exportManifest",
+        "../shared/aekrPayload.generated",
+        "../shared/domain",
+        "../shared/domain"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/files.test.ts",
+      "bytes": 2107,
+      "sha256": "0a15c0697fa6b27849c098c2ef185842b610c067f36046bade1c8ffc7cca2c6e",
+      "declarations": [
+        {
+          "name": "versioned writes and attachment copies never overwrite existing files",
+          "line": 8
+        },
+        {
+          "name": "concurrent intentional writes still create base and versioned files",
+          "line": 31
+        },
+        {
+          "name": "Electron privileged copy boundary requires a real desktop attachment path",
+          "line": 46
+        }
+      ],
+      "assertions": {
+        "equal": 5,
+        "deepEqual": 1,
+        "match": 2
+      },
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "node:fs/promises",
+        "node:os",
+        "node:path",
+        "../electron/files"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/funding.test.ts",
+      "bytes": 4435,
+      "sha256": "3d13dcc2e8ab20f668cc47ff01ffb0ca49a7e008433a8def5ba2f836aab7a37f",
+      "declarations": [
+        {
+          "name": "subscription funding has an exact zero-paid-use default",
+          "line": 11
+        },
+        {
+          "name": "money parsing uses canonical USD minor units without Number arithmetic",
+          "line": 23
+        },
+        {
+          "name": "malformed and unsupported API policies fail closed with stable reasons",
+          "line": 43
+        },
+        {
+          "name": "only an injected exact cumulative contract fixture is API eligible",
+          "line": 102
+        },
+        {
+          "name": "the Mode 1 dialog exposes subscription and an accessibly explained unavailable API mode",
+          "line": 131
+        },
+        {
+          "name": "desktop preflight rejects paid or legacy monetary configuration without fallback",
+          "line": 154
+        }
+      ],
+      "assertions": {
+        "deepEqual": 3,
+        "equal": 10,
+        "match": 9,
+        "doesNotMatch": 2
+      },
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "node:fs",
+        "../shared/funding"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/githubIdentity.test.ts",
+      "bytes": 34472,
+      "sha256": "228dc04fbfde8bb79a655321ce43a0fb2a527fbd282e68b0b4e21a78d2454efd",
+      "declarations": [
+        {
+          "name": "GitHub numeric subject is lossless and excludes mutable, nested, duplicate or nonnumeric keys",
+          "line": 328
+        },
+        {
+          "name": "GitHub App capabilities fail closed and authorization uses S256 without OAuth scopes or installation",
+          "line": 347
+        },
+        {
+          "name": "private paginated primary verified email admits GitHub; session, export, quota and deletion use existing account controls",
+          "line": 417
+        },
+        {
+          "name": "callbacks bind browser and provider, expire, reject duplicates and atomically prevent concurrent replay",
+          "line": 508
+        },
+        {
+          "name": "GitHub failures are recoverable, redacted and leave no partial accounts or credentials",
+          "line": 551
+        },
+        {
+          "name": "explicit linking both directions preserves account, quota and policy; email equality never links",
+          "line": 589
+        },
+        {
+          "name": "additive GitHub migration preserves legacy identity, policies, sessions and receipts without acceptance backfill",
+          "line": 798
+        },
+        {
+          "name": "another account's identity cannot transfer, and logout during provider exchange prevents linkage",
+          "line": 869
+        },
+        {
+          "name": "link completion crossing the five-minute proof deadline rolls back every identity/session write",
+          "line": 908
+        },
+        {
+          "name": "linking and action-scoped rights reject stale, revoked, changed or foreign identity context without Strict callback cookie",
+          "line": 970
+        },
+        {
+          "name": "isolated SQLite backup and read-only restore preserve deletion, revocation, policy erasure and allowance continuity",
+          "line": 1015
+        }
+      ],
+      "assertions": {
+        "equal": 78,
+        "ok": 6,
+        "match": 17,
+        "throws": 2,
+        "doesNotMatch": 3,
+        "deepEqual": 8,
+        "notEqual": 3,
+        "rejects": 1
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:test",
+        "node:sqlite",
+        "node:fs",
+        "node:fs/promises",
+        "node:path",
+        "./helpers/accountHarness",
+        "../functions/_lib/auth/oidc",
+        "../functions/_lib/auth/github",
+        "../functions/_lib/auth/oidc-store",
+        "../functions/_lib/accounts"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/githubWorker.test.ts",
+      "bytes": 7068,
+      "sha256": "e437febc4769c7313ba8e2a4689d9b61b7e909568a968039778e26eed6c3b6c2",
+      "declarations": [
+        {
+          "name": "GitHub authorization executes in workerd with real D1, encrypted PKCE and Strict session",
+          "line": 8
+        }
+      ],
+      "assertions": {
+        "equal": 12,
+        "match": 2,
+        "deepEqual": 1
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:test",
+        "node:fs/promises",
+        "esbuild",
+        "miniflare",
+        "./helpers/accountHarness"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/guidedCreation.test.ts",
+      "bytes": 10753,
+      "sha256": "640541f4791619f87ca0716126fdc5f615db1923b58a6c1495df5bf819ac3d5a",
+      "declarations": [
+        {
+          "name": "an idea omits attachments, while both discovery paths offer optional files before context",
+          "line": 58
+        },
+        {
+          "name": "unanswered future questions never prevent a valid current answer or backwards navigation",
+          "line": 77
+        },
+        {
+          "name": "all protected team and delivery errors block forward motion and allow corrections",
+          "line": 89
+        },
+        {
+          "name": "review edit links return to the correct question without rewriting project values",
+          "line": 113
+        },
+        {
+          "name": "each basic interaction has one title and exposes only its relevant input in both languages",
+          "line": 125
+        },
+        {
+          "name": "guided frame has accurate branch progress, explicit optional skip, and editable review return",
+          "line": 159
+        },
+        {
+          "name": "the web name input accepts free text up to 50 characters and retains the desktop limit",
+          "line": 180
+        },
+        {
+          "name": "four web roles disable additions and other selected roles while retaining each current option",
+          "line": 229
+        },
+        {
+          "name": "an oversized restored web team remains visible and its duplicate current roles stay selectable",
+          "line": 256
+        },
+        {
+          "name": "web summary expands with progress and reflects current attachments, team, route, guides and confirmation",
+          "line": 277
+        }
+      ],
+      "assertions": {
+        "deepEqual": 2,
+        "equal": 24,
+        "doesNotMatch": 6,
+        "match": 22,
+        "ok": 1
+      },
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "react",
+        "react-dom/server",
+        "../src/components/creation/GuidedCreation",
+        "../src/components/creation/SummaryDrawer",
+        "../src/components/creation/TeamStage",
+        "../src/components/creation/guidedFlow",
+        "../src/core",
+        "../src/types"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/helpTips.test.ts",
+      "bytes": 2867,
+      "sha256": "123e4782fde9169876e407df77a1dddc4e958dc2436ba1fdcacb061d01fe9a7a",
+      "declarations": [
+        {
+          "name": "contextual tips cover every module and full guide preserves the complete workflow",
+          "line": 27
+        },
+        {
+          "name": "all EN/ES SOP images are actual 4K assets bound to their provenance manifest",
+          "line": 71
+        }
+      ],
+      "assertions": {
+        "ok": 6,
+        "equal": 9,
+        "deepEqual": 2
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:crypto",
+        "node:fs/promises",
+        "node:test",
+        "../src/components/help/helpContent"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/httpSecurity.test.ts",
+      "bytes": 1392,
+      "sha256": "9865ddb9e7f0a65f71aa59e5f2d8c1db7bf34c3f53f3ccee07e869f056c1e414",
+      "declarations": [
+        {
+          "name": "API JSON and failures retain host-only HTTPS policy and safe retry metadata",
+          "line": 5
+        }
+      ],
+      "assertions": {
+        "equal": 10
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:test",
+        "../functions/_lib/http"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/inputSecurity.test.ts",
+      "bytes": 8298,
+      "sha256": "3fe6ecd0b54015005b8d1f7025595e1061bb91f14bd37ca14478795a6405a57d",
+      "declarations": [
+        {
+          "name": "strict snapshots reject wrong types, enums, unknown fields, controls and numeric YAML injection",
+          "line": 64
+        },
+        {
+          "name": "invalid execution never fingerprints, builds, authorizes or downloads",
+          "line": 121
+        },
+        {
+          "name": "text boundaries preserve original values and reject oversize snapshots",
+          "line": 145
+        },
+        {
+          "name": "SQL, script examples and Unicode stay literal without content censorship",
+          "line": 165
+        },
+        {
+          "name": "archive paths reject traversal, absolute paths, controls, reserved names and collisions",
+          "line": 188
+        },
+        {
+          "name": "file writes reject hostile destination names before creating a directory",
+          "line": 207
+        },
+        {
+          "name": "file copies reject stale selections and enforce source size without a destination write",
+          "line": 227
+        },
+        {
+          "name": "pre-existing junction destinations cannot redirect project writes",
+          "line": 248
+        }
+      ],
+      "assertions": {
+        "throws": 10,
+        "equal": 4,
+        "deepEqual": 6,
+        "ok": 6,
+        "rejects": 5
+      },
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "node:fs/promises",
+        "node:path",
+        "node:os",
+        "react",
+        "react-dom/server",
+        "../shared/domain",
+        "../shared/inputValidation",
+        "../src/operationGuard",
+        "../src/webExport",
+        "../src/bridge/web",
+        "../electron/files",
+        "../shared/domain"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/legalNavigation.test.ts",
+      "bytes": 5940,
+      "sha256": "a7fcb384f95225d1c0f51ab6b1fbe7069a9936be106cfd945d1813b2fcb55472",
+      "declarations": [
+        {
+          "name": "application legal entrypoints carry the primary locale before any referrer-free navigation",
+          "line": 82
+        },
+        {
+          "name": "legal return preserves EN/ES with the real no-referrer policy across Privacy, Cookies and FAQ",
+          "line": 113
+        },
+        {
+          "name": "intermediate legal hops and app return carry explicit language without storage or referrer",
+          "line": 140
+        }
+      ],
+      "assertions": {
+        "match": 3,
+        "equal": 9,
+        "ok": 3,
+        "doesNotMatch": 1
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:fs",
+        "node:test",
+        "node:vm",
+        "react",
+        "react-dom/server",
+        "../src/legal",
+        "../src/components/account/AccountPolicyFields"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/localDataExport.test.ts",
+      "bytes": 1934,
+      "sha256": "73e4e108672517787cd5262a7b76a49b8599512e790d856c16bf9360e55f6ab5",
+      "declarations": [
+        {
+          "name": "personal local download preserves incomplete user data as JSON, uses fixed paths, reports unavailable attachments",
+          "line": 27
+        },
+        {
+          "name": "unverified local context excludes any project or attachment instead of reading another owner journal",
+          "line": 53
+        }
+      ],
+      "assertions": {
+        "deepEqual": 1,
+        "equal": 3,
+        "match": 2,
+        "ok": 1
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:test",
+        "../src/localDataExport",
+        "../src/types"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/loginCaptcha.test.ts",
+      "bytes": 9951,
+      "sha256": "663e6020ab48e45012e82c79b816347ca42100c82918e189c1ffaaa0fe91df63",
+      "declarations": [
+        {
+          "name": "CAPTCHA config fails closed for ordinary login without hiding independent rights providers",
+          "line": 57
+        },
+        {
+          "name": "server verification bounds input and checks success, action, hostname, and malformed/upstream failures",
+          "line": 88
+        },
+        {
+          "name": "Google and GitHub share login verification; missing/replayed tokens create no transactions; rights proof stays independent",
+          "line": 151
+        },
+        {
+          "name": "browser discovers shared public key and passes a token only to ordinary provider sign-in",
+          "line": 231
+        }
+      ],
+      "assertions": {
+        "deepEqual": 3,
+        "ok": 3,
+        "throws": 1,
+        "equal": 22,
+        "rejects": 4
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:test",
+        "../functions/_lib/auth/oidc",
+        "../functions/_lib/auth/captcha",
+        "../functions/_lib/accounts",
+        "../functions/_lib/auth/oidc-contracts",
+        "../functions/_lib/http",
+        "../shared/accountPolicy",
+        "../src/account/webClient",
+        "../functions/_lib/platform"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/mode1Dialog.test.ts",
+      "bytes": 4813,
+      "sha256": "c888ab0628871f2baf231a6c487df81c0031d60ff1d5aa0c864481287acd8a1d",
+      "declarations": [
+        {
+          "name": "Mode1ConfigurationDialog renders native dialog semantics and all four groups in order",
+          "line": 34
+        },
+        {
+          "name": "Mode1ConfigurationDialog renders one row per participant and localizes to Spanish",
+          "line": 59
+        },
+        {
+          "name": "Mode1ConfigurationDialog shows the AEKR compatibility warning for an unsupported topology",
+          "line": 77
+        },
+        {
+          "name": "Mode1ConfigurationDialog shows the browser limitation note instead of a check button on the web host",
+          "line": 91
+        },
+        {
+          "name": "Mode1ConfigurationDialog exposes the subscription funding option as selected and API as disabled",
+          "line": 104
+        },
+        {
+          "name": "Mode1ConfigurationDialog shows a blocking funding warning for an unresolved carried-over policy (CODEX_REVIEW H1)",
+          "line": 117
+        }
+      ],
+      "assertions": {
+        "match": 16,
+        "ok": 3,
+        "doesNotMatch": 1
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:test",
+        "react",
+        "react-dom/server",
+        "../src/components/mode1/Mode1ConfigurationDialog",
+        "../shared/domain",
+        "../src/types"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/mode1Draft.test.ts",
+      "bytes": 7901,
+      "sha256": "fce0565665c5682505576baff40ac85f704836c8655aa8bfff176deaa256b8bb",
+      "declarations": [
+        {
+          "name": "openMode1Draft seeds defaults for unassigned participants",
+          "line": 22
+        },
+        {
+          "name": "openMode1Draft preserves existing assignments by participant ID",
+          "line": 34
+        },
+        {
+          "name": "isAekrCompatibleTopology rejects repeated roles and more than 4 participants",
+          "line": 54
+        },
+        {
+          "name": "openMode1Draft marks compatibilityBlocked for unsupported topology",
+          "line": 75
+        },
+        {
+          "name": "parseIntegerInRange accepts only complete integers in bounds",
+          "line": 84
+        },
+        {
+          "name": "validateMode1Draft flags empty task and unknown provider without destroying other rows",
+          "line": 95
+        },
+        {
+          "name": "validateMode1Draft flags out-of-range numeric limits independently",
+          "line": 111
+        },
+        {
+          "name": "parseIntegerInRange covers the exact min/max boundary and one-past-boundary for all four schema limits (CODEX_REVIEW L3)",
+          "line": 126
+        },
+        {
+          "name": "normalizeMode1Draft returns null for an invalid draft and preserves nothing implicitly",
+          "line": 141
+        },
+        {
+          "name": "normalizeMode1Draft converts a valid draft to a canonical OrchestrationConfig",
+          "line": 152
+        },
+        {
+          "name": "normalizeMode1Draft refuses an AEKR-incompatible topology even if every field is otherwise valid",
+          "line": 166
+        },
+        {
+          "name": "cloneMode1Draft produces an independent deep copy",
+          "line": 176
+        },
+        {
+          "name": "validateMode1Draft blocks Save when the carried-over funding policy is invalid or unsupported (CODEX_REVIEW H1)",
+          "line": 188
+        },
+        {
+          "name": "validateMode1Draft accepts the default subscription funding policy",
+          "line": 210
+        },
+        {
+          "name": "isMode1DraftDirty detects edits and cancel-time equality",
+          "line": 221
+        }
+      ],
+      "assertions": {
+        "equal": 40,
+        "match": 1,
+        "ok": 1,
+        "deepEqual": 2,
+        "notEqual": 1
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:test",
+        "../src/components/mode1/mode1Draft",
+        "../shared/funding",
+        "../shared/domain",
+        "../src/types"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/oidcApi.test.ts",
+      "bytes": 30825,
+      "sha256": "eb5619edb407022a6a302f548ff17b39948052144dd5dcff6a78170ac6ef7eba",
+      "declarations": [
+        {
+          "name": "Google methods stay off without all keys or matching configured origin",
+          "line": 276
+        },
+        {
+          "name": "OIDC rejects missing, false, stale and malformed policy choices before transaction creation or Google I/O",
+          "line": 300
+        },
+        {
+          "name": "rights-only reauthentication refreshes the existing browser without new policy, profile or account writes",
+          "line": 330
+        },
+        {
+          "name": "rights-only start requires an active existing browser and rejects policy-bearing or cross-origin requests",
+          "line": 425
+        },
+        {
+          "name": "Google login and policy receipt roll back together if the receipt cannot be written",
+          "line": 465
+        },
+        {
+          "name": "concurrent rights callbacks issue one new session, without manufacturing policy acceptance",
+          "line": 495
+        },
+        {
+          "name": "rights-only transaction failure preserves the prior browser session and account records",
+          "line": 525
+        },
+        {
+          "name": "dynamic",
+          "line": 557
+        },
+        {
+          "name": "OIDC starts with minimal scopes, bound encrypted transaction and separate Lax cookie",
+          "line": 596
+        },
+        {
+          "name": "OIDC rejects cross-origin starts, linking and caller-controlled redirect",
+          "line": 622
+        },
+        {
+          "name": "real library validates signed Google response and issues only own Strict session",
+          "line": 655
+        },
+        {
+          "name": "dynamic",
+          "line": 716
+        },
+        {
+          "name": "invalid JWS signature is rejected even from the configured token endpoint",
+          "line": 743
+        },
+        {
+          "name": "callback replay and concurrent callbacks perform exactly one token exchange",
+          "line": 753
+        },
+        {
+          "name": "callback requires browser binding and rejects duplicate state without exchange",
+          "line": 768
+        },
+        {
+          "name": "cancel racing a token exchange prevents late cookie issuance",
+          "line": 787
+        },
+        {
+          "name": "dynamic",
+          "line": 803
+        },
+        {
+          "name": "transaction AES-GCM binds account-independent transaction id and rejects key/tag changes",
+          "line": 822
+        },
+        {
+          "name": "linked-identity profile remains usable without a current email or Google MFA claims",
+          "line": 843
+        },
+        {
+          "name": "callback diagnostics contain only fixed codes and distinguish provider exchange, validation and admission",
+          "line": 858
+        }
+      ],
+      "assertions": {
+        "equal": 84,
+        "ok": 9,
+        "deepEqual": 10,
+        "match": 9,
+        "notEqual": 1,
+        "rejects": 3
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:test",
+        "node:fs",
+        "../functions/_lib/auth/oidc",
+        "../functions/_lib/accounts",
+        "./helpers/accountHarness"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/oidcWorker.test.ts",
+      "bytes": 18402,
+      "sha256": "ca5b17d66392f0e7bc4d0833bbca5c81eda74d3a35a60f4a297c945cacc8a386",
+      "declarations": [
+        {
+          "name": "OIDC executes in workerd with real D1 and signature verification",
+          "line": 11
+        }
+      ],
+      "assertions": {
+        "equal": 29,
+        "ok": 2,
+        "match": 4,
+        "deepEqual": 4,
+        "notEqual": 1
+      },
+      "imports": [
+        "node:assert/strict",
+        "./helpers/accountHarness",
+        "node:test",
+        "node:fs/promises",
+        "esbuild",
+        "miniflare"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/onboarding.test.ts",
+      "bytes": 4053,
+      "sha256": "abfbdddda1a2109175ef61f9bc98a2f92d1f968e2177e8f8db567119c5992be8",
+      "declarations": [
+        {
+          "name": "first-run onboarding has two outcome-led, local-first screens",
+          "line": 12
+        },
+        {
+          "name": "guided completion enters creation and contextual help replaces welcome shortcuts",
+          "line": 28
+        },
+        {
+          "name": "help stays contextual and About opens above the current screen",
+          "line": 52
+        },
+        {
+          "name": "onboarding is semantic, keyboard-native, and explains unavailable storage",
+          "line": 71
+        },
+        {
+          "name": "mobile onboarding uses one-column facts and a safe-area action region",
+          "line": 85
+        }
+      ],
+      "assertions": {
+        "match": 35,
+        "doesNotMatch": 7,
+        "ok": 1
+      },
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "node:fs"
+      ],
+      "sourceOnly": true,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/operationGuard.test.ts",
+      "bytes": 4036,
+      "sha256": "d92ee7a9f3556aafabf0dcb89585d4e1bcb5d102888e721667c5fce78d591176",
+      "declarations": [
+        {
+          "name": "canonical JSON sorts object keys, preserves arrays, and rejects unsafe values",
+          "line": 24
+        },
+        {
+          "name": "execution fingerprint identity projects attachment metadata without Blob content",
+          "line": 36
+        },
+        {
+          "name": "execution envelope validation is strict and does not log payloads",
+          "line": 51
+        },
+        {
+          "name": "guard reserves synchronously, replays IDs, coalesces in-flight fingerprints, and permits reruns",
+          "line": 69
+        },
+        {
+          "name": "guard caches failures, releases fingerprints, and evicts only settled IDs",
+          "line": 104
+        }
+      ],
+      "assertions": {
+        "equal": 8,
+        "throws": 4,
+        "deepEqual": 1,
+        "rejects": 5
+      },
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "../src/operationGuard"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/orchestration.test.ts",
+      "bytes": 4475,
+      "sha256": "03d01c4bfd18946b603bb7a26bde2f6962423970abc9abc3c96e88459ce8c5a8",
+      "declarations": [
+        {
+          "name": "snapshot parser fails closed on unknown schemas and inconsistent gates",
+          "line": 32
+        },
+        {
+          "name": "controller launches fixed argv without a shell and gates stdin decisions",
+          "line": 44
+        },
+        {
+          "name": "control state location is deterministic and outside the project",
+          "line": 110
+        },
+        {
+          "name": "Mode 1 start preflight rejects paid and legacy monetary configuration without fallback",
+          "line": 121
+        }
+      ],
+      "assertions": {
+        "throws": 2,
+        "equal": 4,
+        "deepEqual": 2,
+        "rejects": 2,
+        "match": 6,
+        "doesNotMatch": 1
+      },
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "node:fs/promises",
+        "node:fs",
+        "node:os",
+        "node:path",
+        "node:events",
+        "../electron/orchestration"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/platformWorker.test.ts",
+      "bytes": 3486,
+      "sha256": "e8d64f925e6394709e75a70123bd27b2805ccaade69afc26bbbd2f419e0259e1",
+      "declarations": [
+        {
+          "name": "ambient workerd fetch works through runtimeDependencies and the real OIDC client",
+          "line": 6
+        }
+      ],
+      "assertions": {
+        "equal": 9,
+        "deepEqual": 2
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:test",
+        "esbuild",
+        "miniflare"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/projectMap.test.ts",
+      "bytes": 3568,
+      "sha256": "3d0b82e0877deae0787f64e5c5506635cb3dd00c8d0bd5ddd01a98d5f63ab429",
+      "declarations": [
+        {
+          "name": "project map has unique IDs and every flow resolves through exact edges",
+          "line": 27
+        },
+        {
+          "name": "self-contained HTML embeds a byte-equivalent copy of the canonical JSON",
+          "line": 39
+        },
+        {
+          "name": "committed HTML is generated from the canonical JSON and current template",
+          "line": 57
+        },
+        {
+          "name": "viewer exposes responsive, keyboard, status, and reduced-motion affordances",
+          "line": 62
+        },
+        {
+          "name": "inline viewer program is syntactically valid JavaScript",
+          "line": 75
+        },
+        {
+          "name": "validator rejects a flow edge that does not connect consecutive steps",
+          "line": 84
+        }
+      ],
+      "assertions": {
+        "deepEqual": 2,
+        "ok": 6,
+        "doesNotMatch": 5,
+        "match": 8,
+        "equal": 2,
+        "doesNotThrow": 1
+      },
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "node:fs/promises",
+        "node:path",
+        "node:vm",
+        "../scripts/generate-project-map.mjs"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/providerRegistry.test.ts",
+      "bytes": 6462,
+      "sha256": "22209851343c2e1402481aa7a5806951f0bad331e440914a64271ff8189a40b2",
+      "declarations": [
+        {
+          "name": "production registry contains exactly the two evidenced providers",
+          "line": 20
+        },
+        {
+          "name": "registry owns exact fixed probes",
+          "line": 54
+        },
+        {
+          "name": "Claude classifier fails closed for every unsupported auth result",
+          "line": 73
+        },
+        {
+          "name": "Codex classifier accepts ChatGPT and rejects API key or unreadable auth",
+          "line": 98
+        },
+        {
+          "name": "availability validation requires one known result per provider",
+          "line": 118
+        },
+        {
+          "name": "eligibility separates export, execution, unsupported, and unchecked",
+          "line": 157
+        },
+        {
+          "name": "adapter serialization preserves exact current policies",
+          "line": 183
+        },
+        {
+          "name": "test-only invalid descriptors cannot enter the production registry",
+          "line": 210
+        }
+      ],
+      "assertions": {
+        "deepEqual": 10,
+        "equal": 12,
+        "throws": 7,
+        "ok": 1
+      },
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "../shared/providerRegistry",
+        "../shared/funding"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/responsive.test.ts",
+      "bytes": 3652,
+      "sha256": "6788e9cd5d1b4a51aeada6d06ff8cf06994f2a911b6c695c3dfd3c5343186ecb",
+      "declarations": [
+        {
+          "name": "reduced motion removes meaningful animation and transition movement",
+          "line": 14
+        },
+        {
+          "name": "interactive control families retain the 44px target contract",
+          "line": 23
+        },
+        {
+          "name": "320px layouts contain intrinsic content and never impose a desktop width",
+          "line": 45
+        },
+        {
+          "name": "responsive IA switches rail to strip then selector at approved boundaries",
+          "line": 66
+        }
+      ],
+      "assertions": {
+        "match": 24,
+        "doesNotMatch": 1
+      },
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "node:fs"
+      ],
+      "sourceOnly": true,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/reviewManifest.test.ts",
+      "bytes": 4962,
+      "sha256": "ca9756a324db78ad2e539bf3460b1f57cac43ed641d4f7b512854771d59d6894",
+      "declarations": [
+        {
+          "name": "Review carries the dry-run choice next to the confirm action",
+          "line": 55
+        },
+        {
+          "name": "Review presents the unchanged prompt and deterministic plan in a read-only manifest",
+          "line": 87
+        },
+        {
+          "name": "App confines full prompt and plan to Review and exposes contextual summary earlier",
+          "line": 132
+        },
+        {
+          "name": "Review keeps files, plan and prompt in native disclosures with copy and Markdown download",
+          "line": 141
+        }
+      ],
+      "assertions": {
+        "match": 21,
+        "ok": 1,
+        "equal": 1,
+        "doesNotMatch": 3
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:fs",
+        "node:test",
+        "react",
+        "react-dom/server",
+        "../src/core",
+        "../src/components/creation/ReviewStage",
+        "../src/types"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/sqlInjectionBoundary.test.ts",
+      "bytes": 4766,
+      "sha256": "38d1a8b20355932df588bf245c463112bafe6120cce8a15f65ad143d7ae0fbb2",
+      "declarations": [
+        {
+          "name": "real SQLite keeps Blog SQL-looking content literal through publish, list and idempotent retry",
+          "line": 48
+        },
+        {
+          "name": "real account handlers preserve apostrophe emails and reject SQL-shaped identifiers without changing another account",
+          "line": 112
+        }
+      ],
+      "assertions": {
+        "equal": 14,
+        "deepEqual": 2
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:fs",
+        "node:sqlite",
+        "node:test",
+        "../functions/_lib/blog",
+        "../functions/_lib/platform",
+        "./helpers/accountHarness"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/surfaceBoundary.test.ts",
+      "bytes": 2564,
+      "sha256": "f57aaa146c35226fbb4d2406a0836fd22040574d184a8740abc584e2c94d5357",
+      "declarations": [
+        {
+          "name": "web and desktop have distinct renderer entries and outputs",
+          "line": 8
+        },
+        {
+          "name": "only the web entry contributes the optional Blog and PWA graph",
+          "line": 29
+        },
+        {
+          "name": "artifact scan fails closed on Blog administration and PWA leakage",
+          "line": 51
+        }
+      ],
+      "assertions": {
+        "match": 23,
+        "doesNotMatch": 5
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:fs",
+        "node:test"
+      ],
+      "sourceOnly": true,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/termsPresentation.test.ts",
+      "bytes": 7021,
+      "sha256": "d28f8509f644f49c4d1844b22d7174484d20a45c344bb2b062b6a0de19b3fb31",
+      "declarations": [
+        {
+          "name": "each Terms document contains one full language and the matching canonical source",
+          "line": 17
+        },
+        {
+          "name": "all application Terms entrypoints use the active primary locale",
+          "line": 79
+        },
+        {
+          "name": "direct and refreshed explicit language requests resolve without additional selectors, storage or referrer",
+          "line": 128
+        },
+        {
+          "name": "Terms navigation and return keep the chosen language and leave outside destinations intact",
+          "line": 189
+        }
+      ],
+      "assertions": {
+        "deepEqual": 3,
+        "match": 8,
+        "equal": 22,
+        "ok": 1,
+        "doesNotMatch": 5
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:fs",
+        "node:test",
+        "node:vm",
+        "../src/legal",
+        "../shared/accountPolicy"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/theme.test.ts",
+      "bytes": 8143,
+      "sha256": "64c1af58c3dddc6e70d4f7b8db702fed83e064b20f2629cb0ee9e9a614aa6014",
+      "declarations": [
+        {
+          "name": "dark and light themes assign the identical semantic token contract",
+          "line": 35
+        },
+        {
+          "name": "Iceland pearl and soft dark themes retain the neutral hierarchy and restrained red",
+          "line": 45
+        },
+        {
+          "name": "final text and status pairs meet WCAG AA normal-text contrast",
+          "line": 86
+        },
+        {
+          "name": "web defaults to pearl with a guarded local preference and both hosts can switch",
+          "line": 126
+        },
+        {
+          "name": "navigation and genuine choice controls expose their current state",
+          "line": 159
+        },
+        {
+          "name": "Settings controls retain visible label association and controlled values",
+          "line": 173
+        },
+        {
+          "name": "all App buttons declare non-submit behavior and disabled controls stay native",
+          "line": 184
+        },
+        {
+          "name": "legacy theme variables and component color literals are absent",
+          "line": 210
+        }
+      ],
+      "assertions": {
+        "ok": 7,
+        "deepEqual": 1,
+        "match": 27,
+        "doesNotMatch": 6,
+        "equal": 1
+      },
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "node:fs"
+      ],
+      "sourceOnly": true,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/typography.test.ts",
+      "bytes": 5813,
+      "sha256": "a05ca4f9807dba0e44d07023cf33f5a461423e272c69bc6bcdb9bd21179a6eea",
+      "declarations": [
+        {
+          "name": "all presentation surfaces expose the approved typography tokens",
+          "line": 45
+        },
+        {
+          "name": "no surface declares a font family the build never delivers",
+          "line": 59
+        },
+        {
+          "name": "application typography follows semantic product roles",
+          "line": 75
+        },
+        {
+          "name": "legal pages and the project map retain the same role hierarchy",
+          "line": 138
+        }
+      ],
+      "assertions": {
+        "match": 23,
+        "ok": 1,
+        "doesNotMatch": 4
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:fs",
+        "node:test"
+      ],
+      "sourceOnly": true,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/webAccounts.test.ts",
+      "bytes": 18433,
+      "sha256": "08011a3e6985e9d9d16a9f20180b9367d9f10432a8507f78b0a4d7290ce1b9ac",
+      "declarations": [
+        {
+          "name": "all account DTO entry points reject absent or malformed local ownership markers",
+          "line": 39
+        },
+        {
+          "name": "export authorization binds the captured account and session without loading a replacement identity",
+          "line": 77
+        },
+        {
+          "name": "account session uses the profile name and preserves legacy email fallback",
+          "line": 169
+        },
+        {
+          "name": "only explicit current authorization clears the account policy gate",
+          "line": 201
+        },
+        {
+          "name": "account client keeps navigation and network failures distinct without following redirects",
+          "line": 217
+        },
+        {
+          "name": "method discovery fails closed and contains no account selector",
+          "line": 245
+        },
+        {
+          "name": "Google navigation accepts only the configured HTTPS authorization endpoint",
+          "line": 274
+        },
+        {
+          "name": "Google account-control verification omits authorization and project data",
+          "line": 316
+        },
+        {
+          "name": "policy authorization posts only the five explicit choices/version fields and parses the session",
+          "line": 350
+        },
+        {
+          "name": "transaction polling and cancellation expose only bounded status, never identity or tokens",
+          "line": 379
+        },
+        {
+          "name": "only OTP verification establishes a session; session reads are GET and payloads contain no project data",
+          "line": 409
+        },
+        {
+          "name": "OTP errors survive HTTP 401 and rate limits expose bounded retry information",
+          "line": 453
+        },
+        {
+          "name": "account client rejects HTML and malformed application data",
+          "line": 480
+        },
+        {
+          "name": "account data download preserves the server's recent-authentication requirement",
+          "line": 526
+        }
+      ],
+      "assertions": {
+        "deepEqual": 18,
+        "rejects": 20,
+        "equal": 31
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:test",
+        "../shared/accountPolicy",
+        "../src/account/webClient"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/webAttachmentsUi.test.ts",
+      "bytes": 4803,
+      "sha256": "8bff53c26e286cdb850a90ff8e295f36ebb85087b3db60488748f0f33aadb318",
+      "declarations": [
+        {
+          "name": "W1 attachment UI exposes local-only lifecycle, limits, statuses, and bilingual recovery",
+          "line": 24
+        },
+        {
+          "name": "attachment rows use semantic status tokens and 44px removal targets",
+          "line": 43
+        },
+        {
+          "name": "phase and New draft transitions disclose selected transient files",
+          "line": 51
+        },
+        {
+          "name": "Foundation explains browser draft metadata and non-persistent file bytes at point of use",
+          "line": 58
+        },
+        {
+          "name": "both attachment views disable mutations and announce local inspection",
+          "line": 65
+        },
+        {
+          "name": "attachment rejection messages are fixed and bilingual",
+          "line": 121
+        }
+      ],
+      "assertions": {
+        "match": 21,
+        "ok": 1,
+        "doesNotMatch": 1,
+        "equal": 3
+      },
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "node:fs",
+        "react",
+        "react-dom/server",
+        "../shared/domain",
+        "../src/components/creation/FoundationStage",
+        "../src/components/creation/GuidedAttachments"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/webExport.test.ts",
+      "bytes": 19231,
+      "sha256": "4908856ccf9da7dfb3121cb3400e5dfe499dde8a9eb6a3a9d4d6fab5014c938f",
+      "declarations": [
+        {
+          "name": "buildProjectFiles matches the desktop-shared prompt content exactly",
+          "line": 85
+        },
+        {
+          "name": "buildProjectFiles produces the documented ZIP layout under the slug",
+          "line": 92
+        },
+        {
+          "name": "buildProjectFiles signature identifies the web edition and app version",
+          "line": 120
+        },
+        {
+          "name": "buildProjectFiles refuses tracking-only exports with an explicit reason",
+          "line": 130
+        },
+        {
+          "name": "SETUP.md renders literal commands only for actions a browser can't run itself",
+          "line": 140
+        },
+        {
+          "name": "SETUP.md omits git\\/github\\/ide commands when those actions are not planned",
+          "line": 152
+        },
+        {
+          "name": "SETUP refuses shell syntax in restored branch settings",
+          "line": 164
+        },
+        {
+          "name": "buildProjectFiles omits orchestration.yaml when orchestration is disabled",
+          "line": 187
+        },
+        {
+          "name": "buildProjectFiles includes orchestration.yaml when enabled",
+          "line": 192
+        },
+        {
+          "name": "renderOrchestrationConfig only allows workspace-write for the Implementador role",
+          "line": 212
+        },
+        {
+          "name": "renderOrchestrationConfig marks the Auditor role's action_kind as an independent audit",
+          "line": 231
+        },
+        {
+          "name": "mixed providers serialize byte-compatible adapter fields and no registry metadata",
+          "line": 252
+        },
+        {
+          "name": "unknown providers fail before web ZIP file assembly",
+          "line": 292
+        },
+        {
+          "name": "Mode 1 validation rejects role drift and empty tasks",
+          "line": 315
+        },
+        {
+          "name": "compatible one- and four-participant Mode 1 YAML preserves the current AEKR contract with identity comments",
+          "line": 332
+        },
+        {
+          "name": "repeated-role and five/six-participant Mode 1 configurations fail closed with the exact contract error",
+          "line": 359
+        },
+        {
+          "name": "provenance v2 and generated files are deterministic with fixed provenance time",
+          "line": 395
+        },
+        {
+          "name": "web resolver sanitizes hostile names and allocates deterministic case-insensitive collisions",
+          "line": 417
+        },
+        {
+          "name": "actual ZIP extraction includes inspected PDF bytes and preserves duplicate-name allocation",
+          "line": 447
+        },
+        {
+          "name": "synchronous ZIP construction rejects uninspected allowed-extension bytes",
+          "line": 493
+        },
+        {
+          "name": "rebuilt flow preserves the complete definition through prompt, plan, structure, and ZIP",
+          "line": 508
+        }
+      ],
+      "assertions": {
+        "equal": 12,
+        "deepEqual": 7,
+        "throws": 5,
+        "match": 21,
+        "doesNotMatch": 9,
+        "ok": 4
+      },
+      "imports": [
+        "node:test",
+        "node:assert/strict",
+        "../src/webExport",
+        "client-zip",
+        "node:zlib",
+        "../src/core",
+        "../src/types",
+        "../shared/domain",
+        "./helpers/safeAttachment"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/webRelease.test.ts",
+      "bytes": 3479,
+      "sha256": "f5dd120b59eac4730b0796b5f1790f01f972c912196c6cd8dc445dbbdf456577",
+      "declarations": [
+        {
+          "name": "restricted beta keeps indexing and unauthenticated access fail-closed",
+          "line": 15
+        },
+        {
+          "name": "Lighthouse exempts only the intentional private-beta crawlability audit",
+          "line": 36
+        },
+        {
+          "name": "host CSP permits bounded canvas styles without permitting inline script",
+          "line": 50
+        },
+        {
+          "name": "current release copy distinguishes restricted beta from public launch",
+          "line": 73
+        }
+      ],
+      "assertions": {
+        "match": 18,
+        "doesNotMatch": 4,
+        "ok": 2
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:fs",
+        "node:test"
+      ],
+      "sourceOnly": true,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/webRightsClient.test.ts",
+      "bytes": 5430,
+      "sha256": "70f2d50e95f31b08a0b029e3d81c93cdcb6e87a593d73f73230d6514231f0f98",
+      "declarations": [
+        {
+          "name": "an ordinary export suspension locks its product session while a rights-only denial does not",
+          "line": 11
+        },
+        {
+          "name": "rights-only browser proof uses its dedicated start route without policy or ordinary admission",
+          "line": 46
+        },
+        {
+          "name": "rights data/deletion send only the dedicated proof header and never request a product session",
+          "line": 87
+        },
+        {
+          "name": "rights errors use Retry-After metadata without invalidating an unrelated product session",
+          "line": 126
+        }
+      ],
+      "assertions": {
+        "rejects": 6,
+        "equal": 12,
+        "deepEqual": 3
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:test",
+        "../src/account/webClient"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    },
+    {
+      "path": "tests/webSecurityArtifacts.test.ts",
+      "bytes": 1964,
+      "sha256": "77c63ed63daceed7b7dcd908c7024ab449d64453db0cfed12c2f31b2abf7bdf5",
+      "declarations": [
+        {
+          "name": "publication gate allows public code/examples but rejects maps, internal config, sources and unreviewed archives",
+          "line": 6
+        }
+      ],
+      "assertions": {
+        "equal": 1,
+        "rejects": 3
+      },
+      "imports": [
+        "node:assert/strict",
+        "node:fs/promises",
+        "node:path",
+        "node:test"
+      ],
+      "sourceOnly": false,
+      "focusSwitches": []
+    }
+  ]
+}

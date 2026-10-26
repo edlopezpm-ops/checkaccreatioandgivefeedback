@@ -1,0 +1,14 @@
+{
+  "verifiedUtc": "2026-10-26T19:19:48.2840351Z",
+  "method": "Independent PowerShell Get-FileHash SHA256 plus file size, no product-provided comparator",
+  "manifestSha256": "e0824da9fee52481ded2e3ae029fa9a8a63b1be26e14ab8d9c06986beed94233",
+  "manifestFileCount": 712,
+  "comparedCopies": 2,
+  "comparisons": 1424,
+  "mismatches": [],
+  "originalHeadUnchanged": true,
+  "originalBranchUnchanged": true,
+  "originalDirtyStateUnchanged": true,
+  "result": "PASS",
+  "limitations": "Checks only the 712 explicitly frozen source/untracked paths. node_modules/dist/cache/private credentials and remote deployment are separate; excluded content is not claimed identical."
+}

@@ -1,0 +1,7 @@
+import fs from 'node:fs/promises';import path from 'node:path';import {fileURLToPath} from 'node:url';
+const root=path.dirname(fileURLToPath(import.meta.url));const matrix=JSON.parse(await fs.readFile(path.join(root,'MATRIX.json'),'utf8'));
+const seen=new Set();let W=0,P=0,F=0,U=0;const counts={PASS:0,FAIL:0,UNKNOWN:0};
+for(const c of matrix.capabilities){if(seen.has(c.id)||![1,3,5].includes(c.weight)||!Object.hasOwn(counts,c.status))throw Error('Invalid capability matrix');seen.add(c.id);W+=c.weight;counts[c.status]++;if(c.status==='PASS')P+=c.weight;else if(c.status==='FAIL')F+=c.weight;else U+=c.weight;}
+if(W!==P+F+U)throw Error('Weight invariant failed');const pct=n=>W?100*n/W:null;
+const score={schemaVersion:1,snapshotHead:matrix.snapshotHead,matrixFrozenSha256:matrix.frozenSha256,inventoryClosed:matrix.inventoryClosed,provisional:!matrix.inventoryClosed,capabilityCounts:counts,W,P,F,U,identity:'W = P + F + U',demonstratedCompliance:pct(P),decisionCoverage:pct(P+F),confirmedFailureWeight:pct(F),unknownWeight:pct(U),verdict:F?'FAIL':U?'INCONCLUSIVE':'VERIFIED_WITHIN_SCOPE',policy:'Weights are audit policy, not probability of hacking, AI authorship or exhaustive defect rate. UNKNOWN remains in denominator. Local PASS scope is explicit per capability; unverified external integration evidence remains UNKNOWN where that integration is the capability.',calculatedAt:new Date().toISOString()};
+await fs.writeFile(path.join(root,'SCORECARD.json'),JSON.stringify(score,null,2));console.log(JSON.stringify(score,null,2));
