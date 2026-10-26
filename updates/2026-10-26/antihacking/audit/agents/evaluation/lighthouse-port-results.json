@@ -1,0 +1,38 @@
+{
+  "experiment": "Absent failed preview process with preoccupied local HTTP port",
+  "operator": "local test configuration changes ports only; production script otherwise byte-identical",
+  "scriptPath": "scripts/lighthouse-check.mjs",
+  "expected": "Fail: no accreatio artifact or own preview process is available",
+  "observed": {
+    "code": 0,
+    "signal": null,
+    "requests": 4,
+    "stdout": "PASS performance: 100/100 (min 80)\nPASS accessibility: 100/100 (min 90)\nPASS best-practices: 100/100 (min 90)\nPASS seo: 91/100 (min 90)\n\nLighthouse gate passed.\n",
+    "stderr": "",
+    "scores": {
+      "performance": 1,
+      "accessibility": 1,
+      "best-practices": 1,
+      "seo": 0.91,
+      "agentic-browsing": 0.67
+    },
+    "finalUrl": "http://localhost:4237/index.html",
+    "artifactTitle": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": []
+    }
+  },
+  "durationMs": 11690.7298,
+  "scope": "Synthetic loopback fixture only. No production writes or accreatio source modifications."
+}

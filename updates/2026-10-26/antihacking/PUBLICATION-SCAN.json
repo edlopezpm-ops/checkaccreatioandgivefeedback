@@ -1,0 +1,32 @@
+{
+  "tool": "gitleaks",
+  "version": "8.30.1",
+  "officialReleaseChecksumVerified": true,
+  "scope": "New audit folder, both source archives and nested historical/source/example archives (max archive depth4); separate scan of all four updated/new entrypoint documents.",
+  "rawExitCode": 1,
+  "rawMatches": 9,
+  "entrypointExitCode": 0,
+  "dispositions": [
+    {
+      "file": ".dev.vars.example",
+      "line": 24,
+      "occurrences": 3,
+      "classification": "explicit replace/generate placeholder, not a64hex secret"
+    },
+    {
+      "file": "docs/design-v9/OPTIONS_MATRIX.md",
+      "line": 60,
+      "occurrences": 3,
+      "classification": "narrative options-table prose; no credential value"
+    },
+    {
+      "file": "tests/blogApi.test.ts",
+      "line": 22,
+      "occurrences": 3,
+      "classification": "local idempotency-key test constant; not an authentication credential"
+    }
+  ],
+  "unresolved": 0,
+  "result": "NO_CREDENTIAL_IDENTIFIED_AFTER_REVIEW",
+  "limits": "Heuristic scanner and contextual review, not a guarantee of absence of all secrets. Raw exit1 is preserved; findings were classified, not deleted or hidden."
+}

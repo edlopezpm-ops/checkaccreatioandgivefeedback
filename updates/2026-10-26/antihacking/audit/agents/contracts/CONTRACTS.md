@@ -1,0 +1,67 @@
+# Reconstrucción contractual y revisión de frontend
+
+Snapshot: `main`, `0dcafbc426b01faea621d13121e36a54099b283a`; los cuatro grupos de material no versionado preexistente se conservan. Esta pasada no cambia código, documentos ni configuración del producto. Artefactos de auditoría aislados bajo `.local/logs/antihacking-20261026-full/agents/contracts/`.
+
+## Matriz antes de resultados
+
+`MATRIX.frozen.json`: 30 capacidades; peso total **124**. SHA-256 `0a189cdfe83f821cab3b5ab416469a5a1ada1177765be16c38ad36805ac47805`. Todos los estados iniciales UNKNOWN; los pesos se fijaron desde requisitos antes de ver resultados corrientes de comportamiento. Fuentes exactas y obligaciones están en cada capacidad. Crítica=5, importante=3, ordinaria=1; son política de auditoría, no escala científica.
+
+`MATRIX.amended.json` conserva esos IDs y pesos. SHA-256 `81664d0c6b865f39c972a9bcfab2adec1e720941299290e20cf56210790349cf`. Una única corrección documental de precedencia C24 incorpora `docs/FLOATING_EXAMPLE_RELEASE_2026-10-25.md:9`: el ejemplo ahora es un enlace a un diálogo flotante y los enlaces help de Blog/cuenta fueron retirados expresamente. Su ausencia no es incumplimiento. El congelado original queda intacto y la modificación tiene historial explícito.
+
+Los documentos de producto y decisiones posteriores prevalecen sobre recibos históricos. Se leyeron las instrucciones aplicables para operar y extraer límites expresos de producto; no se evaluó gobernanza de agentes ni se alteró. El código/tests no redefinen la intención. No se certifica cumplimiento de toda intención original no documentada.
+
+## Límites funcionales vigentes
+
+- El producto es web/PWA. Produce definiciones, prompt, plan y ZIP local; no construye/despliega la app futura. Git/GitHub/IDE/orquestación son guías de salida. No se debe exigir ejecución desktop o real CLI al producto actual.
+- Los cuatro comandos desktop npm deben fallar cerrado. `docs/WEB_ONLY_DELIVERY_2026-10-22.md:28` excluye la invocación directa de herramientas antiguas como flujo autorizado; conservar Vite desktop y source no promete imposibilidad técnica de compilarlo por cuenta propia.
+- Proyecto/adjuntos/ZIP permanecen locales. Cuenta, Blog, abuso y Collect son excepciones con datos y autoridades distintas. La autorización Collect posterior invalida una lectura literal del antiguo «ninguna telemetría», sólo dentro de su catálogo y elección expresa.
+- Google/GitHub actuales requieren configuración/CAPTCHA y prueba externa; verificar un provider fixture no acredita autorización personal ni entrega de correo. OTP es capacidad opcional desactivada en producción según documentación; un stub de correo no acredita mailbox real.
+- Terms/purpose/privacy son versiones internas de recibo; la etiqueta pública numérica es una presentación deliberada. Recibos viejos no se reescriben por cambios de documento. Los derechos no exigen aceptar nuevas condiciones.
+- Tema perla por defecto y oscuro opcional, PNG/crops originales y filtros de alfa autorizados. No juzgar la dirección anterior «night-only» como requisito vigente.
+- Las instrucciones de adquisición/leyes presentes en los avisos son fuente de contratos técnicos, no una evaluación jurídica de su aplicabilidad.
+
+## Hallazgo UI confirmado y acotado
+
+**UI-STATUS-01**, severidad baja, `CONTRACT_FAILURE` de representación del estado; estado CONFIRMED. Ruta `Privacy → Accept all optional → evento de uso → Reject non-essential cookies`. La interfaz conserva «Analytics enabled. Structured fields only; sharing requires an active optional service.» después de que el rechazo se haya guardado y la retirada haya completado.
+
+Ubicación: `src/components/account/CookiePreferences.tsx:188-210`. `choose(false)` sólo cambia `status` cuando `withdrawCollection` devuelve false; si devuelve true, el status anterior positivo queda vivo. La misma superficie muestra simultáneamente «Saved preference: necessary only.» (`:361`) y `analytics=false`.
+
+Fuente de expectativa: elección explícita y estado correspondiente de `docs/COLLECT_SECURITY_2026-10-22.md:9-15,49`; una notificación actual de activación contradice el rechazo actual. El contrato técnico de recogida sí se respeta en esta reproducción: hubo una fila real previa y cero después de revoke. No se afirma recogida indebida, FALSE_SUCCESS de la retirada, bypass ni manipulación.
+
+Reproducción: `node --import tsx .local/logs/antihacking-20261026-full/agents/contracts/repro-status.mjs`. Compila el componente real con React/esbuild; el collector y el receptor `handleCollection` son reales y usan SQLite local. Se habilita, dispara un evento nuevo, confirma una fila SQL, rechaza y confirma cero filas mediante consulta SQL independiente. JSON y captura: `status-repro.json`, `status-after-reject.png`; cero errores JS. Peticiones observadas: grant, record, revoke, sin valores de capabilities en recibos.
+
+Corrección propuesta para un snapshot posterior: sobrescribir el status en todos los resultados de rechazo; separar éxito/pending/fallo de almacenamiento y de retirada. Verificar EN/ES, rechazo desde opt-in, almacenamiento fallido, retirada pendiente y posterior retry. No se implementó corrección durante la auditoría. El coordinador decide el mapeo de score: este fallo es de estado UI, no evidencia de que el control de consentimiento recoja tras el rechazo.
+
+Alternativa refutada: que sea un historial deliberado. La frase no lleva fecha ni marca de historial y ocupa un único `role=status` de la acción vigente; el rechazo exitoso no inserta entrada posterior. El mensaje conserva una afirmación vigente contradictoria aunque los efectos sean correctos.
+
+## Contradicciones documentales separadas
+
+**DOC-01**: `README.md:114` bajo Capabilities afirma «web appearance is night-only». Contradice el mismo README `:11` y el contrato aceptado `docs/DESIGN_ICELAND_PEARL_2026-10-22.md:3-6`, que exige perla predeterminado y oscuro opcional. Es documentación desactualizada, no una demostración de fallo del tema ni simulación. No reinterpreta la aceptación posterior.
+
+**DOC-02**: `docs/SECURITY.md` mezcla reglas de prototipo/W1 con comportamiento actual: `:16` dice que los contenidos nunca se parsean, `:29` reitera que attachments nunca se parsean/renderizan y `:39` exige Access JWT a cada ruta Blog. La documentación actual específica exige parsear/reconstruir adjuntos y lectura pública de Blog (`docs/ATTACHMENT_SECURITY_2026-10-22.md:7-17`, `README.md:129`). Algunas frases están explícitamente etiquetadas W1; no se deben convertir en requisito actual ni en vulnerabilidad confirmada. Recomendación: identificar claramente sus secciones históricas y enlazar contratos actuales, preservando recibos fechados.
+
+**DOC-03**: `scripts/project-map.template.html:1050` y su viewer generado `accreatio-project-map.html:1050` dicen «Explore the shipped desktop and browser paths». El escritorio nunca fue publicado según la decisión expresa de retiro. `PROJECT_MAP.md:23` define `current` como implementado en este repositorio, sin acreditar despliegue; esa definición legítima no convierte el encabezado «shipped desktop» en verdadero. Es una discrepancia documental del mapa, no evidencia de que sus controles/zoom o rutas estén simulados. El viewer es un artefacto documental separado y no forma parte de la aplicación/PWA según `PROJECT_MAP.md:9`.
+
+**DOC-04**, CONFIRMED, baja: `public/legal/cookies.html:58` afirma que GPC bloquea la recolección opcional; el mismo documento `:416-420` y `:742-747` afirma que no hay collector opcional ni manejador de esas señales operativo. Las secciones están bajo los encabezados actuales «Account controls and rights» y «Rejecting non-essential cookies», con aviso actualizado el 25 de octubre (`:26-34`), sin contenedor histórico, details ni baseline. La única referencia a flujo histórico en esa página se refiere a Cloudflare Access (`:168`). Además la tabla en español `:660-662` describe la preferencia sólo como rechazo schema1, mientras la explicación inglesa actual incorpora schema2 opt-in; las instrucciones `:403` y `:751` nombran el control antiguo «Cookie preferences» / «Preferencias de cookies» en vez del actual Privacy. No es prueba de que GPC falle: el handler real existe en `src/account/collection.ts:46-50` y las puertas de envío lo aplican. La contradicción interna es reproducible en el texto de la fuente sin requerir opt-in ni escritura en producción. Corrección futura: alinear las secciones antiguas con el catálogo y control actual, conservando separación entre disponibilidad remota y permiso local; verificar parity EN/ES y labels/rutas desde navegador. No se emite dictamen jurídico.
+
+Falso candidato refutado: `terms-language.js` ya no hereda referrer, aunque un recibo de presentación antiguo lo decía. `docs/TOS_LEGAL_NAVIGATION_FIX_2026-10-25.md:13-17` lo supersede expresamente porque `Referrer-Policy: no-referrer` impedía ese mecanismo; ahora se propaga `lang` en enlaces. No hallazgo.
+
+Falso candidato refutado: AuthFlow/AccountShell contienen mocks explícitamente etiquetados. Su presencia textual no demuestra uso real; el coordinador revisa configuración efectiva del montaje en App. No se calificó por grep como fuga de mocks.
+
+## Refutación independiente del gate de dependencias
+
+La salida de auditoría npm corriente confirma siete entradas (4 high, 2 moderate, 1 low); no implica siete vulnerabilidades explotables distintas. `.github/workflows/ci.yml:28` exige `npm audit --audit-level=high`, sin `continue-on-error`. `docs/SECURITY.md:57-63` exige que `security:inventory` falle con high/critical y retenga moderate para valoración. El bloqueo por advisories muestra que ese gate funciona; no es EVALUATOR_TAMPERING ni C26 FAIL.
+
+C27 congelada pide dependencias consistentes y valoración/declaración de aplicabilidad; no contiene prohibición absoluta de todas las entradas high. No se debe añadir oportunistamente esa obligación para hacer fallar el score. Registrar `CI_DEPENDENCY_GATE_BLOCKED` como resultado operativo; si falta análisis de aplicabilidad, C27 conserva UNKNOWN. Una autorización/decisión de release high-free adicional sólo puede aplicarse con su fuente exacta previa. No se ejecutó CI remoto, exploit, cambio de dependencias ni deployment.
+
+## Cobertura y límites
+
+`reviewed-files.json` registra 103 archivos: 87 leídos completos, cinco HTML con todo el texto semántico y estructura/atributos/scripts revisados y once documentos/JSON muestreados para contrato/consistencia. Todos los componentes TS/TSX y CSS de `src/components`, los entrypoints, configuración PWA, CSS global/branding y la variante Legacy fueron leídos completos. Los cinco HTML públicos se extrajeron a texto íntegro leído por segmentos; su estructura ejecutable se registra en `public-html-structure.json`: sólo scripts externos locales revisados, sin formularios, iframes, objetos o atributos de evento. Esa revisión de texto y estructura no equivale a revisión jurídica ni hosted. Las imágenes/derivados no se consideran revisados semánticamente por tener hash. El coordinador agrega builds, browser completo, branding checks e inventario.
+
+`src/legacy/LegacyApp.tsx` no equivale automáticamente a Electron retirado: `src/main.tsx:9-10` permite seleccionarlo con `VITE_CREATION_FLOW=legacy` en build-time. Se leyeron sus 2055 líneas y los dos reviews Legacy completos. Esa variante ignora el prop accountBoundary, usa defaults dark/es y llama draft APIs sin owner/session; no es compatible con los contratos web actuales si se reactivara. El coordinador confirma que el flag no forma parte de la configuración actual y el artefacto por defecto usa guided. Se registra riesgo de configuración dormida, no incumplimiento del artefacto actual ni éxito de una exportación no autorizada. El bridge vigente conserva su propia autorización failclosed.
+
+Los generadores `scripts/generate-help-slides.mjs` (356 líneas), `render-brand-assets.mjs` (81), `render-web-brand-assets.mjs` (248) y `project-map.template.html` (1799) se revisaron completos sin regenerar ni ejecutar escritura. El SOP usa fixtures locales declarados para capturar UI real y compone JPEGs; eso no acredita autenticación de proveedor. El generador web verifica el PNG canónico y deriva crops/filtros nativos; el renderer antiguo escribe public/icons heredados, no reemplaza public/branding activos. El mapa usa DOM/textContent, datos embebidos y CSP connect-none; sus controles son reales y no requieren backend.
+
+Tres smokes adicionales leídos completos: `google-account-functional-smoke.mjs` (1308), `account-rights-functional-smoke.mjs` (534), `collect-functional-smoke.mjs` (546). El primero separa transporte Google sintético de SQLite/cuenta/browser real; el segundo es UI con fixtures completos de endpoints/proveedor y declara que no verifica cookie proof/backend; Collect usa receiver/SQLite real y se acota a synthetic local. Las instrumentaciones de Storage/IDB son inyecciones de fallos/lecturas retrasadas en contextos desechables, no alteraciones del comparador o adaptaciones del producto. Las excepciones rebotan o fijan exitCode1. Collect comprueba grant/record/revoke y cero filas tras rechazo, pero omite el mensaje actual del modal; esa laguna explica el bug UI aún con esa ejecución verde, sin demostrar manipulación del evaluador.
+
+No se atribuye intención ni autoría AI a bugs o estilo. No se observó manipulación del evaluador en esta pasada de UI; su auditoría global corresponde a la pasada separada del equipo. Esta pasada no emite score final ni veredicto global.

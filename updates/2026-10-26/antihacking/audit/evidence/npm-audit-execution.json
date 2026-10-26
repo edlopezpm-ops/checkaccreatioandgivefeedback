@@ -1,0 +1,5 @@
+{
+  "command": "npm.cmd audit --json",
+  "exitCode": 1,
+  "utc": "2026-10-26T19:09:01.9626917Z"
+}

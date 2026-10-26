@@ -1,0 +1,23 @@
+{
+  "oracle": "Tras rechazo completado, un mensaje de estado vigente no debe afirmar que la analítica sigue habilitada; el recibo local debe quedar analytics=false.",
+  "beforeEnabled": true,
+  "afterHasEnabledMessage": true,
+  "afterHasNecessaryOnly": true,
+  "analytics": false,
+  "recordsAfter": 0,
+  "requests": [
+    {
+      "route": "/api/collect/preference",
+      "action": "grant"
+    },
+    {
+      "route": "/api/collect/record"
+    },
+    {
+      "route": "/api/collect/preference",
+      "action": "revoke"
+    }
+  ],
+  "errors": [],
+  "scope": "Componente real compilado de source actual; collector real y receptor SQLite local con un registro confirmado antes del rechazo y cero después. No proveedor externo, cuenta ni producción."
+}

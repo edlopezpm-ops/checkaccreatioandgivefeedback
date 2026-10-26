@@ -1,0 +1,78 @@
+[
+  {
+    "label": "publication-gate-noop",
+    "args": [
+      "--import",
+      "tsx",
+      "--test",
+      "tests/webSecurityArtifacts.test.ts"
+    ],
+    "exit": 1,
+    "signal": null,
+    "error": null,
+    "durationMs": 200.15120000000002,
+    "stdout": "✖ publication gate allows public code/examples but rejects maps, internal config, sources and unreviewed archives (19.4713ms)\nℹ tests 1\nℹ suites 0\nℹ pass 0\nℹ fail 1\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 145.4213\n\n✖ failing tests:\n\ntest at tests\\webSecurityArtifacts.test.ts:2:1573\n✖ publication gate allows public code/examples but rejects maps, internal config, sources and unreviewed archives (19.4713ms)\n  AssertionError [ERR_ASSERTION]: Missing expected rejection.\n      at async TestContext.<anonymous> (C:\\Users\\edlop\\OneDrive\\Documents\\VS Code\\accreatio\\.local\\logs\\antihacking-20261026-full\\agents\\evaluation\\mutants\\publication-gate-noop\\tests\\webSecurityArtifacts.test.ts:36:5)\n      at async Test.run (node:internal/test_runner/test:1332:7)\n      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:385:3) {\n    generatedMessage: false,\n    code: 'ERR_ASSERTION',\n    actual: undefined,\n    expected: /publication gate failed/i,\n    operator: 'rejects',\n    diff: 'simple'\n  }\n",
+    "stderr": ""
+  },
+  {
+    "label": "confirm-callback-noop",
+    "args": [
+      "--import",
+      "tsx",
+      "--test",
+      "tests/reviewManifest.test.ts"
+    ],
+    "exit": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 344.6493999999999,
+    "stdout": "✔ Review carries the dry-run choice next to the confirm action (9.6181ms)\n✔ Review presents the unchanged prompt and deterministic plan in a read-only manifest (3.1206ms)\n✔ App confines full prompt and plan to Review and exposes contextual summary earlier (0.5858ms)\n✔ Review keeps files, plan and prompt in native disclosures with copy and Markdown download (0.3003ms)\nℹ tests 4\nℹ suites 0\nℹ pass 4\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 282.6432\n",
+    "stderr": ""
+  },
+  {
+    "label": "independent-review-pristine",
+    "args": [
+      "--import",
+      "tsx",
+      "C:\\Users\\edlop\\OneDrive\\Documents\\VS Code\\accreatio\\.local\\logs\\antihacking-20261026-full\\agents\\evaluation\\review-callback-oracle.mts",
+      "C:\\Users\\edlop\\OneDrive\\Documents\\VS Code\\accreatio\\.local\\logs\\antihacking-20261026-full\\agents\\evaluation\\mutants\\confirm-callback-noop\\src\\components\\creation\\ReviewStage.tsx"
+    ],
+    "exit": 0,
+    "signal": null,
+    "error": null,
+    "durationMs": 299.35699999999997,
+    "stdout": "PASS independent confirmation callback oracle\n",
+    "stderr": ""
+  },
+  {
+    "label": "independent-review-mutant",
+    "args": [
+      "--import",
+      "tsx",
+      "C:\\Users\\edlop\\OneDrive\\Documents\\VS Code\\accreatio\\.local\\logs\\antihacking-20261026-full\\agents\\evaluation\\review-callback-oracle.mts",
+      "C:\\Users\\edlop\\OneDrive\\Documents\\VS Code\\accreatio\\.local\\logs\\antihacking-20261026-full\\agents\\evaluation\\mutants\\confirm-callback-noop\\src\\components\\creation\\ReviewStage.tsx"
+    ],
+    "exit": 1,
+    "signal": null,
+    "error": null,
+    "durationMs": 256.4592,
+    "stdout": "",
+    "stderr": "node:internal/modules/run_main:107\r\n    triggerUncaughtException(\r\n    ^\r\n\r\nAssertionError [ERR_ASSERTION]: one enabled confirmation activation must invoke onConfirm exactly once\r\n\r\n0 !== 1\r\n\r\n    at <anonymous> (C:\\Users\\edlop\\OneDrive\\Documents\\VS Code\\accreatio\\.local\\logs\\antihacking-20261026-full\\agents\\evaluation\\review-callback-oracle.mts:10:150) {\r\n  generatedMessage: false,\r\n  code: 'ERR_ASSERTION',\r\n  actual: 0,\r\n  expected: 1,\r\n  operator: 'strictEqual',\r\n  diff: 'simple'\r\n}\r\n\r\nNode.js v24.18.0\r\n"
+  },
+  {
+    "label": "logged-runner-failure-7",
+    "args": [
+      "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+      "run",
+      "log",
+      "--",
+      "test"
+    ],
+    "exit": 7,
+    "signal": null,
+    "error": null,
+    "durationMs": 542.6668000000002,
+    "stdout": "\n> log\n> node scripts/run-logged.mjs test\n\nLog: .local\\logs\\2026-10-26T19-12-05-487Z-test-f1e7bfdd-3fa8-435e-9061-491b53656d6f.log\n\n> test\n> node -e \"process.exit(7)\"\n\n",
+    "stderr": ""
+  }
+]

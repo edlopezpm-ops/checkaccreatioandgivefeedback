@@ -1,0 +1,19 @@
+{
+  "createdAt": "2026-10-26T19:45:10.190Z",
+  "root": "C:\\Users\\edlop\\OneDrive\\Documents\\VS Code\\accreatio",
+  "head": "0dcafbc426b01faea621d13121e36a54099b283a",
+  "branch": "main",
+  "status": "?? PRIVACY.md\n?? docs/INDEPENDENT_REVIEW_MASTER_2026-10-20.md\n?? docs/dossier-2026-10-20/\n?? docs/independent-review-2026-10-20/\n",
+  "sourceFiles": 712,
+  "sourceBytes": 48235037,
+  "sourceComparisons": 1424,
+  "discrepancies": [],
+  "originalUnchanged": true,
+  "snapshotUnchanged": true,
+  "fileSetUnchanged": true,
+  "trackedDiffUnchanged": true,
+  "sourceManifestSha256": "c713292564dee419d3f4e0857b6bf48f2bd4aec806582cb67c29b621a3196ee1",
+  "frozenMatrixSha256": "0a189cdfe83f821cab3b5ab416469a5a1ada1177765be16c38ad36805ac47805",
+  "capabilityIdsAndWeightsUnchanged": true,
+  "scope": "Source files selected in SNAPSHOT.json, including original untracked groups. Build outputs and isolated mutation copies are separate evidence; credentials and historical caches are not read."
+}

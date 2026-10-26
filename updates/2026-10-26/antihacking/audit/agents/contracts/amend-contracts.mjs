@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
+const root=process.cwd(),out=path.join(root,'.local/logs/antihacking-20261026-full/agents/contracts');
+const matrix=JSON.parse(fs.readFileSync(path.join(out,'MATRIX.frozen.json'),'utf8'));
+const c=matrix.capabilities.find(c=>c.id==='C24');
+const file='docs/FLOATING_EXAMPLE_RELEASE_2026-10-25.md',lines=fs.readFileSync(path.join(root,file),'utf8').split(/\r?\n/);
+const idx=lines.findIndex(x=>x.includes('The Blog and account-menu help links'));
+if(idx<0)throw Error('Contract source missing');
+c.requirementSources.unshift({file,startLine:idx+1,endLine:idx+1,excerpt:lines[idx]});
+c.obligations=['Help abajo izquierda en módulos y resultado del proyecto, sólo signedin; los enlaces help de Blog/account menu están retirados por instrucción posterior; ejemplo público hyperlink abre SOP17tips EN/ES en diálogo flotante; About/FAQ/legal completo y locale preserve; cerrar conserva respuestas/ruta/foco; Terms actual coherente.'];
+matrix.changeHistory.push({at:new Date().toISOString(),action:'CONTRACT_PRECEDENCE_CORRECTION',capability:'C24',weightBefore:3,weightAfter:3,reason:'La orden posterior de presentación en FLOATING_EXAMPLE_RELEASE supersede el recibo anterior HELP_AND_SHARED_CAPTCHA_RELEASE. Corrige obligación antes de evaluar esta capacidad; no modifica pesos ni premia resultados.'});
+const data=JSON.stringify(matrix,null,2)+'\n';fs.writeFileSync(path.join(out,'MATRIX.amended.json'),data);fs.writeFileSync(path.join(out,'MATRIX.amended.sha256'),crypto.createHash('sha256').update(data).digest('hex')+'  MATRIX.amended.json\n');
+console.log(JSON.stringify({capabilities:matrix.capabilities.length,totalWeight:matrix.capabilities.reduce((n,c)=>n+c.weight,0),file:path.join(out,'MATRIX.amended.json'),sha256:crypto.createHash('sha256').update(data).digest('hex')}));

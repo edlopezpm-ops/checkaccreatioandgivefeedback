@@ -1,0 +1,1109 @@
+{
+  "schemaVersion": 1,
+  "policy": "Pesos crítica=5/importante=3/ordinaria=1 fijados desde contratos, no resultados; subcomprobaciones comparten peso; cualquier ampliación tendrá historial separado.",
+  "frozenAt": "2026-10-26T19:06:21.206Z",
+  "snapshotHead": "0dcafbc426b01faea621d13121e36a54099b283a",
+  "sourcePolicy": "Fuentes de producto actuales; AGENTS leído para operar y extraer límites de producto, excluido como objeto evaluado. README conserva checkpoints históricos subordinados a decisiones explícitas actuales. No se concede crédito por recibos antiguos.",
+  "capabilities": [
+    {
+      "id": "C01",
+      "description": "Configuración y validación de proyectos",
+      "weight": 5,
+      "criticality": "critical",
+      "criticalityRationale": "Integridad de las entradas que gobiernan todos los artefactos.",
+      "requirementSources": [
+        {
+          "file": "docs/SOP_WEB.md",
+          "startLine": 9,
+          "endLine": 9,
+          "excerpt": "1. Name the project (up to 50 characters)."
+        }
+      ],
+      "versionScope": "Snapshot accreatio 0.9.1, contrato web vigente hasta 2026-10-26; decisiones posteriores explícitas prevalecen sobre recibos históricos.",
+      "obligations": [
+        "Nombre <=50 caracteres; fases y opciones válidas; límites de texto publicados; rechazo de estructuras y caminos inválidos."
+      ],
+      "inputs": "Entradas estructuradas del creador",
+      "outputs": "Configuración normalizada o errores explícitos",
+      "publicRouteAndComponents": "Creador / revisión; src/core.ts, shared/inputValidation.ts, shared/domain.ts",
+      "acceptanceCriterion": "Casos inéditos válidos/invalidos, límites y Unicode; expectativas derivadas de límites publicados.",
+      "independentOracle": "Casos inéditos válidos/invalidos, límites y Unicode; expectativas derivadas de límites publicados.",
+      "evidenceRequired": [
+        "Revisión semántica de las rutas efectivas",
+        "Casos independientes del contrato y efecto observado; ejecución local salvo integración externa explícita",
+        "Control negativo dirigido donde aporte evidencia"
+      ],
+      "status": "PASS",
+      "evidence": [
+        "evidence/independent-core-results.json",
+        "agents/evaluation/REVIEW.md"
+      ],
+      "result": "Published field/role bounds, strict schema and novel cases pass; real built form validation exercised."
+    },
+    {
+      "id": "C02",
+      "description": "Prompt y plan deterministas",
+      "weight": 5,
+      "criticality": "critical",
+      "criticalityRationale": "Trabajo central prometido por el producto.",
+      "requirementSources": [
+        {
+          "file": "docs/WEB_ONLY_DELIVERY_2026-10-22.md",
+          "startLine": 7,
+          "endLine": 7,
+          "excerpt": "The browser/PWA prepares project definitions, prompts, plans and inspectable ZIPs locally. Its separate account service handles identity, revocable sessions, account-processing/Terms receipts, allowance and own-account rights. The Blog and editorial service remain separate from project contents. Desktop filesystem, local Git/GitHub, IDE and orchestration execution are not current product capabilities."
+        }
+      ],
+      "versionScope": "Snapshot accreatio 0.9.1, contrato web vigente hasta 2026-10-26; decisiones posteriores explícitas prevalecen sobre recibos históricos.",
+      "obligations": [
+        "Producir definición, prompt y plan desde idea, fase, restricciones y decisiones sin inventar datos; igualdad de entrada da plan igual."
+      ],
+      "inputs": "Configuración validada",
+      "outputs": "Prompt y plan inspectables",
+      "publicRouteAndComponents": "Creador → core → revisión; src/core.ts",
+      "acceptanceCriterion": "Cambiar una entrada cambia su contenido correspondiente; pares iguales conservan salida; inspección independiente del texto.",
+      "independentOracle": "Cambiar una entrada cambia su contenido correspondiente; pares iguales conservan salida; inspección independiente del texto.",
+      "evidenceRequired": [
+        "Revisión semántica de las rutas efectivas",
+        "Casos independientes del contrato y efecto observado; ejecución local salvo integración externa explícita",
+        "Control negativo dirigido donde aporte evidencia"
+      ],
+      "status": "PASS",
+      "evidence": [
+        "evidence/independent-core-results.json",
+        "evidence/core-mutant-receipt.json"
+      ],
+      "result": "Fresh Unicode/multiline input preserved, metamorphic change isolated, deterministic prompt/plan and constant-output mutation detected."
+    },
+    {
+      "id": "C03",
+      "description": "ZIP real y manifiesto de archivos",
+      "weight": 5,
+      "criticality": "critical",
+      "criticalityRationale": "Entrega central y preservación de contenido del usuario.",
+      "requirementSources": [
+        {
+          "file": "docs/SOP_WEB.md",
+          "startLine": 21,
+          "endLine": 21,
+          "excerpt": "Extract the ZIP, open its folder in your editor and follow START.md. The same starting instruction is available to copy on the result page. It directs the assistant to the actual goal, constraints, phase, discoveries and pending decisions. Basic preparation needs no external AEKR checkout, Python or orchestrator. Advanced orchestration includes its configuration and setup guides; review requirements and generated code before running anything. Generated scripts are not certified safe and do not bypass PowerShell execution policy."
+        }
+      ],
+      "versionScope": "Snapshot accreatio 0.9.1, contrato web vigente hasta 2026-10-26; decisiones posteriores explícitas prevalecen sobre recibos históricos.",
+      "obligations": [
+        "ZIP se abre; incluye START.md, instrucciones y datos efectivos; rutas seguras; sin sobrescritura de nombres; no afirmar persistencia física del navegador."
+      ],
+      "inputs": "Proyecto validado y adjuntos preparados",
+      "outputs": "Archivo ZIP y resultado de entrega",
+      "publicRouteAndComponents": "Revisión → bridge/web.ts → webExport.ts → descarga",
+      "acceptanceCriterion": "Abrir ZIP con lector independiente; comparar contenido con entradas y manifiesto; colisiones y rutas hostiles.",
+      "independentOracle": "Abrir ZIP con lector independiente; comparar contenido con entradas y manifiesto; colisiones y rutas hostiles.",
+      "evidenceRequired": [
+        "Revisión semántica de las rutas efectivas",
+        "Casos independientes del contrato y efecto observado; ejecución local salvo integración externa explícita",
+        "Control negativo dirigido donde aporte evidencia"
+      ],
+      "status": "PASS",
+      "evidence": [
+        "evidence/independent-core-results.json",
+        "evidence/independent-ui-results.json"
+      ],
+      "result": "Actual ZIP independently opened with fflate; literal source content, contract manifest and downloaded reconstructed PNG/JPEG verified. Browser persistence is never claimed."
+    },
+    {
+      "id": "C04",
+      "description": "Admisión y reconstrucción de adjuntos",
+      "weight": 5,
+      "criticality": "critical",
+      "criticalityRationale": "Frontera crítica para archivos no confiables.",
+      "requirementSources": [
+        {
+          "file": "docs/ATTACHMENT_SECURITY_2026-10-22.md",
+          "startLine": 7,
+          "endLine": 7,
+          "excerpt": "The shared extension allowlist remains a metadata filter. The picker and final browser execution boundary additionally call `prepareAttachment`. The browser uses a disposable same-origin module worker, terminates inspection after ten seconds, and retains a module-private WeakMap proof only for the immutable reconstructed output Blob and exact filename. `buildWebExport` rejects unprepared bytes. Direct bridge calls undergo the same inspection before archive creation, prepared-ZIP retention, quota authorization or download. Changing a name or copying bytes into a new Blob does not copy proof."
+        }
+      ],
+      "versionScope": "Snapshot accreatio 0.9.1, contrato web vigente hasta 2026-10-26; decisiones posteriores explícitas prevalecen sobre recibos históricos.",
+      "obligations": [
+        "Sólo DOCX/PDF/PNG/JPEG; inspección y reconstrucción real; prueba privada ligada a Blob/nombre; frontera ZIP rechaza bytes sin preparar; recursos y tiempo acotados."
+      ],
+      "inputs": "Archivos del selector y llamadas directas al bridge",
+      "outputs": "Blobs reconstruidos o rechazo",
+      "publicRouteAndComponents": "Selector → attachmentSecurity.ts/Core/Worker → buildWebExport",
+      "acceptanceCriterion": "Documentos e imágenes nuevos válidos, polyglot/activo/malformado, falso flag; abrir resultado; prueba de límite.",
+      "independentOracle": "Documentos e imágenes nuevos válidos, polyglot/activo/malformado, falso flag; abrir resultado; prueba de límite.",
+      "evidenceRequired": [
+        "Revisión semántica de las rutas efectivas",
+        "Casos independientes del contrato y efecto observado; ejecución local salvo integración externa explícita",
+        "Control negativo dirigido donde aporte evidencia"
+      ],
+      "status": "PASS",
+      "evidence": [
+        "evidence/independent-core-results.json",
+        "evidence/independent-ui-results.json"
+      ],
+      "result": "Novel DOCX/PDF and active/malformed negatives; actual browser worker PNG/JPEG output opened and pixels/dimensions verified at ZIP boundary. No universal malware guarantee."
+    },
+    {
+      "id": "C05",
+      "description": "Dry-run y separación de ejecución",
+      "weight": 5,
+      "criticality": "critical",
+      "criticalityRationale": "Evita efectos o consumo al solicitar sólo comprobación.",
+      "requirementSources": [
+        {
+          "file": "docs/SOP_WEB.md",
+          "startLine": 17,
+          "endLine": 17,
+          "excerpt": "Choose the action once in Review. Check without download is on by default and consumes no allowance; no ZIP is created. Create and download ZIP prepares the archive in this tab and asks the browser to download it. The final dialog confirms the chosen action. The browser may block, rename or cancel the download; accreatio cannot establish physical persistence."
+        }
+      ],
+      "versionScope": "Snapshot accreatio 0.9.1, contrato web vigente hasta 2026-10-26; decisiones posteriores explícitas prevalecen sobre recibos históricos.",
+      "obligations": [
+        "Dry-run por defecto; check no crea ZIP ni consume cuota; confirmar acción; errores no se presentan como trabajo completado."
+      ],
+      "inputs": "Acción check/export y proyecto",
+      "outputs": "Plan comprobado sin efectos o solicitud real de exportación",
+      "publicRouteAndComponents": "Revisión y diálogo final; src/bridge/web.ts",
+      "acceptanceCriterion": "Observar llamadas, descargas y recibos con check y cancelación; inyectar fallo y leer estado posterior.",
+      "independentOracle": "Observar llamadas, descargas y recibos con check y cancelación; inyectar fallo y leer estado posterior.",
+      "evidenceRequired": [
+        "Revisión semántica de las rutas efectivas",
+        "Casos independientes del contrato y efecto observado; ejecución local salvo integración externa explícita",
+        "Control negativo dirigido donde aporte evidencia"
+      ],
+      "status": "PASS",
+      "evidence": [
+        "evidence/independent-core-results.json",
+        "evidence/verify-console.log"
+      ],
+      "result": "Dry-run causes zero archives/quota/download effects; controlled archive/quota/download errors report failure; real UI confirmation exercised."
+    },
+    {
+      "id": "C06",
+      "description": "Borrador local, aislamiento y recuperación",
+      "weight": 5,
+      "criticality": "critical",
+      "criticalityRationale": "Pérdida o exposición de proyecto entre cuentas/sesiones.",
+      "requirementSources": [
+        {
+          "file": "README.md",
+          "startLine": 15,
+          "endLine": 15,
+          "excerpt": "The browser draft belongs to the verified account and session. Signing out clears the current site draft, selected-file references and prepared ZIP; a later sign-in starts blank. Restoration requires verified matching ownership. A bounded, one-use OAuth handoff can preserve a saved draft through same-owner reauthentication; it does not restore a draft cleared by sign out. Previously downloaded files, introduction completion, cookie preferences and account allowance are independent."
+        }
+      ],
+      "versionScope": "Snapshot accreatio 0.9.1, contrato web vigente hasta 2026-10-26; decisiones posteriores explícitas prevalecen sobre recibos históricos.",
+      "obligations": [
+        "Restauración sólo con cuenta/sesión verificadas; journal+IndexedDB; no persistir bytes/nombres de adjuntos; logout limpia borrador/ZIP; lock/revisión protege pestañas y schema futuro."
+      ],
+      "inputs": "Edición, reload, OAuth handoff, logout, pestañas",
+      "outputs": "Borrador correcto o aviso de recuperación/conflicto",
+      "publicRouteAndComponents": "src/draftStore.ts, account/draftHandoff.ts, WebAccountBoundary/App",
+      "acceptanceCriterion": "Nueva página/sesión y reinicio local; cambio de dueño; fallos de stores; carrera y respuestas tardías.",
+      "independentOracle": "Nueva página/sesión y reinicio local; cambio de dueño; fallos de stores; carrera y respuestas tardías.",
+      "evidenceRequired": [
+        "Revisión semántica de las rutas efectivas",
+        "Casos independientes del contrato y efecto observado; ejecución local salvo integración externa explícita",
+        "Control negativo dirigido donde aporte evidencia"
+      ],
+      "status": "PASS",
+      "evidence": [
+        "evidence/independent-ui-results.json",
+        "evidence/verify-console.log"
+      ],
+      "result": "New-page restored novel content, unavailable attachment bytes block until reselected, exact export; repository browser smokes exercise real IndexedDB/logout/multi-tab/ownership and faults."
+    },
+    {
+      "id": "C07",
+      "description": "Flujo guiado y revisión editable",
+      "weight": 3,
+      "criticality": "important",
+      "criticalityRationale": "Acceso funcional al trabajo central.",
+      "requirementSources": [
+        {
+          "file": "docs/SOP_WEB.md",
+          "startLine": 13,
+          "endLine": 13,
+          "excerpt": "5. Review the brief, all constraints, attachments and effective options. Advanced options can change the local/managed approach, one to four unique planned roles, optional orchestration and Git/GitHub/IDE guides. Defaults are one generalist, local approach and orchestration off. Roles do not run or hire agents."
+        }
+      ],
+      "versionScope": "Snapshot accreatio 0.9.1, contrato web vigente hasta 2026-10-26; decisiones posteriores explícitas prevalecen sobre recibos históricos.",
+      "obligations": [
+        "Una pregunta principal por paso, navegación reversible; revisar y editar respuestas, opciones, adjuntos; New draft confirma descarte y limpia reintento."
+      ],
+      "inputs": "Respuestas y navegación UI",
+      "outputs": "Revisión y resultado coherentes",
+      "publicRouteAndComponents": "src/components/creation/*, src/App.tsx",
+      "acceptanceCriterion": "Flujo navegador completo con editar, retroceder, cancelar, nuevo borrador y entrada vacía.",
+      "independentOracle": "Flujo navegador completo con editar, retroceder, cancelar, nuevo borrador y entrada vacía.",
+      "evidenceRequired": [
+        "Revisión semántica de las rutas efectivas",
+        "Casos independientes del contrato y efecto observado; ejecución local salvo integración externa explícita",
+        "Control negativo dirigido donde aporte evidencia"
+      ],
+      "status": "PASS",
+      "evidence": [
+        "evidence/independent-ui-results.json",
+        "evidence/verify-console.log"
+      ],
+      "result": "Real guided form, review, reload and correction traversed; reversible UI/keyboard and errors covered in current smokes."
+    },
+    {
+      "id": "C08",
+      "description": "Roles, guías y continuación opcionales",
+      "weight": 3,
+      "criticality": "important",
+      "criticalityRationale": "Compromisos de salida sin prometer ejecución inexistente.",
+      "requirementSources": [
+        {
+          "file": "docs/SOP_WEB.md",
+          "startLine": 23,
+          "endLine": 23,
+          "excerpt": "The Git/GitHub/IDE options add guides in the web edition. They do not run local tools, access repositories or push code. GitHub sign-in supplies identity only and is separate from those guides."
+        }
+      ],
+      "versionScope": "Snapshot accreatio 0.9.1, contrato web vigente hasta 2026-10-26; decisiones posteriores explícitas prevalecen sobre recibos históricos.",
+      "obligations": [
+        "1–4 roles únicos; defecto generalista/local/orquestación off; guías Git/GitHub/IDE opcionales, no ejecutar herramientas ni push; instrucción START coincide con resultado."
+      ],
+      "inputs": "Opciones avanzadas y roles",
+      "outputs": "Guías y configuración efectivas en ZIP",
+      "publicRouteAndComponents": "src/core.ts, shared/projectTemplates.ts, webExport.ts",
+      "acceptanceCriterion": "Combinaciones 1/4 roles, duplicados; inspeccionar ausencia/presencia de archivos y no subprocess/red.",
+      "independentOracle": "Combinaciones 1/4 roles, duplicados; inspeccionar ausencia/presencia de archivos y no subprocess/red.",
+      "evidenceRequired": [
+        "Revisión semántica de las rutas efectivas",
+        "Casos independientes del contrato y efecto observado; ejecución local salvo integración externa explícita",
+        "Control negativo dirigido donde aporte evidencia"
+      ],
+      "status": "PASS",
+      "evidence": [
+        "evidence/independent-core-results.json",
+        "evidence/verify-console.log"
+      ],
+      "result": "Four-role YAML independently parsed with PyYAML; defaults and optional inert guides verified, no provider CLI execution claimed."
+    },
+    {
+      "id": "C09",
+      "description": "Custodia local y minimización de datos",
+      "weight": 5,
+      "criticality": "critical",
+      "criticalityRationale": "Contenido privado y credenciales.",
+      "requirementSources": [
+        {
+          "file": "README.md",
+          "startLine": 17,
+          "endLine": 17,
+          "excerpt": "The web application also has a public Blog with administrator-only publishing. Published editorial posts persist in Cloudflare D1 through same-origin Pages Functions. Account email, revocable sessions and export receipts use a separate D1 account store. Project content, attachments and local drafts stay on the device; accreatio does not retain GitHub, IDE, or AI-provider credentials."
+        }
+      ],
+      "versionScope": "Snapshot accreatio 0.9.1, contrato web vigente hasta 2026-10-26; decisiones posteriores explícitas prevalecen sobre recibos históricos.",
+      "obligations": [
+        "Sin envío de contenidos de proyecto/adjuntos/ZIP a cuentas/Blog/Collect; no guardar credenciales de terceros ni fotos; excepciones cuenta/editorial/abuso/Collect expresas y separadas."
+      ],
+      "inputs": "Contenido y eventos de UI",
+      "outputs": "Procesamiento local; solicitudes mínimas permitidas",
+      "publicRouteAndComponents": "Frontend, bridges, API requests y DB schema",
+      "acceptanceCriterion": "Captura de tráfico con marcadores únicos; inspección schemas/artefactos y manejo de secretos sin valores.",
+      "independentOracle": "Captura de tráfico con marcadores únicos; inspección schemas/artefactos y manejo de secretos sin valores.",
+      "evidenceRequired": [
+        "Revisión semántica de las rutas efectivas",
+        "Casos independientes del contrato y efecto observado; ejecución local salvo integración externa explícita",
+        "Control negativo dirigido donde aporte evidencia"
+      ],
+      "status": "PASS",
+      "evidence": [
+        "evidence/independent-ui-results.json",
+        "agents/backend/REVIEW.md"
+      ],
+      "result": "Unique private marker reaches downloaded ZIP without appearing in captured request URLs/bodies. Schema and routes retain separated data boundaries; this is evidence for audited paths, not every provider-side log."
+    },
+    {
+      "id": "C10",
+      "description": "Identidad Google/GitHub y CAPTCHA",
+      "weight": 5,
+      "criticality": "critical",
+      "criticalityRationale": "Autenticación real del acceso ordinario.",
+      "requirementSources": [
+        {
+          "file": "docs/HELP_AND_SHARED_CAPTCHA_RELEASE_2026-10-25.md",
+          "startLine": 24,
+          "endLine": 24,
+          "excerpt": "One visible verification trigger and one Turnstile widget serve both Google and GitHub. Both ordinary sign-in actions wait for the same current proof; expiry, failure or a consumed attempt clears that proof for both. The existing Pages handlers validate a bounded, single-use token server-side against action `login` and the exact production hostname. Independently verified own-data/deletion and connected-account identity checks retain their separate routes. Production uses a dedicated Managed widget for `accreatio.com`, with pre-clearance off; its secret is encrypted in the existing Pages secret store and is absent from source and logs. The challenge loads only after the explicit verification trigger."
+        }
+      ],
+      "versionScope": "Snapshot accreatio 0.9.1, contrato web vigente hasta 2026-10-26; decisiones posteriores explícitas prevalecen sobre recibos históricos.",
+      "obligations": [
+        "Métodos según configuración; misma prueba CAPTCHA actual para Google/GitHub, single-use/login/hostname server-side; transacciones estado+PKCE y validación proveedor; fallo no crea sesión."
+      ],
+      "inputs": "Sign-in, challenge, callback",
+      "outputs": "Identidad validada o error seguro",
+      "publicRouteAndComponents": "AuthFlow/SharedCaptcha → /api/auth/v1 → auth libraries",
+      "acceptanceCriterion": "Flujos válidos/invalidos con provider local y SQL real; ausencia/fallo; proveedor externo real separado UNKNOWN sin credenciales.",
+      "independentOracle": "Flujos válidos/invalidos con provider local y SQL real; ausencia/fallo; proveedor externo real separado UNKNOWN sin credenciales.",
+      "evidenceRequired": [
+        "Revisión semántica de las rutas efectivas",
+        "Casos independientes del contrato y efecto observado; ejecución local salvo integración externa explícita",
+        "Control negativo dirigido donde aporte evidencia"
+      ],
+      "status": "UNKNOWN",
+      "evidence": [
+        "agents/backend/independent-results.json",
+        "evidence/public-readback.json"
+      ],
+      "result": "BLOCKED: real Google/GitHub personal authorization and live Turnstile challenge/siteverify not exercised. Local signatures, transaction/state/PKCE, replay/failure and capability discovery pass; visible enabled methods do not prove provider completion.",
+      "unknownReason": "BLOCKED: real Google/GitHub personal authorization and live Turnstile challenge/siteverify not exercised. Local signatures, transaction/state/PKCE, replay/failure and capability discovery pass; visible enabled methods do not prove provider completion."
+    },
+    {
+      "id": "C11",
+      "description": "Vínculos explícitos entre proveedores",
+      "weight": 5,
+      "criticality": "critical",
+      "criticalityRationale": "Evita unir cuentas ajenas por email.",
+      "requirementSources": [
+        {
+          "file": "docs/SOP_WEB.md",
+          "startLine": 37,
+          "endLine": 37,
+          "excerpt": "Connect a second provider explicitly in the account menu. Account data/deletion and provider connection require a new OAuth check of an already connected identity, bound to the requested action and valid for five minutes. This is not a guarantee of fresh password or MFA entry. Re-authentication must resolve to the same internal account. Sign-out revokes the accreatio session; account deletion and provider authorization revocation are different operations. Use the provider's authorized-app settings to manage its grant."
+        }
+      ],
+      "versionScope": "Snapshot accreatio 0.9.1, contrato web vigente hasta 2026-10-26; decisiones posteriores explícitas prevalecen sobre recibos históricos.",
+      "obligations": [
+        "Conectar explícito; prueba fresca de identidad ya vinculada; acción/cuenta correctas; igualdad de correo no une; identidad compartida preserva cuota."
+      ],
+      "inputs": "Solicitud link y callback",
+      "outputs": "Vínculo al mismo account o rechazo",
+      "publicRouteAndComponents": "/api/account/identity y auth complete; oidc-store.ts",
+      "acceptanceCriterion": "Dos sujetos/cuentas y email coincidente, prueba equivocada/vencida y vínculo ya ocupado.",
+      "independentOracle": "Dos sujetos/cuentas y email coincidente, prueba equivocada/vencida y vínculo ya ocupado.",
+      "evidenceRequired": [
+        "Revisión semántica de las rutas efectivas",
+        "Casos independientes del contrato y efecto observado; ejecución local salvo integración externa explícita",
+        "Control negativo dirigido donde aporte evidencia"
+      ],
+      "status": "PASS",
+      "evidence": [
+        "agents/backend/independent-results.json",
+        "evidence/verify-console.log"
+      ],
+      "result": "Local link-account contract: exact provider/account proof, explicit linking, no email-only merge, persistence and rejection tests pass. External identity integration remains C10 UNKNOWN; no personal link changed."
+    },
+    {
+      "id": "C12",
+      "description": "Sesiones revocables y logout",
+      "weight": 5,
+      "criticality": "critical",
+      "criticalityRationale": "Aislamiento de cuenta y acceso tras revocación.",
+      "requirementSources": [
+        {
+          "file": "docs/ACCOUNT_PRIVACY_OPERATIONS.md",
+          "startLine": 69,
+          "endLine": 69,
+          "excerpt": "`__Host-accreatio_session`: Secure, HttpOnly, host-only, Path=/, Strict, max 24h. `__Host-accreatio_auth_tx`: same isolation/security, Lax, max 10min. `__Host-accreatio_rights`: Secure, HttpOnly, host-only, Path=/, SameSite=Strict, max 300 seconds, only the requested data/delete proof. Provider Access cookies are conditional on separately protected origins; historical `CF_Session` and possible `CF_Authorization` are not product sessions, and their current attributes/TTLs are not established by this record. See the public inventory."
+        }
+      ],
+      "versionScope": "Snapshot accreatio 0.9.1, contrato web vigente hasta 2026-10-26; decisiones posteriores explícitas prevalecen sobre recibos históricos.",
+      "obligations": [
+        "Sesiones opacas hash DB, Secure/HttpOnly/Strict host-only max24h; expiración y security version efectivas; logout revoca y bloquea replay."
+      ],
+      "inputs": "Cookie/sesión vigente/expirada/revocada",
+      "outputs": "Acceso acotado o 401; limpieza local",
+      "publicRouteAndComponents": "/api/account/session/logout y accounts.ts",
+      "acceptanceCriterion": "Cookie flags, DB hash, replay después de logout, expiración reloj DB, cuenta restringida.",
+      "independentOracle": "Cookie flags, DB hash, replay después de logout, expiración reloj DB, cuenta restringida.",
+      "evidenceRequired": [
+        "Revisión semántica de las rutas efectivas",
+        "Casos independientes del contrato y efecto observado; ejecución local salvo integración externa explícita",
+        "Control negativo dirigido donde aporte evidencia"
+      ],
+      "status": "PASS",
+      "evidence": [
+        "agents/backend/independent-results.json",
+        "evidence/verify-console.log"
+      ],
+      "result": "Real local SQL sessions/revocation/logout and actual built UI isolation pass; no hosted account modified."
+    },
+    {
+      "id": "C13",
+      "description": "Autorización necesaria y Terms versionados",
+      "weight": 5,
+      "criticality": "critical",
+      "criticalityRationale": "Evita aceptación inventada y ejecución con recibo obsoleto.",
+      "requirementSources": [
+        {
+          "file": "docs/ACCOUNT_PRIVACY_OPERATIONS.md",
+          "startLine": 57,
+          "endLine": 57,
+          "excerpt": "No preselection, Google success or scalar notice-version update is proof of these actions. Server validation must reject false, missing, extra or stale fields under the approved request contract; no receipt is fabricated for existing accounts."
+        }
+      ],
+      "versionScope": "Snapshot accreatio 0.9.1, contrato web vigente hasta 2026-10-26; decisiones posteriores explícitas prevalecen sobre recibos históricos.",
+      "obligations": [
+        "Sólo acción deliberada junto aviso; contrato exacto y versiones actuales; reloj DB; relectura conserva fecha; recibo antiguo/null no se rellena por sesión; export incluye y delete elimina."
+      ],
+      "inputs": "Continuación, sesión, renovación",
+      "outputs": "Recibo mínimo ligado a cuenta probada",
+      "publicRouteAndComponents": "AccountPolicyFields/AuthFlow → /api/account/policy → SQL",
+      "acceptanceCriterion": "Nuevas/antiguas versiones, omitido/false/extra, renovación, lectura independiente DB y export.",
+      "independentOracle": "Nuevas/antiguas versiones, omitido/false/extra, renovación, lectura independiente DB y export.",
+      "evidenceRequired": [
+        "Revisión semántica de las rutas efectivas",
+        "Casos independientes del contrato y efecto observado; ejecución local salvo integración externa explícita",
+        "Control negativo dirigido donde aporte evidencia"
+      ],
+      "status": "PASS",
+      "evidence": [
+        "agents/backend/independent-results.json",
+        "evidence/verify-console.log"
+      ],
+      "result": "Local real handler/SQL database-time authorization and Terms receipts, no backfill, ordinary-vs-rights separation and browser notice continuation pass."
+    },
+    {
+      "id": "C14",
+      "description": "Cuota rolling e idempotencia de reintentos",
+      "weight": 5,
+      "criticality": "critical",
+      "criticalityRationale": "Autoriza la entrega real y evita cobros/cuota falsos.",
+      "requirementSources": [
+        {
+          "file": "docs/SOP_WEB.md",
+          "startLine": 33,
+          "endLine": 33,
+          "excerpt": "Five new export authorizations per internal account in any rolling 24-hour window. It is not a midnight reset. Review, editing and cancellation consume none. Connected Google/GitHub identities share the same account and allowance; email equality never merges accounts. The server supplies the next available time, displayed in the user's timezone when known."
+        }
+      ],
+      "versionScope": "Snapshot accreatio 0.9.1, contrato web vigente hasta 2026-10-26; decisiones posteriores explícitas prevalecen sobre recibos históricos.",
+      "obligations": [
+        "5 nuevas autorizaciones/24h rolling por cuenta; check/cancel no consume; mismo ID/ZIP retry48h no consume otra; proyecto cambia usa ID nuevo; concurrencia no excede cuota."
+      ],
+      "inputs": "Autorizar operación y retry",
+      "outputs": "Recibo SQL/ZIP exacto o límite con próximo tiempo",
+      "publicRouteAndComponents": "/api/account/authorize → accounts.ts; bridge/web.ts",
+      "acceptanceCriterion": "Seis operaciones, borde24h/48h y concurrencia con SQLite real; lectura nueva conexión.",
+      "independentOracle": "Seis operaciones, borde24h/48h y concurrencia con SQLite real; lectura nueva conexión.",
+      "evidenceRequired": [
+        "Revisión semántica de las rutas efectivas",
+        "Casos independientes del contrato y efecto observado; ejecución local salvo integración externa explícita",
+        "Control negativo dirigido donde aporte evidencia"
+      ],
+      "status": "PASS",
+      "evidence": [
+        "agents/backend/independent-results.json",
+        "agents/backend/mutation-results.json",
+        "evidence/verify-console.log"
+      ],
+      "result": "Five rolling authorizations and idempotent exact-operation retries observed in actual SQL; sixth-slot mutation detected."
+    },
+    {
+      "id": "C15",
+      "description": "Propios datos y borrado con vía independiente",
+      "weight": 5,
+      "criticality": "critical",
+      "criticalityRationale": "Derechos y eliminación de datos personales.",
+      "requirementSources": [
+        {
+          "file": "docs/ABUSE_GUARD_2026-10-22.md",
+          "startLine": 50,
+          "endLine": 50,
+          "excerpt": "Ordinary suspension does not block this separate identity-proof path. Identity proof still protects against disclosure/deletion by another person, and proportionate rights-route pacing remains. Rights-start admission has its own budget of 20 requests per protected network key/hour, 90 globally/hour and at most 1,024 retained rights transactions; ordinary sign-in traffic does not consume it. That finite budget can still delay a request under distributed excess. If the provider or proof is unavailable, route the request to [aekr@aekr.io](mailto:aekr@aekr.io); do not promise unconditional self-service or demand acceptance of new Terms to handle a request. OAuth success does not prove a password or MFA was entered again."
+        }
+      ],
+      "versionScope": "Snapshot accreatio 0.9.1, contrato web vigente hasta 2026-10-26; decisiones posteriores explícitas prevalecen sobre recibos históricos.",
+      "obligations": [
+        "Prueba sólo identidad vinculada y acción específica5min; derechos sin nuevos Terms ni cuenta ordinaria; export sólo datos propios; delete revoca/borra contacto/nombre/vínculos/recibo y preserva sólo continuidad temporal autorizada."
+      ],
+      "inputs": "Data/delete con prueba rights",
+      "outputs": "JSON propio o borrado confirmado",
+      "publicRouteAndComponents": "/api/account/data/delete; /api/auth/v1/rights; rights.ts",
+      "acceptanceCriterion": "Cuenta suspendida/Terms antiguos/wrong action/provider; lectura DB/export nuevo; prohibir creador con cookie rights.",
+      "independentOracle": "Cuenta suspendida/Terms antiguos/wrong action/provider; lectura DB/export nuevo; prohibir creador con cookie rights.",
+      "evidenceRequired": [
+        "Revisión semántica de las rutas efectivas",
+        "Casos independientes del contrato y efecto observado; ejecución local salvo integración externa explícita",
+        "Control negativo dirigido donde aporte evidencia"
+      ],
+      "status": "PASS",
+      "evidence": [
+        "agents/backend/independent-results.json",
+        "agents/backend/mutation-results.json",
+        "evidence/verify-console.log"
+      ],
+      "result": "Own-data/deletion, exact-action freshness and independent rights-only path exercised; reopen reads and revocation during async decrypt fail closed. Provider proof generation is synthetic, C10 remains unknown."
+    },
+    {
+      "id": "C16",
+      "description": "Abuso técnico acotado",
+      "weight": 5,
+      "criticality": "critical",
+      "criticalityRationale": "Sanciones y disponibilidad con datos mínimos.",
+      "requirementSources": [
+        {
+          "file": "docs/ABUSE_GUARD_2026-10-22.md",
+          "startLine": 42,
+          "endLine": 42,
+          "excerpt": "Account sanctions require an explicitly eligible ordinary business action, a currently valid full session and an account/session limit excess attributable to that account. Invalid input, missing/expired sessions, exhausted export allowance, network-only excess, callbacks and rights requests cannot accrue sanctions. Count at most one attributable episode per minute. Three within ten minutes cause a ten-minute restriction; recurrence within 48 hours escalates to one hour and then at most 24 hours. The transition increments the account security version and revokes ordinary sessions atomically. Existing rights-only rows do not grant ordinary access; a security-version change requires fresh rights proof."
+        }
+      ],
+      "versionScope": "Snapshot accreatio 0.9.1, contrato web vigente hasta 2026-10-26; decisiones posteriores explícitas prevalecen sobre recibos históricos.",
+      "obligations": [
+        "Sólo episodios elegibles atribuibles; 3/10min →10min, reincidencia48h→1h/24h; red/email sólo no sanciona; topes/TTL1h buckets48h state; retry no prolonga; derechos reservados."
+      ],
+      "inputs": "Solicitudes por ruta/red/cuenta/sesión",
+      "outputs": "429/cooldown o restricción temporal con razón",
+      "publicRouteAndComponents": "apiAdmission.ts, abuse.ts, SQL migrations-auth0007/8",
+      "acceptanceCriterion": "Mismo network cuentas distintas, excesos atribuibles, bordes/TTL/caps, fallo DB y limpieza acotada.",
+      "independentOracle": "Mismo network cuentas distintas, excesos atribuibles, bordes/TTL/caps, fallo DB y limpieza acotada.",
+      "evidenceRequired": [
+        "Revisión semántica de las rutas efectivas",
+        "Casos independientes del contrato y efecto observado; ejecución local salvo integración externa explícita",
+        "Control negativo dirigido donde aporte evidencia"
+      ],
+      "status": "PASS",
+      "evidence": [
+        "agents/backend/independent-results.json",
+        "evidence/verify-console.log"
+      ],
+      "result": "Local actual counters/sanctions/windows/rights isolation and cleanup effects verified from new connections; no raw-data or content sanction route observed. No production abuse test."
+    },
+    {
+      "id": "C17",
+      "description": "Preferencias opcionales y Collect analítica",
+      "weight": 5,
+      "criticality": "critical",
+      "criticalityRationale": "Recogida opt-in separada de cuenta/proyecto.",
+      "requirementSources": [
+        {
+          "file": "docs/COLLECT_SECURITY_2026-10-22.md",
+          "startLine": 11,
+          "endLine": 11,
+          "excerpt": "Choices default off. Existing schema-1 negative preferences remain negative for their existing 180-day period. Prospective opt-in is schema 2 and notice `2026-10-22-collect-v1`; an old receipt acquires no new purpose. Closing the modal, navigating or storage failure grants nothing. GPC has the conservative product commitment of blocking both optional server purposes; it does not grant/deny account Terms or prevent local downloads. No fingerprint, precise location, raw user agent, free text, external enrichment, contact email or OAuth scope is collected."
+        }
+      ],
+      "versionScope": "Snapshot accreatio 0.9.1, contrato web vigente hasta 2026-10-26; decisiones posteriores explícitas prevalecen sobre recibos históricos.",
+      "obligations": [
+        "Default off y negativo antiguo conserva; GPC bloquea ambos propósitos; catálogo cerrado; capability por propósito SHA256; origen/tamaño/campos/version/expiry/capacidad en SQL; flags fallan cerrado."
+      ],
+      "inputs": "Elección y evento enumerado",
+      "outputs": "Sólo registro permitido o ausencia de envío",
+      "publicRouteAndComponents": "cookiePreferences/collection → /api/collect/* → collection.ts",
+      "acceptanceCriterion": "Sin consentimiento/GPC/rechazo/write failure, payload extra/proyecto, capability inválida o propósito incorrecto.",
+      "independentOracle": "Sin consentimiento/GPC/rechazo/write failure, payload extra/proyecto, capability inválida o propósito incorrecto.",
+      "evidenceRequired": [
+        "Revisión semántica de las rutas efectivas",
+        "Casos independientes del contrato y efecto observado; ejecución local salvo integración externa explícita",
+        "Control negativo dirigido donde aporte evidencia"
+      ],
+      "status": "FAIL",
+      "evidence": [
+        "evidence/independent-ui-results.json",
+        "agents/contracts/status-repro.json"
+      ],
+      "result": "UI-STATUS-01: after successful withdrawal the current status still says analytics enabled. Actual preference is false and server records are deleted; negative consent/GPC and closed-catalog controls themselves pass."
+    },
+    {
+      "id": "C18",
+      "description": "Research, export y retirada opcionales",
+      "weight": 3,
+      "criticality": "important",
+      "criticalityRationale": "Control autónomo sobre contribuciones y continuidad entre pestañas.",
+      "requirementSources": [
+        {
+          "file": "docs/COLLECT_SECURITY_2026-10-22.md",
+          "startLine": 9,
+          "endLine": 9,
+          "excerpt": "`Privacy and data` is a persistent footer entry, also linked from public legal pages via `/?privacy=data`. The first layer offers equally styled Accept all optional, Reject non-essential and Configure. The single banner category is optional usage/technical analytics. Advertising, personalization, marketing/contact and commercial third-party transfer are not offered or silently enabled. Research is selected independently at its own submit action; analytics rejection never disables the survey. Every survey field can be skipped. Save only in this browser makes no server request."
+        }
+      ],
+      "versionScope": "Snapshot accreatio 0.9.1, contrato web vigente hasta 2026-10-26; decisiones posteriores explícitas prevalecen sobre recibos históricos.",
+      "obligations": [
+        "Research independiente; todos campos skip; save local no POST; compartir deliberado; export/withdraw todos ledgers; 30d y topes; fallo conserva pendiente; multitab/late grant no revive."
+      ],
+      "inputs": "Respuestas cerradas, export/withdraw, offline, pestañas",
+      "outputs": "JSON contribuciones propias, revocación y retirada verificadas",
+      "publicRouteAndComponents": "PrivacyControls y account/collection; /api/collect/data/preference",
+      "acceptanceCriterion": "Cambiar analítica no borra research; carreras, nueva sesión, fallo revocación y retry con DB nueva conexión.",
+      "independentOracle": "Cambiar analítica no borra research; carreras, nueva sesión, fallo revocación y retry con DB nueva conexión.",
+      "evidenceRequired": [
+        "Revisión semántica de las rutas efectivas",
+        "Casos independientes del contrato y efecto observado; ejecución local salvo integración externa explícita",
+        "Control negativo dirigido donde aporte evidencia"
+      ],
+      "status": "PASS",
+      "evidence": [
+        "agents/backend/independent-results.json",
+        "evidence/verify-console.log"
+      ],
+      "result": "Structured independent research/local-only save, optional export and withdrawal exercised with real receiver/SQLite, including storage failures and multiple capabilities; no commercial transfer tested or authorized."
+    },
+    {
+      "id": "C19",
+      "description": "Blog público y publicación administrativa",
+      "weight": 5,
+      "criticality": "critical",
+      "criticalityRationale": "Persistencia editorial y autorización server-side.",
+      "requirementSources": [
+        {
+          "file": "README.md",
+          "startLine": 129,
+          "endLine": 129,
+          "excerpt": "Published Blog reads are public. Administration verifies the Cloudflare Access JWT signature, issuer, audience, lifetime and actor claim shape before applying its separate allowlist. Publishing is authorized server-side; hiding the composer is not treated as access control. Sensitive administrator identity values resolve to safe audit labels and are neither stored with posts nor intentionally logged."
+        }
+      ],
+      "versionScope": "Snapshot accreatio 0.9.1, contrato web vigente hasta 2026-10-26; decisiones posteriores explícitas prevalecen sobre recibos históricos.",
+      "obligations": [
+        "Lectura pública desde Blog D1; publish sólo Access JWT validado+allowlist; append-only; input acotado, texto sin ejecución; persistencia e idempotencia same-actor."
+      ],
+      "inputs": "GET posts y POST admin publicado",
+      "outputs": "Posts persistidos o error preservando draft",
+      "publicRouteAndComponents": "BlogExperience → /api/blog/posts, /api/admin/blog/* → blog/access.ts",
+      "acceptanceCriterion": "Public read, JWT inválido, autor no permitido, publish nuevo/replay/collision; leer nueva conexión y reinicio.",
+      "independentOracle": "Public read, JWT inválido, autor no permitido, publish nuevo/replay/collision; leer nueva conexión y reinicio.",
+      "evidenceRequired": [
+        "Revisión semántica de las rutas efectivas",
+        "Casos independientes del contrato y efecto observado; ejecución local salvo integración externa explícita",
+        "Control negativo dirigido donde aporte evidencia"
+      ],
+      "status": "UNKNOWN",
+      "evidence": [
+        "agents/backend/independent-results.json",
+        "evidence/public-readback.json"
+      ],
+      "result": "BLOCKED: local signed-JWT fixture publishing and reopened SQLite read pass, but real Access/JWKS identity and authenticated publication/readback on hosted D1 were not exercised. No production write authorized by audit.",
+      "unknownReason": "BLOCKED: local signed-JWT fixture publishing and reopened SQLite read pass, but real Access/JWKS identity and authenticated publication/readback on hosted D1 were not exercised. No production write authorized by audit."
+    },
+    {
+      "id": "C20",
+      "description": "Migraciones y mantenimiento con retención",
+      "weight": 3,
+      "criticality": "important",
+      "criticalityRationale": "No pérdida histórica ni retención indefinida.",
+      "requirementSources": [
+        {
+          "file": "docs/ABUSE_GUARD_2026-10-22.md",
+          "startLine": 60,
+          "endLine": 60,
+          "excerpt": "Both maintenance paths delete expired guard rows: at most 25 per guard table during a guard request and at most 500 per table in scheduled maintenance. Expiry is checked before use; physical cleanup can lag on failure/backlog. Use only aggregate eligible/backlog counts for operational evidence, and investigate repeated capacity or cleanup failure without dumping keys or payloads. Provider logs/backups have separate, unverified retention; these application TTLs do not establish theirs."
+        }
+      ],
+      "versionScope": "Snapshot accreatio 0.9.1, contrato web vigente hasta 2026-10-26; decisiones posteriores explícitas prevalecen sobre recibos históricos.",
+      "obligations": [
+        "Migraciones aditivas ordenadas; preservan cuentas/cuotas/recibos; Worker scheduled limpia categorías vencidas con topes; compatible instalaciones pre-Collect; no prod backup/restore como prueba."
+      ],
+      "inputs": "DB nueva/legacy y tick programado",
+      "outputs": "Schema compatible y purga limitada verificable",
+      "publicRouteAndComponents": "migrations*, workers/account-maintenance, platform.ts",
+      "acceptanceCriterion": "Aplicar chain en SQLite local, rows sentinel, estados vencidos/vigentes, conexión fresca y fallo limpieza.",
+      "independentOracle": "Aplicar chain en SQLite local, rows sentinel, estados vencidos/vigentes, conexión fresca y fallo limpieza.",
+      "evidenceRequired": [
+        "Revisión semántica de las rutas efectivas",
+        "Casos independientes del contrato y efecto observado; ejecución local salvo integración externa explícita",
+        "Control negativo dirigido donde aporte evidencia"
+      ],
+      "status": "PASS",
+      "evidence": [
+        "agents/backend/independent-results.json",
+        "agents/backend/REVIEW.md"
+      ],
+      "result": "Current SQL migration chain and maintenance operations execute against file-backed SQLite; independently reopened connection verifies physical expiry/removal. The scheduled entry is separately exercised by unit tests using in-memory SQLite. Hosted cron activation/backlog/provider recovery are not credited and remain under deployed-state unknowns."
+    },
+    {
+      "id": "C21",
+      "description": "Admisión API y configuración efectiva",
+      "weight": 5,
+      "criticality": "critical",
+      "criticalityRationale": "Límites antes del trabajo y separación de entornos.",
+      "requirementSources": [
+        {
+          "file": "README.md",
+          "startLine": 5,
+          "endLine": 5,
+          "excerpt": "The accepted pearl/charcoal/red identity and archived former design remain in place. Current hardening restricts untrusted attachments to inspected/reconstructed DOCX, PDF, PNG and JPEG, bounds public Blog URL parsing, rejects noncanonical production API hosts before D1, and adds early request-envelope limits. [Cloudflare edge protection](docs/EDGE_SECURITY_2026-10-22.md) records the active free bot and burst controls. The desktop prototype is obsolete, was never released and will never be released; active dependencies and delivery commands are web-only."
+        }
+      ],
+      "versionScope": "Snapshot accreatio 0.9.1, contrato web vigente hasta 2026-10-26; decisiones posteriores explícitas prevalecen sobre recibos históricos.",
+      "obligations": [
+        "Hosts canónicos, método/origin/content-type/tamaño antes DB; bindings Blog/cuenta separados; error configuración no éxito; no secretos en cliente; CSP de shell/header coherente."
+      ],
+      "inputs": "Requests host/method/body y runtime config",
+      "outputs": "Rechazo limitado o ruta autorizada",
+      "publicRouteAndComponents": "/api/_middleware, apiAdmission/http/platform; wrangler.toml, public/_headers",
+      "acceptanceCriterion": "Hosts/origin maliciosos, envelope excesivo y dependencias ausentes en entorno local; build assets sin secretos.",
+      "independentOracle": "Hosts/origin maliciosos, envelope excesivo y dependencias ausentes en entorno local; build assets sin secretos.",
+      "evidenceRequired": [
+        "Revisión semántica de las rutas efectivas",
+        "Casos independientes del contrato y efecto observado; ejecución local salvo integración externa explícita",
+        "Control negativo dirigido donde aporte evidencia"
+      ],
+      "status": "UNKNOWN",
+      "evidence": [
+        "evidence/deployment-readback.json",
+        "evidence/ci-readback.json",
+        "evidence/public-readback.json"
+      ],
+      "result": "BLOCKED: source admission/types/build and anonymous API flags pass; authoritative deployment listing returned exit1/no JSON and no CI run was found for HEAD. Hosted entry differs from fresh local entry; protected bindings/secret validity/D1 migrations/cron and exact deployed commit not confirmed.",
+      "unknownReason": "BLOCKED: source admission/types/build and anonymous API flags pass; authoritative deployment listing returned exit1/no JSON and no CI run was found for HEAD. Hosted entry differs from fresh local entry; protected bindings/secret validity/D1 migrations/cron and exact deployed commit not confirmed."
+    },
+    {
+      "id": "C22",
+      "description": "Identidad visual oficial y temas",
+      "weight": 3,
+      "criticality": "important",
+      "criticalityRationale": "Identidad aceptada y legibilidad.",
+      "requirementSources": [
+        {
+          "file": "docs/ACCREATIO_BRANDING.md",
+          "startLine": 13,
+          "endLine": 13,
+          "excerpt": "The [provenance manifest](../assets/branding/accreatio-logo-approved-2026-10-22.provenance.json) records the approval, pinned original, palette and exact crop rectangles. The supplied symbol, red dot, lettering and proportions are artwork. Do not redraw, trace, retype or recreate them with generative tools. The canonical original and full-resolution PNG crops preserve the supplied pearl texture. The owner separately authorized a dark-surface adaptation on 2026-10-22: “En la versión dark cuida que no se vea el fondo blanco del logo/logotypo.” The bounded native SVG filter described below removes the pale plate and maps the exact raster contours to pearl and red on dark surfaces. On 2026-10-25 the owner also authorized removing the visible light-mode plate throughout the web. Light SVGs now use the same native alpha masks with charcoal/red output. Other recoloring, removal or replacements require owner authorization."
+        }
+      ],
+      "versionScope": "Snapshot accreatio 0.9.1, contrato web vigente hasta 2026-10-26; decisiones posteriores explícitas prevalecen sobre recibos históricos.",
+      "obligations": [
+        "Preservar PNG/crops/hash/logo AEKR; derivados deterministas autorizados sin plate light/dark; perla default/charcoal/red limitado; lectura body/subtext accesible; nebula original conservada."
+      ],
+      "inputs": "Render desktop/mobile light/dark",
+      "outputs": "Arte oficial proporcional y paleta aceptada",
+      "publicRouteAndComponents": "assets/branding, public/branding, CSS/Atmosphere",
+      "acceptanceCriterion": "Hash assets y contraste calculado; visual browser de temas y transparencia, sin regenerar arte.",
+      "independentOracle": "Hash assets y contraste calculado; visual browser de temas y transparencia, sin regenerar arte.",
+      "evidenceRequired": [
+        "Revisión semántica de las rutas efectivas",
+        "Casos independientes del contrato y efecto observado; ejecución local salvo integración externa explícita",
+        "Control negativo dirigido donde aporte evidencia"
+      ],
+      "status": "PASS",
+      "evidence": [
+        "evidence/verify-console.log",
+        "evidence/independent-ui-result.png",
+        "agents/contracts/CONTRACTS.md"
+      ],
+      "result": "Pinned original asset checks and actual browser theme/contour tests pass; pearl default and optional dark rendered. Binary-hash evidence distinguished from browser presentation."
+    },
+    {
+      "id": "C23",
+      "description": "Interfaz responsive y accesible",
+      "weight": 3,
+      "criticality": "important",
+      "criticalityRationale": "Uso efectivo en pantallas estrechas y teclado.",
+      "requirementSources": [
+        {
+          "file": "docs/HELP_AND_SHARED_CAPTCHA_RELEASE_2026-10-25.md",
+          "startLine": 22,
+          "endLine": 22,
+          "excerpt": "About opens a floating panel without navigating away from the working screen. It contains updated FAQ, the complete SOP after sign-in, product information and locale-preserving Privacy/Terms/Cookies links. View welcome and the old FAQ/ToS pair below the project card were removed. The existing lower-left footer policy controls remain."
+        }
+      ],
+      "versionScope": "Snapshot accreatio 0.9.1, contrato web vigente hasta 2026-10-26; decisiones posteriores explícitas prevalecen sobre recibos históricos.",
+      "obligations": [
+        "Flujo accesible; panel About flotante dentro client width con scrollbar; diálogo/foco/cancelación y mensajes de fallo; sin pérdida de borrador."
+      ],
+      "inputs": "Viewport320/390/desktop, teclado",
+      "outputs": "Controles visibles, foco correcto y estado preservado",
+      "publicRouteAndComponents": "AppFrame/AboutPopover/GuidedCreation/CSS",
+      "acceptanceCriterion": "Captura DOM+geometría y teclado con barras nativas; EN/ES; fallos de API.",
+      "independentOracle": "Captura DOM+geometría y teclado con barras nativas; EN/ES; fallos de API.",
+      "evidenceRequired": [
+        "Revisión semántica de las rutas efectivas",
+        "Casos independientes del contrato y efecto observado; ejecución local salvo integración externa explícita",
+        "Control negativo dirigido donde aporte evidencia"
+      ],
+      "status": "PASS",
+      "evidence": [
+        "evidence/verify-console.log",
+        "evidence/lighthouse-first.json",
+        "evidence/lighthouse-repeat.json"
+      ],
+      "result": "Current browser smokes at 320/390/760/1280 plus keyboard/focus/reflow and automated accessibility96 pass. Not a certification of all assistive-tech/device combinations."
+    },
+    {
+      "id": "C24",
+      "description": "Ayuda contextual, idioma y documentos públicos",
+      "weight": 3,
+      "criticality": "important",
+      "criticalityRationale": "Ayuda y avisos utilizables sin cambiar el trabajo.",
+      "requirementSources": [
+        {
+          "file": "docs/FLOATING_EXAMPLE_RELEASE_2026-10-25.md",
+          "startLine": 9,
+          "endLine": 9,
+          "excerpt": "- The same side navigation is used by the shared tips component. Project-module and result help remain. The Blog and account-menu help links and their unused prop wiring were removed."
+        },
+        {
+          "file": "docs/HELP_AND_SHARED_CAPTCHA_RELEASE_2026-10-25.md",
+          "startLine": 20,
+          "endLine": 20,
+          "excerpt": "After sign-in, each project module and result has its lowercase `help`/`ayuda` hyperlink immediately below its card at the left. Blog has the same alignment within its own module. The account menu also opens its own contextual help, beginning with the current account controls. Help opens a dismissible dialog, selects the current module's tips and preserves answers, attachments, route and focus. There are no module-help links before sign-in; the public welcome example provides the complete overview there."
+        }
+      ],
+      "versionScope": "Snapshot accreatio 0.9.1, contrato web vigente hasta 2026-10-26; decisiones posteriores explícitas prevalecen sobre recibos históricos.",
+      "obligations": [
+        "Help abajo izquierda en módulos y resultado del proyecto, sólo signedin; los enlaces help de Blog/account menu están retirados por instrucción posterior; ejemplo público hyperlink abre SOP17tips EN/ES en diálogo flotante; About/FAQ/legal completo y locale preserve; cerrar conserva respuestas/ruta/foco; Terms actual coherente."
+      ],
+      "inputs": "Help/About/legal idioma y rutas",
+      "outputs": "Contenido y links adecuados al contexto",
+      "publicRouteAndComponents": "helpContent/HelpDialog/HelpTips, legal.ts, public/legal",
+      "acceptanceCriterion": "Revisar las17tips y manifest34imagenes; navegar EN/ES direct/reload/back; conservar valores.",
+      "independentOracle": "Revisar las17tips y manifest34imagenes; navegar EN/ES direct/reload/back; conservar valores.",
+      "evidenceRequired": [
+        "Revisión semántica de las rutas efectivas",
+        "Casos independientes del contrato y efecto observado; ejecución local salvo integración externa explícita",
+        "Control negativo dirigido donde aporte evidencia"
+      ],
+      "status": "FAIL",
+      "evidence": [
+        "agents/contracts/findings.json",
+        "agents/contracts/public-html-structure.json"
+      ],
+      "result": "DOC-04: current EN/ES Cookies page contradicts its own GPC/Collect statements and names retired preference control. Help/17 tips/current locale navigation otherwise reviewed; no legal compliance opinion."
+    },
+    {
+      "id": "C25",
+      "description": "PWA y navegación pública",
+      "weight": 3,
+      "criticality": "important",
+      "criticalityRationale": "Actualización y acceso sin cachear identidad.",
+      "requirementSources": [
+        {
+          "file": "docs/SOP_WEB.md",
+          "startLine": 41,
+          "endLine": 41,
+          "excerpt": "The worker updates public application assets; auth/account APIs remain network-only and uncached. A release does not reload an open project automatically. Browser drafts do not move between origins. Public queries preserve view, article and language through direct entry, reload and Back/Forward, without putting project data in URLs."
+        }
+      ],
+      "versionScope": "Snapshot accreatio 0.9.1, contrato web vigente hasta 2026-10-26; decisiones posteriores explícitas prevalecen sobre recibos históricos.",
+      "obligations": [
+        "SW sólo assets públicos; auth/account network-only uncached; update no autoreload proyecto; navegación view/article/lang persistente sin contenido proyecto URL."
+      ],
+      "inputs": "Update, offline, URLs y history",
+      "outputs": "Assets actuales o fallo explícito, estado local preservado",
+      "publicRouteAndComponents": "vite.config.mts, main.web.tsx, WebExperience",
+      "acceptanceCriterion": "Inspección built SW y browser upgrade/offline/api fail; history nuevo contexto y URL sin datos.",
+      "independentOracle": "Inspección built SW y browser upgrade/offline/api fail; history nuevo contexto y URL sin datos.",
+      "evidenceRequired": [
+        "Revisión semántica de las rutas efectivas",
+        "Casos independientes del contrato y efecto observado; ejecución local salvo integración externa explícita",
+        "Control negativo dirigido donde aporte evidencia"
+      ],
+      "status": "PASS",
+      "evidence": [
+        "evidence/pwa-legal-execution.json",
+        "snapshot/.local/logs/pwa-legal-zDzBKb/receipt.json",
+        "evidence/verify-console.log"
+      ],
+      "result": "Actual historical worker d836e7e and fresh candidate reproduce stale legal caching then recover; 8 current+8 future legal routes network, 8 offline errors, 404/503 proper, shell fallback retained. Current API/SW and view/lang/history smokes pass. September three-build prompt-loop experiment only statically reviewed."
+    },
+    {
+      "id": "C26",
+      "description": "Build, fronteras de publicación e integridad evaluador",
+      "weight": 5,
+      "criticality": "critical",
+      "criticalityRationale": "Las afirmaciones de calidad deben corresponder al producto servido.",
+      "requirementSources": [
+        {
+          "file": "README.md",
+          "startLine": 133,
+          "endLine": 133,
+          "excerpt": "accreatio reduces exposure through least privilege, local project processing, no embedded credentials, and no project telemetry or cloud sync. Web publication checks exclude internal source/configuration and unreviewed archives. Legacy renderer and packaging metadata are preserved for custody; no desktop package is built or released. See [SECURITY.md](docs/SECURITY.md)."
+        }
+      ],
+      "versionScope": "Snapshot accreatio 0.9.1, contrato web vigente hasta 2026-10-26; decisiones posteriores explícitas prevalecen sobre recibos históricos.",
+      "obligations": [
+        "Build/typecheck/CI y smokes ejecutan y propagan fallos; no archivos internos/source maps/archives no revisados; test runner descubre/espera tests, sin mock producción o special casing indebido."
+      ],
+      "inputs": "Snapshot, scripts, runner y CI",
+      "outputs": "Artefacto web y recibos confiables",
+      "publicRouteAndComponents": "package scripts, .github/workflows, scripts/check-web-security-artifacts, tests",
+      "acceptanceCriterion": "Build independiente y conteos raw; negativo de mutación/fallo dependencia detectado; comparar dist/config y ruta real.",
+      "independentOracle": "Build independiente y conteos raw; negativo de mutación/fallo dependencia detectado; comparar dist/config y ruta real.",
+      "evidenceRequired": [
+        "Revisión semántica de las rutas efectivas",
+        "Casos independientes del contrato y efecto observado; ejecución local salvo integración externa explícita",
+        "Control negativo dirigido donde aporte evidencia"
+      ],
+      "status": "FAIL",
+      "evidence": [
+        "agents/evaluation/lighthouse-port-results-v2.json",
+        "evidence/verify-execution.json",
+        "evidence/lighthouse-repeat-execution.json"
+      ],
+      "result": "E-02: real preview exit1 due occupied port can be followed by Lighthouse PASS exit0 against unrelated HTML. Current ordinary run is retained:491/491 unit and other gates pass, final Lighthouse76 fails; isolated repeat86 passes. No evidence of actual baseline collision or evaluator tampering; race/crypto test weaknesses supplementary."
+    },
+    {
+      "id": "C27",
+      "description": "Dependencias, lock y coste cero",
+      "weight": 3,
+      "criticality": "important",
+      "criticalityRationale": "Reproducibilidad y prohibición de costes directos.",
+      "requirementSources": [
+        {
+          "file": "README.md",
+          "startLine": 100,
+          "endLine": 100,
+          "excerpt": "Zero direct service cost remains mandatory. Google and GitHub are enabled in production; configuration and visible buttons do not prove completion of a real provider authorization. Email OTP depends on its independent delivery capability and remains disabled in production. Provider sign-in does not depend on that mail transport. The configurable 1,000-account admission limit is independent of provider capacity; see [privacy operations](docs/ACCOUNT_PRIVACY_OPERATIONS.md) for the existing operating boundaries."
+        }
+      ],
+      "versionScope": "Snapshot accreatio 0.9.1, contrato web vigente hasta 2026-10-26; decisiones posteriores explícitas prevalecen sobre recibos históricos.",
+      "obligations": [
+        "Dependencias/lock consistentes, sin runtime servicio pago necesario; vulnerabilidades declaradas evaluadas con aplicabilidad; defaults no activan cargos."
+      ],
+      "inputs": "package/lock/config y dependencias instaladas",
+      "outputs": "Versiones reproducibles y límites/servicios declarados",
+      "publicRouteAndComponents": "package*.json, wrangler*.toml, vite config, workers config",
+      "acceptanceCriterion": "npm lock/install graph y audit advisories actual si disponible; distinguir registry/cost desconocido.",
+      "independentOracle": "npm lock/install graph y audit advisories actual si disponible; distinguir registry/cost desconocido.",
+      "evidenceRequired": [
+        "Revisión semántica de las rutas efectivas",
+        "Casos independientes del contrato y efecto observado; ejecución local salvo integración externa explícita",
+        "Control negativo dirigido donde aporte evidencia"
+      ],
+      "status": "UNKNOWN",
+      "evidence": [
+        "evidence/npm-audit.json",
+        "agents/evaluation/installed-lock-consistency.json"
+      ],
+      "result": "BLOCKED/assessment limit: seven affected dependency entries, five unique advisories and CI high gate exit1; installed versions match lock. Tool/build applicability reviewed, exploitable product path and external billing/free-tier state not established. A zero-high obligation was not frozen, so registry severity alone is not promoted to a new mandatory contract failure.",
+      "unknownReason": "BLOCKED/assessment limit: seven affected dependency entries, five unique advisories and CI high gate exit1; installed versions match lock. Tool/build applicability reviewed, exploitable product path and external billing/free-tier state not established. A zero-high obligation was not frozen, so registry severity alone is not promoted to a new mandatory contract failure."
+    },
+    {
+      "id": "C28",
+      "description": "Entrega web y retiro desktop failclosed",
+      "weight": 3,
+      "criticality": "important",
+      "criticalityRationale": "Impide revivir superficie obsoleta expresamente prohibida.",
+      "requirementSources": [
+        {
+          "file": "docs/WEB_ONLY_DELIVERY_2026-10-22.md",
+          "startLine": 32,
+          "endLine": 32,
+          "excerpt": "The retirement regression tests check the web defaults and the nonzero exit/reason returned by the guard. Current verification must use the web build, publication gate and functional web checks. Historical Electron build or smoke results are not reused as web release evidence. This lifecycle change does not by itself claim deployment, hosted verification, personal provider authorization or new product acceptance."
+        }
+      ],
+      "versionScope": "Snapshot accreatio 0.9.1, contrato web vigente hasta 2026-10-26; decisiones posteriores explícitas prevalecen sobre recibos históricos.",
+      "obligations": [
+        "dev/start/build/verify web; desktop dev/build/test/package nozero y razón retiro; no Electron en artefacto público; fuente histórica sin exigir release."
+      ],
+      "inputs": "Comandos productivos y desktop retirados",
+      "outputs": "Web funcional; comandos desktop fallan cerrado",
+      "publicRouteAndComponents": "scripts/retire-desktop.mjs, package scripts, vite config",
+      "acceptanceCriterion": "Ejecutar guards y escanear import graph/dist; no construir ni empacar desktop.",
+      "independentOracle": "Ejecutar guards y escanear import graph/dist; no construir ni empacar desktop.",
+      "evidenceRequired": [
+        "Revisión semántica de las rutas efectivas",
+        "Casos independientes del contrato y efecto observado; ejecución local salvo integración externa explícita",
+        "Control negativo dirigido donde aporte evidencia"
+      ],
+      "status": "PASS",
+      "evidence": [
+        "evidence/verify-console.log",
+        "agents/evaluation/REVIEW.md"
+      ],
+      "result": "Supported desktop commands fail closed, web-only artifact boundary passes; obsolete source retained. Direct unsupported low-level tooling and VITE_CREATION_FLOW=legacy are not certified delivery configurations."
+    },
+    {
+      "id": "C29",
+      "description": "OTP y transporte de correo opcionales",
+      "weight": 3,
+      "criticality": "important",
+      "criticalityRationale": "Evita reclamar entrega externa con stub.",
+      "requirementSources": [
+        {
+          "file": "README.md",
+          "startLine": 100,
+          "endLine": 100,
+          "excerpt": "Zero direct service cost remains mandatory. Google and GitHub are enabled in production; configuration and visible buttons do not prove completion of a real provider authorization. Email OTP depends on its independent delivery capability and remains disabled in production. Provider sign-in does not depend on that mail transport. The configurable 1,000-account admission limit is independent of provider capacity; see [privacy operations](docs/ACCOUNT_PRIVACY_OPERATIONS.md) for the existing operating boundaries."
+        }
+      ],
+      "versionScope": "Snapshot accreatio 0.9.1, contrato web vigente hasta 2026-10-26; decisiones posteriores explícitas prevalecen sobre recibos históricos.",
+      "obligations": [
+        "Método disabled salvo config/transporte real autorizados; código10min5intentos/unuso/verificador hash; ausencia/fallo transporte no éxito; no tokens/PII en logs."
+      ],
+      "inputs": "Request/verify OTP y transport configurado/ausente",
+      "outputs": "Código consumible o indisponible/fallo explícito",
+      "publicRouteAndComponents": "/api/account/otp, workers/account-mailer, accounts.ts",
+      "acceptanceCriterion": "Transport local y fallo controlado; expiración/attempts/replay; entrega mailbox real UNKNOWN sin credenciales.",
+      "independentOracle": "Transport local y fallo controlado; expiración/attempts/replay; entrega mailbox real UNKNOWN sin credenciales.",
+      "evidenceRequired": [
+        "Revisión semántica de las rutas efectivas",
+        "Casos independientes del contrato y efecto observado; ejecución local salvo integración externa explícita",
+        "Control negativo dirigido donde aporte evidencia"
+      ],
+      "status": "PASS",
+      "evidence": [
+        "agents/backend/independent-results.json",
+        "evidence/verify-console.log",
+        "evidence/public-readback.json"
+      ],
+      "result": "Current optional disabled mode confirmed by public discovery; local OTP lifecycle, single-use/expiry/attempts and failed/missing mail transport reject correctly. Real mailbox delivery remains UNKNOWN and receives no credit; it is not required for current disabled mode."
+    },
+    {
+      "id": "C30",
+      "description": "Ejemplo público, mapa y derivados generados",
+      "weight": 1,
+      "criticality": "ordinary",
+      "criticalityRationale": "Material público que debe corresponder a los datos declarados.",
+      "requirementSources": [
+        {
+          "file": "docs/SOP_WEB.md",
+          "startLine": 5,
+          "endLine": 5,
+          "excerpt": "Open https://accreatio.com/. The welcome, generated fictional sample, About and Blog are public. Account sign-in protects the builder and export allowance. Google and GitHub appear only when their server configuration is enabled. The desktop prototype is obsolete, was never released and will never be released; accreatio is web-only. Reading or downloading the public sample uses no account allowance."
+        }
+      ],
+      "versionScope": "Snapshot accreatio 0.9.1, contrato web vigente hasta 2026-10-26; decisiones posteriores explícitas prevalecen sobre recibos históricos.",
+      "obligations": [
+        "Ejemplos públicos ficticios/inspectables sin cuota; manifiestos/hashes de ejemplos y SOP corresponden bytes; mapa documental no sustituye rutas reales."
+      ],
+      "inputs": "Assets generados/manifest y acceso público",
+      "outputs": "Muestras verificables y actuales",
+      "publicRouteAndComponents": "public/examples/help, PROJECT_MAP.md/json/html; generate scripts",
+      "acceptanceCriterion": "Abrir ZIP ejemplo y hashes de assets; regeneration check; declarar procedencia y fecha.",
+      "independentOracle": "Abrir ZIP ejemplo y hashes de assets; regeneration check; declarar procedencia y fecha.",
+      "evidenceRequired": [
+        "Revisión semántica de las rutas efectivas",
+        "Casos independientes del contrato y efecto observado; ejecución local salvo integración externa explícita",
+        "Control negativo dirigido donde aporte evidencia"
+      ],
+      "status": "PASS",
+      "evidence": [
+        "evidence/verify-console.log",
+        "agents/contracts/CONTRACTS.md"
+      ],
+      "result": "Current example/seed/vendor/map regeneration checks and actual file:// map controls pass; historical map wording drift recorded separately, not substituted for runtime proof. Upstream external AEKR source check explicitly skipped because checkout absent."
+    }
+  ],
+  "changeHistory": [
+    {
+      "at": "2026-10-26T19:06:21.206Z",
+      "action": "INITIAL_FREEZE",
+      "reason": "Requisitos y pesos fijados antes de ver resultados corrientes de comportamiento.",
+      "totalWeight": 124
+    },
+    {
+      "at": "2026-10-26T19:10:30.358Z",
+      "action": "CONTRACT_PRECEDENCE_CORRECTION",
+      "capability": "C24",
+      "weightBefore": 3,
+      "weightAfter": 3,
+      "reason": "La orden posterior de presentación en FLOATING_EXAMPLE_RELEASE supersede el recibo anterior HELP_AND_SHARED_CAPTCHA_RELEASE. Corrige obligación antes de evaluar esta capacidad; no modifica pesos ni premia resultados."
+    },
+    {
+      "at": "2026-10-26T19:43:45.193Z",
+      "action": "EVIDENCE_AND_SCORING_ADJUDICATION",
+      "weightsChanged": false,
+      "totalWeight": 124,
+      "notes": [
+        "C17 visible action-status coherence and C24 current-notice coherence were omissions in the compact initial checklist; clarified within existing capability weights from docs/COLLECT_SECURITY_2026-10-22.md:9-15,49 and current public Cookies page, no new capacity or weight.",
+        "C26 required failure-propagation obligation fails on independent real Vite/port control. Other weak tests do not receive separate score weight.",
+        "C27 reviewer proposed FAIL, contract reviewer refuted an unfrozen blanket zero-high requirement; final disposition UNKNOWN plus confirmed operational CI block.",
+        "C11/C20/C29 PASS explicitly local/current-disabled obligations; actual external identity lives in UNKNOWN C10, deployed runtime in UNKNOWN C21, real mailbox not credited."
+      ]
+    }
+  ],
+  "frozenSha256": "0a189cdfe83f821cab3b5ab416469a5a1ada1177765be16c38ad36805ac47805",
+  "inventoryClosed": true,
+  "auditDate": "2026-10-26 America/New_York",
+  "scoringScope": "Current accepted web snapshot, local real build and authorized synthetic sandboxes; external provider/deployed configuration limits explicit. Retired desktop not a supported execution target."
+}

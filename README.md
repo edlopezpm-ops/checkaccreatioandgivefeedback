@@ -1,5 +1,12 @@
 # checkaccreatioandgivefeedback
 
+<!-- antihacking-20261026 -->
+
+## Auditoría y snapshots completos · 26 octubre 2026
+
+[Informe y descargas](antihacking-2026-10-26.html) · [Alcance y hashes](updates/2026-10-26/antihacking/README.md). Publicación expresa del propietario: snapshot auditado 0dcafbc (FAIL; D75 %; C85,48 %) y main posterior fd1838f completo, separado y no auditado por ese informe. Esta entrega amplía el anterior alcance público limitado a extractos, sin cambiar la licencia privada. Las notas y sellos que siguen conservan su fecha histórica.
+
+
 > **Latest public update: 26 October 2026.** Read the [minimal current status](PUBLIC_STATUS_2026-10-26.md) and [machine-readable snapshot](PUBLIC-STATUS-2026-10-26.json). Future internal reviews continue in [private AEKR Console Dossier](https://console.aekr.io/dossier). All earlier sections and machine seals below retain their original historical dates and evidence scope.
 
 

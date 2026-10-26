@@ -1,0 +1,1 @@
+PASS PWA legal delivery: legacy stale response reproduced; replacement removes legal precache; later revisions use network without a new worker; offline/503/404 do not substitute old legal HTML. Evidence: C:\Users\edlop\OneDrive\Documents\VS Code\accreatio\.local\logs\antihacking-20261026-full\snapshot\.local\logs\pwa-legal-zDzBKb

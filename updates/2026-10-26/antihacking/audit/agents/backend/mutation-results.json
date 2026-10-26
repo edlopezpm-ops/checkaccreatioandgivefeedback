@@ -1,0 +1,65 @@
+{
+  "tool": "Targeted independent source mutations",
+  "toolVersion": "audit-2026-10-26-v1",
+  "node": "v24.18.0",
+  "operators": [
+    "omit_write",
+    "relax_business_limit",
+    "omit_authorization_recheck"
+  ],
+  "raw": {
+    "detected": 3,
+    "survived": 0,
+    "notCovered": 0,
+    "equivalent": 0,
+    "invalid": 0,
+    "timeouts": 0
+  },
+  "mutations": [
+    {
+      "id": "M-B01",
+      "file": "functions/_lib/collection.ts",
+      "old": "DELETE FROM collection_records WHERE token_hash=? AND EXISTS",
+      "next": "DELETE FROM collection_records WHERE 0 AND token_hash=? AND EXISTS",
+      "risk": "Omit actual withdrawal deletion while response reports success",
+      "baselineSha256": "44381468f38a47f7051ebeb8907f6ae1ccb398e94a79b7fd5670246c57bdd656",
+      "mutantSha256": "21356effc63b2c92e16e1d623dbd469ca363be6c18e6aa47b940e5793ff33b58",
+      "status": "DETECTED",
+      "exitCode": 1,
+      "failedChecks": [
+        "Collect novel payload persists across independent connection then withdraws"
+      ],
+      "restoredExactBaseline": true
+    },
+    {
+      "id": "M-B02",
+      "file": "functions/_lib/accounts.ts",
+      "old": "WHERE account_id = ? AND issued_at > ${NOW_SQL} - ${ACCOUNT_WINDOW_MS}) < 5",
+      "next": "WHERE account_id = ? AND issued_at > ${NOW_SQL} - ${ACCOUNT_WINDOW_MS}) < 6",
+      "risk": "Allow sixth export authorization despite five-per-day promise",
+      "baselineSha256": "db4643019dffd65cd0bc086d4f820685fe1591c827e4787841315bc7c2e467e0",
+      "mutantSha256": "4f1517260734f794cd10a1745e5560a8641ee391e1500f71d38b63fd2cb2462b",
+      "status": "DETECTED",
+      "exitCode": 1,
+      "failedChecks": [
+        "Account deliberate continuation and five rolling receipts; retry consumes no slot"
+      ],
+      "restoredExactBaseline": true
+    },
+    {
+      "id": "M-B03",
+      "file": "functions/_lib/accounts.ts",
+      "old": "// Decryption awaits cannot retain an authorization revoked in the meantime.\n      if (",
+      "next": "// Decryption awaits cannot retain an authorization revoked in the meantime.\n      if (false &&",
+      "risk": "Skip final own-data authorization after asynchronous decryption",
+      "baselineSha256": "db4643019dffd65cd0bc086d4f820685fe1591c827e4787841315bc7c2e467e0",
+      "mutantSha256": "8c914de2b4ea3b044f15ceb0335aa88353e1ac21473064fc5f89f448f94a4df9",
+      "status": "DETECTED",
+      "exitCode": 1,
+      "failedChecks": [
+        "Own-data final proof recheck rejects revocation during asynchronous decryption"
+      ],
+      "restoredExactBaseline": true
+    }
+  ]
+}

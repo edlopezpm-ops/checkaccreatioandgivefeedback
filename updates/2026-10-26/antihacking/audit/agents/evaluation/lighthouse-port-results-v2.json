@@ -1,0 +1,44 @@
+{
+  "experiment": "Real Vite preview fails because another local HTTP server already occupies its port",
+  "operator": "local test configuration changes ports only; production script otherwise byte-identical",
+  "scriptPath": "scripts/lighthouse-check.mjs",
+  "previewNegativeControl": {
+    "exit": 1,
+    "signal": null,
+    "stdout": "",
+    "stderr": "error when starting preview server:\nError: Port 4237 is already in use\n    at httpServerStart (file:///C:/Users/edlop/OneDrive/Documents/VS%20Code/accreatio/.local/logs/antihacking-20261026-full/agents/evaluation/mutants/lighthouse-preoccupied-port/node_modules/vite/dist/node/chunks/node.js:14706:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at async preview (file:///C:/Users/edlop/OneDrive/Documents/VS%20Code/accreatio/.local/logs/antihacking-20261026-full/agents/evaluation/mutants/lighthouse-preoccupied-port/node_modules/vite/dist/node/chunks/node.js:35726:2)\n    at async CAC.<anonymous> (file:///C:/Users/edlop/OneDrive/Documents/VS%20Code/accreatio/.local/logs/antihacking-20261026-full/agents/evaluation/mutants/lighthouse-preoccupied-port/node_modules/vite/dist/node/cli.js:811:18)\n"
+  },
+  "expected": "Fail: the intended fixture artifact cannot be served by its failed Vite preview",
+  "observed": {
+    "code": 0,
+    "signal": null,
+    "requests": 4,
+    "stdout": "PASS performance: 100/100 (min 80)\nPASS accessibility: 100/100 (min 90)\nPASS best-practices: 100/100 (min 90)\nPASS seo: 91/100 (min 90)\n\nLighthouse gate passed.\n",
+    "stderr": "",
+    "scores": {
+      "performance": 1,
+      "accessibility": 1,
+      "best-practices": 1,
+      "seo": 0.91,
+      "agentic-browsing": 0.67
+    },
+    "finalUrl": "http://localhost:4237/index.html",
+    "artifactTitle": {
+      "type": "table",
+      "headings": [
+        {
+          "key": "node",
+          "valueType": "node",
+          "subItemsHeading": {
+            "key": "relatedNode",
+            "valueType": "node"
+          },
+          "label": "Failing Elements"
+        }
+      ],
+      "items": []
+    }
+  },
+  "durationMs": 11005.5485,
+  "scope": "Synthetic loopback fixture only. No production writes or accreatio source modifications."
+}

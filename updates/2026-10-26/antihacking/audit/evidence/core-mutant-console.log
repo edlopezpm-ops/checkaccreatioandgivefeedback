@@ -1,0 +1,49 @@
+[
+  {
+    "name": "contract validation and exact bounds",
+    "status": "PASS",
+    "ms": 1.542100000000005
+  },
+  {
+    "name": "prompt preserves fresh source data; metamorphic isolation",
+    "status": "FAIL",
+    "ms": 4.448800000000006,
+    "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert.ok(prompt.includes(p.context))\n\n    at <anonymous> (C:\\Users\\edlop\\OneDrive\\Documents\\VS Code\\accreatio\\.local\\logs\\antihacking-20261026-full\\repro\\independent-core.mjs:27:45)\n    at check (C:\\Users\\edlop\\OneDrive\\Documents\\VS Code\\accreatio\\.local\\logs\\antihacking-20261026-full\\repro\\independent-core.mjs:20:67)\n    at <anonymous> (C:\\Users\\edlop\\OneDrive\\Documents\\VS Code\\accreatio\\.local\\logs\\antihacking-20261026-full\\repro\\independent-core.mjs:26:7)"
+  },
+  {
+    "name": "real ZIP opens and contains input and all declared files",
+    "status": "FAIL",
+    "ms": 18.106499999999983,
+    "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert.ok(strFromU8(zip[root+'PROJECT_PROMPT.md']).includes(p.context))\n\n    at <anonymous> (C:\\Users\\edlop\\OneDrive\\Documents\\VS Code\\accreatio\\.local\\logs\\antihacking-20261026-full\\repro\\independent-core.mjs:39:9)\n    at async check (C:\\Users\\edlop\\OneDrive\\Documents\\VS Code\\accreatio\\.local\\logs\\antihacking-20261026-full\\repro\\independent-core.mjs:20:61)\n    at async <anonymous> (C:\\Users\\edlop\\OneDrive\\Documents\\VS Code\\accreatio\\.local\\logs\\antihacking-20261026-full\\repro\\independent-core.mjs:32:1)"
+  },
+  {
+    "name": "four-role YAML parsed by independent YAML parser preserves tasks",
+    "status": "PASS",
+    "ms": 112.01480000000004
+  },
+  {
+    "name": "new DOCX reconstruction and immutable admission proof",
+    "status": "PASS",
+    "ms": 25.953100000000063
+  },
+  {
+    "name": "new PDF round trip; active PDF rejected",
+    "status": "PASS",
+    "ms": 17.138599999999997
+  },
+  {
+    "name": "dry-run makes zero archives, quota calls and downloads",
+    "status": "PASS",
+    "ms": 4.347499999999968
+  },
+  {
+    "name": "real bridge creates ZIP, authorizes once, reports requested only",
+    "status": "PASS",
+    "ms": 3.6417999999999893
+  },
+  {
+    "name": "controlled archive/quota/download failures never report success",
+    "status": "PASS",
+    "ms": 3.6258000000000266
+  }
+]

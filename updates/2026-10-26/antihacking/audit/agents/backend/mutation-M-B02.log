@@ -1,0 +1,27 @@
+PASS SQL migrations preserve blank acceptance and durable separate stores
+PASS Collect novel payload persists across independent connection then withdraws
+PASS Collect rejects unknown fields, wrong purpose, GPC, expired and failed storage
+PASS Collect 200-record bound counts persisted effects not HTTP alone
+FAIL Account deliberate continuation and five rolling receipts; retry consumes no slot
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+200 !== 429
+
+    at <anonymous> (C:\Users\edlop\OneDrive\Documents\VS Code\accreatio\.local\logs\antihacking-20261026-full\agents\backend\repro-backend.mts:88:861)
+    at async check (C:\Users\edlop\OneDrive\Documents\VS Code\accreatio\.local\logs\antihacking-20261026-full\agents\backend\repro-backend.mts:73:109)
+    at async <anonymous> (C:\Users\edlop\OneDrive\Documents\VS Code\accreatio\.local\logs\antihacking-20261026-full\agents\backend\repro-backend.mts:87:1)
+PASS Account own-data requires action proof and redacts tokens; deletion erases profile durably
+PASS Rights-only five-minute data proof works without Terms and cannot access builder
+PASS OIDC transaction trusted-identity branch commits real session and never links by email
+PASS Abuse anonymous network excess cannot sanction an account; missing provenance fails closed
+PASS API host/envelope rejects before downstream or database
+PASS CAPTCHA rejects outage/wrong hostname, waits for accepted verification, omits raw IP
+PASS Mailer reports accepted only after provider completion and rejects failure
+PASS Own-data final proof recheck rejects revocation during asynchronous decryption
+PASS Three attributable abuse episodes suspend ordinary session but preserve fresh rights-only access
+PASS Scheduled maintenance physically removes expired optional/auth/security fixtures
+PASS Blog authenticated public handler writes content and public read survives reopen
+{"executed":16,"passed":15,"failed":1}
+{"event":"blog_api_error","route":"POST /api/admin/blog/posts","status":401,"errorClass":"access_token_required"}
+
+Exit: 1

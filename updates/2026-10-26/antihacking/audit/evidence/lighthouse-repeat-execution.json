@@ -1,0 +1,6 @@
+{
+  "command": "npm.cmd run log -- lighthouse",
+  "startedUtc": "2026-10-26T19:17:03.9030999Z",
+  "endedUtc": "2026-10-26T19:17:18.2392382Z",
+  "exitCode": 0
+}

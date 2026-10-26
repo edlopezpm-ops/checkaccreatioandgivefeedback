@@ -1,0 +1,11 @@
+npm notice run accreatio@0.9.1 log
+npm notice run node scripts/run-logged.mjs lighthouse
+Log: .local\logs\2026-10-26T19-17-04-380Z-lighthouse-0102fa1c-19b6-49e0-9d59-cab9e9dad592.log
+npm notice run accreatio@0.9.1 lighthouse
+npm notice run node scripts/lighthouse-check.mjs
+PASS performance: 86/100 (min 80)
+PASS accessibility: 96/100 (min 90)
+PASS best-practices: 100/100 (min 90)
+PASS seo: 69/100 (min 90; intentional private-beta noindex)
+
+Lighthouse gate passed.

@@ -1,0 +1,73 @@
+{
+  "createdAt": "2026-10-26T19:57:31.842958+00:00",
+  "reviewer": "independent publication reviewer",
+  "scope": "Read-only package and presentation review; only this metadata receipt written. No product modification, deployment, external account operation or publication performed.",
+  "result": "PASS_WITH_EXPLICIT_SCOPE",
+  "snapshots": [
+    {
+      "snapshot": "audited",
+      "head": "0dcafbc426b01faea621d13121e36a54099b283a",
+      "entriesVerified": 712,
+      "archiveBytes": 40116920,
+      "allEntriesMatchManifest": true,
+      "gitBlobIdentityChecked": false,
+      "licenseRetained": true
+    },
+    {
+      "snapshot": "currentMain",
+      "head": "fd1838f4927bd026d0f6449c7e1c1488874c5f43",
+      "entriesVerified": 613,
+      "archiveBytes": 21362732,
+      "allEntriesMatchManifest": true,
+      "gitBlobIdentityChecked": true,
+      "licenseRetained": true
+    }
+  ],
+  "evidenceFilesIndependentlyHashed": 119,
+  "allEvidenceExact": true,
+  "localHtmlLinksChecked": 14,
+  "allLocalHtmlLinksExist": true,
+  "auditedVersusLaterMainSeparated": true,
+  "originalPrivateLicenseRetained": true,
+  "scanner": {
+    "reportedHits": 9,
+    "actualSecretsConfirmed": 0,
+    "distinctFalsePositiveLocations": 3,
+    "classifications": [
+      {
+        "entry": ".dev.vars.example",
+        "line": 24,
+        "occurrences": 3,
+        "classification": "EXAMPLE_PLACEHOLDER_NON_RUNTIME_KEY",
+        "actualSecretConfirmed": false,
+        "resolution": "Preserve source bytes; false positive verified independently in each archive. No scanner rule or severity was changed."
+      },
+      {
+        "entry": "docs/design-v9/OPTIONS_MATRIX.md",
+        "line": 60,
+        "occurrences": 3,
+        "classification": "NARRATIVE_MARKDOWN_TABLE",
+        "actualSecretConfirmed": false,
+        "resolution": "Preserve source bytes; false positive verified independently in each archive. No scanner rule or severity was changed."
+      },
+      {
+        "entry": "tests/blogApi.test.ts",
+        "line": 22,
+        "occurrences": 3,
+        "classification": "NON_AUTHENTICATION_TEST_IDEMPOTENCY_FIXTURE",
+        "actualSecretConfirmed": false,
+        "resolution": "Preserve source bytes; false positive verified independently in each archive. No scanner rule or severity was changed."
+      }
+    ],
+    "limits": "Classification covers the nine reported matches, not a proof that every possible secret is absent. No values, ciphertext, keys or raw matches are included in this public receipt."
+  },
+  "presentationNotes": [
+    "Audited 712-file snapshot and later 613-file main are separate and carry distinct hashes.",
+    "Current main is explicitly not audited by the earlier report.",
+    "Prior publication scope is expanded by explicit owner instruction without changing software licensing.",
+    "Retired desktop appears only as historical custody; runtime data, actual config and installed dependencies excluded.",
+    "Dated prior documents remain historical."
+  ],
+  "issues": [],
+  "harnessNote": "First archive membership assertion incorrectly counted directory entries as files; corrected file-only comparison passes for both archives. No product defect inferred."
+}

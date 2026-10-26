@@ -1,0 +1,47 @@
+[
+  {
+    "name": "contract validation and exact bounds",
+    "status": "PASS",
+    "ms": 3.4821000000000595
+  },
+  {
+    "name": "prompt preserves fresh source data; metamorphic isolation",
+    "status": "PASS",
+    "ms": 1.217899999999986
+  },
+  {
+    "name": "real ZIP opens and contains input and all declared files",
+    "status": "PASS",
+    "ms": 63.295799999999986
+  },
+  {
+    "name": "four-role YAML parsed by independent YAML parser preserves tasks",
+    "status": "PASS",
+    "ms": 177.6344999999999
+  },
+  {
+    "name": "new DOCX reconstruction and immutable admission proof",
+    "status": "PASS",
+    "ms": 380.16880000000015
+  },
+  {
+    "name": "new PDF round trip; active PDF rejected",
+    "status": "PASS",
+    "ms": 40.57659999999987
+  },
+  {
+    "name": "dry-run makes zero archives, quota calls and downloads",
+    "status": "PASS",
+    "ms": 2.9326999999998407
+  },
+  {
+    "name": "real bridge creates ZIP, authorizes once, reports requested only",
+    "status": "PASS",
+    "ms": 9.865300000000161
+  },
+  {
+    "name": "controlled archive/quota/download failures never report success",
+    "status": "PASS",
+    "ms": 8.227699999999913
+  }
+]

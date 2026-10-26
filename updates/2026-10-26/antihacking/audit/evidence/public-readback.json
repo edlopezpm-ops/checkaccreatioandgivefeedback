@@ -1,0 +1,119 @@
+{
+  "createdAt": "2026-10-26T19:17:40.101Z",
+  "scope": "Anonymous public GET only; no sign-in, tokens, remote D1 inspection or production mutation. Asset parity does not prove protected runtime bindings/cron/credentials.",
+  "results": [
+    {
+      "path": "/",
+      "redirects": [],
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "cacheControl": "public, max-age=0, must-revalidate",
+      "sha256": "8250c274a52985fd1f9c667534c449df96e50ee3def15600f0e86946b4cebcb1",
+      "bytes": 3410,
+      "scripts": [
+        {
+          "path": "/assets/index-BFXX_x0O.js",
+          "status": 200,
+          "sha256": "4c18bb764cafe7d5262bd96596aa2d34b9af89da078ea03155ea7a5c52a2e660",
+          "bytes": 579890,
+          "matchesLocalDist": false
+        }
+      ]
+    },
+    {
+      "path": "/api/auth/v1/methods",
+      "redirects": [],
+      "status": 200,
+      "contentType": "application/json; charset=utf-8",
+      "cacheControl": "no-store",
+      "sha256": "f84ba4848e2265322e9651205e12dc2d1d5f63b171b5daf6b632379339dc743b",
+      "bytes": 185,
+      "capabilities": {
+        "version": "auth.v1",
+        "methods": {
+          "google": {
+            "available": true
+          },
+          "github": {
+            "available": true
+          },
+          "emailOtp": {
+            "available": false
+          }
+        },
+        "captchaRequired": true,
+        "siteKeyPresent": true
+      }
+    },
+    {
+      "path": "/api/account/session",
+      "redirects": [],
+      "status": 401,
+      "contentType": "application/json; charset=utf-8",
+      "cacheControl": "no-store",
+      "sha256": "28b33a8a84bb607ed524aa2080ba26996d96e2c0161c880093ef721f8510e44d",
+      "bytes": 70,
+      "expectedAnonymous401": true
+    },
+    {
+      "path": "/legal/privacy.html",
+      "redirects": [
+        {
+          "status": 308,
+          "to": "/legal/privacy"
+        }
+      ],
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "cacheControl": "public, max-age=0, must-revalidate, no-transform",
+      "sha256": "5749903c080ebdd2bd216ace4d43fe9dde1e959c6e178adfdb0b9bf5350e13a3",
+      "bytes": 53662,
+      "matchesLocalDist": false
+    },
+    {
+      "path": "/legal/terms.html",
+      "redirects": [
+        {
+          "status": 308,
+          "to": "/legal/terms"
+        }
+      ],
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "cacheControl": "public, max-age=0, must-revalidate, no-transform",
+      "sha256": "9c38795ea2ed084e9ab685b064e0eecc6d9b52daa57ffc6c80d415641f56151d",
+      "bytes": 31500,
+      "matchesLocalDist": true
+    },
+    {
+      "path": "/legal/terms-es.html",
+      "redirects": [
+        {
+          "status": 308,
+          "to": "/legal/terms-es"
+        }
+      ],
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "cacheControl": "public, max-age=0, must-revalidate, no-transform",
+      "sha256": "dc88fafdcb57e27158a949a52a84d69ab912e21a7e48eb8429e58e011509bc1e",
+      "bytes": 34786,
+      "matchesLocalDist": true
+    },
+    {
+      "path": "/legal/cookies.html",
+      "redirects": [
+        {
+          "status": 308,
+          "to": "/legal/cookies"
+        }
+      ],
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "cacheControl": "public, max-age=0, must-revalidate, no-transform",
+      "sha256": "fab8e298f2a5cd3369aa8b3e7d5e66f43757ff738d6736e3cc08d68ec519fb99",
+      "bytes": 43011,
+      "matchesLocalDist": false
+    }
+  ]
+}

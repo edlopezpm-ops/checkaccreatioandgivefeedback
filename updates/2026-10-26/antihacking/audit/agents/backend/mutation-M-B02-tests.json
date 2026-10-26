@@ -1,0 +1,164 @@
+{
+  "createdAt": "2026-10-26T19:08:53.353Z",
+  "snapshot": "C:\\Users\\edlop\\OneDrive\\Documents\\VS Code\\accreatio\\.local\\logs\\antihacking-20261026-full\\agents\\backend\\mutants\\M-B02",
+  "node": "v24.18.0",
+  "executed": 16,
+  "passed": 15,
+  "failed": 1,
+  "tests": [
+    {
+      "name": "SQL migrations preserve blank acceptance and durable separate stores",
+      "status": "PASS",
+      "durationMs": 174,
+      "detail": {
+        "migrations": 10,
+        "reference": "Empty database must create no policy/optional grant"
+      }
+    },
+    {
+      "name": "Collect novel payload persists across independent connection then withdraws",
+      "status": "PASS",
+      "durationMs": 190,
+      "detail": {
+        "recordReadFromNewConnection": true,
+        "rowsAfterWithdrawal": 0
+      }
+    },
+    {
+      "name": "Collect rejects unknown fields, wrong purpose, GPC, expired and failed storage",
+      "status": "PASS",
+      "durationMs": 161,
+      "detail": {
+        "negativeCases": 5,
+        "storedRecords": 0
+      }
+    },
+    {
+      "name": "Collect 200-record bound counts persisted effects not HTTP alone",
+      "status": "PASS",
+      "durationMs": 667,
+      "detail": {
+        "accepted": 200,
+        "rejected": 1
+      }
+    },
+    {
+      "name": "Account deliberate continuation and five rolling receipts; retry consumes no slot",
+      "status": "FAIL",
+      "durationMs": 195,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n200 !== 429\n\n    at <anonymous> (C:\\Users\\edlop\\OneDrive\\Documents\\VS Code\\accreatio\\.local\\logs\\antihacking-20261026-full\\agents\\backend\\repro-backend.mts:88:861)\n    at async check (C:\\Users\\edlop\\OneDrive\\Documents\\VS Code\\accreatio\\.local\\logs\\antihacking-20261026-full\\agents\\backend\\repro-backend.mts:73:109)\n    at async <anonymous> (C:\\Users\\edlop\\OneDrive\\Documents\\VS Code\\accreatio\\.local\\logs\\antihacking-20261026-full\\agents\\backend\\repro-backend.mts:87:1)"
+    },
+    {
+      "name": "Account own-data requires action proof and redacts tokens; deletion erases profile durably",
+      "status": "PASS",
+      "durationMs": 174,
+      "detail": {
+        "exportProfileCorrect": true,
+        "deletedContactAndName": true,
+        "newConnection": true
+      }
+    },
+    {
+      "name": "Rights-only five-minute data proof works without Terms and cannot access builder",
+      "status": "PASS",
+      "durationMs": 180,
+      "detail": {
+        "termsReceipts": 0,
+        "ordinarySessionDenied": true,
+        "expiredDenied": true,
+        "productionRightsTransactionChain": true
+      }
+    },
+    {
+      "name": "OIDC transaction trusted-identity branch commits real session and never links by email",
+      "status": "PASS",
+      "durationMs": 189,
+      "detail": {
+        "localTrustedIdentityOnly": true,
+        "realProviderNotClaimed": true,
+        "durable": true,
+        "emailCollisionDenied": true
+      }
+    },
+    {
+      "name": "Abuse anonymous network excess cannot sanction an account; missing provenance fails closed",
+      "status": "PASS",
+      "durationMs": 820,
+      "detail": {
+        "admitted": 180,
+        "excessDenied": true,
+        "accountSanctions": 0,
+        "noRawIpStored": true
+      }
+    },
+    {
+      "name": "API host/envelope rejects before downstream or database",
+      "status": "PASS",
+      "durationMs": 1,
+      "detail": {
+        "rejectedBeforeNext": 3
+      }
+    },
+    {
+      "name": "CAPTCHA rejects outage/wrong hostname, waits for accepted verification, omits raw IP",
+      "status": "PASS",
+      "durationMs": 461,
+      "detail": {
+        "outage503": true,
+        "wrongHostname403": true,
+        "correctVerificationAccepted": true
+      }
+    },
+    {
+      "name": "Mailer reports accepted only after provider completion and rejects failure",
+      "status": "PASS",
+      "durationMs": 2,
+      "detail": {
+        "acceptedAfterAwait": true,
+        "failureNotSuccess": true,
+        "inboxDeliveryUnknown": true
+      }
+    },
+    {
+      "name": "Own-data final proof recheck rejects revocation during asynchronous decryption",
+      "status": "PASS",
+      "durationMs": 441,
+      "detail": {
+        "revocationDuringExportDecrypt": true,
+        "privateResponseDenied": true
+      }
+    },
+    {
+      "name": "Three attributable abuse episodes suspend ordinary session but preserve fresh rights-only access",
+      "status": "PASS",
+      "durationMs": 1355,
+      "detail": {
+        "eligibleEpisodes": 3,
+        "suspensionMs": 600000,
+        "ordinarySessionsRevoked": true,
+        "freshRightsStillWorks": true
+      }
+    },
+    {
+      "name": "Scheduled maintenance physically removes expired optional/auth/security fixtures",
+      "status": "PASS",
+      "durationMs": 181,
+      "detail": {
+        "newConnectionAfterCleanup": true,
+        "accountRows": 0,
+        "optionalPermissions": 0
+      }
+    },
+    {
+      "name": "Blog authenticated public handler writes content and public read survives reopen",
+      "status": "PASS",
+      "durationMs": 221,
+      "detail": {
+        "unauthorizedRejected": true,
+        "authenticatedInsert201": true,
+        "publicReadAfterReopen": true
+      }
+    }
+  ],
+  "scope": "Synthetic local-only providers/transports; real handler/domain SQL on file-backed SQLite; no production writes, real OAuth, real mailbox, hosted cron or D1 claimed"
+}

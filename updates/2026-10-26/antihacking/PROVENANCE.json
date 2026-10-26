@@ -1,0 +1,72 @@
+{
+  "publishedAt": "2026-10-26T19:54:46.091Z",
+  "authorization": "Explicit owner request in this chat: upload the audit information and full accreatio snapshot to checkaccreatioandgivefeedback.",
+  "repository": "edlopezpm-ops/checkaccreatioandgivefeedback",
+  "auditedSnapshot": {
+    "head": "0dcafbc426b01faea621d13121e36a54099b283a",
+    "branch": "main",
+    "dirty": "?? PRIVACY.md\n?? docs/INDEPENDENT_REVIEW_MASTER_2026-10-20.md\n?? docs/dossier-2026-10-20/\n?? docs/independent-review-2026-10-20/\n",
+    "sourceFiles": 712,
+    "sourceManifestSha256": "c713292564dee419d3f4e0857b6bf48f2bd4aec806582cb67c29b621a3196ee1",
+    "zip": "accreatio-full-audited-0dcafbc-2026-10-26.zip",
+    "zipBytes": 40116920,
+    "zipSha256": "2f78160dba536936990d957cd641518357b3af5702f854b3254c706f732c8281",
+    "allEntriesIndependentlyReopenedAndHashed": true
+  },
+  "currentMainSnapshot": {
+    "head": "fd1838f4927bd026d0f6449c7e1c1488874c5f43",
+    "files": 613,
+    "zip": "accreatio-full-main-fd1838f-2026-10-26.zip",
+    "zipBytes": 21362732,
+    "zipSha256": "9ca83ca726e1c2c8f50ae003f88b7cb524011332ee1ab82bbe173b9fdf0f27be",
+    "gitBlobsVerified": true,
+    "auditStatus": "NOT_AUDITED_BY_THIS_REPORT"
+  },
+  "auditResult": {
+    "schemaVersion": 1,
+    "snapshotHead": "0dcafbc426b01faea621d13121e36a54099b283a",
+    "matrixFrozenSha256": "0a189cdfe83f821cab3b5ab416469a5a1ada1177765be16c38ad36805ac47805",
+    "inventoryClosed": true,
+    "provisional": false,
+    "capabilityCounts": {
+      "PASS": 23,
+      "FAIL": 3,
+      "UNKNOWN": 4
+    },
+    "W": 124,
+    "P": 93,
+    "F": 13,
+    "U": 18,
+    "identity": "W = P + F + U",
+    "demonstratedCompliance": 75,
+    "decisionCoverage": 85.48387096774194,
+    "confirmedFailureWeight": 10.483870967741936,
+    "unknownWeight": 14.516129032258064,
+    "verdict": "FAIL",
+    "policy": "Weights are audit policy, not probability of hacking, AI authorship or exhaustive defect rate. UNKNOWN remains in denominator. Local PASS scope is explicit per capability; unverified external integration evidence remains UNKNOWN where that integration is the capability.",
+    "calculatedAt": "2026-10-26T19:43:45.610Z"
+  },
+  "originalEvidenceManifestSha256": "a0bdb02966f2330327ab7ae3b62edeee9ae96007377033b6aeaa66a82979f308",
+  "evidenceFilesCopied": 119,
+  "license": "Private-use license retained; public inspection does not grant redistribution or open-source rights.",
+  "exclusions": [
+    ".git",
+    "node_modules",
+    "real env/credentials",
+    ".wrangler",
+    ".local/private",
+    "runtime database stores"
+  ],
+  "priorPublicationHead": "5c67a1a186be0f8f4f61b55753bd014d21570fbb",
+  "publicCollectionPolicy": "Existing dossier privacy notice unchanged; static documents/downloads, no new forms, trackers or account processing.",
+  "auditBundle": {
+    "file": "accreatio-audit-evidence-2026-10-26.zip",
+    "bytes": 15435584,
+    "sha256": "f7b6f575589908b9a8fd7a5bc176d950819aa642d6de52adf2e1abebda240d35",
+    "files": 120
+  },
+  "publicationChecks": {
+    "scanner": "PUBLICATION-SCAN.json",
+    "independentReview": "PUBLICATION-QA.json"
+  }
+}

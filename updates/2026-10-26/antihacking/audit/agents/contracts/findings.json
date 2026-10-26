@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "scope": "Hallazgos de la pasada contratos/frontend; no score ni veredicto global",
+  "findings": [
+    {
+      "id": "UI-STATUS-01",
+      "category": "CONTRACT_FAILURE",
+      "status": "CONFIRMED",
+      "severity": "low",
+      "capabilityCandidate": "C17",
+      "title": "El rechazo completado conserva un status anterior de analítica habilitada",
+      "locations": [{"file": "src/components/account/CookiePreferences.tsx", "startLine": 188, "endLine": 210}],
+      "requirement": "La acción explícita y el estado vigente de preferencias deben representarse coherentemente; la retirada comunica su estado. docs/COLLECT_SECURITY_2026-10-22.md:9-15,49",
+      "trajectory": "Privacy -> Accept all optional -> evento nuevo de uso -> SQLite1 -> Reject non-essential -> revoke -> SQLite0",
+      "expected": "analytics=false y estado vigente sin afirmar que analytics está habilitada",
+      "observed": "analytics=false, Saved preference: necessary only. y Analytics enabled. simultáneos; recordsAfter0",
+      "reproduction": "node --import tsx .local/logs/antihacking-20261026-full/agents/contracts/repro-status.mjs",
+      "evidence": ["status-repro.json", "status-after-reject.png"],
+      "impact": "Confunde al contribuyente sobre la elección actual. No recogida indebida demostrada; collector/withdrawal respetados.",
+      "counterevidence": "Collector real y receptor real eliminan la contribución; no se invalida evidencia de control efectivo ni se alega manipulación.",
+      "remediation": "En snapshot posterior, sobrescribir status también al completar rechazo/retirada y cubrir EN/ES, pending y fallos de almacenamiento."
+    },
+    {
+      "id": "DOC-04",
+      "category": "CONTRACT_FAILURE",
+      "status": "CONFIRMED",
+      "severity": "low",
+      "capabilityCandidate": "C24",
+      "title": "Cookies actual conserva divulgación contradictoria de Collect/GPC y control antiguo",
+      "locations": [{"file": "public/legal/cookies.html", "startLine": 416, "endLine": 420}, {"file": "public/legal/cookies.html", "startLine": 742, "endLine": 747}, {"file": "public/legal/cookies.html", "startLine": 660, "endLine": 662}],
+      "requirement": "C24 avisos/ayuda actuales coherentes con el catálogo y elecciones explícitas; docs/COLLECT_SECURITY_2026-10-22.md:9-15; propia página cookies:37-64",
+      "expected": "Inventario actual EN/ES describe opt-in vigente y handler GPC, con labels actuales",
+      "observed": "cookies:58 dice GPC blocks collection, :416-420/:742-747 niegan handler operating; tablaES sólo schema1 rechazo; :403/:751 control antiguo",
+      "evidenceType": "Contradicción estática inequívoca; texto y estructura completos revisados",
+      "evidence": ["cookies.html.txt", "public-html-structure.json", "CONTRACTS.md"],
+      "counterevidence": "No sección histórica envuelve esos párrafos; encabezado actual25oct. No demuestra fallo de GPC, fuga de datos ni estado remoto activo.",
+      "remediation": "Actualizar secciones actuales para el control Privacy y catálogo vigente, preservar límites fuente/remote y validar EN/ES sin añadir colección."
+    }
+  ],
+  "documentationObservations": [
+    {"id":"DOC-01","file":"README.md","line":114,"summary":"Night-only contradice perla default/oscuro opcional vigente; no prueba fallo funcional de tema."},
+    {"id":"DOC-02","file":"docs/SECURITY.md","lines":[16,29,39],"summary":"Reglas de prototipo/W1 no identificadas siempre como historia contradicen parseo/reconstrucción actual y Blog público; no vulnerabilidad inferida."},
+    {"id":"DOC-03","file":"scripts/project-map.template.html","line":1050,"also":"accreatio-project-map.html:1050","summary":"Shipped desktop contradice never released; viewer documental separado, controles reales."}
+  ],
+  "conditionalRisk": {"file":"src/legacy/LegacyApp.tsx","trigger":"VITE_CREATION_FLOW=legacy","summary":"Variante no usada por artefacto actual ignora accountBoundary y draft owner/session; no se certifica reactivación ni se marca FAIL del default."},
+  "evaluatorManipulationObserved": false,
+  "agentAttribution": "NOT_DETERMINED"
+}

@@ -1,0 +1,49 @@
+{
+  "finding": "B-W01",
+  "testsSubject": "tests/accountRollback.test.ts:318-354",
+  "oracle": "The alleged race requires executing the injected revocation hook. An early reauthentication rejection does not exercise that race.",
+  "results": [
+    {
+      "action": "data",
+      "withActionProof": false,
+      "status": 401,
+      "error": "reauthentication_required",
+      "revocationHookCalls": 0
+    },
+    {
+      "action": "delete",
+      "withActionProof": false,
+      "status": 401,
+      "error": "reauthentication_required",
+      "revocationHookCalls": 0
+    },
+    {
+      "action": "authorize",
+      "withActionProof": false,
+      "status": 410,
+      "error": "receipt_expired",
+      "revocationHookCalls": 1
+    },
+    {
+      "action": "data",
+      "withActionProof": true,
+      "status": 401,
+      "error": "reauthentication_required",
+      "revocationHookCalls": 1
+    },
+    {
+      "action": "delete",
+      "withActionProof": true,
+      "status": 401,
+      "error": "reauthentication_required",
+      "revocationHookCalls": 1
+    },
+    {
+      "action": "authorize",
+      "withActionProof": true,
+      "status": 410,
+      "error": "receipt_expired",
+      "revocationHookCalls": 1
+    }
+  ]
+}

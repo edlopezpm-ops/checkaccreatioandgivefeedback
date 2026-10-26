@@ -1,0 +1,696 @@
+npm notice run accreatio@0.9.1 log
+npm notice run node scripts/run-logged.mjs verify
+Log: .local\logs\2026-10-26T19-05-40-530Z-verify-2c670eb1-5d87-4d14-8734-3001284559f5.log
+npm notice run accreatio@0.9.1 verify
+npm notice run npm test && npm run test:account-mailer && npm run aekr:branding:check && npm run blog:seed:check && npm run aekr:vendor:check && npm run examples:check && npm run project-map:check && npm run cloudflare:types:check && npm run typecheck && npm run format:check && npm run cloudflare:functions:build && npm run build && npm run test:surface && npm run test:project-map && npm run test:web && npm run test:account && npm run test:identity && npm run test:rights && npm run test:collect && npm run lighthouse
+npm notice run accreatio@0.9.1 test
+npm notice run node --import tsx --test tests/*.test.ts
+✔ About preserves every administrative fact from the previous surface (28.7519ms)
+✔ version and private-use license remain derived from their controlling sources (1.4691ms)
+✔ web legal documents remain accessible with applicable versioned status (0.4385ms)
+✔ editorial About explains the product model, limits, FAQ, and next action (0.3118ms)
+✔ shared content is semantic and About collapses to one column on mobile (0.3096ms)
+✔ network keys ignore caller forwarding, canonicalize mapped IP and bound rotating IPv6 to /64 (144.4257ms)
+✔ concurrent valid requests atomically reserve every dimension and denials do not extend blocks (409.0091ms)
+✔ middleware charging is not repeated by authenticated guard and missing IP never creates a common ban (80.8538ms)
+✔ fresh attributable episodes crossing the old state expiry still suspend within their rolling window (821.3918ms)
+✔ network-only excess cannot sanction a signed-in victim sharing that network (43.5967ms)
+✔ an active cooldown in any dimension cannot produce strikes or account episodes in another dimension (790.194ms)
+✔ three attributable episodes suspend for 10m then 1h then 24h and revoke full sessions only once (255.6953ms)
+✔ invalid, expired, rights-only and business-ineligible calls never create account episodes (94.1031ms)
+✔ capacity is bounded and reserved rights capacity remains available (25.4993ms)
+✔ state cascades on account deletion, SQL predicates reject caller text and database failures fail closed (24.9983ms)
+✔ a failed dimension write rolls back every bucket reservation (16.8704ms)
+✔ requests inside an existing long cooldown never become new account episodes (169.8687ms)
+✔ suspension, security-version increment and full-session revocation roll back together (54.0829ms)
+✔ three-episode detection uses a rolling ten-minute window across an older first episode (82.0503ms)
+✔ creation navigation keeps landmark, DOM order, native controls, and textual states (15.7483ms)
+✔ a rejected mobile stage change has a visible and announced explanation (5.0536ms)
+✔ the creation flow reports position as a labelled progress bar (13.839ms)
+✔ incomplete Review explains the cause and links to the next corrective action (14.7682ms)
+✔ web draft failure and fatal boundary state cause plus recovery action (2.7286ms)
+✔ History and provider-unavailable states communicate cause and next action (4.3662ms)
+✔ app landmarks and heading ownership remain explicit across the rebuilt flow (2.9267ms)
+✔ suspension rejects product access and policy changes while scoped own-data remains available (189.1442ms)
+✔ rights deletion works during suspension and clears only its own browser cookie (100.7801ms)
+✔ ordinary logout revokes the rights proof and clears both necessary cookies (184.1875ms)
+✔ logout remains idempotent after ordinary session revocation and revokes a remaining rights proof (105.4323ms)
+✔ a rights cookie replaced by another tab cannot switch the account behind a pending deletion confirmation (165.5564ms)
+✔ future account capabilities default entirely off (1.9204ms)
+✔ mock provider covers passwordless lifecycle and local data requests (6.6154ms)
+✔ mock exposes invalid and expired states without external I/O (0.3244ms)
+✔ account boundary contains no network or credential primitives (3.8617ms)
+✔ 0010 preserves existing receipts and leaves all cookies acknowledgements absent (4.3247ms)
+✔ sign-in and repeated session reads never acknowledge cookies; own data remains available (273.4288ms)
+✔ notice receipts bind to each verified account, roll back on failure and purge on deletion (127.8226ms)
+✔ Google-only login stores encrypted contact and hashed own session; stable subject preserves account and contact (132.7921ms)
+✔ OAuth completion aborts every batch write when the clock reaches expiry between statements (619.3764ms)
+✔ new-account writes also roll back at completion expiry and successful logins do not redate an existing receipt (610.7633ms)
+✔ rights-only rotation rolls back its new session and preserves the old session if completion expires (322.448ms)
+✔ same email different subject never links; untrusted external email cannot sign up; no quota or account writes (65.3414ms)
+✔ concurrent Google callbacks for one subject create one account and no orphan accounts (80.6484ms)
+✔ transaction claim, cancellation and expiration prevent replay; admission keeps hourly receipts beyond secret TTL (34.8879ms)
+✔ Google-only delete revokes all identities/sessions, purges PII and retains same principal and exhausted quota within 48h (73.7331ms)
+✔ email encryption binds account/AAD and rejects tampering; backfill preserves legacy identity and receipt and is idempotent (50.0488ms)
+✔ scheduled maintenance runs without requests and has no public operation; locator serialization is deterministic and scoped (38.2544ms)
+✔ own OTP is six digits, HMAC protected, email normalized and session cookie independent of Access (132.1788ms)
+✔ local owner and session markers are purpose-separated, stable and never authenticate requests (137.9591ms)
+✔ incorrect and expired OTP fail uniformly; attempt five may succeed; used code cannot be reused (94.9526ms)
+✔ five wrong concurrent attempts lock the challenge including a later correct guess (166.6225ms)
+✔ simultaneous verification of one OTP produces exactly one account and one session (86.7435ms)
+✔ resend cooldown is atomic and a newly issued code invalidates its predecessor (131.929ms)
+✔ email, IP and global rolling delivery budgets apply atomically before transport (415.2664ms)
+✔ OTP challenges bind code to purpose, challenge ID and account identity (144.478ms)
+✔ transport failure leaves no usable code and still consumes the delivery budget (92.4122ms)
+✔ OTP rejects foreign origins, non-JSON, excess fields, unbounded bodies and unsafe configuration (105.1005ms)
+✔ configurable account capacity still permits existing identity login and preserves quota (146.1435ms)
+✔ deletion clears and invalidates pending email challenges, then re-registration retains rolling quota (168.0637ms)
+✔ OTP migration revokes legacy sessions while preserving accounts and export receipts (7.4963ms)
+✔ a failed session write rolls the whole OTP consumption transaction back (48.385ms)
+✔ OTP reuses the precise Access-era identity HMAC and its existing quota receipts (62.8021ms)
+✔ additive migration preserves existing accounts/sessions without backfilling acceptance (63.7223ms)
+✔ existing accounts receive no fictitious authorization; fresh rights and logout stay available (101.3761ms)
+✔ policy endpoint validates affirmative current choices and same-origin without side effects (138.8508ms)
+✔ affirmative receipt uses database time, is idempotent and is included in own-data export (87.2456ms)
+✔ stale policy blocks old export receipts until a fresh explicit authorization (77.3526ms)
+✔ Terms-only update preserves the prior receipt and data rights until deliberate renewal (196.4614ms)
+✔ served policy documents disclose the expected public labels and retain approved boundaries (34.2765ms)
+✔ authorization batch rechecks session revocation and export batch rechecks policy races (118.622ms)
+✔ policy batch rolls back on failure; deletion and compatible older writers purge authorization immediately (128.3181ms)
+✔ OTP requires current affirmative authorization before issuing a code (29.1455ms)
+✔ Google profile name is bounded Unicode display data only (4.3715ms)
+✔ profile name is encrypted, refreshed and exported without changing identity, contact or quota (385.1178ms)
+✔ legacy and pre-profile accounts retain fallback; rollback deletion trigger purges the additional ciphertext (233.8633ms)
+✔ name encryption rejects email ciphertext and ciphertext from another account (90.6168ms)
+✔ rights-only verification without a current session issues only a five-minute scoped proof and preserves account/policy/quota (153.0352ms)
+✔ rights-only GitHub proof resolves the exact linked subject without profile or email matching (61.5932ms)
+✔ rights transactions have a separate atomic IP/global admission budget and never cancel ordinary browser transactions (129.0539ms)
+✔ rights proof never matches email, admits an unknown/deleted subject, accepts a mismatched provider or completes an expired claim (434.7786ms)
+✔ completion rolls back every rights session write when expiry or revocation races the batch (189.4418ms)
+✔ compatible rollback disables Google admission and preserves encrypted accounts, existing sessions and concurrent rolling quota (367.8768ms)
+✔ rollback retains contact collision barriers and cannot downgrade a Google-only account to email OTP (115.4284ms)
+✔ missing privacy key fails closed instead of bypassing an existing Google email reservation (111.8434ms)
+✔ logout cancels a previously claimed OAuth transaction and prevents creating a replacement session (138.7269ms)
+✔ backfill CAS cannot restore a concurrently deleted contact or change its identity key (71.7719ms)
+✔ revocation between session read and write prevents data export, deletion and quota issuance (174.0072ms)
+✔ legacy login returns only to the app without authentication; identity requires an own session (228.3864ms)
+✔ Access assertions do not create product sessions (136.6183ms)
+✔ export admission rejects absent, stale or foreign context before quota or receipt access (144.1188ms)
+✔ six concurrent operations across two sessions admit exactly five; replay uses the original receipt (185.1585ms)
+✔ midnight does not reset allowance; one slot returns at the exact rolling boundary (234.2859ms)
+✔ logout revokes the app token; changing browser or deleting/re-registering preserves active quota (364.5779ms)
+✔ own session ignores provider assertions; origin, arbitrary fields, database outage and kill switch fail closed (121.0295ms)
+✔ expired app sessions fail without an external provider; old receipts are never free new exports (132.7328ms)
+✔ email export requires a separate human owner allowlist and paginates without duplicates (211.6535ms)
+✔ production API aliases cannot bypass the canonical edge hostname before D1 (129.1776ms)
+✔ invalid request envelopes stop before database/provider work (54.1371ms)
+✔ agent-provider and user-agent spoofing cannot create a fresh network budget (245.8245ms)
+✔ network middleware aggregates providers and encoded aliases before expensive handler execution (180.6991ms)
+✔ unknown paths share one finite class rather than allocating arbitrary route keys (450.571ms)
+✔ reserved rights paths reach session validation without consuming anonymous bucket capacity (77.5554ms)
+✔ disabled middleware preserves handlers, while failures remain generic and all responses get headers (112.2011ms)
+✔ AppFrame exposes semantic product navigation and existing host destinations (17.3162ms)
+✔ desktop retains its vector mark and web uses the supplied official raster lockup (8.757ms)
+✔ shell carries a subtle local AEKR build signature (0.499ms)
+✔ status is scoped, textual, and politely announced (0.477ms)
+✔ shell uses the specified responsive boundaries without a page minimum width (0.3317ms)
+✔ language and theme actions retain keyboard-native button behavior (0.6645ms)
+✔ atmosphere persists in the shell and responds to product state (1.5451ms)
+✔ procedural nebula moves autonomously and clicks sample visible gas (2.4394ms)
+✔ renderer lifecycle pauses offscreen and falls back safely (0.2877ms)
+✔ responsive atmosphere has no cursor decoration or mismatched canvas transform (0.3177ms)
+✔ nebula picking respects bounds and opacity, caps bursts, and clears them after their lifetime (8.4381ms)
+✔ static DOCX is parsed and reconstructed, and exact Blob proof cannot be forged (113.6029ms)
+✔ extension and actual content must both be admitted (25.4105ms)
+✔ DOCX macros, embeddings, active fields, external targets and XML entities are rejected (28.234ms)
+✔ DOCX rejects non-OOXML, traversal, duplicate names and excessive expansion (495.5452ms)
+✔ DOCX mismatched local headers, encrypted flags, corrupt CRC and suffix polyglots fail closed (3.2808ms)
+✔ static PDF is parsed and rewritten instead of passing through arbitrary trailing bytes (50.9898ms)
+✔ PDF JavaScript in compressed object streams and form actions are rejected (24.4075ms)
+✔ PDF escaped action and key names are decoded structurally (2.456ms)
+✔ PDF Flate expansion is bounded before object-stream/high-level parser allocation (142.7356ms)
+✔ PDF page-tree DAGs and cycles are rejected before high-level page traversal (5.7378ms)
+✔ PDF page-tree validation enforces parent links, actual counts and depth (24.4493ms)
+✔ PDF stream external-file keys are rejected including escaped keys (5.2794ms)
+✔ PDF static HTTPS links remain usable; non-HTTPS and launch actions fail closed (24.6576ms)
+✔ image dimensions are bounded before browser decode, with no original-byte fallback (8.5286ms)
+✔ the deterministic editorial fixture contains the three owner-authorized posts (6.5411ms)
+✔ legacy Claude AI posts use neutral bylines without rewriting stored content (0.5202ms)
+✔ the web Blog reads the API and exposes append-only publishing controls (0.4981ms)
+✔ Blog and its editorial client remain web-only (1.128ms)
+{"event":"blog_api_error","route":"GET /api/admin/blog/session","status":401,"errorClass":"access_token_required"}
+{"event":"blog_api_error","route":"GET /api/admin/blog/session","status":401,"errorClass":"invalid_access_token"}
+{"event":"blog_api_error","route":"GET /api/admin/blog/session","status":401,"errorClass":"invalid_access_token"}
+{"event":"blog_api_error","route":"GET /api/admin/blog/session","status":401,"errorClass":"invalid_access_token"}
+✔ admin capability requires a cryptographically verified Access token (133.1052ms)
+{"event":"blog_api_error","route":"GET /api/admin/blog/session","status":503,"errorClass":"access_keys_unavailable"}
+✔ JWKS requests use Workers-compatible manual redirects and reject 302 responses (104.3735ms)
+✔ session exposes only an allowlisted human or service actor's safe label (95.581ms)
+✔ anonymous readers can list posts without Access configuration or valid credentials (1.5972ms)
+{"event":"blog_api_error","route":"POST /api/admin/blog/posts","status":401,"errorClass":"access_token_required"}
+{"event":"blog_api_error","route":"POST /api/admin/blog/posts","status":403,"errorClass":"publisher_not_authorized"}
+{"event":"blog_api_error","route":"POST /api/admin/blog/posts","status":403,"errorClass":"publisher_not_authorized"}
+{"event":"blog_api_error","route":"POST /api/admin/blog/posts","status":403,"errorClass":"publisher_not_authorized"}
+✔ anonymous and ordinary Access identities cannot publish or reach the write database (40.4129ms)
+✔ publishing capability depends on admin identity, not database availability (105.9955ms)
+✔ public reads expose only published content to anonymous, ordinary and admin visitors (69.9532ms)
+{"event":"blog_api_error","route":"GET /api/admin/blog/session","status":401,"errorClass":"invalid_access_token"}
+✔ mixed human and service claim shapes fail closed (59.9176ms)
+✔ operational error logs contain no token, identity, or post body (46.0082ms)
+{"event":"blog_api_error","route":"POST /api/admin/blog/posts","status":403,"errorClass":"cross_origin_write_denied"}
+{"event":"blog_api_error","route":"POST /api/admin/blog/posts","status":403,"errorClass":"publish_header_required"}
+{"event":"blog_api_error","route":"POST /api/admin/blog/posts","status":403,"errorClass":"origin_required"}
+{"event":"blog_api_error","route":"POST /api/admin/blog/posts","status":415,"errorClass":"unsupported_media_type"}
+{"event":"blog_api_error","route":"POST /api/admin/blog/posts","status":413,"errorClass":"payload_too_large"}
+{"event":"blog_api_error","route":"POST /api/admin/blog/posts","status":422,"errorClass":"invalid_post"}
+✔ browser publishing requires same-origin, custom header, JSON, and bounded exact fields (122.136ms)
+✔ publish is append-only and retries return the original post (123.7043ms)
+{"event":"blog_api_error","route":"GET /api/blog/posts","status":503,"errorClass":"editorial_database_unavailable"}
+{"event":"blog_api_error","route":"GET /api/blog/posts","status":503,"errorClass":"editorial_database_unavailable"}
+✔ an allowlisted agent may publish without a browser Origin (51.3624ms)
+✔ D1 failures are explicit for public readers and do not pretend that a read succeeded (1.0403ms)
+✔ the canonical fixture preserves Ed's body and the real Claude revision (2.3601ms)
+✔ Blog slug admission preserves published and trailing-hyphen slugs (5.4582ms)
+✔ crafted Blog query and API slug fail within a bounded subprocess (538.9761ms)
+✔ official logo keeps original custody and transparent theme contours (2371.18ms)
+✔ bridge selection uses the host API availability (1.4685ms)
+✔ web provider detection reports unsupported host for every registry provider (1.4235ms)
+✔ every unimplemented web bridge method explicitly reports unsupported (1.4872ms)
+✔ a session reset while building a ZIP prevents preparation, authorization and download (23.6302ms)
+✔ a session reset during authorization prevents the pending download (23.2328ms)
+✔ web bridge execute reports validation errors without touching the DOM (4.199ms)
+✔ web bridge execute dry-run reports intent without producing a download (4.7999ms)
+✔ web limits reject restored definitions before dry review or archive creation (9.8701ms)
+✔ web bridge execute reports tracking-only as unsupported without touching the DOM (1.6491ms)
+✔ web bridge coalesces concurrent exports into one archive and download (2.7222ms)
+✔ web bridge passes attachment Blobs to the archive and rejects stale sidecars (167.5667ms)
+✔ web bridge dry run never creates an archive when attachments are selected (15.0148ms)
+✔ direct bridge calls inspect file bytes before archive, retained ZIP, quota or download (23.4772ms)
+✔ web bridge distinguishes ZIP and download-request failures without delivery evidence (1.8522ms)
+✔ optional receiver positively stores and exports only the granted purpose, with no account relationship (126.8508ms)
+✔ missing, cross-purpose, incompatible, restrictive, inactive and forged grants fail closed (32.0325ms)
+✔ research works independently of analytics; only explicit enumerated answers reach storage (49.5148ms)
+✔ withdrawal deletes available records and blocks prepared/replayed writes, even when collection is inactive (14.5142ms)
+✔ 30-day logical expiry and capped physical cleanup remove records; restoration invalidates old capabilities (15.6521ms)
+✔ per-purpose and global storage budgets bound writes without touching account rights (773.4265ms)
+✔ client-registered capability retries are idempotent and early or completed withdrawal prevents grant resurrection (72.8846ms)
+✔ client choice gates local and server collection, research is independent, withdrawal cancels pending work (55.3012ms)
+✔ storage failure never creates an opt-in (0.4124ms)
+✔ preference-quota: failed rejection removes a prior positive choice before any current or fresh collector can send (65.2454ms)
+✔ quota: failed rejection removes a prior positive choice before any current or fresh collector can send (16.5985ms)
+✔ preference-silent: failed rejection removes a prior positive choice before any current or fresh collector can send (11.3885ms)
+✔ a failed positive rewrite also cannot leave an earlier positive choice authoritative (4.8252ms)
+✔ a stale failed restriction never deletes a later explicit choice from an independent client (20.3503ms)
+✔ blocked storage grants nothing and the failed client stays off until a new explicit choice after recovery (16.4372ms)
+✔ same-origin Web Lock serializes two independent tabs into one current purpose capability (286.4591ms)
+✔ two concurrent grant responses retain every capability through repeated offline withdrawals and a successful retry (145.9551ms)
+✔ withdrawal before a grant reaches the server prevents its late activation, including a lost response (123.7592ms)
+✔ necessary consent is separate while optional purposes default refused (1.7267ms)
+✔ analytics and advertising adapters are inert no-ops (0.3523ms)
+✔ no cookie preference is written before an explicit rejection (1.1911ms)
+✔ rejection persists only the necessary-only preference without an identifier (0.9994ms)
+✔ expiry is enforced at 180 days and removes the expired local preference (0.2542ms)
+✔ a forged optional grant, future record or unknown schema cannot enable collection (0.2833ms)
+✔ blocked or malformed storage never prevents necessary-only use (0.3071ms)
+✔ each creation screen stays inside its instructional copy budget (40.0013ms)
+✔ each creation screen presents at most one primary action (11.803ms)
+✔ portable deterministic slug (8.9207ms)
+✔ requires identity, context, destination and at least one participant (2.4943ms)
+✔ IDE and GitHub imply Git repository (0.6886ms)
+✔ rejects unsafe attachment type and large file (0.297ms)
+✔ document allowlist excludes audio and video (0.2665ms)
+✔ bilingual prompt includes participants, IDs, and sources (1.3125ms)
+✔ action plan includes attachment, GitHub and signature governance (0.4989ms)
+✔ tracking plan and preview advertise only the tracking artifact (0.5892ms)
+✔ execution preview distinguishes desktop both and W1 ZIP semantics (3.4224ms)
+✔ tracking path is a configuration error, not a destination error (0.3867ms)
+✔ dry-run is recommended but never required (0.2485ms)
+✔ repeated roles are valid and participant IDs remain unique (0.2493ms)
+✔ participant count and identity grammar enforce the 1-6 contract (0.5422ms)
+✔ Mode 1 associations must match participant IDs and order (0.5215ms)
+✔ Mode 1 rejects unknown provider IDs without silently defaulting (0.2162ms)
+✔ governance preserves instance order and audit independence language (45.5304ms)
+✔ attachments are capped at twenty files (0.3854ms)
+✔ structured attachment validation covers extension integrity and exact size boundaries (0.5132ms)
+✔ structured attachment validation covers exact and excessive aggregate totals (0.266ms)
+✔ Spanish action plan is localized and expandable (0.1889ms)
+✔ UI flag transitions preserve the shared Git invariant (0.1845ms)
+✔ Team preserves ordered participants, repeated roles, responsibilities, and Mode 1 disclosure (14.4025ms)
+✔ Delivery exposes equivalent action, destination, Git, GitHub, and IDE inputs (5.0879ms)
+✔ web Delivery is truthful about ZIP output and local-tool limitations (3.3048ms)
+✔ App wires Team and Delivery into stage validation and the shared workspace pattern (1.0288ms)
+✔ creation navigation exposes five reversible stages with textual states (1.1478ms)
+✔ question exit validates and focuses the first invalid Foundation or Context field (0.6176ms)
+✔ every Team and Delivery validation path resolves to a focusable visible target (0.6448ms)
+✔ Foundation and Context preserve the domain values as controlled inputs (0.3886ms)
+✔ responsive stage navigation follows rail, strip, and selector breakpoints (0.6077ms)
+✔ advanced and locality primitives communicate configured and transient state (0.1648ms)
+✔ default delivery commands target the web without a desktop release gate (1.2721ms)
+✔ documented desktop entry points fail closed with the retirement reason (298.8471ms)
+✔ web surface verification succeeds without any desktop artifact (521.9216ms)
+✔ OAuth draft handoff is one-use, owner-bound and contains no project data (2.2752ms)
+✔ logout, expiry, malformed metadata and failed consumption never transfer a draft (0.4979ms)
+✔ every new login must confirm removal of a stale handoff before creating another (0.7955ms)
+✔ silent removal failures and a blocked sessionStorage getter fail closed without breaking logout cleanup (0.3569ms)
+✔ malformed persisted draft opens a blank fallback with a recovery warning (439.6984ms)
+✔ acknowledged IndexedDB edits survive failed journal write and cleanup (231.6544ms)
+✔ immediate journal writes preserve last input, navigation and count without attachment names (238.6838ms)
+✔ without Web Locks stale tab cannot overwrite or clear a newer draft (229.5062ms)
+✔ unavailable durable stores reject save instead of acknowledging it (215.7642ms)
+✔ future draft version rejects writes and preserves the stored payload (184.4376ms)
+✔ a future schema in either durable store cannot be hidden by revision ordering (305.9097ms)
+✔ account draft I/O requires a validated binding and never adopts legacy unowned data (116.0612ms)
+✔ owner or new sign-in changes discard answers options navigation and attachment count (97.2401ms)
+✔ same-session reload and explicit live same-owner reauthentication retain the draft (100.9557ms)
+✔ a nonwriter can purge a future draft and stale writers cannot resurrect it (106.5987ms)
+✔ purge synchronously invalidates an in-flight queued write before its transaction completes (95.8649ms)
+✔ failed cleanup in both stores cannot expose a former owner's bytes to the next session (102.5152ms)
+✔ only an external different context invalidates the bound tab and emits a local event (104.02ms)
+✔ external logout tombstones and removed context emit sessionEnded without restoring the old session (109.5225ms)
+✔ external owner session and generation changes emit sessionEnded false for account recheck (97.0114ms)
+✔ stale-account purge cannot erase the new account's context or draft (99.761ms)
+✔ transactional context rejects a stale queued writer even before storage events arrive (88.3281ms)
+✔ same-session binding preserves a future payload but another account can discard it (89.8762ms)
+✔ a changed durable context cannot be hidden by the old matching journal (95.9941ms)
+✔ onboarding completion is versioned, local, and does not alter drafts (2.2695ms)
+✔ onboarding storage failures fail open with a truthful recovery state (0.264ms)
+✔ normalizeDraft migrates a legacy project without orchestration (1.3396ms)
+✔ normalizeDraft reads the versioned envelope and rejects corrupt values (0.3078ms)
+✔ draft restoration rejects malformed renderable values before installation (2.9179ms)
+✔ unfinished valid drafts remain restorable after shape validation (0.8145ms)
+✔ v1 direct and v2 envelopes migrate losslessly by ID, order, label, task, provider, and limits (0.676ms)
+✔ v5 attachment schema is stable, future versions fail closed, and corrupt IDs recover visibly (0.5634ms)
+✔ v5 serializer strips attachment metadata and retains only a count marker (0.4134ms)
+✔ account context stays outside the domain project and navigation survives normalization (0.4747ms)
+✔ v4 to v5 migration strips legacy attachment values and caps the count-only notice (1.3322ms)
+✔ both registered providers and mixed assignments remain stable (0.2933ms)
+✔ missing funding migrates to subscription while explicit invalid funding is preserved (0.9549ms)
+✔ unknown provider IDs are preserved, warned, and block validation (0.637ms)
+✔ execution evidence UI includes localized outcome and recovery copy (1.3476ms)
+✔ execution evidence UI avoids browser-save certainty and announces results (0.4272ms)
+✔ creation switches to the dedicated outcome and offers only safe follow-up actions (0.3208ms)
+✔ only a successful web dry-run offers the guarded ZIP callback and disables it while busy (19.8001ms)
+✔ es, orchestration=false: all mandatory paths and local Markdown links resolve (6.663ms)
+✔ es, orchestration=true: all mandatory paths and local Markdown links resolve (2.0835ms)
+✔ en, orchestration=false: all mandatory paths and local Markdown links resolve (2.5246ms)
+✔ en, orchestration=true: all mandatory paths and local Markdown links resolve (1.4419ms)
+✔ basic package starts with project context and imposes no runtime setup (9.7622ms)
+✔ advanced package uses one config and includes all setup dependencies (1.0311ms)
+✔ AGENTS is canonical; adapters do not duplicate policy or imply universal CODEX loading (2.2169ms)
+✔ template license and pinned provenance are retained without granting application rights (3.0551ms)
+✔ all phases get a meaningful state and an appropriate first action without fabricated approval (1.362ms)
+✔ paths preview matches the exact generated contract (0.7869ms)
+✔ versioned writes and attachment copies never overwrite existing files (217.9394ms)
+✔ concurrent intentional writes still create base and versioned files (8.7242ms)
+✔ Electron privileged copy boundary requires a real desktop attachment path (1.964ms)
+✔ subscription funding has an exact zero-paid-use default (2.308ms)
+✔ money parsing uses canonical USD minor units without Number arithmetic (0.6046ms)
+✔ malformed and unsupported API policies fail closed with stable reasons (0.1986ms)
+✔ only an injected exact cumulative contract fixture is API eligible (0.2577ms)
+✔ the Mode 1 dialog exposes subscription and an accessibly explained unavailable API mode (0.8176ms)
+✔ desktop preflight rejects paid or legacy monetary configuration without fallback (3.243ms)
+✔ GitHub numeric subject is lossless and excludes mutable, nested, duplicate or nonnumeric keys (1.524ms)
+✔ GitHub App capabilities fail closed and authorization uses S256 without OAuth scopes or installation (108.201ms)
+✔ private paginated primary verified email admits GitHub; session, export, quota and deletion use existing account controls (475.6049ms)
+{"event":"oidc_callback_failed","code":"callback_binding"}
+{"event":"oidc_callback_failed","code":"callback_binding"}
+{"event":"oidc_callback_failed","code":"callback_binding"}
+{"event":"oidc_callback_failed","code":"callback_binding"}
+{"event":"oidc_callback_failed","code":"callback_binding"}
+✔ callbacks bind browser and provider, expire, reject duplicates and atomically prevent concurrent replay (119.9233ms)
+{"event":"oidc_callback_failed","code":"account_admission"}
+{"event":"oidc_callback_failed","code":"authorization_response"}
+{"event":"oidc_callback_failed","code":"authorization_response"}
+{"event":"oidc_callback_failed","code":"authorization_response"}
+{"event":"oidc_callback_failed","code":"authorization_response"}
+{"event":"oidc_callback_failed","code":"authorization_response"}
+✔ GitHub failures are recoverable, redacted and leave no partial accounts or credentials (403.6387ms)
+{"event":"oidc_callback_failed","code":"account_admission"}
+✔ explicit linking both directions preserves account, quota and policy; email equality never links (200.167ms)
+✔ additive GitHub migration preserves legacy identity, policies, sessions and receipts without acceptance backfill (5.1701ms)
+{"event":"oidc_callback_failed","code":"account_admission"}
+{"event":"oidc_callback_failed","code":"account_admission"}
+✔ another account's identity cannot transfer, and logout during provider exchange prevents linkage (91.0156ms)
+✔ link completion crossing the five-minute proof deadline rolls back every identity/session write (70.2186ms)
+{"event":"oidc_callback_failed","code":"account_admission"}
+{"event":"oidc_callback_failed","code":"callback_binding"}
+✔ linking and action-scoped rights reject stale, revoked, changed or foreign identity context without Strict callback cookie (41.129ms)
+✔ isolated SQLite backup and read-only restore preserve deletion, revocation, policy erasure and allowance continuity (54.3734ms)
+✔ GitHub authorization executes in workerd with real D1, encrypted PKCE and Strict session (1491.1082ms)
+✔ an idea omits attachments, while both discovery paths offer optional files before context (1.9263ms)
+✔ unanswered future questions never prevent a valid current answer or backwards navigation (1.4087ms)
+✔ all protected team and delivery errors block forward motion and allow corrections (0.2678ms)
+✔ review edit links return to the correct question without rewriting project values (0.3539ms)
+✔ each basic interaction has one title and exposes only its relevant input in both languages (19.6777ms)
+✔ guided frame has accurate branch progress, explicit optional skip, and editable review return (3.3631ms)
+✔ the web name input accepts free text up to 50 characters and retains the desktop limit (1.3863ms)
+✔ four web roles disable additions and other selected roles while retaining each current option (13.6618ms)
+✔ an oversized restored web team remains visible and its duplicate current roles stay selectable (6.8528ms)
+✔ web summary expands with progress and reflects current attachments, team, route, guides and confirmation (8.524ms)
+✔ contextual tips cover every module and full guide preserves the complete workflow (1.8524ms)
+✔ all EN/ES SOP images are actual 4K assets bound to their provenance manifest (115.3993ms)
+✔ API JSON and failures retain host-only HTTPS policy and safe retry metadata (32.5033ms)
+✔ strict snapshots reject wrong types, enums, unknown fields, controls and numeric YAML injection (3.6992ms)
+✔ invalid execution never fingerprints, builds, authorizes or downloads (1.2075ms)
+✔ text boundaries preserve original values and reject oversize snapshots (1.4058ms)
+✔ SQL, script examples and Unicode stay literal without content censorship (10.4559ms)
+✔ archive paths reject traversal, absolute paths, controls, reserved names and collisions (0.5583ms)
+✔ file writes reject hostile destination names before creating a directory (13.4401ms)
+✔ file copies reject stale selections and enforce source size without a destination write (18.9596ms)
+✔ pre-existing junction destinations cannot redirect project writes (15.1564ms)
+✔ application legal entrypoints carry the primary locale before any referrer-free navigation (65.2794ms)
+✔ legal return preserves EN/ES with the real no-referrer policy across Privacy, Cookies and FAQ (48.8118ms)
+✔ intermediate legal hops and app return carry explicit language without storage or referrer (223.4824ms)
+✔ personal local download preserves incomplete user data as JSON, uses fixed paths, reports unavailable attachments (3.3476ms)
+✔ unverified local context excludes any project or attachment instead of reading another owner journal (1.5096ms)
+✔ CAPTCHA config fails closed for ordinary login without hiding independent rights providers (56.0688ms)
+✔ server verification bounds input and checks success, action, hostname, and malformed/upstream failures (7.4011ms)
+✔ Google and GitHub share login verification; missing/replayed tokens create no transactions; rights proof stays independent (40.7059ms)
+✔ browser discovers shared public key and passes a token only to ordinary provider sign-in (7.0452ms)
+✔ Mode1ConfigurationDialog renders native dialog semantics and all four groups in order (16.5745ms)
+✔ Mode1ConfigurationDialog renders one row per participant and localizes to Spanish (5.2309ms)
+✔ Mode1ConfigurationDialog shows the AEKR compatibility warning for an unsupported topology (9.2731ms)
+✔ Mode1ConfigurationDialog shows the browser limitation note instead of a check button on the web host (4.8305ms)
+✔ Mode1ConfigurationDialog exposes the subscription funding option as selected and API as disabled (4.3211ms)
+✔ Mode1ConfigurationDialog shows a blocking funding warning for an unresolved carried-over policy (CODEX_REVIEW H1) (4.4275ms)
+✔ openMode1Draft seeds defaults for unassigned participants (5.459ms)
+✔ openMode1Draft preserves existing assignments by participant ID (0.4896ms)
+✔ isAekrCompatibleTopology rejects repeated roles and more than 4 participants (0.2142ms)
+✔ openMode1Draft marks compatibilityBlocked for unsupported topology (0.2164ms)
+✔ parseIntegerInRange accepts only complete integers in bounds (0.5934ms)
+✔ validateMode1Draft flags empty task and unknown provider without destroying other rows (0.6858ms)
+✔ validateMode1Draft flags out-of-range numeric limits independently (0.316ms)
+✔ parseIntegerInRange covers the exact min/max boundary and one-past-boundary for all four schema limits (CODEX_REVIEW L3) (0.2084ms)
+✔ normalizeMode1Draft returns null for an invalid draft and preserves nothing implicitly (0.3286ms)
+✔ normalizeMode1Draft converts a valid draft to a canonical OrchestrationConfig (1.2753ms)
+✔ normalizeMode1Draft refuses an AEKR-incompatible topology even if every field is otherwise valid (0.2716ms)
+✔ cloneMode1Draft produces an independent deep copy (0.3311ms)
+✔ validateMode1Draft blocks Save when the carried-over funding policy is invalid or unsupported (CODEX_REVIEW H1) (0.5745ms)
+✔ validateMode1Draft accepts the default subscription funding policy (0.1751ms)
+✔ isMode1DraftDirty detects edits and cancel-time equality (0.5203ms)
+✔ Google methods stay off without all keys or matching configured origin (133.1788ms)
+✔ OIDC rejects missing, false, stale and malformed policy choices before transaction creation or Google I/O (126.951ms)
+✔ rights-only reauthentication refreshes the existing browser without new policy, profile or account writes (156.2ms)
+✔ rights-only start requires an active existing browser and rejects policy-bearing or cross-origin requests (100.6295ms)
+{"event":"oidc_callback_failed","code":"account_admission"}
+✔ Google login and policy receipt roll back together if the receipt cannot be written (159.4787ms)
+{"event":"oidc_callback_failed","code":"callback_binding"}
+✔ concurrent rights callbacks issue one new session, without manufacturing policy acceptance (106.8997ms)
+{"event":"oidc_callback_failed","code":"account_admission"}
+✔ rights-only transaction failure preserves the prior browser session and account records (98.4442ms)
+{"event":"oidc_callback_failed","code":"account_admission"}
+✔ rights-only callback refuses wrong_identity without resurrecting or authorizing an account (157.3031ms)
+{"event":"oidc_callback_failed","code":"account_admission"}
+✔ rights-only callback refuses revoked without resurrecting or authorizing an account (92.5488ms)
+{"event":"oidc_callback_failed","code":"account_admission"}
+✔ rights-only callback refuses deleted without resurrecting or authorizing an account (60.8827ms)
+{"event":"oidc_callback_failed","code":"account_admission"}
+✔ rights-only callback refuses expired without resurrecting or authorizing an account (63.7273ms)
+{"event":"oidc_callback_failed","code":"account_admission"}
+✔ rights-only callback refuses changed_version without resurrecting or authorizing an account (81.5358ms)
+✔ OIDC starts with minimal scopes, bound encrypted transaction and separate Lax cookie (92.4161ms)
+✔ OIDC rejects cross-origin starts, linking and caller-controlled redirect (43.8244ms)
+✔ real library validates signed Google response and issues only own Strict session (73.4981ms)
+{"event":"oidc_callback_failed","code":"token_validation"}
+✔ OIDC rejects wrong issuer without a session or account (74.465ms)
+{"event":"oidc_callback_failed","code":"token_validation"}
+✔ OIDC rejects wrong audience without a session or account (55.2261ms)
+{"event":"oidc_callback_failed","code":"token_validation"}
+✔ OIDC rejects wrong authorized party without a session or account (61.3067ms)
+{"event":"oidc_callback_failed","code":"token_validation"}
+✔ OIDC rejects wrong nonce without a session or account (67.4051ms)
+{"event":"oidc_callback_failed","code":"token_validation"}
+✔ OIDC rejects expired token without a session or account (98.6674ms)
+{"event":"oidc_callback_failed","code":"token_validation"}
+✔ OIDC rejects future issued-at without a session or account (117.7831ms)
+{"event":"oidc_callback_failed","code":"account_admission"}
+✔ OIDC rejects unverified email for new account without a session or account (80.8606ms)
+{"event":"oidc_callback_failed","code":"account_admission"}
+✔ OIDC rejects external email for new account without a session or account (80.6262ms)
+{"event":"oidc_callback_failed","code":"token_validation"}
+✔ invalid JWS signature is rejected even from the configured token endpoint (81.8242ms)
+{"event":"oidc_callback_failed","code":"callback_binding"}
+✔ callback replay and concurrent callbacks perform exactly one token exchange (111.8786ms)
+{"event":"oidc_callback_failed","code":"callback_binding"}
+{"event":"oidc_callback_failed","code":"callback_binding"}
+{"event":"oidc_callback_failed","code":"callback_binding"}
+✔ callback requires browser binding and rejects duplicate state without exchange (116.5815ms)
+{"event":"oidc_callback_failed","code":"account_admission"}
+✔ cancel racing a token exchange prevents late cookie issuance (65.1688ms)
+{"event":"oidc_callback_failed","code":"token_exchange"}
+✔ provider oversized fails closed and clears transaction secrets (79.9808ms)
+{"event":"oidc_callback_failed","code":"token_exchange"}
+✔ provider redirect fails closed and clears transaction secrets (65.046ms)
+{"event":"oidc_callback_failed","code":"token_exchange"}
+✔ provider failure fails closed and clears transaction secrets (85.4161ms)
+✔ transaction AES-GCM binds account-independent transaction id and rejects key/tag changes (1.2917ms)
+✔ linked-identity profile remains usable without a current email or Google MFA claims (0.1523ms)
+✔ callback diagnostics contain only fixed codes and distinguish provider exchange, validation and admission (967.2466ms)
+{"event":"oidc_callback_failed","code":"account_admission"}
+✔ OIDC executes in workerd with real D1 and signature verification (1702.3273ms)
+✔ first-run onboarding has two outcome-led, local-first screens (1.191ms)
+✔ guided completion enters creation and contextual help replaces welcome shortcuts (0.6132ms)
+✔ help stays contextual and About opens above the current screen (3.5845ms)
+✔ onboarding is semantic, keyboard-native, and explains unavailable storage (0.5059ms)
+✔ mobile onboarding uses one-column facts and a safe-area action region (0.2651ms)
+✔ canonical JSON sorts object keys, preserves arrays, and rejects unsafe values (1.4081ms)
+✔ execution fingerprint identity projects attachment metadata without Blob content (11.3981ms)
+✔ execution envelope validation is strict and does not log payloads (0.5966ms)
+✔ guard reserves synchronously, replays IDs, coalesces in-flight fingerprints, and permits reruns (9.9599ms)
+✔ guard caches failures, releases fingerprints, and evicts only settled IDs (0.8351ms)
+✔ snapshot parser fails closed on unknown schemas and inconsistent gates (1.8737ms)
+✔ controller launches fixed argv without a shell and gates stdin decisions (242.5552ms)
+✔ control state location is deterministic and outside the project (1.6399ms)
+✔ Mode 1 start preflight rejects paid and legacy monetary configuration without fallback (1.3239ms)
+✔ ambient workerd fetch works through runtimeDependencies and the real OIDC client (497.7098ms)
+✔ project map has unique IDs and every flow resolves through exact edges (24.0622ms)
+✔ self-contained HTML embeds a byte-equivalent copy of the canonical JSON (33.237ms)
+✔ committed HTML is generated from the canonical JSON and current template (14.8241ms)
+✔ viewer exposes responsive, keyboard, status, and reduced-motion affordances (19.1396ms)
+✔ inline viewer program is syntactically valid JavaScript (10.3104ms)
+✔ validator rejects a flow edge that does not connect consecutive steps (14.7278ms)
+✔ production registry contains exactly the two evidenced providers (4.6385ms)
+✔ registry owns exact fixed probes (2.0369ms)
+✔ Claude classifier fails closed for every unsupported auth result (0.3895ms)
+✔ Codex classifier accepts ChatGPT and rejects API key or unreadable auth (0.3913ms)
+✔ availability validation requires one known result per provider (0.9671ms)
+✔ eligibility separates export, execution, unsupported, and unchecked (0.3055ms)
+✔ adapter serialization preserves exact current policies (0.4015ms)
+✔ test-only invalid descriptors cannot enter the production registry (0.3257ms)
+✔ reduced motion removes meaningful animation and transition movement (1.1857ms)
+✔ interactive control families retain the 44px target contract (0.8438ms)
+✔ 320px layouts contain intrinsic content and never impose a desktop width (0.3748ms)
+✔ responsive IA switches rail to strip then selector at approved boundaries (0.3999ms)
+✔ Review carries the dry-run choice next to the confirm action (19.6772ms)
+✔ Review presents the unchanged prompt and deterministic plan in a read-only manifest (7.2035ms)
+✔ App confines full prompt and plan to Review and exposes contextual summary earlier (0.8932ms)
+✔ Review keeps files, plan and prompt in native disclosures with copy and Markdown download (0.3881ms)
+✔ real SQLite keeps Blog SQL-looking content literal through publish, list and idempotent retry (11.5822ms)
+✔ real account handlers preserve apostrophe emails and reject SQL-shaped identifiers without changing another account (177.6312ms)
+✔ web and desktop have distinct renderer entries and outputs (2.3132ms)
+✔ only the web entry contributes the optional Blog and PWA graph (1.4616ms)
+✔ artifact scan fails closed on Blog administration and PWA leakage (0.4164ms)
+✔ each Terms document contains one full language and the matching canonical source (9.0435ms)
+✔ all application Terms entrypoints use the active primary locale (2.2221ms)
+✔ direct and refreshed explicit language requests resolve without additional selectors, storage or referrer (23.0293ms)
+✔ Terms navigation and return keep the chosen language and leave outside destinations intact (1.5449ms)
+✔ dark and light themes assign the identical semantic token contract (2.709ms)
+✔ Iceland pearl and soft dark themes retain the neutral hierarchy and restrained red (3.1016ms)
+✔ final text and status pairs meet WCAG AA normal-text contrast (2.4939ms)
+✔ web defaults to pearl with a guarded local preference and both hosts can switch (1.2548ms)
+✔ navigation and genuine choice controls expose their current state (0.2684ms)
+✔ Settings controls retain visible label association and controlled values (0.3125ms)
+✔ all App buttons declare non-submit behavior and disabled controls stay native (1.0789ms)
+✔ legacy theme variables and component color literals are absent (0.6358ms)
+✔ all presentation surfaces expose the approved typography tokens (2.1995ms)
+✔ no surface declares a font family the build never delivers (1.104ms)
+✔ application typography follows semantic product roles (1.5634ms)
+✔ legal pages and the project map retain the same role hierarchy (0.6463ms)
+✔ all account DTO entry points reject absent or malformed local ownership markers (49.8633ms)
+✔ export authorization binds the captured account and session without loading a replacement identity (2.8909ms)
+✔ account session uses the profile name and preserves legacy email fallback (3.1795ms)
+✔ only explicit current authorization clears the account policy gate (1.3622ms)
+✔ account client keeps navigation and network failures distinct without following redirects (0.6356ms)
+✔ method discovery fails closed and contains no account selector (1.5571ms)
+✔ Google navigation accepts only the configured HTTPS authorization endpoint (8.3666ms)
+✔ Google account-control verification omits authorization and project data (0.9761ms)
+✔ policy authorization posts only the five explicit choices/version fields and parses the session (0.9259ms)
+✔ transaction polling and cancellation expose only bounded status, never identity or tokens (1.366ms)
+✔ only OTP verification establishes a session; session reads are GET and payloads contain no project data (0.8287ms)
+✔ OTP errors survive HTTP 401 and rate limits expose bounded retry information (0.5817ms)
+✔ account client rejects HTML and malformed application data (2.1584ms)
+✔ account data download preserves the server's recent-authentication requirement (1.2737ms)
+✔ W1 attachment UI exposes local-only lifecycle, limits, statuses, and bilingual recovery (1.735ms)
+✔ attachment rows use semantic status tokens and 44px removal targets (0.438ms)
+✔ phase and New draft transitions disclose selected transient files (0.1876ms)
+✔ Foundation explains browser draft metadata and non-persistent file bytes at point of use (0.1871ms)
+✔ both attachment views disable mutations and announce local inspection (16.3387ms)
+✔ attachment rejection messages are fixed and bilingual (0.2617ms)
+✔ buildProjectFiles matches the desktop-shared prompt content exactly (5.0507ms)
+✔ buildProjectFiles produces the documented ZIP layout under the slug (1.464ms)
+✔ buildProjectFiles signature identifies the web edition and app version (0.6626ms)
+✔ buildProjectFiles refuses tracking-only exports with an explicit reason (1.0659ms)
+✔ SETUP.md renders literal commands only for actions a browser can't run itself (0.3397ms)
+✔ SETUP.md omits git\/github\/ide commands when those actions are not planned (0.2505ms)
+✔ SETUP refuses shell syntax in restored branch settings (0.5046ms)
+✔ buildProjectFiles omits orchestration.yaml when orchestration is disabled (0.7337ms)
+✔ buildProjectFiles includes orchestration.yaml when enabled (1.2656ms)
+✔ renderOrchestrationConfig only allows workspace-write for the Implementador role (0.387ms)
+✔ renderOrchestrationConfig marks the Auditor role's action_kind as an independent audit (0.3003ms)
+✔ mixed providers serialize byte-compatible adapter fields and no registry metadata (0.8248ms)
+✔ unknown providers fail before web ZIP file assembly (0.3392ms)
+✔ Mode 1 validation rejects role drift and empty tasks (0.4257ms)
+✔ compatible one- and four-participant Mode 1 YAML preserves the current AEKR contract with identity comments (0.5034ms)
+✔ repeated-role and five/six-participant Mode 1 configurations fail closed with the exact contract error (1.8564ms)
+✔ provenance v2 and generated files are deterministic with fixed provenance time (1.0873ms)
+✔ web resolver sanitizes hostile names and allocates deterministic case-insensitive collisions (0.6128ms)
+✔ actual ZIP extraction includes inspected PDF bytes and preserves duplicate-name allocation (121.9122ms)
+✔ synchronous ZIP construction rejects uninspected allowed-extension bytes (2.3897ms)
+✔ rebuilt flow preserves the complete definition through prompt, plan, structure, and ZIP (1.0693ms)
+✔ restricted beta keeps indexing and unauthenticated access fail-closed (1.3288ms)
+✔ Lighthouse exempts only the intentional private-beta crawlability audit (1.0521ms)
+✔ host CSP permits bounded canvas styles without permitting inline script (0.4821ms)
+✔ current release copy distinguishes restricted beta from public launch (5.1201ms)
+✔ an ordinary export suspension locks its product session while a rights-only denial does not (31.6145ms)
+✔ rights-only browser proof uses its dedicated start route without policy or ordinary admission (1.8658ms)
+✔ rights data/deletion send only the dedicated proof header and never request a product session (1.8634ms)
+✔ rights errors use Retry-After metadata without invalidating an unrelated product session (1.401ms)
+✔ publication gate allows public code/examples but rejects maps, internal config, sources and unreviewed archives (61.3241ms)
+ℹ tests 491
+ℹ suites 0
+ℹ pass 491
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6512.5539
+npm notice run accreatio@0.9.1 test:account-mailer
+npm notice run node workers/account-mailer/verify.mjs
+account-mailer tests: PASS (.local\logs\otp\mailer-2026-10-26T19-05-48-199Z\tests.log)
+account-mailer types: PASS (.local\logs\otp\mailer-2026-10-26T19-05-48-199Z\types.log)
+account-mailer typecheck: PASS (.local\logs\otp\mailer-2026-10-26T19-05-48-199Z\typecheck.log)
+account-mailer dry-run: PASS (.local\logs\otp\mailer-2026-10-26T19-05-48-199Z\dry-run.log)
+npm notice run accreatio@0.9.1 aekr:branding:check
+npm notice run node scripts/check-aekr-branding.mjs
+PASS AEKR branding integrity (4 pinned files, local offline check)
+npm notice run accreatio@0.9.1 blog:seed:check
+npm notice run node scripts/generate-blog-seed.mjs --check
+Blog fixture and generated migration are in sync.
+npm notice run accreatio@0.9.1 aekr:vendor:check
+npm notice run node scripts/vendor-aekr-payload.mjs --check
+fatal: cannot change to 'C:\Users\edlop\OneDrive\Documents\VS Code\accreatio\.local\logs\antihacking-20261026-full\AI Engineering Knowledge Repo': No such file or directory
+aekr:vendor:check skipped — AEKR not available at C:\Users\edlop\OneDrive\Documents\VS Code\accreatio\.local\logs\antihacking-20261026-full\AI Engineering Knowledge Repo.
+npm notice run accreatio@0.9.1 examples:check
+npm notice run node --import tsx scripts/generate-export-examples.mjs --check
+Verified 2 actual ZIPs, accreatio-basic-sample.zip: 21 entries, 21176 bytes; accreatio-orchestration-sample.zip: 27 entries, 30162 bytes.
+npm notice run accreatio@0.9.1 project-map:check
+npm notice run node scripts/generate-project-map.mjs --check
+accreatio-project-map.html verified (21 nodes, 40 edges, 12 flows).
+npm notice run accreatio@0.9.1 cloudflare:types:check
+npm notice run wrangler types functions/types.d.ts --config wrangler.toml --include-runtime false --check
+
+ ⛅️ wrangler 4.151.3 (update available 4.153.0)
+───────────────────────────────────────────────
+✨ Types at functions/types.d.ts are up to date.
+
+npm notice run accreatio@0.9.1 typecheck
+npm notice run tsc -p tsconfig.app.json --pretty false && npm run typecheck:functions
+npm notice run accreatio@0.9.1 typecheck:functions
+npm notice run tsc -p tsconfig.functions.json --pretty false
+npm notice run accreatio@0.9.1 format:check
+npm notice run prettier --check "src/**/*.{ts,tsx,css}" "electron/**/*.ts" "shared/**/*.ts" "functions/_lib/**/*.ts" "functions/api/**/*.ts" "workers/account-maintenance/**/*.ts" "content/**/*.json" "tests/**/*.ts" "scripts/**/*.mjs"
+Checking formatting...
+All matched files use Prettier code style!
+npm notice run accreatio@0.9.1 cloudflare:functions:build
+npm notice run wrangler pages functions build functions --outdir .local/cache/cloudflare/functions-build
+
+ ⛅️ wrangler 4.151.3 (update available 4.153.0)
+───────────────────────────────────────────────
+✨ Compiled Worker successfully
+npm notice run accreatio@0.9.1 build
+npm notice run npm run build:web
+npm notice run accreatio@0.9.1 build:web
+npm notice run tsc -p tsconfig.app.json && vite build --mode web && npm run security:artifacts:check
+vite v8.3.4 building client environment for web...
+transforming...
+✓ 2094 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                     2.47 kB │ gzip:   0.93 kB
+dist/assets/attachmentSecurityWorker-DhLx7jZX.js  512.12 kB
+dist/assets/index-CHwLljjH.css                    117.62 kB │ gzip:  21.30 kB
+dist/assets/build-BkIkdflC.js                       3.32 kB │ gzip:   1.34 kB
+dist/assets/client-zip-scKVvBcw.js                  6.34 kB │ gzip:   2.63 kB
+dist/assets/nebula-DYGYasLh.js                      9.74 kB │ gzip:   4.11 kB
+dist/assets/attachmentSecurityCore-BxAuxdsP.js    508.47 kB │ gzip: 206.50 kB
+dist/assets/index-XluTHW5x.js                     563.18 kB │ gzip: 179.45 kB
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 742ms
+
+PWA v1.3.0
+mode      generateSW
+precache  26 entries (3016.89 KiB)
+files generated
+  dist/sw.js
+  dist/workbox-2fbc6a65.js
+npm notice run accreatio@0.9.1 security:artifacts:check
+npm notice run node scripts/check-web-security-artifacts.mjs
+PASS web publication gate: 86 files; no source maps or known internal configuration/source paths; public archives allowlisted.
+npm notice run accreatio@0.9.1 test:surface
+npm notice run node scripts/surface-boundary-smoke.mjs --web-only
+{"desktopFiles":0,"mode":"web-only","ok":true}
+npm notice run accreatio@0.9.1 test:project-map
+npm notice run node scripts/project-map-functional-smoke.mjs
+PASS project map file:// smoke (12 flows, 4 viewports, zero external requests)
+npm notice run accreatio@0.9.1 test:web
+npm notice run node scripts/web-functional-smoke.mjs
+PASS web footer destination: Built with AEKR; intercepted isolated popup
+PASS web footer destination: Instagram; intercepted isolated popup
+PASS web footer: exact destinations, isolated new tabs, hidden pending profiles
+PASS public Blog/About without account; posts survive denied or stalled admin capability
+PASS nebula: motion, no hover, visible gas, empty space, right click, UI exclusion
+PASS advanced options: unique roles, limit, route and optional configuration
+PASS restored draft guards: preserve and repair long names, duplicate roles and five participants
+PASS guided creation: es, 760px, reduced motion, validation/back/review/keyboard/direct confirmed ZIP bytes
+PASS guided creation: en, 390px, reduced motion, validation/back/review/keyboard/direct confirmed ZIP bytes
+PASS guided creation: es, 320px, reduced motion, validation/back/review/keyboard/direct confirmed ZIP bytes
+PASS guided creation: en, 1280px, reduced motion, validation/back/review/keyboard/direct confirmed ZIP bytes
+PASS W1 browser functional smoke
+npm notice run accreatio@0.9.1 test:account
+npm notice run node --import tsx scripts/account-functional-smoke.mjs
+PASS account menu: header order, legacy username, private dropdown content, Escape/focus, outside click, Tab, Blog/About and 320/390/1280 layouts
+PASS own OTP: ordered entry, invalid code, cooldown/resend, email correction, cookie resume, active service worker and layouts
+PASS new draft: cancellation keeps ZIP retry; confirmed discard removes previous ZIP recovery without account or quota changes
+PASS account quota: five ZIPs, retry, thank-you, reload and retained draft
+PASS revocation, logout/deletion without navigation, isolated blank draft after logout/deletion and non-resettable allowance
+PASS account draft isolation: distinct accounts, same-account return, cookie replacement, secondary-tab logout and unchanged cookie preferences/quota
+PASS account policy: no backfill before explicit continue; fresh rights without acceptance; idempotent DB-time receipt; later review preserves draft
+PASS Google UI: popup/COOP, block/cancel/outage/expiry, active service worker and exact attachment bytes in downloaded ZIP
+PASS privacy UI: public notices/contact, exact device-storage names and GPC/DNT with default-off optional collection and no optional transmission
+PASS account UI/SQLite integration; evidence: .local\logs\account-ui-1793041623144
+npm notice run accreatio@0.9.1 test:identity
+npm notice run node --import tsx scripts/identity-functional-smoke.mjs
+PASS identity UI: C:\Users\edlop\OneDrive\Documents\VS Code\accreatio\.local\logs\antihacking-20261026-full\snapshot\.local\logs\readiness-2026-10-21\identity-ui-1793041658692
+npm notice run accreatio@0.9.1 test:rights
+npm notice run node scripts/account-rights-functional-smoke.mjs
+PASS rights UI en/1280: exact download, transaction rejection, confirmed deletion, Retry-After, popup cancellation, local preservation.
+PASS rights UI en/320: exact download, transaction rejection, confirmed deletion, Retry-After, popup cancellation, local preservation.
+PASS rights UI es/1280: exact download, transaction rejection, confirmed deletion, Retry-After, popup cancellation, local preservation.
+PASS rights UI es/320: exact download, transaction rejection, confirmed deletion, Retry-After, popup cancellation, local preservation.
+Evidence: .local\logs\account-rights-ui-1793041673518
+npm notice run accreatio@0.9.1 test:collect
+npm notice run node --import tsx scripts/collect-functional-smoke.mjs
+{"result":"PASS","scope":"Synthetic local built-browser UI + actual receiver/SQLite, no real users/OAuth/external transmission","cases":["default off","symmetric first layer","rejection preserves local ZIP","positive allowlisted server delivery","withdrawal deletes contributions","research independent of analytics","optional export manifest","cross-tab restriction and shared grant","mobile width and targets","keyboard/native dialog focus","GPC","storage failure","preference quota rejection survives reload without analytics POSTs","full write quota rejection preserves research, capabilities and local data","silent preference write rejection survives reload without analytics POSTs"],"serverRecordCount":0,"externalRequests":0}
+npm notice run accreatio@0.9.1 lighthouse
+npm notice run node scripts/lighthouse-check.mjs
+FAIL performance: 76/100 (min 80)
+
+Lighthouse gate failed. Full report: .local/logs/lighthouse/lhr.json
+PASS accessibility: 96/100 (min 90)
+PASS best-practices: 100/100 (min 90)
+PASS seo: 69/100 (min 90; intentional private-beta noindex)
