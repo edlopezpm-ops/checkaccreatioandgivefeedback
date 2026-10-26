@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "effectiveDate": "2026-10-26",
+  "baselinePublicCommit": "4d63ea2a5db560f97a5a2aaab3e4f947f7e65191",
+  "scope": "Minimal public status and continuity navigation; historical evidence unchanged. This manifest covers only this update and excludes itself. Older package manifests and current-state files remain historical snapshots.",
+  "historicalFilesByteIdentical": 158,
+  "navigationFilesChanged": [
+    "README.md",
+    "llms.txt",
+    "index.html"
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 4903,
+      "sha256": "832e311cae0bd390bf3235de721d79f3b1f8780004520b9e0725ad0484986f0d"
+    },
+    {
+      "path": "llms.txt",
+      "bytes": 4374,
+      "sha256": "2e3a2bbaed34542ae5f58815e97a722253c43574eccd9db58ee326634c4f40b0"
+    },
+    {
+      "path": "index.html",
+      "bytes": 146659,
+      "sha256": "a0262ad2455ae7ce2c083e41ec06039b6f5bf64811839d1779e7376b847475ac"
+    },
+    {
+      "path": "PUBLIC_STATUS_2026-10-26.md",
+      "bytes": 1679,
+      "sha256": "1f9b39901b6e4ad4c05ab5c70545673f4d3b224949752764ae8048aa510c3ceb"
+    },
+    {
+      "path": "PUBLIC-STATUS-2026-10-26.json",
+      "bytes": 1660,
+      "sha256": "262f8ff0249215dec75a8d680c3a880bce90c5c0664d7a0cc4c29079f3dd4ade"
+    },
+    {
+      "path": "update-2026-10-26.html",
+      "bytes": 2131,
+      "sha256": "5c0b2beb3e1e927277994cc4632337c43126536e25c014c179ec2fcc9308ef2a"
+    }
+  ]
+}
