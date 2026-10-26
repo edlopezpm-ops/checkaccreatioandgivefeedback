@@ -1,5 +1,8 @@
 # accreatio review dossier
 
+> **Latest public update: 26 October 2026.** Read the [minimal current status](PUBLIC_STATUS_2026-10-26.md) and [machine-readable snapshot](PUBLIC-STATUS-2026-10-26.json). Future internal reviews continue in [private AEKR Console Dossier](https://console.aekr.io/dossier). All earlier sections and machine seals below retain their original historical dates and evidence scope.
+
+
 <!-- security-update-20261022:start -->
 
 ## Actualización vigente — seguridad y diseño · 22 de octubre de 2026
